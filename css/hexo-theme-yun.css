@@ -1805,9 +1805,6 @@ pre[class*='language-']:hover .copy-btn {
 .site-author-avatar img:hover {
   box-shadow: 0 0 30px rgba(0,120,231,0.2);
 }
-.site-author-avatar img {
-  border-radius: 50%;
-}
 .site-author-name {
   margin-top: 0;
   margin-bottom: 1rem;
