@@ -106,12 +106,12 @@
 <meta name="renderer" content="webkit">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <title>该页面不存在-404.life</title>
-<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/payiz-asj/CDN@4.04/404/favicon.ico">
-<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/payiz-asj/CDN@4.04/404/css/404life.css" />
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/payiz-asj/CDN@4.05/404/favicon.ico">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/payiz-asj/CDN@4.05/404/css/404life.css" />
 </head>
 <body>
 <div class="tcy_404 container">
-<img src="https://cdn.jsdelivr.net/gh/payiz-asj/CDN@4.04/404/picture/404.png">
+<img src="https://cdn.jsdelivr.net/gh/payiz-asj/CDN@4.05/404/picture/404.png">
 <h2>抱歉，您访问的页面出错了</h2>
 <p>您可能输错了网址，或该网页已删除或不存在</p>
 <a href="https://yeying.tech" class="btn btn-primary btn_blue">返回主页</a>
@@ -171,11 +171,6 @@
 <h3 id="More"><a href="#More" class="headerlink" title="More:"></a>More:</h3><h4 id="💬-Enjoy-yourself-here-or-on-my-personal-blog-夜莺悠吟"><a href="#💬-Enjoy-yourself-here-or-on-my-personal-blog-夜莺悠吟" class="headerlink" title="💬 Enjoy yourself here or on my personal blog: 夜莺悠吟"></a>💬 Enjoy yourself here or on my personal blog: <a href="https://yeying.tech/">夜莺悠吟</a></h4>]]></content>
   </entry>
   <entry>
-    <title>分类</title>
-    <url>/categories/index.html</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
     <title>博客介绍</title>
     <url>/about/site.html</url>
     <content><![CDATA[<!-- 标题部分 
@@ -230,13 +225,18 @@
 ]]></content>
   </entry>
   <entry>
-    <title>相册</title>
-    <url>/photos/index.html</url>
+    <title>分类</title>
+    <url>/categories/index.html</url>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
     <title>friends</title>
     <url>/friends/index.html</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>相册</title>
+    <url>/photos/index.html</url>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
