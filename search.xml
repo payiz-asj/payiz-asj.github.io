@@ -1,233 +1,249 @@
 <?xml version="1.0" encoding="utf-8"?>
-<search> 
-  
-  
-    
-    <entry>
-      <title>作品展示</title>
-      <link href="/Hackathon%E5%8D%8E%E4%B8%9C%E4%B9%9D%E6%A0%A1%E7%BC%96%E7%A8%8B%E5%88%9B%E5%AE%A2%E9%A9%AC%E6%8B%89%E6%9D%BE/hackathon_readme/"/>
-      <url>/Hackathon%E5%8D%8E%E4%B8%9C%E4%B9%9D%E6%A0%A1%E7%BC%96%E7%A8%8B%E5%88%9B%E5%AE%A2%E9%A9%AC%E6%8B%89%E6%9D%BE/hackathon_readme/</url>
-      
-        <content type="html"><![CDATA[<h1 align = "center">Hackathon比赛项目</h1><h3 align = "center">——“送信鸭”小程序</h3><p>    <img align ="center" src = "https://i.loli.net/2020/11/30/YHbwgmOqu9F5rU7.png"/></p><h3 align ="center">小程序头像</h3>这里是 Hackathon 2020参赛队伍私有仓库<p><strong>比赛官网请看：<a href="https://hackathon2020eastchina.top/">https://hackathon2020eastchina.top/</a></strong></p><h2 id="队伍名：“觉醒吧，猎杀时刻！”"><a href="#队伍名：“觉醒吧，猎杀时刻！”" class="headerlink" title="队伍名：“觉醒吧，猎杀时刻！”"></a>队伍名：“觉醒吧，猎杀时刻！”</h2><h2 id="作品名称：“送信鸭”"><a href="#作品名称：“送信鸭”" class="headerlink" title="作品名称：“送信鸭”"></a>作品名称：“送信鸭”</h2><h2 id="作品介绍："><a href="#作品介绍：" class="headerlink" title="作品介绍："></a>作品介绍：</h2><p>​    这是一个可以<strong>邮寄、接受实物、电子信件、明信片</strong>等的微信小程序，<strong>我们将传统的“信件物流”也与现代的“信息交流”结合，创新性提出“信件交流新纪元”</strong>。   </p><p>​    您可以在这里给<strong>现实中的朋友邮寄信件、明信片等</strong>，并<strong>实时监控信件路程</strong>，还可以<strong>查询自己待收取、已收取的信件</strong>；您<strong>还可以</strong>在这里给好友<strong>写电子信件、明信片、生日贺卡等</strong>；还有<strong>好多漂亮的邮票、信封</strong>等着你去积攒哦！</p><p>​    后期我们还会推出<strong>陌生人写信社交、树洞分享故事、青年社区等精彩版块</strong>，期待您的加入！</p><h2 id="创意来源"><a href="#创意来源" class="headerlink" title="创意来源"></a>创意来源</h2><p>​    上个月宿舍楼管理室阿姨叫我帮忙送一下学生的信件和明信片，一共有30多件，我花了2个小时将其中的17件送到了对应的学生宿舍，剩下那么多都是半年前，甚至一年前的信件，我到他们宿舍发现已经换了新生。。。<br>​    有些信件上面除了<strong>学生宿舍号</strong>，还有<strong>电话号码</strong>，我打通了几个电话，对方有些人表示<strong>因为疫情原因，很长时间没开学这个信件一直没能过来取，还有一些人表示才知道自己有这么一封信！</strong><br>​    我们宿舍楼的学生信件其实已经放到很显眼的位置了，就在宿管阿姨值班的窗口那里，学生可以随时过去领自己的信件，也可以委托阿姨寄信。那为什么有那么多信件没人来领，而且在阿姨那里放了那么久呢？<br>​    <strong>就这么随意的一件事激发了我做这个项目，正好赶上这次黑客松编程马拉松的题目就是利用科技帮助解决疫情难题，所以我们组就准备解决这个问题。</strong><br>​    对此事进行了深入调研发现，我们宿舍楼的信箱里，有大概几种类型的信件：好有写信、明信片、贺卡、书店邮寄的书本及杂志、银行贷款账单、有些合同等。<br>​    信件封面一般都会标有收信<strong>姓名、地址（具体到宿舍号）、电话号</strong>等，<strong>个别还有寄信日期</strong>   ，正好这些信息可以利用我们的技术手段给同学们和宿管阿姨们提供便利的信件查询服务，还可以提供更加高效的寄信服务。</p><p>​    再进行了<strong>充分的需求分析（共花了16个小时，这次比赛总共就24小时，汗！）</strong>后，我们准备制作微信小程序，并且已经完成了初步的开发。<strong>希望尽快完成全部任务的开发和部署上线，期待与大家早日见面！！！</strong>  </p><h2 id="作品预览："><a href="#作品预览：" class="headerlink" title="作品预览："></a>作品预览：</h2><p>    <img align ="center" src = "https://i.loli.net/2020/11/30/oUEMF1W7stOgcm4.png"/>    <h3 align ="center">作品预览.png</h3></p>    <h2 id="关于本仓库"><a href="#关于本仓库" class="headerlink" title="关于本仓库"></a>关于本仓库</h2><p>本仓库为本次比赛新建的临时仓库，后期在开发和维护“送信鸭”微信小程序时，将会移到别的仓库，不过您可以通过下方的链接到达我的<a href= "https://github.com/payiz-asj">GitHub主页 </a></p><h2 id="关于版权信息"><a href="#关于版权信息" class="headerlink" title="关于版权信息"></a>关于版权信息</h2><p>​    本仓库属于Hackathon 2020参赛队伍 “觉醒吧，猎杀时刻！”，欢迎大家前来体验和提出建议，请勿用于商业用途。谢谢！</p>]]></content>
-      
-      
+<search>
+  <entry>
+    <title>个人介绍</title>
+    <url>/%E5%8D%9A%E4%B8%BB%E5%AF%84%E8%AF%AD/about-me/</url>
+    <content><![CDATA[<!-- 标题部分 
+
+<h1 align="center">个人介绍</h1>
+-->
+
+<!-- 个人介绍 -->
+
+<h3 id="Brief-Biography"><a href="#Brief-Biography" class="headerlink" title="Brief Biography"></a>Brief Biography</h3><ul>
+<li><p>Undergraduate of Department of Computer Science and Technology in Nanjing University.🎓</p>
+</li>
+<li><p>Software Engineer.👨‍💻</p>
+</li>
+<li><p><strong>Technology Stack:</strong></p>
+<ul>
+<li>Front-end: HTML 5, CSS, JS, TS, Wechat Mini Program, Framework: Vue, React .</li>
+<li>Back-end: Linux, Python Web development, crawler, scientific operation, data analysis, Framework: Django, Flask.</li>
+<li>Database: Sql Server, Sqlite.</li>
+<li>Favorite IDE: JetBrains Family Bucket (Especially PyCharm, WebStorm, IntelliJ IDEA ), Visual Studio, Sublime Text3, VMware Workstation.</li>
+<li>Dev Tools: Github, Gitee, Selenium, Scrapy,  postman, Fiddler,  FeHelper.</li>
+<li>Others: Adobe Family Bucket(Especially PS, PR, AU, XD), My Laptop💻, My Phone📱.</li>
+</ul>
+<!-- 动图效果 -->
+<div align="right"  >-----------LOVE YOU KOBE R.I.P❤-----------</div>
+  <a href="#" align="right">
+      <img align="right" src="http://5b0988e595225.cdn.sohucs.com/images/20190721/e8837828bc664adba3e9692712c90a99.gif" alt="图片裂开了？这里本该显示一个gif的"/>     
+  </a>     </li>
+<li><p><strong>Currently Focusing On:</strong></p>
+<ul>
+<li>Data Structure, Computer Algorithm</li>
+<li>Web Design,Web Crawler</li>
+<li>Machine Learning</li>
+<li>Natural Language Processing</li>
+</ul>
+</li>
+<li><p><strong>Recent Wishes:</strong></p>
+<ul>
+<li><strong>At the time of graduation, I am applying for a software engineering related job.💌</strong></li>
+</ul>
+</li>
+</ul>
+<!-- 后记 -->
+
+<h3 id="More"><a href="#More" class="headerlink" title="More:"></a>More:</h3><h4 id="💬-Enjoy-yourself-here-or-on-my-personal-blog-夜莺悠吟"><a href="#💬-Enjoy-yourself-here-or-on-my-personal-blog-夜莺悠吟" class="headerlink" title="💬 Enjoy yourself here or on my personal blog: 夜莺悠吟"></a>💬 Enjoy yourself here or on my personal blog: <a href="https://yeying.tech/">夜莺悠吟</a></h4>]]></content>
       <categories>
-          
-          <category> Hackathon华东九校编程创客马拉松 </category>
-          
+        <category>博主寄语</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> 个人项目 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>项目需求分析</title>
-      <link href="/Hackathon%E5%8D%8E%E4%B8%9C%E4%B9%9D%E6%A0%A1%E7%BC%96%E7%A8%8B%E5%88%9B%E5%AE%A2%E9%A9%AC%E6%8B%89%E6%9D%BE/hackathon_requirement_analysis/"/>
-      <url>/Hackathon%E5%8D%8E%E4%B8%9C%E4%B9%9D%E6%A0%A1%E7%BC%96%E7%A8%8B%E5%88%9B%E5%AE%A2%E9%A9%AC%E6%8B%89%E6%9D%BE/hackathon_requirement_analysis/</url>
-      
-        <content type="html"><![CDATA[<h1 align = "center">项目需求分析</h1><h3 align = "center">——“送信鸭”小程序</h3>## 1. 需求获取 / 需求调研：<h3 id="1-1-访谈"><a href="#1-1-访谈" class="headerlink" title="1.1 访谈"></a>1.1 访谈</h3><p>​    访谈法获取需求是需求获取方法中最直接、最快速的一种方法了，往往能够<strong>最直接、最具体、清晰、客观地</strong>了解目标用户的需求。   </p><h4 id="1-1-1-用户访谈"><a href="#1-1-1-用户访谈" class="headerlink" title="1.1.1 用户访谈"></a>1.1.1 用户访谈</h4><p>​    我们首先来到学校宿舍楼01栋值班室，与值班的阿姨们聊天，对她们进行了访谈，因为他们是这个项目的目标用户之一，而且这个项目立项也是受她们启发。<br>​    我们利用大约一个小时的访谈，获取了以下11条需求：   </p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1.</span> 希望能够有效地分发值班室收到的信件</span><br><span class="line"><span class="number">2.</span> 需要能够寄信，寄明信片</span><br><span class="line"><span class="number">3.</span> 能够添加、删除、修改、查询信件</span><br><span class="line"><span class="number">4.</span> 需要有一定的隐蔽性，学生的姓名、学号呀、手机号啊之类的信息不能泄露</span><br><span class="line"><span class="number">5.</span> 平台最好是手机APP或者小程序，其他的东西我们学不会</span><br><span class="line"><span class="number">6.</span> 能够添加、修改、删除个人收货地址</span><br><span class="line"><span class="number">7.</span> 学校宿管人员是否有特殊的身份可以进行普通用户以外的功能？</span><br><span class="line"><span class="number">8.</span> 能够自动更新版本，不过最好不要太频繁，或者更新速度快一些</span><br><span class="line"><span class="number">9.</span> 有使用说明，或者良好的导航栏，容易上手</span><br><span class="line"><span class="number">10.</span> APP体积不要太大，手机内存吃不消</span><br><span class="line"><span class="number">11.</span> 字体能够调整，界面颜色也能调整就更好啦</span><br></pre></td></tr></table></figure><h4 id="1-1-2-开发人员访谈"><a href="#1-1-2-开发人员访谈" class="headerlink" title="1.1.2 开发人员访谈"></a>1.1.2 开发人员访谈</h4><p>​    用户访谈往往只能获取一些表面化的功能性需求，而开发人员访谈能够获得比<strong>较全面、明确、技术化</strong>的需求。<br>​    因此我们进行了一次开发人员访谈，因为时间有限，我们就只采用了队内开发人员充当不同领域的开发人员进行模拟访谈。包括以下角色：<br>​        艾山江（队长）：访谈人、记录人员<br>​        郭庭：被访谈人，前端工程师<br>​        艾尔肯：被访谈人，后端工程师<br>​        阿卜杜拉：被访谈人，测试工程师   </p><p>​    经过一个小时的访谈及讨论，又得到了以下需求：   </p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1.</span> 界面优雅、操作易懂、不含广告</span><br><span class="line"><span class="number">2.</span> 考虑到目标用户、市场、跨平台性(不考虑Linux)，最好是开发一个微信小程序</span><br><span class="line"><span class="number">3.</span> 相应速度必须快，软件包不能太大，代码易于重构迭代，版本控制</span><br><span class="line"><span class="number">4.</span> 后端数据需要清晰、高效率的数据库，并考虑部分数据采取保密措施</span><br><span class="line"><span class="number">5.</span> 需要收集使用情况、崩溃报告信息、用户主动反馈消息</span><br><span class="line"><span class="number">6.</span> 输入框提供良好的编辑操作</span><br><span class="line"><span class="number">7.</span> 文字的可复制性</span><br><span class="line"><span class="number">8.</span> 查询功能的范围-&gt;信件标题||内容,全局搜索</span><br><span class="line"><span class="number">9.</span> 页面跳转逻辑合理</span><br><span class="line"><span class="number">10.</span> 具有最低硬件环境要求，并检测不符合的硬件给出提示</span><br><span class="line"><span class="number">11.</span> 利用github进行本本管理</span><br><span class="line"><span class="number">12.</span> 对用户输入进行检测和反馈，提高鲁棒性</span><br><span class="line"><span class="number">13.</span> 搜索栏、查询功能需要防止SQL注入、渗透测试等黑客攻击</span><br><span class="line"><span class="number">14.</span> 能够预防CDN攻击、DDOS攻击及一切黑客攻击手段</span><br><span class="line"><span class="number">15.</span> 产品的推广能力需要强一点</span><br><span class="line"><span class="number">16.</span> 适当提供用户个性化定制操作（包括设置、图样、文字、消息推送等）</span><br></pre></td></tr></table></figure><h3 id="1-2-市场调研-同类产品的需求文档"><a href="#1-2-市场调研-同类产品的需求文档" class="headerlink" title="1.2 市场调研 / 同类产品的需求文档"></a>1.2 市场调研 / 同类产品的需求文档</h3><p>​    市场调研的优点在于数据的<strong>真实性、时效性</strong>，能够根据市场的现状得到<strong>真实、最新的需求</strong>。<br>​    然而，我们的“送信鸭”这个产品属于创新项目、市场上没有与之直接对应的已有产品做参考。但是，将我们把“送信鸭”的服务内容拆开为“物流”和“社交”两个方面以后就有很多已有的产品做参考了！<br>​    目前各个小程序寄主平台(微信、QQ、支付宝、头条、百度)，对于小程序还没有出现评分、评论体系，因此，我们退而求次，准备通过类似产品，即移动应用（APP）的评分、评论得到市场上关于我们这个产品的需求。<br>​    我们选取了以下三个APP进行分析：  </p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">《邮政EMS》 ：典型信件物流      </span><br><span class="line">《给未来写封信》：典型信件树洞      </span><br><span class="line">《过客 Gorkor 》：典型信件社交      </span><br></pre></td></tr></table></figure><p>​    考虑到这些APP的技术团队没有（<strong>不可能</strong>）提供他们开发时的需求文档，所以我们准备利用爬虫技术爬取这些APP的用户评论数据，从用户评论里得到用户需求。  </p><p>​    选择评论数据来源：<strong>华为应用市场</strong>（国内市场用户量最大的安卓应用商店）   </p><h4 id="1-2-1-具体过程"><a href="#1-2-1-具体过程" class="headerlink" title="1.2.1 具体过程"></a>1.2.1 具体过程</h4><p>​    由队长艾山江独立写python代码完成此部分工作。  </p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1.</span> 爬取数据：直接写python代码爬虫，或者利用八爪鱼、后裔采集器等信息采集工具，或者 寻找APP数据统计服务平台等。爬取结果用pandas库写入csv文件。  </span><br><span class="line"></span><br><span class="line"><span class="number">2.</span> 提取目标数据段:从评论数据（评论人，评分星级、评论时间、APP版本号、用户机型、评论内容）中，分理出“评分星级”和“评论内容”。  </span><br><span class="line">    </span><br><span class="line"><span class="number">3.</span> 清洗数据：  </span><br><span class="line">​<span class="number">2.1</span> 初步清洗 ：过滤重复内容以及评论字数小于<span class="number">7</span>的评论   </span><br><span class="line">​<span class="number">2.2</span> 深度过滤 ：</span><br><span class="line"><span class="number">2.2</span><span class="number">.1</span> 利用“语气词词库”、“暴力、涉政、敏感词词库”等词库进行匹配、过滤；  </span><br><span class="line">​    <span class="number">2.2</span><span class="number">.2</span> 利用NLP技术对评论内容进行情感极性分析、内容识别、文本分类，以便过滤掉无关、广告、舆情等不良评论。（这次比赛因时间太短，训练数据集来不及，因而此项暂未被启用）  </span><br><span class="line"></span><br><span class="line"><span class="number">4.</span> 词频统计：利用stylecloud(wordcloud的扩展)库进行词频统计并输出词云，结果如下图<span class="number">1</span>-<span class="number">1</span></span><br><span class="line"></span><br></pre></td></tr></table></figure><h4 id="1-2-1-调研结果"><a href="#1-2-1-调研结果" class="headerlink" title="1.2.1 调研结果"></a>1.2.1 调研结果</h4><p>​        需求调研结果用词云来表示如下:</p><p>    <img align ="center" src = "https://i.loli.net/2020/11/30/MzpPIAaXUkD3dVB.jpg"/>    <h3 align ="center">图 1-1</h3></p>        <p>​        因为时间太紧张，有些语气词没能完全过滤率掉，导致真正的关于功能的需求频率太小图片里看不清。<br>​        经过查看本地词频统计结果，我们又大致得到了一下需求及需要考虑的问题：  </p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1.</span> 收不到验证码，一直都没有办法注册</span><br><span class="line"><span class="number">2.</span> 良心社区，笔友素质高，</span><br><span class="line"><span class="number">3.</span> 界面简洁，色调舒服</span><br><span class="line"><span class="number">4.</span> 想要那种只自己一个人说话一个人看的私密空间</span><br><span class="line"><span class="number">5.</span> 总说登录过期啦？明明一天时间都没有到</span><br><span class="line"><span class="number">6.</span> 纷扰的世界里少有的宁静，心甘情愿氪金（我们觉得应该是合理的商业化指向，即不要盲目收费，先搞好社区气氛，再适当地提供有偿的精美道具、模板之类的内部商品）</span><br><span class="line"><span class="number">7.</span> 客服对线和管理的水平令人不适！</span><br><span class="line"><span class="number">8.</span> 每次登录都要验证码 麻烦了;希望什么时候可以加一个密码登录。</span><br><span class="line"><span class="number">9.</span> 可以帮笔友买邮票吗？买邮票的地方有个选项是为谁购买;可是选了笔友的名字买了以后还在我这？？</span><br><span class="line"><span class="number">10.</span> 收到这信的时候; 还活着。三年时间了</span><br><span class="line"><span class="number">11.</span> 如果能选具体的收信时间更好(这个需求超级棒，这样可以定制生日礼物明信片！当天送达！这也可以是一个新的商业化价值)</span><br><span class="line"><span class="number">12.</span> 商城买的快递拒收后返运堪称蜗牛速度。客服都问不了;投诉不了;故意逃避责任？以后商城再给 发EMS 就不买华为了！！</span><br><span class="line"><span class="number">13.</span> 所谓的官方快递;包装如此简陋；看看顺丰;请正视差距;</span><br><span class="line"><span class="number">14.</span> 一点击“网点查询”就闪退</span><br><span class="line"><span class="number">15.</span> 没人来收;就显示已揽收，无奈！！！</span><br><span class="line"><span class="number">16.</span> 新用户还可以获得十元红包？！！哇</span><br><span class="line"><span class="number">17.</span> 本根点不开寄件</span><br><span class="line"><span class="number">18.</span> 四天前寄出的东西到 还查不到物流信息; 也是醉了-_-</span><br><span class="line"><span class="number">19.</span> ...</span><br><span class="line"><span class="number">20.</span> 一共<span class="number">9277</span>条</span><br><span class="line"></span><br></pre></td></tr></table></figure><p>​    数量及其庞大！！但是需求分类可以解决这个问题。</p><h2 id="2-需求分类及优先级评定："><a href="#2-需求分类及优先级评定：" class="headerlink" title="2. 需求分类及优先级评定："></a>2. 需求分类及优先级评定：</h2><p>​    为了更精确地简化需求，我们进行了需求分类和优先级评定，对上述访谈和市场调研结果，参考国内软件需求分析人员常用的几个需求分类和等级分类，进行队内投票计算平均值的方式得到了本次项目的最终需求及需求优先级。<br>​    为了不浪费时间，我就省略过程介绍，直接把结果放出来吧！请看下图1-2：</p><p>    <img align ="center" src = "https://i.loli.net/2020/11/30/9WrAfkRthIcVPqs.png"/>    <h3 align ="center">图 1-2</h3></p><h2 id="3-未来要完成的工作"><a href="#3-未来要完成的工作" class="headerlink" title="3. 未来要完成的工作"></a>3. 未来要完成的工作</h2><p>​    获得了我们本次项目的需求以后，接下来可以进行：<br>​        * 需求开发：建模、撰写需求文档<br>​        * 需求管理：升级、维护<br>​        * 这些是以后的事儿啦，我们现在时间有限，就开始写代码吧！   </p><h2 id="4-需求分析时用到的技术和轮子"><a href="#4-需求分析时用到的技术和轮子" class="headerlink" title="4.需求分析时用到的技术和轮子"></a>4.需求分析时用到的技术和轮子</h2><p>​    知识及技术：大三、大四选修课程学到的知识《软件需求分析》、《软件工程》、《软件测试》、《程序设计语言》<br>   轮子：python自学了两年了，现在还在学，主要对爬虫、NLP感兴趣，也想过学一下ML,但是奈何自己数学不太好，学不进去，本次需求分析用到的代码，一部分是我在2020年03月-2020年06月撰写我的毕业论文《应用商店应用评分机制研究》，今天再改了改，维护了一下就重新用了。</p><h2 id="4-心酸往事"><a href="#4-心酸往事" class="headerlink" title="4.心酸往事"></a>4.心酸往事</h2><p>​    本需求分析完档编写于从2020-11-28 12:00 到 2020-11-29 04:38，花费了这次比赛规定的24小时中的16个小时，几乎一半以上，可能我有点完美主义吧，不过需求分析真的是软件开发最重要的一环，~~我还可以更加优化的~~~~呜呜，算了抓紧时间写前端去，拜拜！</p><p>​        </p>]]></content>
-      
-      
+      <tags>
+        <tag>个人介绍</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>博客介绍</title>
+    <url>/%E5%8D%9A%E4%B8%BB%E5%AF%84%E8%AF%AD/about-site/</url>
+    <content><![CDATA[<!-- 标题部分 
+
+<h1 align="center">博客介绍</h1>
+-->
+
+<!-- 博客介绍 --> 
+
+<p>​        此博客的建立初衷，是想记录我的所见所闻、学到的知识、遇到的问题，并将有价值的知识、有趣的事物分享给他人，希望大家能从中受益！😉   </p>
+<h2 align="center">博客名字的寓意</h2>
+​        博客名字：夜莺悠吟      
+​        灵感来自一场偶遇 ：  
+
+<h3 align="center">织梦使者-夜莺, 代号04:00:00</h3>
+​        这几日，天天熬夜折腾，在搭建个人博客。经过3天3夜的努力，现在倒是基本完成了本地构建框架、几篇文章撰写，就差一个好听一点的博客名字，就可以买域名、部署、上线了！想来想去又熬到深更半夜...            
+​        感到眼睛有些疲劳的我，又跟往常一样，去阳台抽根烟放松放松......     
+​        忽然，听到远处传来一个悠长的鸟鸣声，接着，那声音越来越近....那声音是那么的悠然，清脆！仿佛仙界歌声一般！   
+
+<p>​        用心聆听……<br>​        沉浸在歌声中，完全没发现小鸟已经飞到自己身边，就在身旁悠悠吟唱！   </p>
+<p>​        小鸟唱完，我…，许久没有说话，脑子里就像漫无边际的大自然，空旷、宁静，身体感到极其放松、舒适……<br>过了一会儿，小鸟主动介绍自己，说自己是一个高维生物，名字叫夜莺，职业是织梦使者，代号是04:00:00。它的工作是夜晚04:00:00巡逻全世界，随机挑选一个和自己性格相同的人类，让他或她体验高维生物的生活。</p>
+<p>此外，还给我介绍了一下高维生物：<br>地球上已知的生命体都是三维生物，其实还存在高维生物，我们察觉不到而已！<br>高维生物中，有一个职业叫做织梦使者，专门为三维生物编制梦！（主要是给人类）<br>在职数量86400个，即：24*60*60=86400，每秒一位使者工作，全世界范围内挑选一名与自己的性格相同的人类织梦，等对方体验完梦境后，删除相关记忆！<br>织梦使者形态跟三维生物差不多，有人的形态，也有动物、植物，但是不重复，比如，夜莺只有一个！</p>
+<p>夜莺每晚04:00:00工作，它的风格是喜欢自由，勤奋，励志。<br>它会每晚这个时间点，在全世界范围内挑选性格与它相同的人类织梦，让他或她拥有高维生物的能力，尽情绽放自己的想象力！</p>
+<p>​        今晚是刚好挑选到我……</p>
+<p>​        我看看手机上的表，刚出来阳台时就是凌晨3点58来着，现在一根烟抽完，还听了这么久的歌声，时间停在04:00:00，是手机出问题了？还是夜莺真的让时间停止了？？？   </p>
+<p>​        夜莺微笑的点头说：是的，我让时间暂停了，等我工作结束后，时间就会是下一个织梦使者的了。<br>​        下面我给你介绍一下我们高维生物的生活吧~~    </p>
+<p>高维生物的能力：能够控制宇宙基本粒子</p>
+<p>他们很强大，基于上述能力，他们可以衍生出以下技能：<br>超光速移动<br>控制时间（包括时光穿梭和回流）<br>重生，永生<br>隐身，<br>制作、修改、删除记忆<br>其他……</p>
+<p>​        夜莺说着，在我头上点了一下，我感受到脑海顿时被无数个记忆充满，身体也突然发烫……</p>
+<p>​        过了一会儿，我逐渐意识自己拥有了控制宇宙粒子的能力！！！   </p>
+<p>​        掌握后，我迫不及待地体验了一下，真的能隐身、让我身高变成180哎！！！<br>那试试瞬移？呵，心中意念一动，我立刻出现我们学校图书馆！信念再一动，我开始以量子速度阅读书籍，几分钟就把图书馆所有书籍都记到脑子里了….<br>​       哇！这也太强大了吧！<br>​       我动用时间修改能力，让时间变成夏天，瞬移到女朋友身边，带她到海边，慢慢与她分享我的能力……<br>​       多年后，我与夫人一起，做出了很多科技，天文，物理方面的大发明、大贡献！给全世界证明了自己的同时，让人类进入了全新的宇宙航海时代！<br>​    </p>
+<p>​        但是，功成名就的我，偶尔会特别伤心…..</p>
+<p>​        这一切成就来得如此简单，以至于我都感觉不到我给人类到底做了什么，我做了什么？啊，这些都是我做的吗？</p>
+<p>​        我想到我高中时的人生格言：<strong>奇迹是努力的另一个名字</strong></p>
+<p>​        对啊！</p>
+<p>​        曾经我坚持不懈的努力，到最后就算没有成功，心里也是开心的！</p>
+<p>​        </p>
+<p>​        瘦如干柴的身躯，慢慢地施展时间回流的能力，心里想着当年跟女朋友说过的：“我们要共同经历人生酸甜苦辣，慢慢品味生活，一步一步，脚踏实地……”，大呵一声：“回到这一切的开始吧！”</p>
+<p>​        重新出现在记忆中那个阳台，深邃的眼睛重新变得清澈、坚定！</p>
+<p>​        就在此时，又听到夜莺缓缓悠吟……</p>
+<p>我问：<br>你要走了吗？</p>
+<p>夜莺:<br>嗯，我也很高兴认识你。非常喜欢你的表现 ，也说明我没有选错人！没有超能力又如何，努力活出自我才最重要！<br>现在该是织梦使者04:00:01的时间了，我该回去休息了。</p>
+<p>我问：<br>以后有机会再相遇吗？</p>
+<p>夜莺：<br>看缘分吧！每个人身上的性格都很复杂的，你身上的主要性格与我相似不代表你没有别的性格，也许你还能遇到别的织梦使者呢！体验一下别的梦也不错呦~~</p>
+<p>对了，你今晚的部分记忆我会删除哦，抱歉&lt;(_ _)&gt;<br>再见了！保重！<br>        ……<br>        ……   </p>
+<p>我：</p>
+<p>​        刚才好像听到了个很美妙的歌声？可是这大半夜谁会唱歌啊？？</p>
+<p>回到座位……<br>咦！电脑屏幕上何时出现这四个字？？</p>
+<p>​                      <strong>夜莺悠吟</strong></p>
+<p>哇！博客名字就选这个了！！！</p>
+<p>［夜莺，谢谢你！］</p>
+]]></content>
       <categories>
-          
-          <category> Hackathon华东九校编程创客马拉松 </category>
-          
+        <category>博主寄语</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> 个人项目 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>博客介绍</title>
-      <link href="/%E5%8D%9A%E4%B8%BB%E5%AF%84%E8%AF%AD/about-site/"/>
-      <url>/%E5%8D%9A%E4%B8%BB%E5%AF%84%E8%AF%AD/about-site/</url>
-      
-        <content type="html"><![CDATA[<!-- 标题部分 <h1 align="center">博客介绍</h1>--><!-- 博客介绍 --> <p>​        此博客的建立初衷，是想记录我的所见所闻、学到的知识、遇到的问题，并将有价值的知识、有趣的事物分享给他人，希望大家能从中受益！😉   </p><h2 align="center">博客名字的寓意</h2>​        博客名字：夜莺悠吟      ​        灵感来自一场偶遇 ：  <h3 align="center">织梦使者-夜莺, 代号04:00:00</h3>​        这几日，天天熬夜折腾，在搭建个人博客。经过3天3夜的努力，现在倒是基本完成了本地构建框架、几篇文章撰写，就差一个好听一点的博客名字，就可以买域名、部署、上线了！想来想去又熬到深更半夜...            ​        感到眼睛有些疲劳的我，又跟往常一样，去阳台抽根烟放松放松......     ​        忽然，听到远处传来一个悠长的鸟鸣声，接着，那声音越来越近....那声音是那么的悠然，清脆！仿佛仙界歌声一般！   <p>​        用心聆听……<br>​        沉浸在歌声中，完全没发现小鸟已经飞到自己身边，就在身旁悠悠吟唱！   </p><p>​        小鸟唱完，我…，许久没有说话，脑子里就像漫无边际的大自然，空旷、宁静，身体感到极其放松、舒适……<br>过了一会儿，小鸟主动介绍自己，说自己是一个高维生物，名字叫夜莺，职业是织梦使者，代号是04:00:00。它的工作是夜晚04:00:00巡逻全世界，随机挑选一个和自己性格相同的人类，让他或她体验高维生物的生活。</p><p>此外，还给我介绍了一下高维生物：<br>地球上已知的生命体都是三维生物，其实还存在高维生物，我们察觉不到而已！<br>高维生物中，有一个职业叫做织梦使者，专门为三维生物编制梦！（主要是给人类）<br>在职数量86400个，即：24*60*60=86400，每秒一位使者工作，全世界范围内挑选一名与自己的性格相同的人类织梦，等对方体验完梦境后，删除相关记忆！<br>织梦使者形态跟三维生物差不多，有人的形态，也有动物、植物，但是不重复，比如，夜莺只有一个！</p><p>夜莺每晚04:00:00工作，它的风格是喜欢自由，勤奋，励志。<br>它会每晚这个时间点，在全世界范围内挑选性格与它相同的人类织梦，让他或她拥有高维生物的能力，尽情绽放自己的想象力！</p><p>​        今晚是刚好挑选到我……</p><p>​        我看看手机上的表，刚出来阳台时就是凌晨3点58来着，现在一根烟抽完，还听了这么久的歌声，时间停在04:00:00，是手机出问题了？还是夜莺真的让时间停止了？？？   </p><p>​        夜莺微笑的点头说：是的，我让时间暂停了，等我工作结束后，时间就会是下一个织梦使者的了。<br>​        下面我给你介绍一下我们高维生物的生活吧~~    </p><p>高维生物的能力：能够控制宇宙基本粒子</p><p>他们很强大，基于上述能力，他们可以衍生出以下技能：<br>超光速移动<br>控制时间（包括时光穿梭和回流）<br>重生，永生<br>隐身，<br>制作、修改、删除记忆<br>其他……</p><p>​        夜莺说着，在我头上点了一下，我感受到脑海顿时被无数个记忆充满，身体也突然发烫……</p><p>​        过了一会儿，我逐渐意识自己拥有了控制宇宙粒子的能力！！！   </p><p>​        掌握后，我迫不及待地体验了一下，真的能隐身、让我身高变成180哎！！！<br>那试试瞬移？呵，心中意念一动，我立刻出现我们学校图书馆！信念再一动，我开始以量子速度阅读书籍，几分钟就把图书馆所有书籍都记到脑子里了….<br>​       哇！这也太强大了吧！<br>​       我动用时间修改能力，让时间变成夏天，瞬移到女朋友身边，带她到海边，慢慢与她分享我的能力……<br>​       多年后，我与夫人一起，做出了很多科技，天文，物理方面的大发明、大贡献！给全世界证明了自己的同时，让人类进入了全新的宇宙航海时代！<br>​    </p><p>​        但是，功成名就的我，偶尔会特别伤心…..</p><p>​        这一切成就来得如此简单，以至于我都感觉不到我给人类到底做了什么，我做了什么？啊，这些都是我做的吗？</p><p>​        我想到我高中时的人生格言：<strong>奇迹是努力的另一个名字</strong></p><p>​        对啊！</p><p>​        曾经我坚持不懈的努力，到最后就算没有成功，心里也是开心的！</p><p>​        </p><p>​        瘦如干柴的身躯，慢慢地施展时间回流的能力，心里想着当年跟女朋友说过的：“我们要共同经历人生酸甜苦辣，慢慢品味生活，一步一步，脚踏实地……”，大呵一声：“回到这一切的开始吧！”</p><p>​        重新出现在记忆中那个阳台，深邃的眼睛重新变得清澈、坚定！</p><p>​        就在此时，又听到夜莺缓缓悠吟……</p><p>我问：<br>你要走了吗？</p><p>夜莺:<br>嗯，我也很高兴认识你。非常喜欢你的表现 ，也说明我没有选错人！没有超能力又如何，努力活出自我才最重要！<br>现在该是织梦使者04:00:01的时间了，我该回去休息了。</p><p>我问：<br>以后有机会再相遇吗？</p><p>夜莺：<br>看缘分吧！每个人身上的性格都很复杂的，你身上的主要性格与我相似不代表你没有别的性格，也许你还能遇到别的织梦使者呢！体验一下别的梦也不错呦~~</p><p>对了，你今晚的部分记忆我会删除哦，抱歉&lt;(_ _)&gt;<br>再见了！保重！<br>        ……<br>        ……   </p><p>我：</p><p>​        刚才好像听到了个很美妙的歌声？可是这大半夜谁会唱歌啊？？</p><p>回到座位……<br>咦！电脑屏幕上何时出现这四个字？？</p><p>​                      <strong>夜莺悠吟</strong></p><p>哇！博客名字就选这个了！！！</p><p>［夜莺，谢谢你！］</p>]]></content>
-      
-      
+      <tags>
+        <tag>博客介绍</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>作品展示</title>
+    <url>/Hackathon%E5%8D%8E%E4%B8%9C%E4%B9%9D%E6%A0%A1%E7%BC%96%E7%A8%8B%E5%88%9B%E5%AE%A2%E9%A9%AC%E6%8B%89%E6%9D%BE/hackathon_readme/</url>
+    <content><![CDATA[<h1 align = "center">Hackathon比赛项目</h1>
+<h3 align = "center">——“送信鸭”小程序</h3>
+<p>
+    <img align ="center" src = "https://i.loli.net/2020/11/30/YHbwgmOqu9F5rU7.png"/>
+</p>
+<h3 align ="center">小程序头像</h3>
+这里是 Hackathon 2020参赛队伍私有仓库
+
+<p><strong>比赛官网请看：<a href="https://hackathon2020eastchina.top/">https://hackathon2020eastchina.top/</a></strong></p>
+<h2 id="队伍名：“觉醒吧，猎杀时刻！”"><a href="#队伍名：“觉醒吧，猎杀时刻！”" class="headerlink" title="队伍名：“觉醒吧，猎杀时刻！”"></a>队伍名：“觉醒吧，猎杀时刻！”</h2><h2 id="作品名称：“送信鸭”"><a href="#作品名称：“送信鸭”" class="headerlink" title="作品名称：“送信鸭”"></a>作品名称：“送信鸭”</h2><h2 id="作品介绍："><a href="#作品介绍：" class="headerlink" title="作品介绍："></a>作品介绍：</h2><p>​    这是一个可以<strong>邮寄、接受实物、电子信件、明信片</strong>等的微信小程序，<strong>我们将传统的“信件物流”也与现代的“信息交流”结合，创新性提出“信件交流新纪元”</strong>。   </p>
+<p>​    您可以在这里给<strong>现实中的朋友邮寄信件、明信片等</strong>，并<strong>实时监控信件路程</strong>，还可以<strong>查询自己待收取、已收取的信件</strong>；您<strong>还可以</strong>在这里给好友<strong>写电子信件、明信片、生日贺卡等</strong>；还有<strong>好多漂亮的邮票、信封</strong>等着你去积攒哦！</p>
+<p>​    后期我们还会推出<strong>陌生人写信社交、树洞分享故事、青年社区等精彩版块</strong>，期待您的加入！</p>
+<h2 id="创意来源"><a href="#创意来源" class="headerlink" title="创意来源"></a>创意来源</h2><p>​    上个月宿舍楼管理室阿姨叫我帮忙送一下学生的信件和明信片，一共有30多件，我花了2个小时将其中的17件送到了对应的学生宿舍，剩下那么多都是半年前，甚至一年前的信件，我到他们宿舍发现已经换了新生。。。<br>​    有些信件上面除了<strong>学生宿舍号</strong>，还有<strong>电话号码</strong>，我打通了几个电话，对方有些人表示<strong>因为疫情原因，很长时间没开学这个信件一直没能过来取，还有一些人表示才知道自己有这么一封信！</strong><br>​    我们宿舍楼的学生信件其实已经放到很显眼的位置了，就在宿管阿姨值班的窗口那里，学生可以随时过去领自己的信件，也可以委托阿姨寄信。那为什么有那么多信件没人来领，而且在阿姨那里放了那么久呢？<br>​    <strong>就这么随意的一件事激发了我做这个项目，正好赶上这次黑客松编程马拉松的题目就是利用科技帮助解决疫情难题，所以我们组就准备解决这个问题。</strong><br>​    对此事进行了深入调研发现，我们宿舍楼的信箱里，有大概几种类型的信件：好有写信、明信片、贺卡、书店邮寄的书本及杂志、银行贷款账单、有些合同等。<br>​    信件封面一般都会标有收信<strong>姓名、地址（具体到宿舍号）、电话号</strong>等，<strong>个别还有寄信日期</strong>   ，正好这些信息可以利用我们的技术手段给同学们和宿管阿姨们提供便利的信件查询服务，还可以提供更加高效的寄信服务。</p>
+<p>​    再进行了<strong>充分的需求分析（共花了16个小时，这次比赛总共就24小时，汗！）</strong>后，我们准备制作微信小程序，并且已经完成了初步的开发。<strong>希望尽快完成全部任务的开发和部署上线，期待与大家早日见面！！！</strong>  </p>
+<h2 id="作品预览："><a href="#作品预览：" class="headerlink" title="作品预览："></a>作品预览：</h2><p>
+    <img align ="center" src = "https://i.loli.net/2020/11/30/oUEMF1W7stOgcm4.png"/>
+    <h3 align ="center">作品预览.png</h3>
+</p>    
+
+<h2 id="关于本仓库"><a href="#关于本仓库" class="headerlink" title="关于本仓库"></a>关于本仓库</h2><p>本仓库为本次比赛新建的临时仓库，后期在开发和维护“送信鸭”微信小程序时，将会移到别的仓库，不过您可以通过下方的链接到达我的<a href= "https://github.com/payiz-asj">GitHub主页 </a></p>
+<h2 id="关于版权信息"><a href="#关于版权信息" class="headerlink" title="关于版权信息"></a>关于版权信息</h2><p>​    本仓库属于Hackathon 2020参赛队伍 “觉醒吧，猎杀时刻！”，欢迎大家前来体验和提出建议，请勿用于商业用途。谢谢！</p>
+]]></content>
       <categories>
-          
-          <category> 博主寄语 </category>
-          
+        <category>Hackathon华东九校编程创客马拉松</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> 博客介绍 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>个人介绍</title>
-      <link href="/%E5%8D%9A%E4%B8%BB%E5%AF%84%E8%AF%AD/about-me/"/>
-      <url>/%E5%8D%9A%E4%B8%BB%E5%AF%84%E8%AF%AD/about-me/</url>
-      
-        <content type="html"><![CDATA[<!-- 标题部分 <h1 align="center">个人介绍</h1>--><!-- 个人介绍 --><h3 id="Brief-Biography"><a href="#Brief-Biography" class="headerlink" title="Brief Biography"></a>Brief Biography</h3><ul><li><p>Undergraduate of Department of Computer Science and Technology in Nanjing University.🎓</p></li><li><p>Software Engineer.👨‍💻</p></li><li><p><strong>Technology Stack:</strong></p><ul><li>Front-end: HTML 5, CSS, JS, TS, Wechat Mini Program, Framework: Vue, React .</li><li>Back-end: Linux, Python Web development, crawler, scientific operation, data analysis, Framework: Django, Flask.</li><li>Database: Sql Server, Sqlite.</li><li>Favorite IDE: JetBrains Family Bucket (Especially PyCharm, WebStorm, IntelliJ IDEA ), Visual Studio, Sublime Text3, VMware Workstation.</li><li>Dev Tools: Github, Gitee, Selenium, Scrapy,  postman, Fiddler,  FeHelper.</li><li>Others: Adobe Family Bucket(Especially PS, PR, AU, XD), My Laptop💻, My Phone📱.</li></ul><!-- 动图效果 --><div align="right"  >-----------LOVE YOU KOBE R.I.P❤-----------</div>  <a href="#" align="right">      <img align="right" src="http://5b0988e595225.cdn.sohucs.com/images/20190721/e8837828bc664adba3e9692712c90a99.gif" alt="图片裂开了？这里本该显示一个gif的"/>       </a>     </li><li><p><strong>Currently Focusing On:</strong></p><ul><li>Data Structure, Computer Algorithm</li><li>Web Design,Web Crawler</li><li>Machine Learning</li><li>Natural Language Processing</li></ul></li><li><p><strong>Recent Wishes:</strong></p><ul><li><strong>At the time of graduation, I am applying for a software engineering related job.💌</strong></li></ul></li></ul><!-- 后记 --><h3 id="More"><a href="#More" class="headerlink" title="More:"></a>More:</h3><h4 id="💬-Enjoy-yourself-here-or-on-my-personal-blog-夜莺悠吟"><a href="#💬-Enjoy-yourself-here-or-on-my-personal-blog-夜莺悠吟" class="headerlink" title="💬 Enjoy yourself here or on my personal blog: 夜莺悠吟"></a>💬 Enjoy yourself here or on my personal blog: <a href="https://yeying.tech/">夜莺悠吟</a></h4>]]></content>
-      
-      
+      <tags>
+        <tag>个人项目</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>博客初建</title>
+    <url>/%E5%8D%9A%E4%B8%BB%E5%AF%84%E8%AF%AD/blog_firstday/</url>
+    <content><![CDATA[<h1 align="center">HELLO 👋</h1>
+
+<p>您好，</p>
+<p>​        欢迎来到我的个人博客！</p>
+<p>​        平时会抽空分享一些技术文章和我学习、生活中一些有趣的事情。🎶</p>
+<p>​        此外，还可通过 “ 首页-&gt;社交 “ ，到达我在其他几个主流网站上的个人首页，希望能给您奉上有意义的内容。💪</p>
+<p>​        您还可以通过邮箱联系我，来投稿或提出宝贵意见，期待您的信息💬</p>
+]]></content>
       <categories>
-          
-          <category> 博主寄语 </category>
-          
+        <category>博主寄语</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> 个人介绍 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>博客初建</title>
-      <link href="/%E5%8D%9A%E4%B8%BB%E5%AF%84%E8%AF%AD/blog_firstday/"/>
-      <url>/%E5%8D%9A%E4%B8%BB%E5%AF%84%E8%AF%AD/blog_firstday/</url>
-      
-        <content type="html"><![CDATA[<h1 align="center">HELLO 👋</h1><p>您好，</p><p>​        欢迎来到我的个人博客！</p><p>​        平时会抽空分享一些技术文章和我学习、生活中一些有趣的事情。🎶</p><p>​        此外，还可通过 “ 首页-&gt;社交 “ ，到达我在其他几个主流网站上的个人首页，希望能给您奉上有意义的内容。💪</p><p>​        您还可以通过邮箱联系我，来投稿或提出宝贵意见，期待您的信息💬</p>]]></content>
-      
-      
+      <tags>
+        <tag>欢迎</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>项目需求分析</title>
+    <url>/Hackathon%E5%8D%8E%E4%B8%9C%E4%B9%9D%E6%A0%A1%E7%BC%96%E7%A8%8B%E5%88%9B%E5%AE%A2%E9%A9%AC%E6%8B%89%E6%9D%BE/hackathon_requirement_analysis/</url>
+    <content><![CDATA[<h1 align = "center">项目需求分析</h1>
+<h3 align = "center">——“送信鸭”小程序</h3>
+## 1. 需求获取 / 需求调研：
+
+<h3 id="1-1-访谈"><a href="#1-1-访谈" class="headerlink" title="1.1 访谈"></a>1.1 访谈</h3><p>​    访谈法获取需求是需求获取方法中最直接、最快速的一种方法了，往往能够<strong>最直接、最具体、清晰、客观地</strong>了解目标用户的需求。   </p>
+<h4 id="1-1-1-用户访谈"><a href="#1-1-1-用户访谈" class="headerlink" title="1.1.1 用户访谈"></a>1.1.1 用户访谈</h4><p>​    我们首先来到学校宿舍楼01栋值班室，与值班的阿姨们聊天，对她们进行了访谈，因为他们是这个项目的目标用户之一，而且这个项目立项也是受她们启发。<br>​    我们利用大约一个小时的访谈，获取了以下11条需求：   </p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="number">1.</span> 希望能够有效地分发值班室收到的信件</span><br><span class="line"><span class="number">2.</span> 需要能够寄信，寄明信片</span><br><span class="line"><span class="number">3.</span> 能够添加、删除、修改、查询信件</span><br><span class="line"><span class="number">4.</span> 需要有一定的隐蔽性，学生的姓名、学号呀、手机号啊之类的信息不能泄露</span><br><span class="line"><span class="number">5.</span> 平台最好是手机APP或者小程序，其他的东西我们学不会</span><br><span class="line"><span class="number">6.</span> 能够添加、修改、删除个人收货地址</span><br><span class="line"><span class="number">7.</span> 学校宿管人员是否有特殊的身份可以进行普通用户以外的功能？</span><br><span class="line"><span class="number">8.</span> 能够自动更新版本，不过最好不要太频繁，或者更新速度快一些</span><br><span class="line"><span class="number">9.</span> 有使用说明，或者良好的导航栏，容易上手</span><br><span class="line"><span class="number">10.</span> APP体积不要太大，手机内存吃不消</span><br><span class="line"><span class="number">11.</span> 字体能够调整，界面颜色也能调整就更好啦</span><br></pre></td></tr></table></figure>
+<h4 id="1-1-2-开发人员访谈"><a href="#1-1-2-开发人员访谈" class="headerlink" title="1.1.2 开发人员访谈"></a>1.1.2 开发人员访谈</h4><p>​    用户访谈往往只能获取一些表面化的功能性需求，而开发人员访谈能够获得比<strong>较全面、明确、技术化</strong>的需求。<br>​    因此我们进行了一次开发人员访谈，因为时间有限，我们就只采用了队内开发人员充当不同领域的开发人员进行模拟访谈。包括以下角色：<br>​        艾山江（队长）：访谈人、记录人员<br>​        郭庭：被访谈人，前端工程师<br>​        艾尔肯：被访谈人，后端工程师<br>​        阿卜杜拉：被访谈人，测试工程师   </p>
+<p>​    经过一个小时的访谈及讨论，又得到了以下需求：   </p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="number">1.</span> 界面优雅、操作易懂、不含广告</span><br><span class="line"><span class="number">2.</span> 考虑到目标用户、市场、跨平台性(不考虑Linux)，最好是开发一个微信小程序</span><br><span class="line"><span class="number">3.</span> 相应速度必须快，软件包不能太大，代码易于重构迭代，版本控制</span><br><span class="line"><span class="number">4.</span> 后端数据需要清晰、高效率的数据库，并考虑部分数据采取保密措施</span><br><span class="line"><span class="number">5.</span> 需要收集使用情况、崩溃报告信息、用户主动反馈消息</span><br><span class="line"><span class="number">6.</span> 输入框提供良好的编辑操作</span><br><span class="line"><span class="number">7.</span> 文字的可复制性</span><br><span class="line"><span class="number">8.</span> 查询功能的范围-&gt;信件标题||内容,全局搜索</span><br><span class="line"><span class="number">9.</span> 页面跳转逻辑合理</span><br><span class="line"><span class="number">10.</span> 具有最低硬件环境要求，并检测不符合的硬件给出提示</span><br><span class="line"><span class="number">11.</span> 利用github进行本本管理</span><br><span class="line"><span class="number">12.</span> 对用户输入进行检测和反馈，提高鲁棒性</span><br><span class="line"><span class="number">13.</span> 搜索栏、查询功能需要防止SQL注入、渗透测试等黑客攻击</span><br><span class="line"><span class="number">14.</span> 能够预防CDN攻击、DDOS攻击及一切黑客攻击手段</span><br><span class="line"><span class="number">15.</span> 产品的推广能力需要强一点</span><br><span class="line"><span class="number">16.</span> 适当提供用户个性化定制操作（包括设置、图样、文字、消息推送等）</span><br></pre></td></tr></table></figure>
+<h3 id="1-2-市场调研-同类产品的需求文档"><a href="#1-2-市场调研-同类产品的需求文档" class="headerlink" title="1.2 市场调研 / 同类产品的需求文档"></a>1.2 市场调研 / 同类产品的需求文档</h3><p>​    市场调研的优点在于数据的<strong>真实性、时效性</strong>，能够根据市场的现状得到<strong>真实、最新的需求</strong>。<br>​    然而，我们的“送信鸭”这个产品属于创新项目、市场上没有与之直接对应的已有产品做参考。但是，将我们把“送信鸭”的服务内容拆开为“物流”和“社交”两个方面以后就有很多已有的产品做参考了！<br>​    目前各个小程序寄主平台(微信、QQ、支付宝、头条、百度)，对于小程序还没有出现评分、评论体系，因此，我们退而求次，准备通过类似产品，即移动应用（APP）的评分、评论得到市场上关于我们这个产品的需求。<br>​    我们选取了以下三个APP进行分析：  </p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">《邮政EMS》 ：典型信件物流      </span><br><span class="line">《给未来写封信》：典型信件树洞      </span><br><span class="line">《过客 Gorkor 》：典型信件社交      </span><br></pre></td></tr></table></figure>
+<p>​    考虑到这些APP的技术团队没有（<strong>不可能</strong>）提供他们开发时的需求文档，所以我们准备利用爬虫技术爬取这些APP的用户评论数据，从用户评论里得到用户需求。  </p>
+<p>​    选择评论数据来源：<strong>华为应用市场</strong>（国内市场用户量最大的安卓应用商店）   </p>
+<h4 id="1-2-1-具体过程"><a href="#1-2-1-具体过程" class="headerlink" title="1.2.1 具体过程"></a>1.2.1 具体过程</h4><p>​    由队长艾山江独立写python代码完成此部分工作。  </p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="number">1.</span> 爬取数据：直接写python代码爬虫，或者利用八爪鱼、后裔采集器等信息采集工具，或者 寻找APP数据统计服务平台等。爬取结果用pandas库写入csv文件。  </span><br><span class="line"></span><br><span class="line"><span class="number">2.</span> 提取目标数据段:从评论数据（评论人，评分星级、评论时间、APP版本号、用户机型、评论内容）中，分理出“评分星级”和“评论内容”。  </span><br><span class="line">    </span><br><span class="line"><span class="number">3.</span> 清洗数据：  </span><br><span class="line">​	<span class="number">2.1</span> 初步清洗 ：过滤重复内容以及评论字数小于<span class="number">7</span>的评论   </span><br><span class="line">​	<span class="number">2.2</span> 深度过滤 ：</span><br><span class="line">		<span class="number">2.2</span><span class="number">.1</span> 利用“语气词词库”、“暴力、涉政、敏感词词库”等词库进行匹配、过滤；  </span><br><span class="line">​	    <span class="number">2.2</span><span class="number">.2</span> 利用NLP技术对评论内容进行情感极性分析、内容识别、文本分类，以便过滤掉无关、广告、舆情等不良评论。（这次比赛因时间太短，训练数据集来不及，因而此项暂未被启用）  </span><br><span class="line"></span><br><span class="line"><span class="number">4.</span> 词频统计：利用stylecloud(wordcloud的扩展)库进行词频统计并输出词云，结果如下图<span class="number">1</span>-<span class="number">1</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h4 id="1-2-1-调研结果"><a href="#1-2-1-调研结果" class="headerlink" title="1.2.1 调研结果"></a>1.2.1 调研结果</h4><p>​        需求调研结果用词云来表示如下:</p>
+<p>
+    <img align ="center" src = "https://i.loli.net/2020/11/30/MzpPIAaXUkD3dVB.jpg"/>
+    <h3 align ="center">图 1-1</h3>
+</p>        
+
+<p>​        因为时间太紧张，有些语气词没能完全过滤率掉，导致真正的关于功能的需求频率太小图片里看不清。<br>​        经过查看本地词频统计结果，我们又大致得到了一下需求及需要考虑的问题：  </p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="number">1.</span> 收不到验证码，一直都没有办法注册</span><br><span class="line"><span class="number">2.</span> 良心社区，笔友素质高，</span><br><span class="line"><span class="number">3.</span> 界面简洁，色调舒服</span><br><span class="line"><span class="number">4.</span> 想要那种只自己一个人说话一个人看的私密空间</span><br><span class="line"><span class="number">5.</span> 总说登录过期啦？明明一天时间都没有到</span><br><span class="line"><span class="number">6.</span> 纷扰的世界里少有的宁静，心甘情愿氪金（我们觉得应该是合理的商业化指向，即不要盲目收费，先搞好社区气氛，再适当地提供有偿的精美道具、模板之类的内部商品）</span><br><span class="line"><span class="number">7.</span> 客服对线和管理的水平令人不适！</span><br><span class="line"><span class="number">8.</span> 每次登录都要验证码 麻烦了;希望什么时候可以加一个密码登录。</span><br><span class="line"><span class="number">9.</span> 可以帮笔友买邮票吗？买邮票的地方有个选项是为谁购买;可是选了笔友的名字买了以后还在我这？？</span><br><span class="line"><span class="number">10.</span> 收到这信的时候; 还活着。三年时间了</span><br><span class="line"><span class="number">11.</span> 如果能选具体的收信时间更好(这个需求超级棒，这样可以定制生日礼物明信片！当天送达！这也可以是一个新的商业化价值)</span><br><span class="line"><span class="number">12.</span> 商城买的快递拒收后返运堪称蜗牛速度。客服都问不了;投诉不了;故意逃避责任？以后商城再给 发EMS 就不买华为了！！</span><br><span class="line"><span class="number">13.</span> 所谓的官方快递;包装如此简陋；看看顺丰;请正视差距;</span><br><span class="line"><span class="number">14.</span> 一点击“网点查询”就闪退</span><br><span class="line"><span class="number">15.</span> 没人来收;就显示已揽收，无奈！！！</span><br><span class="line"><span class="number">16.</span> 新用户还可以获得十元红包？！！哇</span><br><span class="line"><span class="number">17.</span> 本根点不开寄件</span><br><span class="line"><span class="number">18.</span> 四天前寄出的东西到 还查不到物流信息; 也是醉了-_-</span><br><span class="line"><span class="number">19.</span> ...</span><br><span class="line"><span class="number">20.</span> 一共<span class="number">9277</span>条</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>​    数量及其庞大！！但是需求分类可以解决这个问题。</p>
+<h2 id="2-需求分类及优先级评定："><a href="#2-需求分类及优先级评定：" class="headerlink" title="2. 需求分类及优先级评定："></a>2. 需求分类及优先级评定：</h2><p>​    为了更精确地简化需求，我们进行了需求分类和优先级评定，对上述访谈和市场调研结果，参考国内软件需求分析人员常用的几个需求分类和等级分类，进行队内投票计算平均值的方式得到了本次项目的最终需求及需求优先级。<br>​    为了不浪费时间，我就省略过程介绍，直接把结果放出来吧！请看下图1-2：</p>
+<p>
+    <img align ="center" src = "https://i.loli.net/2020/11/30/9WrAfkRthIcVPqs.png"/>
+    <h3 align ="center">图 1-2</h3>
+</p>
+
+<h2 id="3-未来要完成的工作"><a href="#3-未来要完成的工作" class="headerlink" title="3. 未来要完成的工作"></a>3. 未来要完成的工作</h2><p>​    获得了我们本次项目的需求以后，接下来可以进行：<br>​        * 需求开发：建模、撰写需求文档<br>​        * 需求管理：升级、维护<br>​        * 这些是以后的事儿啦，我们现在时间有限，就开始写代码吧！   </p>
+<h2 id="4-需求分析时用到的技术和轮子"><a href="#4-需求分析时用到的技术和轮子" class="headerlink" title="4.需求分析时用到的技术和轮子"></a>4.需求分析时用到的技术和轮子</h2><p>​    知识及技术：大三、大四选修课程学到的知识《软件需求分析》、《软件工程》、《软件测试》、《程序设计语言》<br>   轮子：python自学了两年了，现在还在学，主要对爬虫、NLP感兴趣，也想过学一下ML,但是奈何自己数学不太好，学不进去，本次需求分析用到的代码，一部分是我在2020年03月-2020年06月撰写我的毕业论文《应用商店应用评分机制研究》，今天再改了改，维护了一下就重新用了。</p>
+<h2 id="4-心酸往事"><a href="#4-心酸往事" class="headerlink" title="4.心酸往事"></a>4.心酸往事</h2><p>​    本需求分析完档编写于从2020-11-28 12:00 到 2020-11-29 04:38，花费了这次比赛规定的24小时中的16个小时，几乎一半以上，可能我有点完美主义吧，不过需求分析真的是软件开发最重要的一环，~~我还可以更加优化的~~~~呜呜，算了抓紧时间写前端去，拜拜！</p>
+<p>​        </p>
+]]></content>
       <categories>
-          
-          <category> 博主寄语 </category>
-          
+        <category>Hackathon华东九校编程创客马拉松</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> 欢迎 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-  
-  
-    
-    
-    <entry>
-      <title>四大皆空</title>
-      <link href="//404.html"/>
-      <url>//404.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>个人介绍</title>
-      <link href="/about2/about-me.html"/>
-      <url>/about2/about-me.html</url>
-      
-        <content type="html"><![CDATA[<!-- 标题部分 <h1 align="center">个人介绍</h1>--><!-- 个人介绍 --><h3 id="Brief-Biography"><a href="#Brief-Biography" class="headerlink" title="Brief Biography"></a>Brief Biography</h3><ul><li><p>Undergraduate of Department of Computer Science and Technology in Nanjing University.🎓</p></li><li><p>Software Engineer.👨‍💻</p></li><li><p><strong>Technology Stack:</strong></p><ul><li>Front-end: HTML 5, CSS, JS, TS, Wechat Mini Program, Framework: Vue, React .</li><li>Back-end: Linux, Python Web development, crawler, scientific operation, data analysis, Framework: Django, Flask.</li><li>Database: Sql Server, Sqlite.</li><li>Favorite IDE: JetBrains Family Bucket (Especially PyCharm, WebStorm, IntelliJ IDEA ), Visual Studio, Sublime Text3, VMware Workstation.</li><li>Dev Tools: Github, Gitee, Selenium, Scrapy,  postman, Fiddler,  FeHelper.</li><li>Others: Adobe Family Bucket(Especially PS, PR, AU, XD), My Laptop💻, My Phone📱.</li></ul><!-- 动图效果 --><div align="right"  >-----------LOVE YOU KOBE R.I.P❤-----------</div>  <a href="#" align="right">      <img align="right" src="http://5b0988e595225.cdn.sohucs.com/images/20190721/e8837828bc664adba3e9692712c90a99.gif" alt="图片裂开了？这里本该显示一个gif的"/>       </a>     </li><li><p><strong>Currently Focusing On:</strong></p><ul><li>Data Structure, Computer Algorithm</li><li>Web Design,Web Crawler</li><li>Machine Learning</li><li>Natural Language Processing</li></ul></li><li><p><strong>Recent Wishes:</strong></p><ul><li><strong>At the time of graduation, I am applying for a software engineering related job.💌</strong></li></ul></li></ul><!-- 后记 --><h3 id="More"><a href="#More" class="headerlink" title="More:"></a>More:</h3><h4 id="💬-Enjoy-yourself-here-or-on-my-personal-blog-夜莺悠吟"><a href="#💬-Enjoy-yourself-here-or-on-my-personal-blog-夜莺悠吟" class="headerlink" title="💬 Enjoy yourself here or on my personal blog: 夜莺悠吟"></a>💬 Enjoy yourself here or on my personal blog: <a href="https://yeying.tech/">夜莺悠吟</a></h4>]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>博客介绍</title>
-      <link href="/about2/about-site.html"/>
-      <url>/about2/about-site.html</url>
-      
-        <content type="html"><![CDATA[<!-- 标题部分 <h1 align="center">博客介绍</h1>--><!-- 博客介绍 --> <p>​        此博客的建立初衷，是想记录我的所见所闻、学到的知识、遇到的问题，并将有价值的知识、有趣的事物分享给他人，希望大家能从中受益！😉   </p><h2 align="center">博客名字的寓意</h2>​        博客名字：夜莺悠吟      ​        灵感来自一场偶遇 ：  <h3 align="center">织梦使者-夜莺, 代号04:00:00</h3>​        这几日，天天熬夜折腾，在搭建个人博客。经过3天3夜的努力，现在倒是基本完成了本地构建框架、几篇文章撰写，就差一个好听一点的博客名字，就可以买域名、部署、上线了！想来想去又熬到深更半夜...            ​        感到眼睛有些疲劳的我，又跟往常一样，去阳台抽根烟放松放松......     ​        忽然，听到远处传来一个悠长的鸟鸣声，接着，那声音越来越近....那声音是那么的悠然，清脆！仿佛仙界歌声一般！   <p>​        用心聆听……<br>​        沉浸在歌声中，完全没发现小鸟已经飞到自己身边，就在身旁悠悠吟唱！   </p><p>​        小鸟唱完，我…，许久没有说话，脑子里就像漫无边际的大自然，空旷、宁静，身体感到极其放松、舒适……<br>过了一会儿，小鸟主动介绍自己，说自己是一个高维生物，名字叫夜莺，职业是织梦使者，代号是04:00:00。它的工作是夜晚04:00:00巡逻全世界，随机挑选一个和自己性格相同的人类，让他或她体验高维生物的生活。</p><p>此外，还给我介绍了一下高维生物：<br>地球上已知的生命体都是三维生物，其实还存在高维生物，我们察觉不到而已！<br>高维生物中，有一个职业叫做织梦使者，专门为三维生物编制梦！（主要是给人类）<br>在职数量86400个，即：24*60*60=86400，每秒一位使者工作，全世界范围内挑选一名与自己的性格相同的人类织梦，等对方体验完梦境后，删除相关记忆！<br>织梦使者形态跟三维生物差不多，有人的形态，也有动物、植物，但是不重复，比如，夜莺只有一个！</p><p>夜莺每晚04:00:00工作，它的风格是喜欢自由，勤奋，励志。<br>它会每晚这个时间点，在全世界范围内挑选性格与它相同的人类织梦，让他或她拥有高维生物的能力，尽情绽放自己的想象力！</p><p>​        今晚是刚好挑选到我……</p><p>​        我看看手机上的表，刚出来阳台时就是凌晨3点58来着，现在一根烟抽完，还听了这么久的歌声，时间停在04:00:00，是手机出问题了？还是夜莺真的让时间停止了？？？   </p><p>​        夜莺微笑的点头说：是的，我让时间暂停了，等我工作结束后，时间就会是下一个织梦使者的了。<br>​        下面我给你介绍一下我们高维生物的生活吧~~    </p><p>高维生物的能力：能够控制宇宙基本粒子</p><p>他们很强大，基于上述能力，他们可以衍生出以下技能：<br>超光速移动<br>控制时间（包括时光穿梭和回流）<br>重生，永生<br>隐身，<br>制作、修改、删除记忆<br>其他……</p><p>​        夜莺说着，在我头上点了一下，我感受到脑海顿时被无数个记忆充满，身体也突然发烫……</p><p>​        过了一会儿，我逐渐意识自己拥有了控制宇宙粒子的能力！！！   </p><p>​        掌握后，我迫不及待地体验了一下，真的能隐身、让我身高变成180哎！！！<br>那试试瞬移？呵，心中意念一动，我立刻出现我们学校图书馆！信念再一动，我开始以量子速度阅读书籍，几分钟就把图书馆所有书籍都记到脑子里了….<br>​       哇！这也太强大了吧！<br>​       我动用时间修改能力，让时间变成夏天，瞬移到女朋友身边，带她到海边，慢慢与她分享我的能力……<br>​       多年后，我与夫人一起，做出了很多科技，天文，物理方面的大发明、大贡献！给全世界证明了自己的同时，让人类进入了全新的宇宙航海时代！<br>​    </p><p>​        但是，功成名就的我，偶尔会特别伤心…..</p><p>​        这一切成就来得如此简单，以至于我都感觉不到我给人类到底做了什么，我做了什么？啊，这些都是我做的吗？</p><p>​        我想到我高中时的人生格言：<strong>奇迹是努力的另一个名字</strong></p><p>​        对啊！</p><p>​        曾经我坚持不懈的努力，到最后就算没有成功，心里也是开心的！</p><p>​        </p><p>​        瘦如干柴的身躯，慢慢地施展时间回流的能力，心里想着当年跟女朋友说过的：“我们要共同经历人生酸甜苦辣，慢慢品味生活，一步一步，脚踏实地……”，大呵一声：“回到这一切的开始吧！”</p><p>​        重新出现在记忆中那个阳台，深邃的眼睛重新变得清澈、坚定！</p><p>​        就在此时，又听到夜莺缓缓悠吟……</p><p>我问：<br>你要走了吗？</p><p>夜莺:<br>嗯，我也很高兴认识你。非常喜欢你的表现 ，也说明我没有选错人！没有超能力又如何，努力活出自我才最重要！<br>现在该是织梦使者04:00:01的时间了，我该回去休息了。</p><p>我问：<br>以后有机会再相遇吗？</p><p>夜莺：<br>看缘分吧！每个人身上的性格都很复杂的，你身上的主要性格与我相似不代表你没有别的性格，也许你还能遇到别的织梦使者呢！体验一下别的梦也不错呦~~</p><p>对了，你今晚的部分记忆我会删除哦，抱歉&lt;(_ _)&gt;<br>再见了！保重！<br>        ……<br>        ……   </p><p>我：</p><p>​        刚才好像听到了个很美妙的歌声？可是这大半夜谁会唱歌啊？？</p><p>回到座位……<br>咦！电脑屏幕上何时出现这四个字？？</p><p>​                      <strong>夜莺悠吟</strong></p><p>哇！博客名字就选这个了！！！</p><p>［夜莺，谢谢你！］</p>]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>个人介绍</title>
-      <link href="/about2/index.html"/>
-      <url>/about2/index.html</url>
-      
-        <content type="html"><![CDATA[<!-- 标题部分 <h1 align="center">个人介绍</h1>--><!-- 个人介绍 --><h3 id="Brief-Biography"><a href="#Brief-Biography" class="headerlink" title="Brief Biography"></a>Brief Biography</h3><ul><li><p>Undergraduate of Department of Computer Science and Technology in Nanjing University.🎓</p></li><li><p>Software Engineer.👨‍💻</p></li><li><p><strong>Technology Stack:</strong></p><ul><li>Front-end: HTML 5, CSS, JS, TS, Wechat Mini Program, Framework: Vue, React .</li><li>Back-end: Linux, Python Web development, crawler, scientific operation, data analysis, Framework: Django, Flask.</li><li>Database: Sql Server, Sqlite.</li><li>Favorite IDE: JetBrains Family Bucket (Especially PyCharm, WebStorm, IntelliJ IDEA ), Visual Studio, Sublime Text3, VMware Workstation.</li><li>Dev Tools: Github, Gitee, Selenium, Scrapy,  postman, Fiddler,  FeHelper.</li><li>Others: Adobe Family Bucket(Especially PS, PR, AU, XD), My Laptop💻, My Phone📱.</li></ul><!-- 动图效果 --><div align="right"  >-----------LOVE YOU KOBE R.I.P❤-----------</div>  <a href="#" align="right">      <img align="right" src="http://5b0988e595225.cdn.sohucs.com/images/20190721/e8837828bc664adba3e9692712c90a99.gif" alt="图片裂开了？这里本该显示一个gif的"/>       </a>     </li><li><p><strong>Currently Focusing On:</strong></p><ul><li>Data Structure, Computer Algorithm</li><li>Web Design,Web Crawler</li><li>Machine Learning</li><li>Natural Language Processing</li></ul></li><li><p><strong>Recent Wishes:</strong></p><ul><li><strong>At the time of graduation, I am applying for a software engineering related job.💌</strong></li></ul></li></ul><!-- 后记 --><h3 id="More"><a href="#More" class="headerlink" title="More:"></a>More:</h3><h4 id="💬-Enjoy-yourself-here-or-on-my-personal-blog-夜莺悠吟"><a href="#💬-Enjoy-yourself-here-or-on-my-personal-blog-夜莺悠吟" class="headerlink" title="💬 Enjoy yourself here or on my personal blog: 夜莺悠吟"></a>💬 Enjoy yourself here or on my personal blog: <a href="https://yeying.tech/">夜莺悠吟</a></h4>]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>博客介绍</title>
-      <link href="/about2/site.html"/>
-      <url>/about2/site.html</url>
-      
-        <content type="html"><![CDATA[<!-- 标题部分 <h1 align="center">博客介绍</h1>--><!-- 博客介绍 --><p>​        人类的发展离不开知识的传承，如今的人类文明是几万年人类智慧的累积。一个人的时间和精力是有限的，用尽一生也只能够钻研大千世界的某一小部分，因此，合作、借鉴、分享是积极重要的！   </p><p>​        本博客的建立初衷，是记录我学到的知识、遇到的问题，并将我这一生所见所闻中值得分享的知识、有趣的事物分享给他人，如果有人能够从中受益我便很开心！😉   </p><h2 align="center">博客名字的寓意</h2>​        博客名字：夜莺悠吟   ​        灵感来自博主的故事：  <h3 align="center">织梦使者-夜莺, 代号04:00:00</h3>​        这几日，天天熬夜折腾，在搭建个人博客。经过3天3夜的努力，现在倒是基本完成了开发、部署、上线，但是就差一个好听一点的博客名字了，想来想去又熬到深更半夜...            ​        感到眼睛有些疲劳，又跟往常一样，去阳台抽根烟放松放松......     ​        忽然，听到远处传来一个悠长的鸟叫声，接着，声音越来越近，那声音越发动听！仿佛仙界歌声一般！那歌声是那么的悠然，清脆，浪漫！   ​        用心聆听……       ​        沉浸在小鸟歌声中，完全没发现它已经飞到自己身边，就在身旁悠悠吟唱！   <p>​        小鸟唱完，我…，许久没有说话，脑子里就像漫无边际的大自然，空旷、宁静，感到极其放松、舒适……<br>过了一会儿，小鸟主动介绍自己，说自己是夜莺，一个高维生物，名字叫夜莺，职业是织梦使者，代号是04:00:00。它的工作是夜晚04:00:00巡逻全世界，随机挑选一个和自己性格相同的人类，让他或她体验高维生物的生活。</p><p>此外，还给我介绍了一下高维生物：<br>地球上已知的生命体都是三维生物，其实还存在高维生物，我们察觉不到而已！<br>高维生物中，有一个职业叫做织梦使者，专门为三维生物编制梦！（主要是给人类）<br>在职数量86400个，即：24*60*60=86400，每秒一位使者工作，全世界范围内挑选一名与自己的性格相同的人类织梦，等对方体验完梦境后，删除相关记忆！<br>织梦使者形态跟三维生物差不多，有人的形态，也有动物、植物，但是不重复，比如，夜莺只有一个！</p><p>夜莺每晚04:00:00工作，它的风格是浪漫，无私，自由，勤奋，励志。<br>它会每晚这个时间点，在全世界范围内挑选性格与它相同的人类织梦，让他或她拥有高维生物的能力，尽情绽放自己的想象力！</p><p>​        今晚是刚好挑选到我……</p><p>​        我看看手机上的表，刚出来阳台时就是凌晨3点58来着，现在一根烟抽完，还听了这么久的歌声，时间停在04:00:00，是手机出问题了？还是夜莺真的让时间停止了？？？   </p><p>​        夜莺微笑的点头说：是的，我让时间暂停了，等我工作结束后，时间就会是下一个织梦使者的了。<br>​        下面我给你介绍一下我们高维生物的生活吧~~    </p><p>高维生物的能力：能够控制宇宙基本粒子</p><p>他们很强大，基于上述能力，他们可以衍生出以下技能：<br>超光速移动<br>控制时间（包括时光穿梭和回流）<br>重生，永生<br>隐身，<br>制作、修改、删除记忆<br>其他……</p><p>​        夜莺说着，在我头上点了一下，我感受到脑海顿时被无数个记忆充满，身体也突然发烫……</p><p>​        过了一会儿，我逐渐意识自己拥有了控制宇宙粒子的能力！！！   </p><p>​        掌握后，我迫不及待地体验了一下，真的能隐身、让我身高变成180哎！！！<br>那试试瞬移？呵，心中意念一动，我立刻出现我们学校图书馆！信念再一动，我开始以量子速度阅读书籍，几分钟就把图书馆所有书籍都记到脑子里了….<br>​       哇！这也太强大了吧！<br>​       我动用时间修改能力，让时间变成夏天，瞬移到女朋友身边，带她到海边，慢慢与她分享我的能力……<br>​       多年后，我与夫人一起，做出了很多科技，天文，物理方面的大发明、大贡献！给全世界证明了自己的同时，让人类进入了全新的宇宙航海时期！<br>​    </p><p>​        但是，功成名就的我，偶尔会特别伤心…..</p><p>​        这一切成就来得如此简单，以至于我都感觉不到我给人类到底做了什么，我做了什么？啊，这些都是我做的吗？</p><p>​        我想到我高中时的人生格言：<strong>奇迹是努力的另一个名字</strong></p><p>​        对啊！</p><p>​        曾经我坚持不懈的努力，到最后就算没有成功，心里也是开心的！</p><p>​        </p><p>​        瘦如干柴的身躯，慢慢地施展时间回流的能力，心里想着当年跟女朋友说过的：“我们要共同经历人生酸甜苦辣，慢慢品味生活，一步一步，脚踏实地……”，大呵一声：“回到这一切的开始吧！”</p><p>​        重新出现在记忆中那个阳台，深邃的眼睛变得更加清澈、坚定！</p><p>​        就在此时，又听到夜莺缓缓悠吟……</p><p>我问：<br>你要走了吗？</p><p>夜莺:<br>嗯，我也很高兴认识你。非常喜欢你的表现 ，也说明我没有选错人！没有超能力又如何，努力活出自我才最重要！<br>现在该是织梦使者04:00:01的时间了，我该回去休息了。</p><p>我问：<br>以后有机会再相遇吗？</p><p>夜莺：<br>看缘分吧！每个人身上的性格都很复杂的，你身上的主要性格与我相似不代表你没有别的性格，也许你还能遇到别的织梦使者呢！体验一下别的梦也不错呦~~</p><p>对了，你今晚的部分记忆我会删除哦，抱歉&lt;(_ _)&gt;<br>再见了！保重！<br>        ……<br>        ……   </p><p>我：</p><p>​        刚才好像听到了个很美妙的歌声？可是这大半夜谁会唱歌啊？？</p><p>回到座位……<br>咦！电脑屏幕上何时出现这四个字？？</p><p>​                      <strong>夜莺悠吟</strong></p><p>哇！博客名字就选这个了！！！</p><p>［夜莺，谢谢你！］</p>]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>分类</title>
-      <link href="/categories/index.html"/>
-      <url>/categories/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>friends</title>
-      <link href="/friends/index.html"/>
-      <url>/friends/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>相册</title>
-      <link href="/photos/index.html"/>
-      <url>/photos/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>标签</title>
-      <link href="/tags/index.html"/>
-      <url>/tags/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-  
+      <tags>
+        <tag>个人项目</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>页面丢失啦🙈</title>
+    <url>//404.html</url>
+    <content><![CDATA[<p>
+    <img align ="center" src = "https://cdn.jsdelivr.net/gh/payiz-asj/CDN@main/images/404.jpeg"/>
+    <a href = "https://yeying.tech" > <h4 align ="center">回到首页</h4> </a>
+</p>
+
+
+
+]]></content>
+  </entry>
+  <entry>
+    <title>friends</title>
+    <url>/friends/index.html</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>页面丢失啦🙈</title>
+    <url>//404.html</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>分类</title>
+    <url>/categories/index.html</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>相册</title>
+    <url>/photos/index.html</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>标签</title>
+    <url>/tags/index.html</url>
+    <content><![CDATA[]]></content>
+  </entry>
 </search>
