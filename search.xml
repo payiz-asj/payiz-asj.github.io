@@ -54,24 +54,6 @@
       </tags>
   </entry>
   <entry>
-    <title>博客初建</title>
-    <url>/%E5%8D%9A%E4%B8%BB%E5%AF%84%E8%AF%AD/blog_firstday/</url>
-    <content><![CDATA[<h1 align="center">HELLO 👋</h1>
-
-<p>您好，</p>
-<p>​        欢迎来到我的个人博客！</p>
-<p>​        平时会抽空分享一些技术文章和我学习、生活中一些有趣的事情。🎶</p>
-<p>​        此外，还可通过 “ 首页-&gt;社交 “ ，到达我在其他几个主流网站上的个人首页，希望能给您奉上有意义的内容。💪</p>
-<p>​        您还可以通过邮箱联系我，来投稿或提出宝贵意见，期待您的信息💬</p>
-]]></content>
-      <categories>
-        <category>博主寄语</category>
-      </categories>
-      <tags>
-        <tag>欢迎</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>博客介绍</title>
     <url>/%E5%8D%9A%E4%B8%BB%E5%AF%84%E8%AF%AD/about-site/</url>
     <content><![CDATA[<!-- 标题部分 
@@ -129,6 +111,24 @@
       </categories>
       <tags>
         <tag>博客介绍</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>博客初建</title>
+    <url>/%E5%8D%9A%E4%B8%BB%E5%AF%84%E8%AF%AD/blog_firstday/</url>
+    <content><![CDATA[<h1 align="center">HELLO 👋</h1>
+
+<p>您好，</p>
+<p>​        欢迎来到我的个人博客！</p>
+<p>​        平时会抽空分享一些技术文章和我学习、生活中一些有趣的事情。🎶</p>
+<p>​        此外，还可通过 “ 首页-&gt;社交 “ ，到达我在其他几个主流网站上的个人首页，希望能给您奉上有意义的内容。💪</p>
+<p>​        您还可以通过邮箱联系我，来投稿或提出宝贵意见，期待您的信息💬</p>
+]]></content>
+      <categories>
+        <category>博主寄语</category>
+      </categories>
+      <tags>
+        <tag>欢迎</tag>
       </tags>
   </entry>
   <entry>
@@ -227,11 +227,6 @@
     <content><![CDATA[]]></content>
   </entry>
   <entry>
-    <title>friends</title>
-    <url>/friends/index.html</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
     <title>分类</title>
     <url>/categories/index.html</url>
     <content><![CDATA[]]></content>
@@ -239,6 +234,11 @@
   <entry>
     <title>相册</title>
     <url>/photos/index.html</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>friends</title>
+    <url>/friends/index.html</url>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
