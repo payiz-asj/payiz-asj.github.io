@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://www.yeying.tech/about/site.html</loc>
+    
+    <lastmod>2021-07-25</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.yeying.tech/about/me.html</loc>
+    
+    <lastmod>2021-07-25</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://www.yeying.tech/404.html</loc>
     
     <lastmod>2021-07-25</lastmod>
@@ -10,20 +24,6 @@
   
   <url>
     <loc>https://www.yeying.tech/friends/index.html</loc>
-    
-    <lastmod>2021-07-25</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.yeying.tech/%E5%8D%9A%E4%B8%BB%E5%AF%84%E8%AF%AD/about-site/</loc>
-    
-    <lastmod>2021-07-25</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.yeying.tech/%E5%8D%9A%E4%B8%BB%E5%AF%84%E8%AF%AD/about-me/</loc>
     
     <lastmod>2021-07-25</lastmod>
     
@@ -79,20 +79,6 @@
     <priority>1.0</priority>
   </url>
 
-  
-  <url>
-    <loc>https://www.yeying.tech/tags/%E4%B8%AA%E4%BA%BA%E4%BB%8B%E7%BB%8D/</loc>
-    <lastmod>2021-07-25</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.yeying.tech/tags/%E5%8D%9A%E5%AE%A2%E4%BB%8B%E7%BB%8D/</loc>
-    <lastmod>2021-07-25</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
   
   <url>
     <loc>https://www.yeying.tech/tags/%E6%AC%A2%E8%BF%8E/</loc>
