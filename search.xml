@@ -171,6 +171,11 @@
 <h3 id="More"><a href="#More" class="headerlink" title="More:"></a>More:</h3><h4 id="💬-Enjoy-yourself-here-or-on-my-personal-blog-夜莺悠吟"><a href="#💬-Enjoy-yourself-here-or-on-my-personal-blog-夜莺悠吟" class="headerlink" title="💬 Enjoy yourself here or on my personal blog: 夜莺悠吟"></a>💬 Enjoy yourself here or on my personal blog: <a href="https://yeying.tech/">夜莺悠吟</a></h4>]]></content>
   </entry>
   <entry>
+    <title>分类</title>
+    <url>/categories/index.html</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
     <title>博客介绍</title>
     <url>/about/site.html</url>
     <content><![CDATA[<!-- 标题部分 
@@ -225,18 +230,13 @@
 ]]></content>
   </entry>
   <entry>
-    <title>分类</title>
-    <url>/categories/index.html</url>
+    <title>相册</title>
+    <url>/photos/index.html</url>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
     <title>friends</title>
     <url>/friends/index.html</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
-    <title>相册</title>
-    <url>/photos/index.html</url>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
