@@ -6,7 +6,7 @@
   <link href="https://www.yeying.tech/atom.xml" rel="self"/>
   
   <link href="https://www.yeying.tech/"/>
-  <updated>2021-07-26T10:30:48.282Z</updated>
+  <updated>2021-07-26T18:51:01.713Z</updated>
   <id>https://www.yeying.tech/</id>
   
   <author>
@@ -18,10 +18,10 @@
   
   <entry>
     <title>校园风景</title>
-    <link href="https://www.yeying.tech/%E7%9B%B8%E5%86%8C/xianlincampus/"/>
-    <id>https://www.yeying.tech/%E7%9B%B8%E5%86%8C/xianlincampus/</id>
+    <link href="https://www.yeying.tech/zh-CN/%E7%9B%B8%E5%86%8C/xianlincampus/"/>
+    <id>https://www.yeying.tech/zh-CN/%E7%9B%B8%E5%86%8C/xianlincampus/</id>
     <published>2021-07-26T08:08:38.000Z</published>
-    <updated>2021-07-26T10:30:48.282Z</updated>
+    <updated>2021-07-26T18:51:01.713Z</updated>
     
     
     <summary type="html">&lt;h1 align = &quot;center&quot;&gt;校园风景自拍&lt;/h1&gt;
@@ -39,11 +39,41 @@
   </entry>
   
   <entry>
-    <title>作品展示</title>
-    <link href="https://www.yeying.tech/Hackathon%E5%8D%8E%E4%B8%9C%E4%B9%9D%E6%A0%A1%E7%BC%96%E7%A8%8B%E5%88%9B%E5%AE%A2%E9%A9%AC%E6%8B%89%E6%9D%BE/hackathon_readme/"/>
-    <id>https://www.yeying.tech/Hackathon%E5%8D%8E%E4%B8%9C%E4%B9%9D%E6%A0%A1%E7%BC%96%E7%A8%8B%E5%88%9B%E5%AE%A2%E9%A9%AC%E6%8B%89%E6%9D%BE/hackathon_readme/</id>
+    <title>博客初建</title>
+    <link href="https://www.yeying.tech/zh-CN/%E5%8D%9A%E4%B8%BB%E5%AF%84%E8%AF%AD/blog_firstday/"/>
+    <id>https://www.yeying.tech/zh-CN/%E5%8D%9A%E4%B8%BB%E5%AF%84%E8%AF%AD/blog_firstday/</id>
+    <published>2019-03-05T02:13:34.000Z</published>
+    <updated>2021-07-26T18:12:03.107Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 align=&quot;center&quot;&gt;HELLO 👋&lt;/h1&gt;
+您好，
+
+&lt;p&gt;​        欢迎来到我的个人博客！&lt;/p&gt;
+&lt;p&gt;​        平时会抽空分享一些技术文章和我学习、生活中一些有趣的事情。🎶&lt;/p&gt;
+&lt;p&gt;​        此外，还可通过 “</summary>
+        
+      
+    
+    
+    
+    <category term="博主寄语" scheme="https://www.yeying.tech/categories/%E5%8D%9A%E4%B8%BB%E5%AF%84%E8%AF%AD/"/>
+    
+    
+    <category term="欢迎" scheme="https://www.yeying.tech/tags/%E6%AC%A2%E8%BF%8E/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>比赛回忆</title>
+    <link href="https://www.yeying.tech/zh-CN/Hackathon%E5%8D%8E%E4%B8%9C%E4%B9%9D%E6%A0%A1%E7%BC%96%E7%A8%8B%E5%88%9B%E5%AE%A2%E9%A9%AC%E6%8B%89%E6%9D%BE/hackathon_memory/"/>
+    <id>https://www.yeying.tech/zh-CN/Hackathon%E5%8D%8E%E4%B8%9C%E4%B9%9D%E6%A0%A1%E7%BC%96%E7%A8%8B%E5%88%9B%E5%AE%A2%E9%A9%AC%E6%8B%89%E6%9D%BE/hackathon_memory/</id>
     <published>2020-11-29T12:20:34.000Z</published>
-    <updated>2021-07-26T10:27:21.874Z</updated>
+    <updated>2021-07-26T18:11:54.008Z</updated>
     
     
     <summary type="html">&lt;h1 align = &quot;center&quot;&gt;Hackathon编程马拉松项目&lt;/h1&gt;
@@ -54,16 +84,7 @@
 
 
 
-&lt;p&gt;这周末参加了一个很有意思的编程比赛，想写篇文章记录一下比赛经历。 &lt;/p&gt;
-&lt;h3 id=&quot;赛事信息：&quot;&gt;&lt;a href=&quot;#赛事信息：&quot; class=&quot;headerlink&quot; title=&quot;赛事信息：&quot;&gt;&lt;/a&gt;赛事信息：&lt;/h3&gt;&lt;p&gt;​        南京大学和微软亚洲研究院主办、由微软开发者关系部门、东南大学、南京航空航天大学、南京理工大学、苏州大学、山东大学、同济大学和华东师范大学，复旦大学联合承办的创客马拉松大赛 “Hackathon 华东 &lt;a href=&quot;https://github.com/2020&quot;&gt;@2020&lt;/a&gt;” 。&lt;/p&gt;
-&lt;p&gt;​        比赛形式：1-4人组成一个队伍，各高校之间可以互相组队，在24小时连续编程。&lt;/p&gt;
-&lt;h4 id=&quot;比赛官网：-https-hackathon2020eastchina-top&quot;&gt;&lt;a href=&quot;#比赛官网：-https-hackathon2020eastchina-top&quot; class=&quot;headerlink&quot; title=&quot;比赛官网： https://hackathon2020eastchina.top/&quot;&gt;&lt;/a&gt;比赛官网： &lt;a href=&quot;https://hackathon2020eastchina.top/&quot;&gt;https://hackathon2020eastchina.top/&lt;/a&gt;&lt;/h4&gt;&lt;h3 id=&quot;我们的队伍&quot;&gt;&lt;a href=&quot;#我们的队伍&quot; class=&quot;headerlink&quot; title=&quot;我们的队伍&quot;&gt;&lt;/a&gt;我们的队伍&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;队伍名：&lt;/strong&gt;“觉醒吧，猎杀时刻！”&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;作品名称：&lt;/strong&gt;微信小程序“送信鸭” &lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;队伍成员：&lt;/strong&gt; 艾山江（队长）、郭庭、阿卜杜拉、艾尔肯&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;队伍成果：&lt;/strong&gt;我们队在24小时几乎一直没有休息，最终完成了微信小程序“送信鸭”的需求分析及部分前后端功能实现，答辩时得到评委认可，最终排名9/28。 &lt;/p&gt;
-&lt;h3 id=&quot;作品介绍：&quot;&gt;&lt;a href=&quot;#作品介绍：&quot; class=&quot;headerlink&quot; title=&quot;作品介绍：&quot;&gt;&lt;/a&gt;作品介绍：&lt;/h3&gt;&lt;p&gt;​    我们观察到2020疫情期间学校宿舍后管理室在分发学生信件、明信片等资料工作中的众多困难，准备做一个小程序来解决问题。与此同时，我们发现了此小程序在陌生人交友、青年社区等潜力，大家励志想打造一款可以&lt;strong&gt;邮寄、寄收实体信件、电子信件&lt;/strong&gt;等，又包含&lt;strong&gt;陌生人写信社交、树洞分享故事、青年社区等精彩版块&lt;/strong&gt;的微信小程序。&lt;/p&gt;
-&lt;p&gt;​    您可以在这里给&lt;strong&gt;现实中的朋友邮寄实体信件、明信片等&lt;/strong&gt;，并&lt;strong&gt;监控信件的分发路程&lt;/strong&gt;，还可以&lt;strong&gt;查询自己待收取、收取记录&lt;/strong&gt;；您&lt;strong&gt;还可以&lt;/strong&gt;在这里给好友&lt;strong&gt;写电子信件、明信片、生日贺卡等&lt;/strong&gt;，&lt;strong&gt;还可以倾诉故事，认识新的朋友&lt;/strong&gt;。&lt;/p&gt;
-&lt;p&gt;​    期待您的加入！&lt;/p&gt;</summary>
+&lt;p&gt;这周末参加了一个很有意思的编程比赛，想写篇文章记录一下比赛经历。 &lt;/p&gt;</summary>
     
     
     
@@ -76,10 +97,10 @@
   
   <entry>
     <title>项目需求分析</title>
-    <link href="https://www.yeying.tech/Hackathon%E5%8D%8E%E4%B8%9C%E4%B9%9D%E6%A0%A1%E7%BC%96%E7%A8%8B%E5%88%9B%E5%AE%A2%E9%A9%AC%E6%8B%89%E6%9D%BE/hackathon_requirement_analysis/"/>
-    <id>https://www.yeying.tech/Hackathon%E5%8D%8E%E4%B8%9C%E4%B9%9D%E6%A0%A1%E7%BC%96%E7%A8%8B%E5%88%9B%E5%AE%A2%E9%A9%AC%E6%8B%89%E6%9D%BE/hackathon_requirement_analysis/</id>
+    <link href="https://www.yeying.tech/zh-CN/Hackathon%E5%8D%8E%E4%B8%9C%E4%B9%9D%E6%A0%A1%E7%BC%96%E7%A8%8B%E5%88%9B%E5%AE%A2%E9%A9%AC%E6%8B%89%E6%9D%BE/hackathon_requirement_analysis/"/>
+    <id>https://www.yeying.tech/zh-CN/Hackathon%E5%8D%8E%E4%B8%9C%E4%B9%9D%E6%A0%A1%E7%BC%96%E7%A8%8B%E5%88%9B%E5%AE%A2%E9%A9%AC%E6%8B%89%E6%9D%BE/hackathon_requirement_analysis/</id>
     <published>2020-11-29T04:20:34.000Z</published>
-    <updated>2021-07-26T09:23:13.414Z</updated>
+    <updated>2021-07-26T17:45:32.406Z</updated>
     
     
     <summary type="html">&lt;h1 align = &quot;center&quot;&gt;项目需求分析&lt;/h1&gt;
@@ -94,36 +115,6 @@
     
     
     <category term="个人项目" scheme="https://www.yeying.tech/tags/%E4%B8%AA%E4%BA%BA%E9%A1%B9%E7%9B%AE/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>博客初建</title>
-    <link href="https://www.yeying.tech/%E5%8D%9A%E4%B8%BB%E5%AF%84%E8%AF%AD/blog_firstday/"/>
-    <id>https://www.yeying.tech/%E5%8D%9A%E4%B8%BB%E5%AF%84%E8%AF%AD/blog_firstday/</id>
-    <published>2019-03-05T02:13:34.000Z</published>
-    <updated>2021-07-25T03:58:27.416Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 align=&quot;center&quot;&gt;HELLO 👋&lt;/h1&gt;
-
-&lt;p&gt;您好，&lt;/p&gt;
-&lt;p&gt;​        欢迎来到我的个人博客！&lt;/p&gt;
-&lt;p&gt;​        平时会抽空分享一些技术文章和我学习、生活中一些有趣的事情。🎶&lt;/p&gt;
-&lt;p&gt;​       </summary>
-        
-      
-    
-    
-    
-    <category term="博主寄语" scheme="https://www.yeying.tech/categories/%E5%8D%9A%E4%B8%BB%E5%AF%84%E8%AF%AD/"/>
-    
-    
-    <category term="欢迎" scheme="https://www.yeying.tech/tags/%E6%AC%A2%E8%BF%8E/"/>
     
   </entry>
   
