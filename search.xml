@@ -97,6 +97,38 @@
       </tags>
   </entry>
   <entry>
+    <title>校园风景</title>
+    <url>/%E7%9B%B8%E5%86%8C/xianlincampus/</url>
+    <content><![CDATA[<h1 align = "center">校园风景自拍</h1>
+
+
+
+<p>
+    <img align ="center" src = "https://pic.imgdb.cn/item/60fe6aca5132923bf86f184e.jpg"  style = "width:800px;height:600px"/>
+    <h5 align ="center">图书馆前</h5>
+</p>
+
+<p>
+    <img align ="center" src = "https://pic.imgdb.cn/item/60fe6a945132923bf86e57b3.jpg"  style = "width:800px;height:600px"/>
+    <h5 align ="center">吃完饭回宿舍之路</h5>
+</p>
+
+
+
+<p>
+    <img align ="center" src = "https://pic.imgdb.cn/item/60fe6cc95132923bf8769ed4.jpg"  style = "width:600px;height:800px"/>
+    <h5 align ="center">宿舍楼底下</h5>
+</p>
+
+]]></content>
+      <categories>
+        <category>相册</category>
+      </categories>
+      <tags>
+        <tag>校园</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>页面丢失啦🙈</title>
     <url>//404.html</url>
     <content><![CDATA[<!DOCTYPE html>
@@ -230,6 +262,11 @@
     <content><![CDATA[]]></content>
   </entry>
   <entry>
+    <title>标签</title>
+    <url>/tags/index.html</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
     <title>friends</title>
     <url>/friends/index.html</url>
     <content><![CDATA[]]></content>
@@ -237,11 +274,6 @@
   <entry>
     <title>相册</title>
     <url>/photos/index.html</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
-    <title>标签</title>
-    <url>/tags/index.html</url>
     <content><![CDATA[]]></content>
   </entry>
 </search>
