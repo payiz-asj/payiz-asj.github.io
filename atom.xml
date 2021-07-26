@@ -6,7 +6,7 @@
   <link href="https://www.yeying.tech/atom.xml" rel="self"/>
   
   <link href="https://www.yeying.tech/"/>
-  <updated>2021-07-26T10:17:03.404Z</updated>
+  <updated>2021-07-26T10:30:48.282Z</updated>
   <id>https://www.yeying.tech/</id>
   
   <author>
@@ -17,11 +17,33 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>校园风景</title>
+    <link href="https://www.yeying.tech/%E7%9B%B8%E5%86%8C/xianlincampus/"/>
+    <id>https://www.yeying.tech/%E7%9B%B8%E5%86%8C/xianlincampus/</id>
+    <published>2021-07-26T08:08:38.000Z</published>
+    <updated>2021-07-26T10:30:48.282Z</updated>
+    
+    
+    <summary type="html">&lt;h1 align = &quot;center&quot;&gt;校园风景自拍&lt;/h1&gt;
+​    
+
+&lt;h3 id=&quot;记录身边的美景😘&quot;&gt;&lt;a href=&quot;#记录身边的美景😘&quot; class=&quot;headerlink&quot; title=&quot;记录身边的美景😘&quot;&gt;&lt;/a&gt;记录身边的美景😘&lt;/h3&gt;</summary>
+    
+    
+    
+    <category term="相册" scheme="https://www.yeying.tech/categories/%E7%9B%B8%E5%86%8C/"/>
+    
+    
+    <category term="校园" scheme="https://www.yeying.tech/tags/%E6%A0%A1%E5%9B%AD/"/>
+    
+  </entry>
+  
+  <entry>
     <title>作品展示</title>
     <link href="https://www.yeying.tech/Hackathon%E5%8D%8E%E4%B8%9C%E4%B9%9D%E6%A0%A1%E7%BC%96%E7%A8%8B%E5%88%9B%E5%AE%A2%E9%A9%AC%E6%8B%89%E6%9D%BE/hackathon_readme/"/>
     <id>https://www.yeying.tech/Hackathon%E5%8D%8E%E4%B8%9C%E4%B9%9D%E6%A0%A1%E7%BC%96%E7%A8%8B%E5%88%9B%E5%AE%A2%E9%A9%AC%E6%8B%89%E6%9D%BE/hackathon_readme/</id>
     <published>2020-11-29T12:20:34.000Z</published>
-    <updated>2021-07-26T10:17:03.404Z</updated>
+    <updated>2021-07-26T10:27:21.874Z</updated>
     
     
     <summary type="html">&lt;h1 align = &quot;center&quot;&gt;Hackathon编程马拉松项目&lt;/h1&gt;
@@ -38,8 +60,8 @@
 &lt;h4 id=&quot;比赛官网：-https-hackathon2020eastchina-top&quot;&gt;&lt;a href=&quot;#比赛官网：-https-hackathon2020eastchina-top&quot; class=&quot;headerlink&quot; title=&quot;比赛官网： https://hackathon2020eastchina.top/&quot;&gt;&lt;/a&gt;比赛官网： &lt;a href=&quot;https://hackathon2020eastchina.top/&quot;&gt;https://hackathon2020eastchina.top/&lt;/a&gt;&lt;/h4&gt;&lt;h3 id=&quot;我们的队伍&quot;&gt;&lt;a href=&quot;#我们的队伍&quot; class=&quot;headerlink&quot; title=&quot;我们的队伍&quot;&gt;&lt;/a&gt;我们的队伍&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;队伍名：&lt;/strong&gt;“觉醒吧，猎杀时刻！”&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;作品名称：&lt;/strong&gt;微信小程序“送信鸭” &lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;队伍成员：&lt;/strong&gt; 艾山江（队长）、郭庭、阿卜杜拉、艾尔肯&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;队伍成果：&lt;/strong&gt;我们队在24小时一直休息，最终完成了微信小程序“送信鸭”的需求分析及部分前后端功能实现，答辩时得到评委认可，最终排名9/28。 &lt;/p&gt;
-&lt;h3 id=&quot;作品介绍：&quot;&gt;&lt;a href=&quot;#作品介绍：&quot; class=&quot;headerlink&quot; title=&quot;作品介绍：&quot;&gt;&lt;/a&gt;作品介绍：&lt;/h3&gt;&lt;p&gt;​    我们观察到2020疫情期间学校宿舍后管理室在分发学生信件、明信片等资料工作中的众多困难，准备做一个小程序来解决问题。与此同时，我们发现了此小程序在陌生人交友、青年社区等潜力，大家励志想打造一款可以&lt;strong&gt;邮寄、接受实体信件、电子信件&lt;/strong&gt;等，又包含&lt;strong&gt;陌生人写信社交、树洞分享故事、青年社区等精彩版块&lt;/strong&gt;的微信小程序。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;队伍成果：&lt;/strong&gt;我们队在24小时几乎一直没有休息，最终完成了微信小程序“送信鸭”的需求分析及部分前后端功能实现，答辩时得到评委认可，最终排名9/28。 &lt;/p&gt;
+&lt;h3 id=&quot;作品介绍：&quot;&gt;&lt;a href=&quot;#作品介绍：&quot; class=&quot;headerlink&quot; title=&quot;作品介绍：&quot;&gt;&lt;/a&gt;作品介绍：&lt;/h3&gt;&lt;p&gt;​    我们观察到2020疫情期间学校宿舍后管理室在分发学生信件、明信片等资料工作中的众多困难，准备做一个小程序来解决问题。与此同时，我们发现了此小程序在陌生人交友、青年社区等潜力，大家励志想打造一款可以&lt;strong&gt;邮寄、寄收实体信件、电子信件&lt;/strong&gt;等，又包含&lt;strong&gt;陌生人写信社交、树洞分享故事、青年社区等精彩版块&lt;/strong&gt;的微信小程序。&lt;/p&gt;
 &lt;p&gt;​    您可以在这里给&lt;strong&gt;现实中的朋友邮寄实体信件、明信片等&lt;/strong&gt;，并&lt;strong&gt;监控信件的分发路程&lt;/strong&gt;，还可以&lt;strong&gt;查询自己待收取、收取记录&lt;/strong&gt;；您&lt;strong&gt;还可以&lt;/strong&gt;在这里给好友&lt;strong&gt;写电子信件、明信片、生日贺卡等&lt;/strong&gt;，&lt;strong&gt;还可以倾诉故事，认识新的朋友&lt;/strong&gt;。&lt;/p&gt;
 &lt;p&gt;​    期待您的加入！&lt;/p&gt;</summary>
     
