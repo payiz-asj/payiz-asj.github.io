@@ -15,7 +15,7 @@
         name="viewport"
         content="width=device-width, initial-scale=1, maximum-scale=1"
       />
-      <title>Tag: 欢迎 |  夜莺悠吟</title>
+      <title> 夜莺悠吟</title>
   <meta name="generator" content="hexo-theme-ayer">
       
       <link rel="shortcut icon" href="/favicon.ico" />
@@ -46,103 +46,190 @@
     
       
     <main class="content on">
-      <section class="outer">
+      
+<section class="cover">
+    
+  <div class="cover-frame">
+    <div class="bg-box">
+      <img src="https://cdn.jsdelivr.net/gh/payiz-asj/CDN/images/hands.jpg" alt="image frame" />
+    </div>
+    <div class="cover-inner text-center text-white">
+      <h1><a href="/">夜莺悠吟</a></h1>
+      <div id="subtitle-box">
+        
+        <span id="subtitle"></span>
+        
+      </div>
+      <div>
+        
+        <img
+          src="/images/bird.svg"
+          class="cover-logo"
+          alt="夜莺悠吟"
+        />
+        
+      </div>
+    </div>
+  </div>
+  <div class="cover-learn-more">
+    <a href="javascript:void(0)" class="anchor"><i class="ri-arrow-down-line"></i></a>
+  </div>
+</section>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11/lib/typed.min.js"></script>
+
+
+<!-- Subtitle -->
+
+  <script>
+    try {
+      var typed = new Typed("#subtitle", {
+        strings: ['夜暗方显万颗星，灯明始见一缕尘。', '宝剑锋从磨砺出，梅花香自苦寒来。', '人生如逆旅，我亦是行人。'],
+        startDelay: 0,
+        typeSpeed: 150,
+        loop: true,
+        backSpeed: 25,
+        showCursor: true
+      });
+    } catch (err) {
+      console.log(err)
+    }
+  </script>
   
+<div id="main">
+  <section class="outer">
+  
+  
+  
+
+<div class="notice" style="margin-top:50px">
+    <i class="ri-heart-fill"></i>
+    <div class="notice-content" id="broad"></div>
+</div>
+<script type="text/javascript">
+    fetch('https://v1.hitokoto.cn')
+        .then(response => response.json())
+        .then(data => {
+            document.getElementById("broad").innerHTML = data.hitokoto;
+        })
+        .catch(console.error)
+</script>
+
+<style>
+    .notice {
+        padding: 20px;
+        border: 1px dashed #e6e6e6;
+        color: #969696;
+        position: relative;
+        display: inline-block;
+        width: 100%;
+        background: #fbfbfb50;
+        border-radius: 10px;
+    }
+
+    .notice i {
+        float: left;
+        color: #999;
+        font-size: 16px;
+        padding-right: 10px;
+        vertical-align: middle;
+        margin-top: -2px;
+    }
+
+    .notice-content {
+        display: initial;
+        vertical-align: middle;
+    }
+</style>
   
   <article class="articles">
     
     
-    <h1 class="page-type-title">#&nbsp欢迎</h1>
     
     
-  
-  
-  
-  
-  
-  
-  <div class="archives-wrap">
-    <div class="archive-year-wrap">
-      <a href="/archives/2019" class="archive-year">2019</a>
-    </div>
-    <div class="archives">
-      
-      
-<!--想要部分文章不在归档中显示，因此加了此条件-->
 
-
-
-
-<article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/%E5%8D%9A%E4%B8%BB%E5%AF%84%E8%AF%AD/blog-creation-process/" class="archive-article-date">
-  <time datetime="2019-03-27T03:22:49.000Z" itemprop="datePublished">03/27</time>
-</a>
+    <!--想要部分文章不在主页显示，因此加了此条件-->
+       
+    
+<article
+  id="post-hackathon-requirement-analysis"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
        
 <h2 itemprop="name">
-  <a class="archive-article-title" href="/%E5%8D%9A%E4%B8%BB%E5%AF%84%E8%AF%AD/blog-creation-process/"
-    >建立博客心路历程</a> 
+  <a class="article-title" href="/Hackathon%E5%8D%8E%E4%B8%9C%E4%B9%9D%E6%A0%A1%E7%BC%96%E7%A8%8B%E5%88%9B%E5%AE%A2%E9%A9%AC%E6%8B%89%E6%9D%BE/hackathon-requirement-analysis/"
+    >项目需求分析</a> 
 </h2>
  
 
+      
     </header>
-    
-    
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%AC%A2%E8%BF%8E/" rel="tag">欢迎</a></li></ul>
-
-    
+     
+    <div class="article-meta">
+      <a href="/Hackathon%E5%8D%8E%E4%B8%9C%E4%B9%9D%E6%A0%A1%E7%BC%96%E7%A8%8B%E5%88%9B%E5%AE%A2%E9%A9%AC%E6%8B%89%E6%9D%BE/hackathon-requirement-analysis/" class="article-date">
+  <time datetime="2020-11-29T04:20:34.000Z" itemprop="datePublished">2020-11-29</time>
+</a> 
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Hackathon%E5%8D%8E%E4%B8%9C%E4%B9%9D%E6%A0%A1%E7%BC%96%E7%A8%8B%E5%88%9B%E5%AE%A2%E9%A9%AC%E6%8B%89%E6%9D%BE/">Hackathon华东九校编程创客马拉松</a>
   </div>
-</article>
-
-
-
-
+   
+    </div>
       
-  
-  
-      
-<!--想要部分文章不在归档中显示，因此加了此条件-->
-
-
-
-
-<article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/%E5%8D%9A%E4%B8%BB%E5%AF%84%E8%AF%AD/blog-firstday/" class="archive-article-date">
-  <time datetime="2019-03-05T02:13:34.000Z" itemprop="datePublished">03/05</time>
-</a>
+    <div class="article-entry" itemprop="articleBody">
        
-<h2 itemprop="name">
-  <a class="archive-article-title" href="/%E5%8D%9A%E4%B8%BB%E5%AF%84%E8%AF%AD/blog-firstday/"
-    >博客初建</a> 
-</h2>
- 
+  <h1 align = "center">项目需求分析</h1>
+<h3 align = "center">——“送信鸭”小程序</h3>
+## 1. 需求获取 / 需求调研：
 
-    </header>
-    
-    
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%AC%A2%E8%BF%8E/" rel="tag">欢迎</a></li></ul>
-
-    
-  </div>
-</article>
-
-
-
-
-      
+<h3 id="1-1-访谈"><a href="#1-1-访谈" class="headerlink" title="1.1 访谈"></a>1.1 访谈</h3><p>​    访谈法获取需求是需求获取方法中最直接、最快速的一种方法了，往往能够<strong>最直接、最具体、清晰、客观地</strong>了解目标用户的需求。   </p> 
+      <a class="article-more-link" href="/Hackathon%E5%8D%8E%E4%B8%9C%E4%B9%9D%E6%A0%A1%E7%BC%96%E7%A8%8B%E5%88%9B%E5%AE%A2%E9%A9%AC%E6%8B%89%E6%9D%BE/hackathon-requirement-analysis/"
+        >阅读更多...</a
+      >
+       
+      <!-- reward -->
       
     </div>
+    
+
+    <!-- copyright -->
+    
+    <footer class="article-footer">
+       
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E4%B8%AA%E4%BA%BA%E9%A1%B9%E7%9B%AE/" rel="tag">个人项目</a></li></ul>
+
+    </footer>
   </div>
-  
+
+    
+ 
+    
+</article>
+
+
+    
+
+    
+
+  </article>
   
 
+  
+  <nav class="page-nav">
+    
+    <a class="extend prev" rel="prev" href="/">上一页</a><a class="page-number" href="/">1</a><span class="page-number current">2</span>
+  </nav>
   
 </section>
+</div>
+
       <footer class="footer">
   <div class="outer">
     <ul>
