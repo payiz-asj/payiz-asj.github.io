@@ -1,8 +1,325 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>希腊字母</title>
+    <url>/%E7%AC%94%E8%AE%B0/Greek-alphabet/</url>
+    <content><![CDATA[<h1 align = "center">希腊字母及读音</h1>
+
+
+<table>
+<thead>
+<tr>
+<th>大写</th>
+<th>小写</th>
+<th>英文注音</th>
+<th>中文读音</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Α</td>
+<td>α</td>
+<td>alpha</td>
+<td>阿尔法</td>
+</tr>
+<tr>
+<td>Β</td>
+<td>β</td>
+<td>beta</td>
+<td>贝塔</td>
+</tr>
+<tr>
+<td>Γ</td>
+<td>γ</td>
+<td>gamma</td>
+<td>伽马</td>
+</tr>
+<tr>
+<td>Δ</td>
+<td>δ</td>
+<td>delta</td>
+<td>德尔塔</td>
+</tr>
+<tr>
+<td>Ε</td>
+<td>ε</td>
+<td>epsilon</td>
+<td>伊普西龙</td>
+</tr>
+<tr>
+<td>Ζ</td>
+<td>ζ</td>
+<td>zeta</td>
+<td>截塔</td>
+</tr>
+<tr>
+<td>Η</td>
+<td>η</td>
+<td>eta</td>
+<td>艾塔</td>
+</tr>
+<tr>
+<td>Θ</td>
+<td>θ</td>
+<td>theta</td>
+<td>西塔</td>
+</tr>
+<tr>
+<td>Ι</td>
+<td>ι</td>
+<td>iota</td>
+<td>约塔</td>
+</tr>
+<tr>
+<td>Κ</td>
+<td>κ</td>
+<td>kappa</td>
+<td>卡帕</td>
+</tr>
+<tr>
+<td>∧</td>
+<td>λ</td>
+<td>lambda</td>
+<td>兰布达</td>
+</tr>
+<tr>
+<td>Μ</td>
+<td>μ</td>
+<td>mu</td>
+<td>缪</td>
+</tr>
+<tr>
+<td>Ν</td>
+<td>ν</td>
+<td>nu</td>
+<td>纽</td>
+</tr>
+<tr>
+<td>Ξ</td>
+<td>ξ</td>
+<td>xi</td>
+<td>克西</td>
+</tr>
+<tr>
+<td>Ο</td>
+<td>ο</td>
+<td>omicron</td>
+<td>奥密克戎</td>
+</tr>
+<tr>
+<td>∏</td>
+<td>π</td>
+<td>pi</td>
+<td>派</td>
+</tr>
+<tr>
+<td>Ρ</td>
+<td>ρ</td>
+<td>rho</td>
+<td>肉</td>
+</tr>
+<tr>
+<td>∑</td>
+<td>σ</td>
+<td>sigma</td>
+<td>西格马</td>
+</tr>
+<tr>
+<td>Τ</td>
+<td>τ</td>
+<td>tau</td>
+<td>套</td>
+</tr>
+<tr>
+<td>Υ</td>
+<td>υ</td>
+<td>upsilon</td>
+<td>宇普西龙</td>
+</tr>
+<tr>
+<td>Φ</td>
+<td>φ</td>
+<td>phi</td>
+<td>佛爱</td>
+</tr>
+<tr>
+<td>Χ</td>
+<td>χ</td>
+<td>chi</td>
+<td>西</td>
+</tr>
+<tr>
+<td>Ψ</td>
+<td>ψ</td>
+<td>psi</td>
+<td>普西</td>
+</tr>
+<tr>
+<td>Ω</td>
+<td>ω</td>
+<td>omega</td>
+<td>欧米伽</td>
+</tr>
+</tbody></table>
+]]></content>
+      <categories>
+        <category>笔记</category>
+      </categories>
+      <tags>
+        <tag>希腊字母</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>建立博客心路历程</title>
+    <url>/%E5%8D%9A%E4%B8%BB%E5%AF%84%E8%AF%AD/blog-creation-process/</url>
+    <content><![CDATA[<h1 align="center">建立博客心路历程</h1>
+​        还记得大一时就有老师告诉我们：“大家可以尝试在网上写博客、文章，好让自己记录下学习的点点滴滴，也可以跟他人交流经验，那将是件非常不错的事情。”
+
+<p>​        我大一就做了微信个人公众号，但是可惜啊，就写了一两片文章就没能坚持。后来在CSDN和博客园、知乎、简书等零零散散写了一些文章也没后文。</p>
+<p>​        到现在终于下决心做个博客，花了3天3夜时间几乎没休息，啃完了HTML+CSS+JS大概用法，并且使用Gitpages+hexo成功搭建了这个免费的个人博客，说实话用Github这么长时间了了，现才才知道这个好东西，真是有点惭愧啊！</p>
+<p>​        <strong>下面写一下我建立此博客的过程和心得吧，希望大家能够从中受益！</strong>👉</p>
+<span id="more"></span>
+
+<h3 id="1-搭建Github-Pages-hexo-博客环境"><a href="#1-搭建Github-Pages-hexo-博客环境" class="headerlink" title="1. 搭建Github Pages + hexo 博客环境"></a>1. 搭建Github Pages + hexo 博客环境</h3><p>​        这方面网上别人写的教程太多了，也可以参考<a href="https://hexo.io/zh-cn/docs/setup">hexo官网资料</a>，如果你是超级新手，我可以推荐一个非常用心的博主，他的教程能够手把手教会你搭建自己的博客！<a href="https://www.yunyoujun.cn/share/how-to-build-your-site/">云游君</a></p>
+<h3 id="2-选择一个好看的主题来部署"><a href="#2-选择一个好看的主题来部署" class="headerlink" title="2. 选择一个好看的主题来部署"></a>2. 选择一个好看的主题来部署</h3><p>​        这部分就看个人喜好了，网上的hexo主题有几千种，选择喜欢的部署就可以。哈哈，其实选主题是个大坑，因为主题都是别人写的，看明白他人代码并修改真的能让人痛苦到死！😂</p>
+<p>​        所以选一个自己喜欢的，有维护的或者自己有能力修改的主题很重要！</p>
+<h3 id="3-博客美化"><a href="#3-博客美化" class="headerlink" title="3. 博客美化"></a>3. 博客美化</h3><p>​        我希望我的个人博客有一个好听的名字，一个好的意境。幸好因一次偶然机会让我找到了我想要的结果！🤟🤟</p>
+<h3 id="4-购买域名"><a href="#4-购买域名" class="headerlink" title="4. 购买域名"></a>4. 购买域名</h3><p>​        想好博客名字后，觉得xxxx.github.io这个名字看起来太土，因此我申请了域名，因为现在只是静态页面，所以没考虑买服务器，暂时就用Gihub Page来充当服务器。</p>
+<h3 id="5-写文章"><a href="#5-写文章" class="headerlink" title="5. 写文章"></a>5. 写文章</h3><p>​        写文章要坚持，而且不一定只写技术文章，也可以写一写生活中有意义的事情！对吧！加油！💪💪</p>
+<h3 id="6-说一下我自己遇到过得坑吧"><a href="#6-说一下我自己遇到过得坑吧" class="headerlink" title="6. 说一下我自己遇到过得坑吧"></a>6. 说一下我自己遇到过得坑吧</h3><p>​        新手刚开始不要尝试修改别人的主题！我刚开始就选择了一个 特别好看的主题，但是其风格太主观化，处处能看到只属于原作者，因此我想改一改代码，增加我自己的风格。</p>
+<p>​        结果，看了好几天，就是硬啃，我这个小白只能连蒙带猜地把源代码改一改比较一下效果，时刻在github备份版本。在尝试了无数次，遇到无数bug并一一解决，回退了无数次版本之后，终于知道了我的博客背后的逻辑，知道了hexo的运作机制，config.yml，layout , source， public， post, scaffolds这些文件及文件夹的原理，才算是成功了。我乘胜追击，又下载了好几个主题，看看能不能修改，加点自己的想法，嘿嘿😅</p>
+<p>​        最后选择了现在这个主题，有了侧边栏、白天-黑夜模式、相册、RSS等，已经满足了我的期望了！</p>
+<p>​        有几个界面（404页面、关于我页面、相册页面等）努力了近一个月才终于成功，期间也知道了CDN加速和图床的重要性，探索后使用了<a href="https://www.jsdelivr.com/">JsDelivr</a>来做CDN加速，<a href="https://www.superbed.cn/">聚合图床</a>来做个人图床。也从<a href="https://www.iconfont.cn/">阿里巴巴标准矢量图库</a>下载了好多图标做网站美化。</p>
+<p>​        购买域名，我暂时买了一年，以后可能看情况续费或者买别的域名。新手刚开始就买一些便宜一点的即可。   </p>
+<p>​        <strong>把所有的bug经历一遍并调会，你就是专家了！加油！勇敢迈出第一步🦶</strong></p>
+<p>
+    <img align ="center" src = "https://pic.imgdb.cn/item/60ffcc995132923bf8a1ffc0.jpg" style= "width:500px"/>
+    <p align ="center">探索永不止步</p>
+</p>    
+
+]]></content>
+      <categories>
+        <category>博主寄语</category>
+      </categories>
+      <tags>
+        <tag>欢迎</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>博客初建</title>
+    <url>/%E5%8D%9A%E4%B8%BB%E5%AF%84%E8%AF%AD/blog-firstday/</url>
+    <content><![CDATA[<h1 align="center">HELLO 👋</h1>
+您好，
+
+<p>​        欢迎来到我的个人博客！</p>
+<p>​        平时会抽空分享一些技术文章和我学习、生活中一些有趣的事情。🎶</p>
+<p>​        此外，还可通过 “ 首页-&gt;社交 “ ，到达我在其他几个主流网站上的个人首页，希望能给您奉上有意义的内容。💪</p>
+<p>​        您还可以通过邮箱联系我，来投稿或提出宝贵意见，期待您的来信！💬</p>
+]]></content>
+      <categories>
+        <category>博主寄语</category>
+      </categories>
+      <tags>
+        <tag>欢迎</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Git 学习笔记</title>
+    <url>/%E7%AC%94%E8%AE%B0/git-learning/</url>
+    <content><![CDATA[<h1 align = "center">Git 学习笔记</h1>
+记录 Git 的一些常用指令与问题解决方案。
+
+<p>更加具体的内容请看以下仓库：</p>
+<ul>
+<li><a href="https://github.com/payiz-asj/git-tips">Git 的奇技淫巧</a></li>
+<li><a href="https://github.com/payiz-asj/HelloGitHub">GitHub 上有趣、入门级的开源项目</a></li>
+</ul>
+<h2 id="常用指令"><a href="#常用指令" class="headerlink" title="常用指令"></a>常用指令</h2><h3 id="拉取代码"><a href="#拉取代码" class="headerlink" title="拉取代码"></a>拉取代码</h3><ul>
+<li>从远程仓库获取线上代码: <code>git clone git@github.com:用户名/项目名.git</code></li>
+<li>关联远程仓库: <code>git remote add origin git@github.com:xxx/xxx.git</code> (git clone 后已自动关联)</li>
+<li>git 拉取代码更新项目: <code>git pull origin master</code></li>
+</ul>
+<h3 id="远程仓库"><a href="#远程仓库" class="headerlink" title="远程仓库"></a>远程仓库</h3><ul>
+<li><p>删除远程仓库地址： <code>git remote rm origin</code></p>
+</li>
+<li><p>增加远程仓库地址： <code>git remote add origin git@github.com:xxx/xxx.git</code> or <code>git remote add origin https://github.com/xxx/xxx</code> ( origin 为远程仓库命名)</p>
+</li>
+<li><p>查看远程库信息： <code>git remote -v</code></p>
+</li>
+<li><p>关联多个远程仓库:</p>
+</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git remote add github git@github.com:xxx/xxx.git</span><br><span class="line">git remote add gitee git@gitee.com:xxx/xxx.git</span><br><span class="line">git remote add coding git@git.coding.net:xxx/xxx.git</span><br></pre></td></tr></table></figure>
+
+<h3 id="代码推送"><a href="#代码推送" class="headerlink" title="代码推送"></a>代码推送</h3><ul>
+<li><p>git 初始化： <code>git init</code></p>
+</li>
+<li><p>保存到暂存区： <code>git add -A</code>   (git 2.0以后<code>git add -A</code>与<code>git add .</code>功能相同 )</p>
+</li>
+<li><p>输入描述信息并提交到本地的 Git： <code>git commit -m &quot;Say something&quot;</code></p>
+</li>
+<li><p>修改已经提交的描述： <code>git commit --amend</code> <a href="#%E4%BF%AE%E6%94%B9%E5%B7%B2%E6%8F%90%E4%BA%A4%E5%86%85%E5%AE%B9">修改已提交内容</a></p>
+</li>
+<li><p>将代码推送到 GitHub： <code>git push</code> or <code>git push -u origin master</code> ( <code>-u</code> 选项指定一个默认主机,后面就可以不加任何参数使用 <code>git push</code> )</p>
+</li>
+<li><p>强制推送： <code>git push -u origin master -f</code></p>
+</li>
+<li><p><a href="#git-push-%E8%AF%A6%E8%A7%A3">git push 详解</a></p>
+</li>
+<li><p>清空文件夹的本地缓存: <code>git rm -r --cached </code></p>
+</li>
+</ul>
+<h3 id="代码回滚"><a href="#代码回滚" class="headerlink" title="代码回滚"></a>代码回滚</h3><p>在 Git 中，用 HEAD 表示当前版本，，上一个版本就是 HEAD^，上上一个版本就是 HEAD^^，当然往上 100 个版本写 100 个^比较容易数不过来，所以写成 HEAD~100。</p>
+<p><code>--hard</code> 会包括当前源码回到上次状态。</p>
+<p>保留当前更改，只回退 commit 信息可使用 <code>--soft</code>。</p>
+<p>清除缓存区中准备提交的内容，只保留修改的状态，可不加参数，或使用 <code>--mixed</code>。</p>
+<ul>
+<li><p>回滚到上一版本：<code>git reset --hard HEAD^</code></p>
+</li>
+<li><p>回退到指定版本 <code>git reset --hard id</code> (id 为 commit 版本号，填写前数位保证不重复即可)</p>
+</li>
+<li><p>通过 <code>git log</code> 查看历史版本</p>
+</li>
+</ul>
+<h3 id="分支管理"><a href="#分支管理" class="headerlink" title="分支管理"></a>分支管理</h3><ul>
+<li><p>显示当前分支 <code>git branch -v</code></p>
+</li>
+<li><p>显示远程分支 <code>git remote -v</code></p>
+</li>
+<li><p>将当前分支切换到 master 分支上: <code>git checkout master</code></p>
+</li>
+<li><p>创建一个名为 xxx 的新分支: <code>git checkout -b xxx</code> , <code>-b</code> 选项表示创建指定名称的新分支。</p>
+</li>
+<li><p>新建远程分支： <code>git push origin 推送的分支:远程的分支</code></p>
+</li>
+<li><p>合并分支： <code>git merge fake-branch</code></p>
+</li>
+<li><p>删除分支： <code>git branch -d fake-branch</code></p>
+</li>
+<li><p>删除远程分支：<code>git push origin –-delete 分支名</code></p>
+</li>
+<li><p>修改分支名称：<code>git branch -m old_branch_name new_branch_name</code></p>
+</li>
+</ul>
+<h3 id="清除缓存"><a href="#清除缓存" class="headerlink" title="清除缓存"></a>清除缓存</h3><ul>
+<li><p><code>git rm --cached [文件路径]</code></p>
+</li>
+<li><p><code>-r</code> 递归</p>
+</li>
+<li><p><code>-f</code> 强制</p>
+</li>
+</ul>
+<p>Example: <code>git rm -r --cached .</code></p>
+]]></content>
+      <categories>
+        <category>笔记</category>
+      </categories>
+      <tags>
+        <tag>github</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>比赛回忆</title>
-    <url>/zh-CN/Hackathon%E5%8D%8E%E4%B8%9C%E4%B9%9D%E6%A0%A1%E7%BC%96%E7%A8%8B%E5%88%9B%E5%AE%A2%E9%A9%AC%E6%8B%89%E6%9D%BE/hackathon_memory/</url>
+    <url>/Hackathon%E5%8D%8E%E4%B8%9C%E4%B9%9D%E6%A0%A1%E7%BC%96%E7%A8%8B%E5%88%9B%E5%AE%A2%E9%A9%AC%E6%8B%89%E6%9D%BE/hackathon-memory/</url>
     <content><![CDATA[<h1 align = "center">Hackathon编程马拉松项目</h1>
 <h3 align = "center">——微信小程序“送信鸭”</h3>
 <p>
@@ -45,26 +362,8 @@
       </tags>
   </entry>
   <entry>
-    <title>博客初建</title>
-    <url>/zh-CN/%E5%8D%9A%E4%B8%BB%E5%AF%84%E8%AF%AD/blog_firstday/</url>
-    <content><![CDATA[<h1 align="center">HELLO 👋</h1>
-您好，
-
-<p>​        欢迎来到我的个人博客！</p>
-<p>​        平时会抽空分享一些技术文章和我学习、生活中一些有趣的事情。🎶</p>
-<p>​        此外，还可通过 “ 首页-&gt;社交 “ ，到达我在其他几个主流网站上的个人首页，希望能给您奉上有意义的内容。💪</p>
-<p>​        您还可以通过邮箱联系我，来投稿或提出宝贵意见，期待您的信息💬</p>
-]]></content>
-      <categories>
-        <category>博主寄语</category>
-      </categories>
-      <tags>
-        <tag>欢迎</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>项目需求分析</title>
-    <url>/zh-CN/Hackathon%E5%8D%8E%E4%B8%9C%E4%B9%9D%E6%A0%A1%E7%BC%96%E7%A8%8B%E5%88%9B%E5%AE%A2%E9%A9%AC%E6%8B%89%E6%9D%BE/hackathon_requirement_analysis/</url>
+    <url>/Hackathon%E5%8D%8E%E4%B8%9C%E4%B9%9D%E6%A0%A1%E7%BC%96%E7%A8%8B%E5%88%9B%E5%AE%A2%E9%A9%AC%E6%8B%89%E6%9D%BE/hackathon-requirement-analysis/</url>
     <content><![CDATA[<h1 align = "center">项目需求分析</h1>
 <h3 align = "center">——“送信鸭”小程序</h3>
 ## 1. 需求获取 / 需求调研：
@@ -113,8 +412,58 @@
       </tags>
   </entry>
   <entry>
+    <title>Visual Studio 快捷键</title>
+    <url>/%E7%AC%94%E8%AE%B0/vs-keys/</url>
+    <content><![CDATA[<h1 align = "center">Visual Studio 快捷键</h1>
+
+<table>
+<thead>
+<tr>
+<th>功能</th>
+<th>快捷键</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>注释</td>
+<td>Ctrl + K  Ctrl + C</td>
+</tr>
+<tr>
+<td>取消注释</td>
+<td>Ctrl + K  Ctrl + U</td>
+</tr>
+<tr>
+<td>快速换行</td>
+<td>Ctrl + Shift + Enter</td>
+</tr>
+<tr>
+<td>复制当前行</td>
+<td>Ctrl + D</td>
+</tr>
+<tr>
+<td>强迫显示参数信息</td>
+<td>Ctrl-Shift-空格</td>
+</tr>
+<tr>
+<td>插入代码段</td>
+<td>Ctrl+K，X</td>
+</tr>
+<tr>
+<td>代码自动对齐</td>
+<td>Ctrl+K+F</td>
+</tr>
+</tbody></table>
+]]></content>
+      <categories>
+        <category>笔记</category>
+      </categories>
+      <tags>
+        <tag>快捷键</tag>
+        <tag>Visual Studio</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>校园风景</title>
-    <url>/zh-CN/%E7%9B%B8%E5%86%8C/xianlincampus/</url>
+    <url>/%E7%9B%B8%E5%86%8C/xianlincampus/</url>
     <content><![CDATA[<h1 align = "center">校园风景自拍</h1>
 ​    
 
@@ -223,11 +572,6 @@
 <h3 id="More"><a href="#More" class="headerlink" title="More:"></a>More:</h3><h4 id="💬-Enjoy-yourself-here-or-on-my-personal-blog-夜莺悠吟"><a href="#💬-Enjoy-yourself-here-or-on-my-personal-blog-夜莺悠吟" class="headerlink" title="💬 Enjoy yourself here or on my personal blog: 夜莺悠吟"></a>💬 Enjoy yourself here or on my personal blog: <a href="https://yeying.tech/">夜莺悠吟</a></h4>]]></content>
   </entry>
   <entry>
-    <title>分类</title>
-    <url>/categories/index.html</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
     <title>博客介绍</title>
     <url>/about/site.html</url>
     <content><![CDATA[<!-- 标题部分 
@@ -282,18 +626,33 @@
 ]]></content>
   </entry>
   <entry>
+    <title>分类</title>
+    <url>/categories/index.html</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
     <title>friends</title>
     <url>/friends/index.html</url>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
-    <title>标签</title>
-    <url>/tags/index.html</url>
-    <content><![CDATA[]]></content>
+    <title>《Y 你》</title>
+    <url>/photos/index.html</url>
+    <content><![CDATA[<!--
+<h3 align="left" >诗词全文：</h3>
+<h2 align="center" >《Y 你》</h2>
+<p align="center">艾亭湖边挂晚霞，紫金之巅坠悬崖。</p>
+<p align="center">小块身边幸有他，驰骋天下从不怕。</p>
+<p align="center">呆子与你永相伴，无畏春寒夏日炎。</p>
+<p align="center">巴卜可愿为57， 1314Y你。</p>
+-->
+
+
+]]></content>
   </entry>
   <entry>
-    <title>相册</title>
-    <url>/photos/index.html</url>
+    <title>标签</title>
+    <url>/tags/index.html</url>
     <content><![CDATA[]]></content>
   </entry>
 </search>

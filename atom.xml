@@ -6,7 +6,7 @@
   <link href="https://www.yeying.tech/atom.xml" rel="self"/>
   
   <link href="https://www.yeying.tech/"/>
-  <updated>2021-07-26T18:51:01.713Z</updated>
+  <updated>2021-07-27T10:21:29.259Z</updated>
   <id>https://www.yeying.tech/</id>
   
   <author>
@@ -17,11 +17,128 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Visual Studio 快捷键</title>
+    <link href="https://www.yeying.tech/%E7%AC%94%E8%AE%B0/vs-keys/"/>
+    <id>https://www.yeying.tech/%E7%AC%94%E8%AE%B0/vs-keys/</id>
+    <published>2019-04-09T09:52:55.000Z</published>
+    <updated>2021-07-27T10:21:29.259Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 align = &quot;center&quot;&gt;Visual Studio 快捷键&lt;/h1&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;功能&lt;/th&gt;
+&lt;th&gt;快捷键&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td&gt;注释&lt;/td&gt;
+&lt;td&gt;Ctrl</summary>
+        
+      
+    
+    
+    
+    <category term="笔记" scheme="https://www.yeying.tech/categories/%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="快捷键" scheme="https://www.yeying.tech/tags/%E5%BF%AB%E6%8D%B7%E9%94%AE/"/>
+    
+    <category term="Visual Studio" scheme="https://www.yeying.tech/tags/Visual-Studio/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>建立博客心路历程</title>
+    <link href="https://www.yeying.tech/%E5%8D%9A%E4%B8%BB%E5%AF%84%E8%AF%AD/blog-creation-process/"/>
+    <id>https://www.yeying.tech/%E5%8D%9A%E4%B8%BB%E5%AF%84%E8%AF%AD/blog-creation-process/</id>
+    <published>2019-03-27T03:22:49.000Z</published>
+    <updated>2021-07-27T10:20:49.565Z</updated>
+    
+    
+    <summary type="html">&lt;h1 align=&quot;center&quot;&gt;建立博客心路历程&lt;/h1&gt;
+​        还记得大一时就有老师告诉我们：“大家可以尝试在网上写博客、文章，好让自己记录下学习的点点滴滴，也可以跟他人交流经验，那将是件非常不错的事情。”
+
+&lt;p&gt;​        我大一就做了微信个人公众号，但是可惜啊，就写了一两片文章就没能坚持。后来在CSDN和博客园、知乎、简书等零零散散写了一些文章也没后文。&lt;/p&gt;
+&lt;p&gt;​        到现在终于下决心做个博客，花了3天3夜时间几乎没休息，啃完了HTML+CSS+JS大概用法，并且使用Gitpages+hexo成功搭建了这个免费的个人博客，说实话用Github这么长时间了了，现才才知道这个好东西，真是有点惭愧啊！&lt;/p&gt;
+&lt;p&gt;​        &lt;strong&gt;下面写一下我建立此博客的过程和心得吧，希望大家能够从中受益！&lt;/strong&gt;👉&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="博主寄语" scheme="https://www.yeying.tech/categories/%E5%8D%9A%E4%B8%BB%E5%AF%84%E8%AF%AD/"/>
+    
+    
+    <category term="欢迎" scheme="https://www.yeying.tech/tags/%E6%AC%A2%E8%BF%8E/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>希腊字母</title>
+    <link href="https://www.yeying.tech/%E7%AC%94%E8%AE%B0/Greek-alphabet/"/>
+    <id>https://www.yeying.tech/%E7%AC%94%E8%AE%B0/Greek-alphabet/</id>
+    <published>2019-04-09T10:02:54.000Z</published>
+    <updated>2021-07-27T10:19:21.033Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 align =</summary>
+        
+      
+    
+    
+    
+    <category term="笔记" scheme="https://www.yeying.tech/categories/%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="希腊字母" scheme="https://www.yeying.tech/tags/%E5%B8%8C%E8%85%8A%E5%AD%97%E6%AF%8D/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Git 学习笔记</title>
+    <link href="https://www.yeying.tech/%E7%AC%94%E8%AE%B0/git-learning/"/>
+    <id>https://www.yeying.tech/%E7%AC%94%E8%AE%B0/git-learning/</id>
+    <published>2019-04-06T09:29:41.000Z</published>
+    <updated>2021-07-27T09:55:24.341Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 align = &quot;center&quot;&gt;Git 学习笔记&lt;/h1&gt;
+记录 Git 的一些常用指令与问题解决方案。
+
+&lt;p&gt;更加具体的内容请看以下仓库：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="笔记" scheme="https://www.yeying.tech/categories/%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="github" scheme="https://www.yeying.tech/tags/github/"/>
+    
+  </entry>
+  
+  <entry>
     <title>校园风景</title>
-    <link href="https://www.yeying.tech/zh-CN/%E7%9B%B8%E5%86%8C/xianlincampus/"/>
-    <id>https://www.yeying.tech/zh-CN/%E7%9B%B8%E5%86%8C/xianlincampus/</id>
-    <published>2021-07-26T08:08:38.000Z</published>
-    <updated>2021-07-26T18:51:01.713Z</updated>
+    <link href="https://www.yeying.tech/%E7%9B%B8%E5%86%8C/xianlincampus/"/>
+    <id>https://www.yeying.tech/%E7%9B%B8%E5%86%8C/xianlincampus/</id>
+    <published>2019-03-10T08:08:38.000Z</published>
+    <updated>2021-07-27T07:48:41.108Z</updated>
     
     
     <summary type="html">&lt;h1 align = &quot;center&quot;&gt;校园风景自拍&lt;/h1&gt;
@@ -40,10 +157,10 @@
   
   <entry>
     <title>博客初建</title>
-    <link href="https://www.yeying.tech/zh-CN/%E5%8D%9A%E4%B8%BB%E5%AF%84%E8%AF%AD/blog_firstday/"/>
-    <id>https://www.yeying.tech/zh-CN/%E5%8D%9A%E4%B8%BB%E5%AF%84%E8%AF%AD/blog_firstday/</id>
+    <link href="https://www.yeying.tech/%E5%8D%9A%E4%B8%BB%E5%AF%84%E8%AF%AD/blog-firstday/"/>
+    <id>https://www.yeying.tech/%E5%8D%9A%E4%B8%BB%E5%AF%84%E8%AF%AD/blog-firstday/</id>
     <published>2019-03-05T02:13:34.000Z</published>
-    <updated>2021-07-26T18:12:03.107Z</updated>
+    <updated>2021-07-27T05:46:02.017Z</updated>
     
     
       
@@ -70,8 +187,8 @@
   
   <entry>
     <title>比赛回忆</title>
-    <link href="https://www.yeying.tech/zh-CN/Hackathon%E5%8D%8E%E4%B8%9C%E4%B9%9D%E6%A0%A1%E7%BC%96%E7%A8%8B%E5%88%9B%E5%AE%A2%E9%A9%AC%E6%8B%89%E6%9D%BE/hackathon_memory/"/>
-    <id>https://www.yeying.tech/zh-CN/Hackathon%E5%8D%8E%E4%B8%9C%E4%B9%9D%E6%A0%A1%E7%BC%96%E7%A8%8B%E5%88%9B%E5%AE%A2%E9%A9%AC%E6%8B%89%E6%9D%BE/hackathon_memory/</id>
+    <link href="https://www.yeying.tech/Hackathon%E5%8D%8E%E4%B8%9C%E4%B9%9D%E6%A0%A1%E7%BC%96%E7%A8%8B%E5%88%9B%E5%AE%A2%E9%A9%AC%E6%8B%89%E6%9D%BE/hackathon-memory/"/>
+    <id>https://www.yeying.tech/Hackathon%E5%8D%8E%E4%B8%9C%E4%B9%9D%E6%A0%A1%E7%BC%96%E7%A8%8B%E5%88%9B%E5%AE%A2%E9%A9%AC%E6%8B%89%E6%9D%BE/hackathon-memory/</id>
     <published>2020-11-29T12:20:34.000Z</published>
     <updated>2021-07-26T18:11:54.008Z</updated>
     
@@ -97,8 +214,8 @@
   
   <entry>
     <title>项目需求分析</title>
-    <link href="https://www.yeying.tech/zh-CN/Hackathon%E5%8D%8E%E4%B8%9C%E4%B9%9D%E6%A0%A1%E7%BC%96%E7%A8%8B%E5%88%9B%E5%AE%A2%E9%A9%AC%E6%8B%89%E6%9D%BE/hackathon_requirement_analysis/"/>
-    <id>https://www.yeying.tech/zh-CN/Hackathon%E5%8D%8E%E4%B8%9C%E4%B9%9D%E6%A0%A1%E7%BC%96%E7%A8%8B%E5%88%9B%E5%AE%A2%E9%A9%AC%E6%8B%89%E6%9D%BE/hackathon_requirement_analysis/</id>
+    <link href="https://www.yeying.tech/Hackathon%E5%8D%8E%E4%B8%9C%E4%B9%9D%E6%A0%A1%E7%BC%96%E7%A8%8B%E5%88%9B%E5%AE%A2%E9%A9%AC%E6%8B%89%E6%9D%BE/hackathon-requirement-analysis/"/>
+    <id>https://www.yeying.tech/Hackathon%E5%8D%8E%E4%B8%9C%E4%B9%9D%E6%A0%A1%E7%BC%96%E7%A8%8B%E5%88%9B%E5%AE%A2%E9%A9%AC%E6%8B%89%E6%9D%BE/hackathon-requirement-analysis/</id>
     <published>2020-11-29T04:20:34.000Z</published>
     <updated>2021-07-26T17:45:32.406Z</updated>
     
