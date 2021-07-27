@@ -1,6 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>博客初建</title>
+    <url>/%E5%8D%9A%E4%B8%BB%E5%AF%84%E8%AF%AD/blog-firstday/</url>
+    <content><![CDATA[<h1 align="center">HELLO 👋</h1>
+您好，
+
+<p>​        欢迎来到我的个人博客！</p>
+<p>​        平时会抽空分享一些技术文章和我学习、生活中一些有趣的事情。🎶</p>
+<p>​        此外，还可通过 “ 首页-&gt;社交 “ ，到达我在其他几个主流网站上的个人首页，希望能给您奉上有意义的内容。💪</p>
+<p>​        您还可以通过邮箱联系我，来投稿或提出宝贵意见，期待您的来信！💬</p>
+]]></content>
+      <categories>
+        <category>博主寄语</category>
+      </categories>
+      <tags>
+        <tag>欢迎</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>希腊字母</title>
     <url>/%E7%AC%94%E8%AE%B0/Greek-alphabet/</url>
     <content><![CDATA[<h1 align = "center">希腊字母及读音</h1>
@@ -205,21 +223,47 @@
       </tags>
   </entry>
   <entry>
-    <title>博客初建</title>
-    <url>/%E5%8D%9A%E4%B8%BB%E5%AF%84%E8%AF%AD/blog-firstday/</url>
-    <content><![CDATA[<h1 align="center">HELLO 👋</h1>
-您好，
+    <title>比赛回忆</title>
+    <url>/Hackathon%E5%8D%8E%E4%B8%9C%E4%B9%9D%E6%A0%A1%E7%BC%96%E7%A8%8B%E5%88%9B%E5%AE%A2%E9%A9%AC%E6%8B%89%E6%9D%BE/hackathon-memory/</url>
+    <content><![CDATA[<h1 align = "center">Hackathon编程马拉松项目</h1>
+<h3 align = "center">——微信小程序“送信鸭”</h3>
+<p>
+    <img align ="center" src = "https://pic.imgdb.cn/item/60fe7e585132923bf8be7495.png" style = "width:81px"/>
+</p>
 
-<p>​        欢迎来到我的个人博客！</p>
-<p>​        平时会抽空分享一些技术文章和我学习、生活中一些有趣的事情。🎶</p>
-<p>​        此外，还可通过 “ 首页-&gt;社交 “ ，到达我在其他几个主流网站上的个人首页，希望能给您奉上有意义的内容。💪</p>
-<p>​        您还可以通过邮箱联系我，来投稿或提出宝贵意见，期待您的来信！💬</p>
+
+
+<p>这周末参加了一个很有意思的编程比赛，想写篇文章记录一下比赛经历。 </p>
+<span id="more"></span>
+
+
+
+<h3 id="赛事信息："><a href="#赛事信息：" class="headerlink" title="赛事信息："></a>赛事信息：</h3><p>​        南京大学和微软亚洲研究院主办、由微软开发者关系部门、东南大学、南京航空航天大学、南京理工大学、苏州大学、山东大学、同济大学和华东师范大学，复旦大学联合承办的创客马拉松大赛 “Hackathon 华东 <a href="https://github.com/2020">@2020</a>” 。</p>
+<p>​        比赛形式：1-4人组成一个队伍，各高校之间可以互相组队，在24小时连续编程。</p>
+<p><strong>比赛官网：</strong> <a href="https://hackathon2020eastchina.top/">https://hackathon2020eastchina.top/</a></p>
+<h3 id="我们的队伍"><a href="#我们的队伍" class="headerlink" title="我们的队伍"></a>我们的队伍</h3><p><strong>队伍名：</strong>“觉醒吧，猎杀时刻！”</p>
+<p><strong>作品名称：</strong>微信小程序“送信鸭” </p>
+<p><strong>队伍成员：</strong> 艾山江（队长）、郭庭、阿卜杜拉、艾尔肯</p>
+<p><strong>队伍成果：</strong>我们队在24小时几乎一直没有休息，最终完成了微信小程序“送信鸭”的需求分析及部分前后端功能实现，答辩时得到评委认可，最终排名9/28。 </p>
+<h3 id="作品介绍："><a href="#作品介绍：" class="headerlink" title="作品介绍："></a>作品介绍：</h3><p>​    我们观察到2020疫情期间学校宿舍后管理室在分发学生信件、明信片等资料工作中的众多困难，准备做一个小程序来解决问题。与此同时，我们发现了此小程序在陌生人交友、青年社区等潜力，大家励志想打造一款可以<strong>邮寄、寄收实体信件、电子信件</strong>等，又包含<strong>陌生人写信社交、树洞分享故事、青年社区等精彩版块</strong>的微信小程序。</p>
+<p>​    您可以在这里给<strong>现实中的朋友邮寄实体信件、明信片等</strong>，并<strong>监控信件的分发路程</strong>，还可以<strong>查询自己待收取、收取记录</strong>；您<strong>还可以</strong>在这里给好友<strong>写电子信件、明信片、生日贺卡等</strong>，<strong>还可以倾诉故事，认识新的朋友</strong>。</p>
+<p>​    期待您的加入！</p>
+<h3 id="创意来源"><a href="#创意来源" class="headerlink" title="创意来源"></a>创意来源</h3><p>​        宿舍楼管理室宿管阿姨叫我们队员中的一位同学帮忙送一下学生的信件和明信片，一共有30多件，他花了2个小时将其中的17件送到了对应的学生宿舍，剩下那么多都是半年前，甚至一年前的信件，他到收信人宿舍发现已经换了新生。。。<br>​    有些信件上面除了<strong>学生宿舍号</strong>，还有<strong>电话号码</strong>，他打通了几个电话，对方有些人表示<strong>因为疫情原因，很长时间没开学这个信件一直没能过来取，还有一些人表示才知道自己有这么一封信！</strong><br>​    我们宿舍楼的学生信件其实已经放到很显眼的位置了，就在宿管阿姨值班的窗口那里，学生可以随时过去领自己的信件，如果寄信也可到窗口委托阿姨寄信。那为什么有那么多信件没人来领，而且在阿姨那里放了那么久呢？<br>​    <strong>这件事激发了我们的关注，大家一致同意在这次黑客松编程马拉松的比赛中，利用自己的技术帮助宿管阿姨们解决困难。</strong><br>​    对此事进行了深入调研发现，我们宿舍楼的信箱里，有大概几种类型的信件：来自好友的信件、明信片及贺卡，书店邮寄的书本及杂志，银行贷款账单，有些合同等。<br>​    信件封面一般都会标有收信<strong>姓名、地址（具体到宿舍号）、电话号</strong>等，<strong>个别还有寄信日期</strong>   ，正好这些信息可以利用我们的技术手段给同学们和宿管阿姨们提供便利的信件查询服务，还可以提供更加高效的寄信服务。</p>
+<p>​    再进行了<strong>充分的需求分析</strong>后，我们准备制作微信小程序，并且已经完成了部分页面和功能的开发。<strong>希望尽快完成全部任务的开发和部署上线，期待与大家早日见面！！！</strong>  </p>
+<h3 id="作品预览："><a href="#作品预览：" class="headerlink" title="作品预览："></a>作品预览：</h3><p>
+    <img align ="center" src = "https://pic.imgdb.cn/item/60fe7eb35132923bf8bfc0a8.png"/>
+    <h3 align ="center">作品预览.png</h3>
+</p>    
+
+<h3 id="代码仓库"><a href="#代码仓库" class="headerlink" title="代码仓库"></a>代码仓库</h3><p>​    仓库地址：<a href="https://github.com/juexingle">https://github.com/juexingle</a> </p>
+<p>​    说明：在比赛公示期间结束后本仓库将会设置<strong>private</strong> 权限。</p>
+<h3 id="关于版权信息"><a href="#关于版权信息" class="headerlink" title="关于版权信息"></a>关于版权信息</h3><p>​    本项目属于Hackathon 2020参赛队伍 “觉醒吧，猎杀时刻！” 参赛作品及原创微信小程序，欢迎大家前来体验和提出建议，请勿用于商业用途。谢谢！</p>
 ]]></content>
       <categories>
-        <category>博主寄语</category>
+        <category>Hackathon华东九校编程创客马拉松</category>
       </categories>
       <tags>
-        <tag>欢迎</tag>
+        <tag>个人项目</tag>
       </tags>
   </entry>
   <entry>
@@ -315,50 +359,6 @@
       </categories>
       <tags>
         <tag>github</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>比赛回忆</title>
-    <url>/Hackathon%E5%8D%8E%E4%B8%9C%E4%B9%9D%E6%A0%A1%E7%BC%96%E7%A8%8B%E5%88%9B%E5%AE%A2%E9%A9%AC%E6%8B%89%E6%9D%BE/hackathon-memory/</url>
-    <content><![CDATA[<h1 align = "center">Hackathon编程马拉松项目</h1>
-<h3 align = "center">——微信小程序“送信鸭”</h3>
-<p>
-    <img align ="center" src = "https://pic.imgdb.cn/item/60fe7e585132923bf8be7495.png" style = "width:81px"/>
-</p>
-
-
-
-<p>这周末参加了一个很有意思的编程比赛，想写篇文章记录一下比赛经历。 </p>
-<span id="more"></span>
-
-
-
-<h3 id="赛事信息："><a href="#赛事信息：" class="headerlink" title="赛事信息："></a>赛事信息：</h3><p>​        南京大学和微软亚洲研究院主办、由微软开发者关系部门、东南大学、南京航空航天大学、南京理工大学、苏州大学、山东大学、同济大学和华东师范大学，复旦大学联合承办的创客马拉松大赛 “Hackathon 华东 <a href="https://github.com/2020">@2020</a>” 。</p>
-<p>​        比赛形式：1-4人组成一个队伍，各高校之间可以互相组队，在24小时连续编程。</p>
-<p><strong>比赛官网：</strong> <a href="https://hackathon2020eastchina.top/">https://hackathon2020eastchina.top/</a></p>
-<h3 id="我们的队伍"><a href="#我们的队伍" class="headerlink" title="我们的队伍"></a>我们的队伍</h3><p><strong>队伍名：</strong>“觉醒吧，猎杀时刻！”</p>
-<p><strong>作品名称：</strong>微信小程序“送信鸭” </p>
-<p><strong>队伍成员：</strong> 艾山江（队长）、郭庭、阿卜杜拉、艾尔肯</p>
-<p><strong>队伍成果：</strong>我们队在24小时几乎一直没有休息，最终完成了微信小程序“送信鸭”的需求分析及部分前后端功能实现，答辩时得到评委认可，最终排名9/28。 </p>
-<h3 id="作品介绍："><a href="#作品介绍：" class="headerlink" title="作品介绍："></a>作品介绍：</h3><p>​    我们观察到2020疫情期间学校宿舍后管理室在分发学生信件、明信片等资料工作中的众多困难，准备做一个小程序来解决问题。与此同时，我们发现了此小程序在陌生人交友、青年社区等潜力，大家励志想打造一款可以<strong>邮寄、寄收实体信件、电子信件</strong>等，又包含<strong>陌生人写信社交、树洞分享故事、青年社区等精彩版块</strong>的微信小程序。</p>
-<p>​    您可以在这里给<strong>现实中的朋友邮寄实体信件、明信片等</strong>，并<strong>监控信件的分发路程</strong>，还可以<strong>查询自己待收取、收取记录</strong>；您<strong>还可以</strong>在这里给好友<strong>写电子信件、明信片、生日贺卡等</strong>，<strong>还可以倾诉故事，认识新的朋友</strong>。</p>
-<p>​    期待您的加入！</p>
-<h3 id="创意来源"><a href="#创意来源" class="headerlink" title="创意来源"></a>创意来源</h3><p>​        宿舍楼管理室宿管阿姨叫我们队员中的一位同学帮忙送一下学生的信件和明信片，一共有30多件，他花了2个小时将其中的17件送到了对应的学生宿舍，剩下那么多都是半年前，甚至一年前的信件，他到收信人宿舍发现已经换了新生。。。<br>​    有些信件上面除了<strong>学生宿舍号</strong>，还有<strong>电话号码</strong>，他打通了几个电话，对方有些人表示<strong>因为疫情原因，很长时间没开学这个信件一直没能过来取，还有一些人表示才知道自己有这么一封信！</strong><br>​    我们宿舍楼的学生信件其实已经放到很显眼的位置了，就在宿管阿姨值班的窗口那里，学生可以随时过去领自己的信件，如果寄信也可到窗口委托阿姨寄信。那为什么有那么多信件没人来领，而且在阿姨那里放了那么久呢？<br>​    <strong>这件事激发了我们的关注，大家一致同意在这次黑客松编程马拉松的比赛中，利用自己的技术帮助宿管阿姨们解决困难。</strong><br>​    对此事进行了深入调研发现，我们宿舍楼的信箱里，有大概几种类型的信件：来自好友的信件、明信片及贺卡，书店邮寄的书本及杂志，银行贷款账单，有些合同等。<br>​    信件封面一般都会标有收信<strong>姓名、地址（具体到宿舍号）、电话号</strong>等，<strong>个别还有寄信日期</strong>   ，正好这些信息可以利用我们的技术手段给同学们和宿管阿姨们提供便利的信件查询服务，还可以提供更加高效的寄信服务。</p>
-<p>​    再进行了<strong>充分的需求分析</strong>后，我们准备制作微信小程序，并且已经完成了部分页面和功能的开发。<strong>希望尽快完成全部任务的开发和部署上线，期待与大家早日见面！！！</strong>  </p>
-<h3 id="作品预览："><a href="#作品预览：" class="headerlink" title="作品预览："></a>作品预览：</h3><p>
-    <img align ="center" src = "https://pic.imgdb.cn/item/60fe7eb35132923bf8bfc0a8.png"/>
-    <h3 align ="center">作品预览.png</h3>
-</p>    
-
-<h3 id="代码仓库"><a href="#代码仓库" class="headerlink" title="代码仓库"></a>代码仓库</h3><p>​    仓库地址：<a href="https://github.com/juexingle">https://github.com/juexingle</a> </p>
-<p>​    说明：在比赛公示期间结束后本仓库将会设置<strong>private</strong> 权限。</p>
-<h3 id="关于版权信息"><a href="#关于版权信息" class="headerlink" title="关于版权信息"></a>关于版权信息</h3><p>​    本项目属于Hackathon 2020参赛队伍 “觉醒吧，猎杀时刻！” 参赛作品及原创微信小程序，欢迎大家前来体验和提出建议，请勿用于商业用途。谢谢！</p>
-]]></content>
-      <categories>
-        <category>Hackathon华东九校编程创客马拉松</category>
-      </categories>
-      <tags>
-        <tag>个人项目</tag>
       </tags>
   </entry>
   <entry>
@@ -631,24 +631,24 @@
     <content><![CDATA[]]></content>
   </entry>
   <entry>
-    <title>friends</title>
-    <url>/friends/index.html</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
     <title>《Y 你》</title>
     <url>/photos/index.html</url>
-    <content><![CDATA[<!--
-<h3 align="left" >诗词全文：</h3>
-<h2 align="center" >《Y 你》</h2>
+    <content><![CDATA[<h2 align="center" >《Y 你》</h2>
 <p align="center">艾亭湖边挂晚霞，紫金之巅坠悬崖。</p>
 <p align="center">小块身边幸有他，驰骋天下从不怕。</p>
 <p align="center">呆子与你永相伴，无畏春寒夏日炎。</p>
 <p align="center">巴卜可愿为57， 1314Y你。</p>
--->
+
+
+
 
 
 ]]></content>
+  </entry>
+  <entry>
+    <title>friends</title>
+    <url>/friends/index.html</url>
+    <content><![CDATA[]]></content>
   </entry>
   <entry>
     <title>标签</title>
