@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+
+
+<html lang="zh-CN">
+  
+
+    <head>
+      <meta charset="utf-8" />
+       
+      <meta name="keywords" content="YeYing,Blog,夜莺,博客,夜莺悠吟,yeying.tech,www.yeying.tech" />
+       
+      <meta name="description" content="挑灯夜战，常闻夜莺悠吟...停笔共鸣...悲壮、坚定！&lt;br&gt;心酸背后总有值得坚持的理由💪请坚持！&lt;br&gt; 珍惜身边的人！ 小快y你❤" />
+      
+      <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1"
+      />
+      <title>软件测试-6 |  夜莺悠吟</title>
+  <meta name="generator" content="hexo-theme-ayer">
+      
+      <link rel="shortcut icon" href="/favicon.ico" />
+       
+<link rel="stylesheet" href="/dist/main.css">
+
+      <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/Shen-Yu/cdn/css/remixicon.min.css"
+      />
+      
+<link rel="stylesheet" href="/css/custom.css">
+ 
+      <script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+       
+ 
+
+      <!-- mermaid -->
+      
+    <link rel="alternate" href="/atom.xml" title="夜莺悠吟" type="application/atom+xml">
+</head>
+  </html>
+</html>
+
+
+<body>
+  <div id="app">
+    
+      
+    <main class="content on">
+      <section class="outer">
+  
+<article
+  id="post-software-testing-6"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h1 class="article-title sea-center" style="border-left:0" itemprop="name">
+  软件测试-6
+</h1>
+ 
+
+      
+    </header>
+     
+    <div class="article-meta">
+      <a href="/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/software-testing-6/" class="article-date">
+  <time datetime="2019-05-28T06:24:21.000Z" itemprop="datePublished">2019-05-28</time>
+</a> 
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/">软件测试</a>
+  </div>
+  
+<div class="word_count">
+    <span class="post-time">
+        <span class="post-meta-item-icon">
+            <i class="ri-quill-pen-line"></i>
+            <span class="post-meta-item-text"> 字数统计:</span>
+            <span class="post-count">7k</span>
+        </span>
+    </span>
+
+    <span class="post-time">
+        &nbsp; | &nbsp;
+        <span class="post-meta-item-icon">
+            <i class="ri-book-open-line"></i>
+            <span class="post-meta-item-text"> 阅读时长≈</span>
+            <span class="post-count">23 分钟</span>
+        </span>
+    </span>
+</div>
+ 
+    </div>
+      
+    <div class="tocbot"></div>
+
+
+
+
+  
+    <div class="article-entry" itemprop="articleBody">
+       
+  <h1 id="软件测试方法"><a href="#软件测试方法" class="headerlink" title="软件测试方法"></a>软件测试方法</h1><p>主要介绍软件测试的方法，包括白盒测试、灰盒测试、黑盒测试、静态测试、动态测试、手动测试、自动测试以及用例设计方法等。</p>
+<h1 id="测试方法划分"><a href="#测试方法划分" class="headerlink" title="测试方法划分"></a>测试方法划分</h1><p>测试方法一般按以下几种划分：</p>
+<ul>
+<li><p>按照执行阶段划分为：白盒测试、黑盒测试、灰盒测试。</p>
+</li>
+<li><p>按照执行状态划分为：静态测试、动态测试。</p>
+</li>
+<li><p>按照执行行为划分为：手动测试、自动测试。</p>
+</li>
+</ul>
+<span id="more"></span>
+
+<h1 id="白盒测试"><a href="#白盒测试" class="headerlink" title="白盒测试"></a>白盒测试</h1><p>白盒测试（White Box Testing）又称结构测试、逻辑驱动测试或基于代码的测试，主要检查产品内部结构是否按照规格说明书的规定正常运行。白盒测试是一种测试用例设计方法，盒子指的是被测试的软件，白盒顾名思义是指盒子是可视的，观察者清楚盒子内部的东西以及里面是如何运作的，因此，白盒测试需要测试人员对系统内部的结构和工作原理有一个清楚的了解。</p>
+<h1 id="黑盒测试"><a href="#黑盒测试" class="headerlink" title="黑盒测试"></a>黑盒测试</h1><p>黑盒测试（Black Box Testing）也称功能测试，主要来检测每个功能是否都能正常使用。它也是在软件测试中使用最广泛的一类测试。</p>
+<p>在黑盒测试中，通常把程序看作一个不能打开的黑盒子，在完全不考虑程序内部结构和内部特性的情况下，对程序接口进行测试，它只检查程序功能是否按照需求规格说明书的规定正常使用，程序是否能适当地接收输入数据而产生正确的输出信息。</p>
+<p><img src="https://cdn.nlark.com/yuque/0/2020/png/87080/1601901151390-0f558b40-d3b6-4bbf-8ca6-8491514d1598.png" alt="img"></p>
+<p>由于黑盒测试着眼于程序外部结构，不考虑内部逻辑结构，主要针对软件界面和软件功能进行测试。所以黑盒测试是以用户的角度，从输入数据与输出数据的对应关系出发进行测试的。关注的是软件的功能需求，主要试图发现以下类型的错误：</p>
+<ul>
+<li><p>功能是否正确，是否有遗漏。</p>
+</li>
+<li><p>界面是否错误。</p>
+</li>
+<li><p>数据结构或外部数据库访问错误。</p>
+</li>
+<li><p>性能错误。</p>
+</li>
+</ul>
+<p>在实际工作中，最常见的黑盒测试方法有：功能性测试、性能测试、安全性测试、兼容性测试、稳定性测试、可靠性测试以及安装卸载测试等。</p>
+<p>从理论上讲，黑盒测试只有采用穷举输入测试，把所有可能的输入都作为测试情况进行考虑，才能查出程序中所有的错误。因为穷举测试是不可能的，所以要有针对性地选择测试用例。通过制定测试案例指导测试的实施，保证软件测试有组织、有计划地进行。只有对黑盒测试进行量化，才能保证软件的质量，具体量化的方法之一就是测试用例。</p>
+<p>黑盒测试用例设计方法包括<strong>等****价类划分法、边界值分析法、判定表分析法、因果图分析法、正交试验法、流程分析法、状态迁移法、异常分析法以及错误推测法等</strong>。</p>
+<h2 id="等价类划分法"><a href="#等价类划分法" class="headerlink" title="等价类划分法"></a>等价类划分法</h2><p>等价类划分法是一种典型的黑盒测试用例设计方法，使用等价类划分，是将软件的输入域分为若干部分，然后从每个部分中选取少数具有代表性的数据进行测试，这样可以避免穷举产生的大量用例。</p>
+<p>等价类是指某个输入域的子集合，在该子集合中，每个输入数据对于揭露软件中的错误都是等效的。简单地说，就是指输入该输入域中的某一个数据，如不能揭露被测对象中的缺陷，那么我们就说这个输入域中的所有数据都无法揭露该缺陷，反之亦然。</p>
+<p>等价类划分一般划分为两种情况：有效等价类和无效等价类。</p>
+<ul>
+<li><strong>有效等价类</strong>：对需求规格说明而言，合理的、有效的输入数据构成的集合。</li>
+<li><strong>无效等价类</strong>：对需求规格说明而言，不合理的、无效的输入数据构成的集合。</li>
+</ul>
+<p>因为软件不仅要能接收合理的数据，不合理的数据也需要做出正确响应，所以在设计测试用例时，两种等价类都需要考虑，这样的测试才能确保软件具有更高的可靠性。</p>
+<p>根据需求规格说明书确定被测对象的输入域，进行等价类划分。等价类划分的标准，划分的子集必须是互不相交的，符合完备测试，避免出现冗余。</p>
+<p>等价类划分法的划分原则，通常按照以下规则进行划分等价类：</p>
+<p>1）如果规定输入的取值范围或个数时，则划分一个有效等价类和两个无效等价类。如：注册用户名的长度限制6～18个字符，6～18个字符是有效等价类，小于6个字符和大于18个字符则是两个无效等价类。</p>
+<p>2）如果规定了输入的集合或规则必须要遵循的条件，则划分一个有效等价类，和一个无效等价类。如：注册用户名的格式要求必须以字母开头时，以字母开头是有效等价类，非字母开头则是无效等价类。</p>
+<p>3）如果输入条件是一个布尔值，则划分为一个有效等价类和一个无效等价类。如：在注册用户时需要遵循协议或条款是否接受时，“接受”是有效等价类，“不接受”则是无效等价类。</p>
+<p>4）如果输入条件是一组数据（枚举值），并且程序对每一个输入的值做不同的处理，则化为若干个有效等价类和一个无效等价类。如：网游中充值VIP等级（3个等价），对每个VIP的等级优惠不同，VIP1、VIP2、VIP3不同等级是三个有效等价类，不是VIP用户则是无效等价类。</p>
+<p>5）如果输入条件规定了必须要遵循的某些规则下，则划分为一个有效等价类和若干个无效等价类（无效等价类需要从不同的角度去违反规则）。如：密码要求首位必须是大写字母的，首字母大写是有效等价类，首位小写字母的、首位为数字的或首位为特殊字符的则是无效等价类。</p>
+<p>6）不是所有的等价类都有无效等价类。如性别的选择只有男或女两种。</p>
+<h3 id="【案例解析】"><a href="#【案例解析】" class="headerlink" title="【案例解析】"></a>【案例解析】</h3><p>某网站的用户注册的需求说明，用户名为必填项，要求长度为6～18个字符，并由字母、数字、下划线组成，必须以字母开头，结尾必须是数字或字母，而且不区分大小写字母，重名账号不允许注册。密码为必填项，要求8～15个字符，首位必须是大写字母，而且区分大小写字母。确认密码，要求与密码输入一致。</p>
+<p><img src="https://cdn.nlark.com/yuque/0/2020/png/87080/1601901703384-f29d9620-6b8c-40e8-a450-37a10ba529f1.png" alt="img"></p>
+<p>根据上面需求说明，首先进行划分等价类。经过细化后并将有效等价类和无效等价类填入等价类划分设计表中，并进行编号</p>
+<p><img src="https://cdn.nlark.com/yuque/0/2020/png/87080/1601902008514-459e4650-2615-4868-9065-426212943269.png" alt="img"></p>
+<p>根据覆盖的规则，将测试数据覆盖的有效和无效等价类编号填入表中</p>
+<p><img src="https://cdn.nlark.com/yuque/0/2020/png/87080/1601902036904-54313a00-44dd-48c1-a6b3-ecbe157dbe02.png" alt="img"></p>
+<p>最后根据上面的测试数据设计对应的测试用例</p>
+<p><img src="https://cdn.nlark.com/yuque/0/2020/png/87080/1601902075531-116778e1-e87f-4d28-b328-bd0683fb1151.png" alt="img"></p>
+<h2 id="边界值分析法"><a href="#边界值分析法" class="headerlink" title="边界值分析法"></a>边界值分析法</h2><p>边界值分析法是对等价类划分法的一个补充，该方法不仅需要考虑输入域的边界，而且还要关注输出域的边界。由长期的测试工作经验得知，大量的错误发生在输入和输出范围的边界上。因此针对各种边界情况设计用例，可以查出更多的错误。</p>
+<p>该方法一般在规定了取值范围或规定了值的个数，或者明确输入条件的有序集合中使用。</p>
+<p>通常按照以下规则进行边界点的划分：</p>
+<ul>
+<li><p>如果规定了输入域的取值范围，则选取刚好在范围边界的点，以及刚好超过边界的点，作为测试的输入数据。</p>
+</li>
+<li><p>如果规定了输入值的个数，则用最大个数，最小个数，比最小个数少1，比最大个数多1的数作为测试数据。</p>
+</li>
+<li><p>如果规定了输入是一个有序的集合，则选取集合的第一个元素和最后一个元素作为测试数据。</p>
+</li>
+</ul>
+<h3 id="【案例解析】-1"><a href="#【案例解析】-1" class="headerlink" title="【案例解析】"></a>【案例解析】</h3><p>某银行系统，允许用户通过日期对交易进行查询，系统对输入日期的限定为1990年1月～2049年12月，并规定：日期由6位数字字符组成，前4位表示年，后2位表示月。</p>
+<p>分析输入条件有6位数字字符，年份的范围，月份范围，</p>
+<table>
+<thead>
+<tr>
+<th>输入条件</th>
+<th>有效等价类</th>
+<th>有效边界点</th>
+<th>无效等价类</th>
+<th>无效边界点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>日期长度</td>
+<td>6位数字字符</td>
+<td>6位</td>
+<td>小于6位数字字符</td>
+<td>5位</td>
+</tr>
+<tr>
+<td>大于6位数字字符</td>
+<td>7位</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>日期类型</td>
+<td>数字字符</td>
+<td>无</td>
+<td>非数字字符</td>
+<td>无</td>
+</tr>
+<tr>
+<td>年份范围</td>
+<td>1990-2049</td>
+<td>1990,2049 1991,2048</td>
+<td>小于1990</td>
+<td>1989</td>
+</tr>
+<tr>
+<td>大于2049</td>
+<td>2050</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>月份范围</td>
+<td>01-12</td>
+<td>01,12 02,11</td>
+<td>小于1</td>
+<td>00</td>
+</tr>
+<tr>
+<td>大于12</td>
+<td>13</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<h2 id="判定表分析法"><a href="#判定表分析法" class="headerlink" title="判定表分析法"></a>判定表分析法</h2><p>在等价类设计法中，没有考虑输入域的组合情况，导致设计的用例中无法覆盖输入域之间存在关联的地方。为了弥补等价类设计的不足，这里介绍一种新的用例设计方法——判定表分析法。</p>
+<p>判定表分析法主要是分析和表达多种输入条件下系统执行不同动作的技术。在程序设计发展的初期，判定表就已被当作编写程序的辅助工具了，它可以把复杂的逻辑关系和多种条件组合的情况表达得很明确。判定表由四个部分组成，</p>
+<p><img src="https://cdn.nlark.com/yuque/0/2020/png/87080/1601902548319-855aff0c-1b5e-4350-9ea3-3f2c664a6eff.png" alt="img"></p>
+<p>1）条件桩：列出被测对象的所有输入，并列出输入条件与次序无关。</p>
+<p>2）动作桩：列出输入条件系统可能采取的操作，这些操作的排序顺序没有约束。</p>
+<p>3）条件项：列出输入条件的其他取值，在所有可能情况下的真假值。</p>
+<p>4）动作项：列出在条件项的各种取值情况下应采取的动作。</p>
+<h3 id="【案例解析】-2"><a href="#【案例解析】-2" class="headerlink" title="【案例解析】"></a>【案例解析】</h3><p>书籍阅读指南，需求描述如下：</p>
+<p>1）觉得疲倦但对书的内容感兴趣，同时书的内容让你糊涂，回到本章重读。</p>
+<p>2）觉得疲倦但对书的内容感兴趣，同时书的内容不让你糊涂，继续读下去。</p>
+<p>3）不觉得疲倦并对书的内容感兴趣，同时书的内容让你糊涂的话，回到本章重读。</p>
+<p>4）觉得疲倦并对书的内容不感兴趣，同时书的内容不让你糊涂，停止阅读休息。</p>
+<p>5）觉得疲倦并对书的内容不感兴趣，并且书的内容让你糊涂，请停止阅读休息。</p>
+<p>6）不疲倦，对书的内容感兴趣，书的内容不糊涂，继续读下去。</p>
+<p>7）不疲倦，不感兴趣，对书的内容糊涂，跳到下一章去读。</p>
+<p>8）不疲倦，不感兴趣，对书的内容不糊涂，跳到下一章去读。</p>
+<p>首先分析条件桩和动作桩，条件项有您觉得疲倦吗、您对书中的内容感兴趣吗、书的内容让你糊涂吗；动作桩有回到本章重读、继续读下去、跳到下一章去读、请停止阅读休息。</p>
+<p>其次根据条件来计算规则23个（即8），构成判定表.</p>
+<p><img src="https://cdn.nlark.com/yuque/0/2020/png/87080/1601902972776-93d32d61-040d-41bc-9c9d-7b2992df9b9a.png" alt="img"></p>
+<p>再根据合并规则，将1和5、2和6、3和4、7和8合并得到判定表</p>
+<p><img src="https://cdn.nlark.com/yuque/0/2020/png/87080/1601902988473-ad1004b6-c5cd-4a0e-8d33-68918e2fe98c.png" alt="img"></p>
+<p>合并后只剩4条规则，看上去用例数减少了，但是很容易产生漏测的风险。</p>
+<h2 id="因果图分析法"><a href="#因果图分析法" class="headerlink" title="因果图分析法"></a>因果图分析法</h2><p>在利用判定表设计用例的过程中，如果条件过多，导致设计判定表比较困难。为了弥补该缺点，接下来介绍一种新的测试用例设计方法——因果图分析法。</p>
+<p>因果图分析法是分析输入条件之间的约束情况，然后生成判定表，进行用例设计。下面介绍一下因果图的基本图形符号：因果符号和约束符号。</p>
+<h3 id="因果符号"><a href="#因果符号" class="headerlink" title="因果符号"></a>因果符号</h3><p>因果是指输入和输出的因果关系。因果符号有<strong>恒等、非、或、与</strong>四种表示方法，如图所示，其中c1表示输入的状态，即原因、e1表示输出的状态，即结果。c1和e1均可取值0或1（0表示某状态不出现，1表示某状态出现）。</p>
+<p><img src="https://cdn.nlark.com/yuque/0/2020/png/87080/1601903308725-fa197435-6e4e-43e4-9cf4-0010a67bf696.png" alt="img"></p>
+<ul>
+<li><p><strong>恒等</strong>：当输入条件发生时，则一定会产生对应的输出；相反当输入条件不发生时，则不产生对应的输出。即c1为1时，e1一定为1；否则c1为0，e1一定为0；</p>
+</li>
+<li><p><strong>非</strong>：与恒等相反，当输入条件发生时，则不产生对应的输出；反之亦然。即c1为1时，e1一定为0；否则c1为0，e1一定为1；</p>
+</li>
+<li><p><strong>或</strong>：当输入多个条件时，只要有其中一个条件发生，则产生对应的输出。即只要c1、c2、c3其中一个为1，则e1为1；只有c1、c2、c3全部为0时，e1才为0；</p>
+</li>
+<li><p><strong>与</strong>：当输入多个条件时，只有所有的输入条件发生时，才会产生对应的输出。即c1、c2都为1时，e1才为1；只要c1、c2其中一个为0，e1为0。</p>
+</li>
+</ul>
+<h3 id="约束符号"><a href="#约束符号" class="headerlink" title="约束符号"></a>约束符号</h3><p>约束是指输入与输入之间存在的某些依赖关系，称为约束。约束符号有<strong>异、或、唯一、要求、强制</strong>五种表示方法，其中前面四种是针对输入条件的约束，最后一种强制只针对输出条件的约束。</p>
+<p>其中a，b分别代表条件。条件的取值0或1（0表示某状态不出现，1表示某状态出现）。</p>
+<p><img src="https://cdn.nlark.com/yuque/0/2020/png/87080/1601903437579-4ee38fa4-b813-448a-98ec-46f77071a330.png" alt="img"></p>
+<ul>
+<li><p><strong>异</strong>：在所有输入条件中，至多有一个可能不发生。即图4-11中，a和b最多只有一个为1，不能同时为1，但可以同时为0。</p>
+</li>
+<li><p><strong>或</strong>：在所有输入条件中，至少有一个发生。即图4-11中，a、b、c最少有一个为1，不能同时为0，但可以同时为1。</p>
+</li>
+<li><p><strong>唯一</strong>：在所有输入条件中，有且只有一个发生。即图4-11中，a和b，只有一个为1，不能同时为1，也不能同时为0。</p>
+</li>
+<li><p><strong>要求</strong>：在所有输入条件中，只要有一个发生，则要求其他条件也发生。即图4-11中，a和b，a为1时，要求b也为1。</p>
+</li>
+<li><p><strong>强制</strong>：是针对结果的约束关系，当一个结果发生，强制另一个结果不发生。</p>
+</li>
+</ul>
+<h3 id="【案例解析】-3"><a href="#【案例解析】-3" class="headerlink" title="【案例解析】"></a>【案例解析】</h3><p>需求规定：当输入的第一列字符必须是X或Y，第二列字符必须是一个数字时，对文件进行修改，如果第一列字符不正确，则给出信息A；如果第二列字符不正确，则给出信息B。</p>
+<p>首先分析原因和结果，并进行编号</p>
+<p><img src="https://cdn.nlark.com/yuque/0/2020/png/87080/1601903584378-3f22679c-c051-4c97-8088-fa8212324195.png" alt="img"></p>
+<p>再根据它们之间的对应关系，画出因果图并标记约束符号</p>
+<p><img src="https://cdn.nlark.com/yuque/0/2020/png/87080/1601903614195-18e62304-e034-4eed-af88-425136c5d769.png" alt="img"></p>
+<p>再根据因果图转换为判定表（Y代表出现、N代表不出现）</p>
+<p><img src="https://cdn.nlark.com/yuque/0/2020/png/87080/1601903635420-647c78b4-7f35-493d-b89f-744e6441568f.png" alt="img"></p>
+<p>由于原因1和2不可能同时出现，故规则1、2属于不可能发生的组合，即1、2规则的测试用例可以不考虑。最终生成的测试用例就是规则3、4、5、6、7、8共计六条。</p>
+<h2 id="正交试验法"><a href="#正交试验法" class="headerlink" title="正交试验法"></a>正交试验法</h2><p>正交试验法是从大量的试验点中挑选出适量的、有代表性的点，应用依据迦罗瓦理论导出的“正交表”，合理的安排试验的一种科学的试验设计方法。它是根据正交性从全面试验中挑选出部分有代表性的点进行试验，这些有代表性的点具备了“均匀分散，齐整可比”的特点，是研究多因素多层次采样点的一种设计方法，正交试验设计是一种基于正交表的、高效率、快速、经济的试验设计方法。</p>
+<p>正交试验中常用的术语有指标、因子、因子状态三个。</p>
+<ul>
+<li><p><strong>指标</strong>：通常把判断试验结果优劣的标准叫做试验的指标。</p>
+</li>
+<li><p><strong>因子</strong>：把所有影响试验指标的条件称为因子。</p>
+</li>
+<li><p><strong>因子的状态</strong>：把影响试验因子称为因子的状态。</p>
+</li>
+</ul>
+<p>正交试验表示形式有2种：Lr（mn）或Lr（mn，pq），其中n、q代表因子数，即正交表中的列；m、p代表水平数也称状态，即单个因子取的最大数；r代表行数，正交表中行的数量，即测试用例数。简单地说正交试验法就是测试组合的方法，这一点跟判定表法类似，但是判定表法是通过人工对全排列组合来进行化简得到测试用例，而正交试验法是借助数学工具，通过算法从全排列组合中选择组合并放到正交表中，通过查看合适的正交表，可以直接得到测试用例。正交表的原理就是两两组合。</p>
+<h3 id="【案例解析】-4"><a href="#【案例解析】-4" class="headerlink" title="【案例解析】"></a>【案例解析】</h3><p>某数据库查询系统，规定查询条件，可以按照功能、结构、逻辑符号等查询类别进行查询；也可按照简单、组合、条件等查询方式进行查询；还可以按照元门、功能块等元胞类别进行查询；还可以按照终端显示、图形显示、行式打印等打印方式进行查询。</p>
+<p>根据规定分析因子和因子的状态，可得到因子——状态表</p>
+<p><img src="https://cdn.nlark.com/yuque/0/2020/png/87080/1601904522378-abcdfb10-6560-4141-a719-f9ef4c52de23.png" alt="img"></p>
+<p>根据规格分析，在上表中，因为打印方式的权值和查询类别中逻辑符号的权值比较小，所以我们将这些权值比较小的因子或状态进行加权筛选，得到分析表，</p>
+<p><img src="https://cdn.nlark.com/yuque/0/2020/png/87080/1601904545491-7d01f13d-42d1-42f6-bd45-85e91855c0ff.png" alt="img"></p>
+<p>再将上面的查询方式中简单和组合进行合并，得到组合后的因素表</p>
+<p><img src="https://cdn.nlark.com/yuque/0/2020/png/87080/1601904560525-81e43fae-6137-44a1-8cb4-0fcae010ca56.png" alt="img"></p>
+<p>再将合并后的因素表，替换到正交表3因子2状态中</p>
+<p><img src="https://cdn.nlark.com/yuque/0/2020/png/87080/1601904583819-2e3adc9e-b362-44e3-8bd8-ffd9962019a1.png" alt="img"></p>
+<p>进行分解，最后得到具有6条测试用例的测试数据集</p>
+<p><img src="https://cdn.nlark.com/yuque/0/2020/png/87080/1601904616911-d0f1262d-2045-48ea-a9b7-3037b0e586e8.png" alt="img"></p>
+<p>根据表途中中每行的测试数据生成测试用例。需要注意的是，在最后设计用例时，需要补充已筛选权值比较小的测试用例，即查询类别为逻辑符号的测试用例。</p>
+<p>因为在正交表中有4因子3状态，所以该案例还可以采用直接补空状态进行设计用例。然后再用其他状态替换补空的状态（即空状态可以用门或功能块替换）</p>
+<p><img src="https://cdn.nlark.com/yuque/0/2020/png/87080/1601904728119-ca564d76-e90b-43f8-9378-171ff19809e8.png" alt="img"></p>
+<p>虽然该方法在工作中使用比较广泛，但需要注意正交表中包含的组合并没有考虑实际取值的意义，因此可能出现无效的组合。在设计中需要删除无效组合，还需要补充遗漏的常见组合。</p>
+<h2 id="流程分析法"><a href="#流程分析法" class="headerlink" title="流程分析法"></a>流程分析法</h2><p>流程分析法也称场景法，主要是针对测试场景类型。它是从白盒测试设计方法中的路径覆盖分析法演变过来的一种重要的方法。在白盒测试中，路径就是指函数代码的某个分支组合，路径覆盖法需要构造足够的用例覆盖函数的所有代码路径。在黑盒测试中，若将软件系统的某个流程看成路径的话，则可以针对该路径使用路径分析的方法设计测试用例。</p>
+<p>在实际工作中，流程分析法是最容易理解和执行的，它是主要通过流程对系统的功能点或业务流程进行描述，可以展示测试效果。流程分析法一般包含基本流和备选流，从一个流程开始，通过描述经过的路径来遍历所有的基本流和备选流。</p>
+<ul>
+<li>基本流：是指程序的主流程，是实现业务流程最简单的路径。</li>
+<li>备选流：是指实现业务流程时，因错误操作或者是异常操作，导致最终未达到目的流程。</li>
+</ul>
+<p>直线表示基本流；其他曲线表示为备选流。由图可以看到，一个备选流可以从基本流开始；也可以从备选流开始。备选流的终点，可以是一个流程的出口，也可以是回到基本流，还可以是汇入其他的备选流。可以确认的流程如下所示：</p>
+<p><img src="https://cdn.nlark.com/yuque/0/2020/png/87080/1601904816758-71340bec-3cea-4f15-851f-372f9ba607a6.png" alt="img"></p>
+<p>流程1：基本流</p>
+<p>流程2：基本流→备选流1</p>
+<p>流程3：基本流→备选流1→备选流2</p>
+<p>流程4：基本流→备选流3</p>
+<p>流程5：基本流→备选流3→备选流1</p>
+<p>流程6：基本流→备选流3→备选流1→备选流2</p>
+<p>流程7：基本流→备选流4</p>
+<p>流程8：基本流→备选流3→备选流4</p>
+<h3 id="【案例解析】-5"><a href="#【案例解析】-5" class="headerlink" title="【案例解析】"></a>【案例解析】</h3><p>某银行ATM取款机的取款流程进行测试。首先画取款的流程图</p>
+<p><img src="https://cdn.nlark.com/yuque/0/2020/jpeg/87080/1601904931891-5f500bd8-5f50-413a-adac-d5fc0a34575d.jpeg" alt="img"></p>
+<p><img src="https://cdn.nlark.com/yuque/0/2020/jpeg/87080/1601904974673-79b4a2f7-4852-4342-9140-cc8db38a767c.jpeg" alt="img"></p>
+<p>其次生成ATM取款的流程</p>
+<p><img src="https://cdn.nlark.com/yuque/0/2020/jpeg/87080/1601905015512-b4583280-87b7-4104-b8ec-090bc03995b4.jpeg" alt="img"> </p>
+<h2 id="状态迁移法"><a href="#状态迁移法" class="headerlink" title="状态迁移法"></a>状态迁移法</h2><p>状态迁移法是通过把被测系统，分析出它的若干个状态，以及这些状态之间的转换条件和路径，那么就可以从状态迁移路径覆盖的角度来对设计用例进行测试。其主要验证在给定的条件内是否能够产生需要的状态变化，是否存在不可能达到的状态或非法的状态，是否可能产生非法的状态转移等。在黑盒测试中主要目标是设计足够的用例达到对系统状态的覆盖、状态-条件组合的覆盖以及状态迁移路径的覆盖。</p>
+<p>简单来说，状态迁移就是将程序的业务流程中每个节点用状态来描述，通过触发的事件来完成各状态之间的转换。</p>
+<p>实际工作中，在业务流程中都涉及了复杂的业务场景（即业务状态的迁移）。而这些业务场景在需求规格中往往不能够完全阐述清楚，容易出现遗漏。所以当被测系统的业务场景复杂时，在工程中应用这种针对状态迁移测试的思路完成对复杂业务场景的测试有时是很有必要的。</p>
+<h3 id="【案例解析】-6"><a href="#【案例解析】-6" class="headerlink" title="【案例解析】"></a>【案例解析】</h3><p>Bug测试流程：测试人员提交新问题单，项目测试经理（TPM）审核问题单，如果不是问题，则作为非问题关闭，如果重复则作为重复问题关闭，否则置为打开状态。开发人员分析打开状态的问题单，如果接受则进行修改。否则应与测试人员协商，在问题单提交人同意的情况下，可退回给测试人员作为非问题关闭。对于开发人员拒绝修改，但测试人员无法认同的情况，该问题单需提交CCB评审，根据评审结果，如果确认要修改则进入修改状态，如果不是问题则作为非问题关闭，如果是问题但暂时无法解决则挂起，挂起的问题单到达指定修改期限时，会再次进入打开状态。修改后的问题单需由测试人员进行回归测试，如果回归通过则关闭问题单，如果回归不通过则重新进入打开状态。</p>
+<p>首先根据描述确定流程的节点，即节点状态，分析状态之间的迁移关系，用圆圈代表状态，箭头代表状态迁移方向，绘制状态迁移图</p>
+<p><img src="https://cdn.nlark.com/yuque/0/2020/png/87080/1601905856393-d6acc8a3-8762-4544-9f80-0d322f540b1f.png" alt="img"></p>
+<p>其次根据状态图，将输入不同条件导致的输出和状态迁移列入表中</p>
+<p><img src="https://cdn.nlark.com/yuque/0/2020/png/87080/1601905873139-0d1fcf2a-baf3-471f-a73e-d1f3db80e059.png" alt="img"></p>
+<p>最后可以根据状态事件表设计测试路径，最后生成测试用例，还要设计非法状态转换的测试用例。</p>
+<h2 id="异常分析法"><a href="#异常分析法" class="headerlink" title="异常分析法"></a>异常分析法</h2><p>异常分析就是针对系统有可能存在的异常操作、软硬件缺陷引起的故障进行分析，依此设计测试用例。一方面主要针对系统的容错能力、故障恢复能力进行测试。另一方面，针对系统资源的异常进行测试。简单地说，就是通过人为的制造异常情况，来检查系统处理能力。</p>
+<p>下面主要介绍一下常见的异常分析情况：</p>
+<p>1）测试软件不按照正常的流程运行。</p>
+<p>2）删除或修改系统的重要配置文件。</p>
+<p>3）比如特殊符号“/”斜杠、“./”点斜杠、“‘”单引号以及空格等。</p>
+<p>4）强行关闭数据库服务器、制造数据库死机、非法破坏数据表或数据等。</p>
+<p>5）增加服务器资源的使用情况，CPU、内存、硬盘等。</p>
+<p>6）对部分或者所有相关软件进行断电测试。</p>
+<h2 id="错误推测法"><a href="#错误推测法" class="headerlink" title="错误推测法"></a>错误推测法</h2><p>在软件测试中，基于经验和直觉推测程序中可能存在的各种错误，从而有针对性的设计测试用例的方法，就是错误推测法。</p>
+<p>它的基本的设计思路就是分析程序中最易出错的场景和情况，在此基础上有针对性的设计测试用例。</p>
+<p>需要测试人员深度熟悉被测系统的业务、需求，对被测系统或类似系统之前的缺陷分布情况进行过系统的分析，包括功能缺陷、数据缺陷、接口缺陷和界面缺陷等。在实际测试活动中，随着对产品的了解的加深和测试经验的丰富，使得错误推测法设计的测试用例往往非常有效，可以作为测试设计的一种补充手段。简单说就是积累的经验越丰富，方法使用效率越高。错误推测不是瞎猜，主要是针对系统可能存在的薄弱环节的测试补充，而不是为了覆盖而测试。</p>
+<h2 id="黑盒测试的优缺点"><a href="#黑盒测试的优缺点" class="headerlink" title="黑盒测试的优缺点"></a>黑盒测试的优缺点</h2><p>黑盒测试使用范围比较广泛，其优点主要是站在用户的角度进行测试，测试人员不需要了解程序实现的细节，相对白盒测试而言，黑盒测试的测试数据很容易生成，但是要测试到每一个输入流几乎是不可能的，其最大的缺点就是不能针对特定的程序段，这样很容易造成程序路径的漏测，当程序非常复杂时其隐藏的问题很难发现。在实际工作中，由于黑盒测试的测试人员编程能力相对薄弱，所以大部分测试人员现在研究的都是介于白盒和黑盒之间，就是灰盒测试，也是常说的接口测试。</p>
+ 
+      <!-- reward -->
+      
+      <div id="reword-out">
+        <div id="reward-btn">
+          打赏
+        </div>
+      </div>
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <div class="declare">
+      <ul class="post-copyright">
+        <li>
+          <i class="ri-copyright-line"></i>
+          <strong>版权声明： </strong>
+          
+          本博客所有文章除特别声明外，著作权归作者所有。转载请注明出处！
+          
+        </li>
+      </ul>
+    </div>
+    
+    <footer class="article-footer">
+       
+<div class="share-btn">
+      <span class="share-sns share-outer">
+        <i class="ri-share-forward-line"></i>
+        分享
+      </span>
+      <div class="share-wrap">
+        <i class="arrow"></i>
+        <div class="share-icons">
+          
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="ri-weibo-fill"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="ri-wechat-fill"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="ri-qq-fill"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="ri-douban-line"></i>
+          </a>
+          <!-- <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a> -->
+          
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="ri-facebook-circle-fill"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="ri-twitter-fill"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="ri-google-fill"></i>
+          </a>
+        </div>
+      </div>
+</div>
+
+<div class="wx-share-modal">
+    <a class="modal-close" href="javascript:;"><i class="ri-close-circle-line"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://www.yeying.tech/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/software-testing-6/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div id="share-mask"></div>  
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E5%9F%BA%E7%A1%80/" rel="tag">软件测试基础</a></li></ul>
+
+    </footer>
+  </div>
+
+   
+  <nav class="article-nav">
+    
+      <a href="/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/software-testing-7/" class="article-nav-link">
+        <strong class="article-nav-caption">上一篇</strong>
+        <div class="article-nav-title">
+          
+            软件测试-7
+          
+        </div>
+      </a>
+    
+    
+      <a href="/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/software-testing-5/" class="article-nav-link">
+        <strong class="article-nav-caption">下一篇</strong>
+        <div class="article-nav-title">软件测试-5</div>
+      </a>
+    
+  </nav>
+
+   
+<!-- valine评论 -->
+<div id="vcomments-box">
+  <div id="vcomments"></div>
+</div>
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js"></script>
+<script>
+  new Valine({
+    el: "#vcomments",
+    app_id: "",
+    app_key: "",
+    path: window.location.pathname,
+    avatar: "monsterid",
+    placeholder: "给我的文章加点评论吧~",
+    recordIP: true,
+  });
+  const infoEle = document.querySelector("#vcomments .info");
+  if (infoEle && infoEle.childNodes && infoEle.childNodes.length > 0) {
+    infoEle.childNodes.forEach(function (item) {
+      item.parentNode.removeChild(item);
+    });
+  }
+</script>
+<style>
+  #vcomments-box {
+    padding: 5px 30px;
+  }
+
+  @media screen and (max-width: 800px) {
+    #vcomments-box {
+      padding: 5px 0px;
+    }
+  }
+
+  #vcomments-box #vcomments {
+    background-color: #fff;
+  }
+
+  .v .vlist .vcard .vh {
+    padding-right: 20px;
+  }
+
+  .v .vlist .vcard {
+    padding-left: 10px;
+  }
+</style>
+
+ 
+   
+     
+</article>
+
+
+</section>
+      <footer class="footer">
+  <div class="outer">
+    <ul>
+      <li>
+        Copyrights &copy;
+        2019-2021
+        <i class="ri-heart-fill heart_icon"></i> PAYIZ
+      </li>
+    </ul>
+    <ul>
+      <li>
+        
+        
+        <span>
+  <span><i class="ri-user-3-fill"></i><span id="busuanzi_value_site_uv"></span></span>
+  <span class="division">|</span>
+  <span><i class="ri-eye-fill"></i><span id="busuanzi_value_page_pv"></span></span>
+</span>
+        
+      </li>
+    </ul>
+    <ul>
+      
+    </ul>
+    <ul>
+      
+    </ul>
+    <ul>
+      <li>
+        <!-- cnzz统计 -->
+        
+        <script type="text/javascript" src='https://s9.cnzz.com/z_stat.php?id=1280147847&amp;web_id=1280147847'></script>
+        
+      </li>
+    </ul>
+  </div>
+</footer>
+      <div class="float_btns">
+        <div class="totop" id="totop">
+  <i class="ri-arrow-up-line"></i>
+</div>
+
+<div class="todark" id="todark">
+  <i class="ri-moon-line"></i>
+</div>
+
+      </div>
+    </main>
+    <aside class="sidebar on">
+      <button class="navbar-toggle"></button>
+<nav class="navbar">
+  
+  <div class="logo">
+    <a href="/"><img src="/images/bird.png" alt="夜莺悠吟"></a>
+  </div>
+  
+  <ul class="nav nav-main">
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/">主页</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/archives">归档</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/categories">分类</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/tags">标签</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/categories/%E7%9B%B8%E5%86%8C">相册</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/photos">壁纸</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/friends">社交</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/about/me">关于我</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/about/site">关于博客</a>
+    </li>
+    
+  </ul>
+</nav>
+<nav class="navbar navbar-bottom">
+  <ul class="nav">
+    <li class="nav-item">
+      
+      <a class="nav-item-link nav-item-search"  title="搜索">
+        <i class="ri-search-line"></i>
+      </a>
+      
+      
+      <a class="nav-item-link" target="_blank" href="/atom.xml" title="RSS Feed">
+        <i class="ri-rss-line"></i>
+      </a>
+      
+    </li>
+  </ul>
+</nav>
+<div class="search-form-wrap">
+  <div class="local-search local-search-plugin">
+  <input type="search" id="local-search-input" class="local-search-input" placeholder="Search...">
+  <div id="local-search-result" class="local-search-result"></div>
+</div>
+</div>
+    </aside>
+    <div id="mask"></div>
+
+<!-- #reward -->
+<div id="reward">
+  <span class="close"><i class="ri-close-line"></i></span>
+  <p class="reward-p"><i class="ri-cup-line"></i>感谢您的支持😊</p>
+  <div class="reward-box">
+    
+    <div class="reward-item">
+      <img class="reward-img" src="https://cdn.jsdelivr.net/gh/payiz-asj/CDN/images/alipay.png">
+      <span class="reward-type">支付宝</span>
+    </div>
+    
+    
+    <div class="reward-item">
+      <img class="reward-img" src="https://cdn.jsdelivr.net/gh/payiz-asj/CDN/images/wechatpay.png">
+      <span class="reward-type">微信</span>
+    </div>
+    
+  </div>
+</div>
+    
+<script src="/js/jquery-2.0.3.min.js"></script>
+ 
+<script src="/js/lazyload.min.js"></script>
+
+<!-- Tocbot -->
+ 
+<script src="/js/tocbot.min.js"></script>
+
+<script>
+  tocbot.init({
+    tocSelector: ".tocbot",
+    contentSelector: ".article-entry",
+    headingSelector: "h1, h2, h3, h4, h5, h6",
+    hasInnerContainers: true,
+    scrollSmooth: true,
+    scrollContainer: "main",
+    positionFixedSelector: ".tocbot",
+    positionFixedClass: "is-position-fixed",
+    fixedSidebarOffset: "auto",
+  });
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.js"></script>
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.css"
+/>
+<script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js"></script>
+
+<script src="/dist/main.js"></script>
+
+<!-- ImageViewer -->
+ <!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" style="display:none" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css">
+<script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"></script>
+
+<script>
+    function viewer_init() {
+        let pswpElement = document.querySelectorAll('.pswp')[0];
+        let $imgArr = document.querySelectorAll(('.article-entry img:not(.reward-img)'))
+
+        $imgArr.forEach(($em, i) => {
+            $em.onclick = () => {
+                // slider展开状态
+                // todo: 这样不好，后面改成状态
+                if (document.querySelector('.left-col.show')) return
+                let items = []
+                $imgArr.forEach(($em2, i2) => {
+                    let img = $em2.getAttribute('data-idx', i2)
+                    let src = $em2.getAttribute('data-target') || $em2.getAttribute('src')
+                    let title = $em2.getAttribute('alt')
+                    // 获得原图尺寸
+                    const image = new Image()
+                    image.src = src
+                    items.push({
+                        src: src,
+                        w: image.width || $em2.width,
+                        h: image.height || $em2.height,
+                        title: title
+                    })
+                })
+                var gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, {
+                    index: parseInt(i)
+                });
+                gallery.init()
+            }
+        })
+    }
+    viewer_init()
+</script> 
+<!-- MathJax -->
+
+<!-- Katex -->
+
+<!-- busuanzi  -->
+ 
+<script src="/js/busuanzi-2.3.pure.min.js"></script>
+ 
+<!-- ClickLove -->
+ 
+<script src="/js/clickLove.js"></script>
+ 
+<!-- ClickBoom1 -->
+
+<!-- ClickBoom2 -->
+
+<!-- CodeCopy -->
+ 
+<link rel="stylesheet" href="/css/clipboard.css">
+ <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+<script>
+  function wait(callback, seconds) {
+    var timelag = null;
+    timelag = window.setTimeout(callback, seconds);
+  }
+  !function (e, t, a) {
+    var initCopyCode = function(){
+      var copyHtml = '';
+      copyHtml += '<button class="btn-copy" data-clipboard-snippet="">';
+      copyHtml += '<i class="ri-file-copy-2-line"></i><span>COPY</span>';
+      copyHtml += '</button>';
+      $(".highlight .code pre").before(copyHtml);
+      $(".article pre code").before(copyHtml);
+      var clipboard = new ClipboardJS('.btn-copy', {
+        target: function(trigger) {
+          return trigger.nextElementSibling;
+        }
+      });
+      clipboard.on('success', function(e) {
+        let $btn = $(e.trigger);
+        $btn.addClass('copied');
+        let $icon = $($btn.find('i'));
+        $icon.removeClass('ri-file-copy-2-line');
+        $icon.addClass('ri-checkbox-circle-line');
+        let $span = $($btn.find('span'));
+        $span[0].innerText = 'COPIED';
+        
+        wait(function () { // 等待两秒钟后恢复
+          $icon.removeClass('ri-checkbox-circle-line');
+          $icon.addClass('ri-file-copy-2-line');
+          $span[0].innerText = 'COPY';
+        }, 2000);
+      });
+      clipboard.on('error', function(e) {
+        e.clearSelection();
+        let $btn = $(e.trigger);
+        $btn.addClass('copy-failed');
+        let $icon = $($btn.find('i'));
+        $icon.removeClass('ri-file-copy-2-line');
+        $icon.addClass('ri-time-line');
+        let $span = $($btn.find('span'));
+        $span[0].innerText = 'COPY FAILED';
+        
+        wait(function () { // 等待两秒钟后恢复
+          $icon.removeClass('ri-time-line');
+          $icon.addClass('ri-file-copy-2-line');
+          $span[0].innerText = 'COPY';
+        }, 2000);
+      });
+    }
+    initCopyCode();
+  }(window, document);
+</script>
+ 
+<!-- CanvasBackground -->
+
+<script>
+  if (window.mermaid) {
+    mermaid.initialize({ theme: "forest" });
+  }
+</script>
+
+
+    
+  </div>
+</body>
+
+</html>

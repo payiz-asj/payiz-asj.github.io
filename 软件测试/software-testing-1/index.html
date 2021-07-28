@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+
+
+<html lang="zh-CN">
+  
+
+    <head>
+      <meta charset="utf-8" />
+       
+      <meta name="keywords" content="YeYing,Blog,夜莺,博客,夜莺悠吟,yeying.tech,www.yeying.tech" />
+       
+      <meta name="description" content="挑灯夜战，常闻夜莺悠吟...停笔共鸣...悲壮、坚定！&lt;br&gt;心酸背后总有值得坚持的理由💪请坚持！&lt;br&gt; 珍惜身边的人！ 小快y你❤" />
+      
+      <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1"
+      />
+      <title>软件测试-1 |  夜莺悠吟</title>
+  <meta name="generator" content="hexo-theme-ayer">
+      
+      <link rel="shortcut icon" href="/favicon.ico" />
+       
+<link rel="stylesheet" href="/dist/main.css">
+
+      <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/Shen-Yu/cdn/css/remixicon.min.css"
+      />
+      
+<link rel="stylesheet" href="/css/custom.css">
+ 
+      <script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+       
+ 
+
+      <!-- mermaid -->
+      
+    <link rel="alternate" href="/atom.xml" title="夜莺悠吟" type="application/atom+xml">
+</head>
+  </html>
+</html>
+
+
+<body>
+  <div id="app">
+    
+      
+    <main class="content on">
+      <section class="outer">
+  
+<article
+  id="post-software-testing-1"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h1 class="article-title sea-center" style="border-left:0" itemprop="name">
+  软件测试-1
+</h1>
+ 
+
+      
+    </header>
+     
+    <div class="article-meta">
+      <a href="/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/software-testing-1/" class="article-date">
+  <time datetime="2019-05-28T06:12:21.000Z" itemprop="datePublished">2019-05-28</time>
+</a> 
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/">软件测试</a>
+  </div>
+  
+<div class="word_count">
+    <span class="post-time">
+        <span class="post-meta-item-icon">
+            <i class="ri-quill-pen-line"></i>
+            <span class="post-meta-item-text"> 字数统计:</span>
+            <span class="post-count">4k</span>
+        </span>
+    </span>
+
+    <span class="post-time">
+        &nbsp; | &nbsp;
+        <span class="post-meta-item-icon">
+            <i class="ri-book-open-line"></i>
+            <span class="post-meta-item-text"> 阅读时长≈</span>
+            <span class="post-count">13 分钟</span>
+        </span>
+    </span>
+</div>
+ 
+    </div>
+      
+    <div class="tocbot"></div>
+
+
+
+
+  
+    <div class="article-entry" itemprop="articleBody">
+       
+  <h1 id="软件测试基础理论"><a href="#软件测试基础理论" class="headerlink" title="软件测试基础理论"></a><strong>软件测试基础理论</strong></h1><h1 id="软件概念"><a href="#软件概念" class="headerlink" title="软件概念"></a>软件概念</h1><p>软件（Software）是一系列按照特定顺序组织的计算机数据和指令的集合。一般来讲，软件被划分为系统软件、应用软件和介于这两者之间的中间件。在国标中对软件的定义是与计算机系统操作有关的计算机程序、规程、规则以及可能有的文件、文档及数据等。</p>
+<h1 id="软件生命周期"><a href="#软件生命周期" class="headerlink" title="软件生命周期"></a>软件生命周期</h1><p>生命周期（Life Cycle）的概念应用很广泛，简单说就是指一个对象的“生老病死”。对一个软件产品或软件系统而言也需要经历同样阶段，一般称为软件生命周期。软件生命周期大致分为六个阶段。</p>
+<p><img src="https://pic.imgdb.cn/item/6100fd355132923bf846d6ea.jpg" alt="软件生命周期"></p>
+<span id="more"></span>
+
+<h2 id="项目计划阶段"><a href="#项目计划阶段" class="headerlink" title="项目计划阶段"></a>项目计划阶段</h2><p>此阶段主要是确定软件开发的总体目标，通过市场调研并给出功能、性能、接口等方面的设想以及项目的可行性分析，同时对项目开发使用的资源、成本、进度做出评估，制定项目实施的计划（项目一级计划）。</p>
+<h2 id="需求分析阶段"><a href="#需求分析阶段" class="headerlink" title="需求分析阶段"></a>需求分析阶段</h2><p>需求俗称软件的主体，所以需求分析阶段作为一个非常重要的阶段，它由需求分析人员和用户共同对软件需要实现的各个功能进行详细的分析并给予确切的描述，并编写软件需求说明书（Software Requirements Specification，简称SRS）。</p>
+<h2 id="软件设计阶段"><a href="#软件设计阶段" class="headerlink" title="软件设计阶段"></a>软件设计阶段</h2><p>该阶段俗称软件的核心，主要是由系统分析组（架构师和系统分析人员）根据需求分析的结果，对整个软件进行系统架构的设计，编写概要设计说明书（High Level Design，简称HLD）。接下来由数据库设计员和开发人员根据需求说明书和概要设计说明书进行系统数据库设计以及编写详细设计说明书（Low LevelDesign，简称LLD）。</p>
+<h2 id="程序编码阶段"><a href="#程序编码阶段" class="headerlink" title="程序编码阶段"></a>程序编码阶段</h2><p>把软件设计的结果转换为计算机可运行的程序代码，使用RDBMS工具建立数据库。程序编码必须符合标准和编码规范，以保证程序的可读性、易维护性，保证程序运行的效率。</p>
+<h2 id="软件测试阶段"><a href="#软件测试阶段" class="headerlink" title="软件测试阶段"></a>软件测试阶段</h2><p>此阶段主要是测试人员来检测软件是否符合客户的需求，是否达到质量的要求。一般在软件设计完成后，项目开发人员构建测试版本，以便测试团队进行测试，整个测试过程大致分为：单元测试、集成测试、系统测试、验收测试。</p>
+<h2 id="运行与维护阶段"><a href="#运行与维护阶段" class="headerlink" title="运行与维护阶段"></a>运行与维护阶段</h2><p>此阶段是软件生命周期中最长的阶段。在软件开发完成并正式投入使用后，可能有很多原因需要对软件进行修改，如软件错误、系统升级、增加功能、提高性能等。</p>
+<h1 id="软件体系结构"><a href="#软件体系结构" class="headerlink" title="软件体系结构"></a>软件体系结构</h1><h2 id="什么是C-S结构"><a href="#什么是C-S结构" class="headerlink" title="什么是C/S结构"></a>什么是C/S结构</h2><p>C/S（Client/Server）结构即客户端/服务器结构。客户端通常可以理解为安装在PC、手机终端设备上的软件，是软件系统体系结构的一种。比如：QQ软件、手机APP等，C/S模式简单地讲就是基于企业内部网络的应用系统。与B/S（Browser/Server，浏览器/服务器）模式相比，C/S模式的应用系统最大的好处是不依赖企业外网环境，即无论企业是否能够上网，都不影响应用。</p>
+<p>还有一类通信的软件，比如：百度云盘、迅雷下载等，也属于C/S结构。但是它们之间的数据传输不需要经过服务器处理业务，可以直接通过客户端进行传输，这种结构通常称为P2P（Peer to Peer）点对点结构。</p>
+<p>P2P是可以简单的定义成通过直接交换来共享计算机资源和服务，而对等计算模型应用层形成的网络通常称为对等网络。对等网络，即对等计算机网络，是一种在对等者（Peer）之间分配任务和工作负载的分布式应用架构，是对等计算模型在应用层形成的一种组网或网络形式。</p>
+<h2 id="什么是B-S结构"><a href="#什么是B-S结构" class="headerlink" title="什么是B/S结构"></a>什么是B/S结构</h2><p>B/S（Brower/Server）结构即浏览器/服务器结构。随着Internet技术的兴起，对C/S结构的一种变化或者改进的结构。在这种结构下，用户工作界面是通过浏览器来实现，极少部分事务通过逻辑在前端（Browser）实现，但是主要事务逻辑在服务器端（Server）实现，形成所谓三层3-tier结构。B/S是目前互联网中应用最为广泛的系统结构。B/S结构比起C/S结构有着很大的优越性，传统的MIS系统依赖于专门的操作环境，这意味着操作者的活动空间受到极大限制；而B/S结构则不需要专门的操作环境，在任何地方，只要能上网，就能够操作MIS系统，这其中的优劣差别是不言而喻的。</p>
+<h1 id="软件测试基本概念"><a href="#软件测试基本概念" class="headerlink" title="软件测试基本概念"></a>软件测试基本概念</h1><p>测试（Test）就是为检测特定的目标是否符合标准而采用专用的工具或者方法进行验证，并最终得出特定的结果。软件测试（Software Testing）伴随着软件的诞生而产生。对软件而言，软件测试就是在有限的时间内提高软件质量的保证，是软件开发过程中非常重要的一部分。</p>
+<h2 id="软件测试发展"><a href="#软件测试发展" class="headerlink" title="软件测试发展"></a>软件测试发展</h2><p>迄今为止，软件测试的发展一共经历了五个重要时期：</p>
+<h3 id="以调试为主"><a href="#以调试为主" class="headerlink" title="以调试为主"></a>以调试为主</h3><p>早在20世纪50年代，计算机刚诞生不久，只有科学家级别的人才会去编程，需求和程序本身也远远没有现在这么复杂多变，相当于编程人员承担需求分析、设计、开发、测试等所有工作，当然也不会有人去区分调试和测试。然而有些比较严谨的科学家们已经在开始思考“怎么知道程序满足了需求？”这类问题了。</p>
+<h3 id="以证明为主"><a href="#以证明为主" class="headerlink" title="以证明为主"></a>以证明为主</h3><p>在1957年，在《软件测试发展》（作者Charles Baker）一书中强调了调试和测试区分：1）调试（Debug），确保程序做了程序员想让它做的事情。</p>
+<p>2）测试（Testing），确保程序解决了它该解决的问题。</p>
+<p>这也是软件测试史上一个重要的里程碑，它标志软件测试终于自立门户了。随着计算机应用的数量，成本和复杂性都大幅度提升，其经济风险也大大增加，测试就显得很有必要了，这个时期测试的主要目就是确认软件是满足需求的，也就是我们常说的“做了该做的事情”。</p>
+<h3 id="以破坏为主"><a href="#以破坏为主" class="headerlink" title="以破坏为主"></a>以破坏为主</h3><p>在1979年，测试界的经典之作《软件测试之艺术》（作者C.J.Myers）一书中给出了软件测试的经典定义：测试是为发现错误而执行程序的过程。这个观点较之前证明为主的思路，是一个很大的进步。我们不仅要证明软件做了该做的事情，也要保证它没做不该做的事情，这会使测试更加全面，更容易发现问题。</p>
+<p>在书中，Myers还指出两点：好的测试用例是发现迄今为止尚未发现的错误的测试用例；成功的测试执行是发现了至今为止尚未发现的错误的测试执行。相对于“程序测试就是证明程序中不存在错误的过程”而言，Myers的定义是对的，但定义的测试范围过窄。</p>
+<h3 id="以评估为主"><a href="#以评估为主" class="headerlink" title="以评估为主"></a>以评估为主</h3><p>在1983年，美国国家标准局提出了测试界很有名的两个名词：验证（Verification）和确认（Validation），也就是我们常说的V&amp;V理论。</p>
+<p>人们提出了在软件生命周期中使用分析、评审、测试来评估产品的理论。软件测试工程在这个时期得到了快速的发展：相继出现了测试经理、测试分析师等职称以及发表大量测试刊物，发布相关国际标准。</p>
+<p>同时IEEE提出的软件工程标准术语中给软件测试定义是：“使用人工或自动手段来运行或测定某个软件系统的过程，其目的在于检验它是否满足规定的需求或弄清预期结果与实际结果之间的差别”。也就是这个时期人们开始关注工具对测试的影响。</p>
+<h3 id="以预防为主"><a href="#以预防为主" class="headerlink" title="以预防为主"></a>以预防为主</h3><p>预防为主是当下软件测试的主流思想之一。STEP（产品模型数据交互规范，Systematic Test and Evaluation Process，简称STEP）是最早的一个以预防为主的生命周期模型，STEP认为测试与开发是并行的，整个测试的生命周期也是由计划、分析、设计、开发、执行和维护组成，也就是说，测试不是在编码完成后才开始介入，而是贯穿于整个软件生命周期。</p>
+<h2 id="软件测试目的"><a href="#软件测试目的" class="headerlink" title="软件测试目的"></a>软件测试目的</h2><p>从上述测试的发展来看，软件测试的目的也有一个阶段性的变化，我们通过下表来分析一下软件测试目的的演进。</p>
+<table>
+<thead>
+<tr>
+<th>20世纪60年代</th>
+<th>20世纪70年代中</th>
+<th>20世纪90年代</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>证明</td>
+<td>检测</td>
+<td>预防</td>
+</tr>
+<tr>
+<td>表明软件能够工作</td>
+<td>发现错误</td>
+<td>管理质量</td>
+</tr>
+</tbody></table>
+<h3 id="证明"><a href="#证明" class="headerlink" title="证明"></a>证明</h3><p>保证软件产品是完整的并且可用或可被集成，同时需要尝试在非正常情况下的功能和特性是否可用，评估系统的风险承受能力。</p>
+<h3 id="检测"><a href="#检测" class="headerlink" title="检测"></a>检测</h3><p>发现缺陷、错误和系统不足的地方，定义系统的能力和局限性，并提供相关的组件、工作产品和系统质量信息。</p>
+<h3 id="预防"><a href="#预防" class="headerlink" title="预防"></a>预防</h3><p>提供预防和减少可能导致错误的信息，在过程中尽早地检测错误，确认问题和风险，并且提前确认解决这些问题和风险的途径。</p>
+<p>软件测试目的往往包含如下内容：</p>
+<p>1）测试并不仅是为了找出错误，而且要通过分析错误产生的原因和错误的发生趋势，帮助项目管理者发现当前软件开发过程中的缺陷，以便及时改进。</p>
+<p>2）需要测试工程师设计出具有针对性的测试方法，以改善测试的有效性。</p>
+<p>3）没有发现错误的测试也是有价值的，完整的测试是评估软件质量的一种方法。</p>
+<p><strong>综上来看软件测试目的是指尽可能早的发现软件中存在的缺陷并提高软件质量。</strong></p>
+<h2 id="软件测试原则"><a href="#软件测试原则" class="headerlink" title="软件测试原则"></a>软件测试原则</h2><p>软件测试理论经过几十年的发展，在测试界提出了很多测试的基本原则，概括出以下8条软件测试基本原则。</p>
+<h3 id="1-所有的测试要追溯到用户的需求"><a href="#1-所有的测试要追溯到用户的需求" class="headerlink" title="1.所有的测试要追溯到用户的需求"></a>1.所有的测试要追溯到用户的需求</h3><p>在所有测试活动的过程中，测试人员都应该从客户的需求出发，想用户所想。正如我们所知，软件测试的目标就是验证产品开发的一致性和确认产品是否满足客户的需求，与之对应的任何产品质量特性都应追溯到用户需求。简单说就是一切从用户角度出发。</p>
+<h3 id="2．测试应尽早地介入"><a href="#2．测试应尽早地介入" class="headerlink" title="2．测试应尽早地介入"></a>2．测试应尽早地介入</h3><p>根据统计表明，在软件开发生命周期早期引入的错误占软件过程中出现所有错误（包括最终的缺陷）数量的50%～60%。此外，IBM的一份研究结果表明，缺陷存在放大的趋势。所以越是测试后期，为修复缺陷所付出的代价就会越大。因此，软件测试人员要尽早地且不断地进行软件测试，以提高软件质量，降低软件开发成本。</p>
+<h3 id="3．测试无法穷举"><a href="#3．测试无法穷举" class="headerlink" title="3．测试无法穷举"></a>3．测试无法穷举</h3><p>在整个测试过程中，测试人员无法考虑到所有可能输入值和它们的组合以及结合所有不同的测试前置条件；所以穷举测试是不可能的，当测试满足一定的出口准则时，测试就应当终止。因此，想要控制测试工作量，在测试成本、收益和风险之间求得平衡；需要通过风险分析、优先级分析以及软件质量模型和不同测试的方法来确定测试关注点，从而代替穷举测试，提高测试覆盖率。</p>
+<h3 id="4．避免开发者自测"><a href="#4．避免开发者自测" class="headerlink" title="4．避免开发者自测"></a>4．避免开发者自测</h3><p>测试工作需要严谨的作风、冷静的分析。心理学告诉我们，每个人都具有一种不愿否定自己工作的心理，这种状态导致测试自己程序的障碍。同时，程序员对需求规格说明的错误理解而引入的错误是很难被发现。因此，程序员应避免测试自己的程序，为达到最佳的效果，应由独立的测试小组、第三方来完成测试。</p>
+<h3 id="5．群集现象"><a href="#5．群集现象" class="headerlink" title="5．群集现象"></a>5．群集现象</h3><p>Pareto Principle帕累托法则（二八定律）表明：80%的错误集中在20%的程序模块中。也就是说，测试所发现的大部分缺陷和软件运行失效是由少数程序模块引起的。因此，测试过程中要充分注意群集现象，对发现错误较多的程序段或者软件模块，应进行反复的深入的测试。</p>
+<h3 id="6．杀虫剂悖论"><a href="#6．杀虫剂悖论" class="headerlink" title="6．杀虫剂悖论"></a>6．杀虫剂悖论</h3><p>杀虫剂用得多了，害虫就有免疫力，杀虫剂就发挥不了效力。同样在测试中，如果测试用例被反复使用时，发现缺陷的能力就会越来越差。为了避免克服这种现象出现，测试用例需要进行定期评审和修改，不断增加新的不同的测试用例来测试软件或系统的不同部分，从而发现更多潜在的缺陷。作为专业的测试人员来说，要具有探索性思维和逆向思维。同理，测试方法也需要不断地变化。</p>
+<h3 id="7．不存在缺陷的谬论"><a href="#7．不存在缺陷的谬论" class="headerlink" title="7．不存在缺陷的谬论"></a>7．不存在缺陷的谬论</h3><p>通过测试可以减少软件中存在未被发现缺陷的可能性，但即使测试没有发现任何缺陷，也不能证明软件或系统是完全正确的。也就是说，测试只能证明软件存在缺陷，不能证明软件不存在缺陷。比如，不能满足用户期望的或用户不满意，也是一种缺陷。</p>
+<h3 id="8．测试活动依赖于测试背景"><a href="#8．测试活动依赖于测试背景" class="headerlink" title="8．测试活动依赖于测试背景"></a>8．测试活动依赖于测试背景</h3><p>针对不同的测试背景，进行的测试活动也不同，测试策略和测试方法在选取上也有所不同。比如，银行产品和电商平台。在银行产品中要将安全放到首位；在电商平台中要把兼容性、性能放到首位。在实际测试过程中，测试人员应该在测试原则指导下进行测试活动。</p>
+<p>软件测试原则有助于测试人员进行高质量的测试，尽早尽可能多的发现缺陷，并负责跟踪和分析软件中的问题，对存在的问题和不足提出质疑和改进，从而持续改进测试过程。</p>
+ 
+      <!-- reward -->
+      
+      <div id="reword-out">
+        <div id="reward-btn">
+          打赏
+        </div>
+      </div>
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <div class="declare">
+      <ul class="post-copyright">
+        <li>
+          <i class="ri-copyright-line"></i>
+          <strong>版权声明： </strong>
+          
+          本博客所有文章除特别声明外，著作权归作者所有。转载请注明出处！
+          
+        </li>
+      </ul>
+    </div>
+    
+    <footer class="article-footer">
+       
+<div class="share-btn">
+      <span class="share-sns share-outer">
+        <i class="ri-share-forward-line"></i>
+        分享
+      </span>
+      <div class="share-wrap">
+        <i class="arrow"></i>
+        <div class="share-icons">
+          
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="ri-weibo-fill"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="ri-wechat-fill"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="ri-qq-fill"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="ri-douban-line"></i>
+          </a>
+          <!-- <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a> -->
+          
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="ri-facebook-circle-fill"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="ri-twitter-fill"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="ri-google-fill"></i>
+          </a>
+        </div>
+      </div>
+</div>
+
+<div class="wx-share-modal">
+    <a class="modal-close" href="javascript:;"><i class="ri-close-circle-line"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://www.yeying.tech/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/software-testing-1/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div id="share-mask"></div>  
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E5%9F%BA%E7%A1%80/" rel="tag">软件测试基础</a></li></ul>
+
+    </footer>
+  </div>
+
+   
+  <nav class="article-nav">
+    
+      <a href="/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/software-testing-2/" class="article-nav-link">
+        <strong class="article-nav-caption">上一篇</strong>
+        <div class="article-nav-title">
+          
+            软件测试-2
+          
+        </div>
+      </a>
+    
+    
+      <a href="/%E7%AC%94%E8%AE%B0/adb-keys/" class="article-nav-link">
+        <strong class="article-nav-caption">下一篇</strong>
+        <div class="article-nav-title">adb命令详解</div>
+      </a>
+    
+  </nav>
+
+   
+<!-- valine评论 -->
+<div id="vcomments-box">
+  <div id="vcomments"></div>
+</div>
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js"></script>
+<script>
+  new Valine({
+    el: "#vcomments",
+    app_id: "",
+    app_key: "",
+    path: window.location.pathname,
+    avatar: "monsterid",
+    placeholder: "给我的文章加点评论吧~",
+    recordIP: true,
+  });
+  const infoEle = document.querySelector("#vcomments .info");
+  if (infoEle && infoEle.childNodes && infoEle.childNodes.length > 0) {
+    infoEle.childNodes.forEach(function (item) {
+      item.parentNode.removeChild(item);
+    });
+  }
+</script>
+<style>
+  #vcomments-box {
+    padding: 5px 30px;
+  }
+
+  @media screen and (max-width: 800px) {
+    #vcomments-box {
+      padding: 5px 0px;
+    }
+  }
+
+  #vcomments-box #vcomments {
+    background-color: #fff;
+  }
+
+  .v .vlist .vcard .vh {
+    padding-right: 20px;
+  }
+
+  .v .vlist .vcard {
+    padding-left: 10px;
+  }
+</style>
+
+ 
+   
+     
+</article>
+
+
+</section>
+      <footer class="footer">
+  <div class="outer">
+    <ul>
+      <li>
+        Copyrights &copy;
+        2019-2021
+        <i class="ri-heart-fill heart_icon"></i> PAYIZ
+      </li>
+    </ul>
+    <ul>
+      <li>
+        
+        
+        <span>
+  <span><i class="ri-user-3-fill"></i><span id="busuanzi_value_site_uv"></span></span>
+  <span class="division">|</span>
+  <span><i class="ri-eye-fill"></i><span id="busuanzi_value_page_pv"></span></span>
+</span>
+        
+      </li>
+    </ul>
+    <ul>
+      
+    </ul>
+    <ul>
+      
+    </ul>
+    <ul>
+      <li>
+        <!-- cnzz统计 -->
+        
+        <script type="text/javascript" src='https://s9.cnzz.com/z_stat.php?id=1280147847&amp;web_id=1280147847'></script>
+        
+      </li>
+    </ul>
+  </div>
+</footer>
+      <div class="float_btns">
+        <div class="totop" id="totop">
+  <i class="ri-arrow-up-line"></i>
+</div>
+
+<div class="todark" id="todark">
+  <i class="ri-moon-line"></i>
+</div>
+
+      </div>
+    </main>
+    <aside class="sidebar on">
+      <button class="navbar-toggle"></button>
+<nav class="navbar">
+  
+  <div class="logo">
+    <a href="/"><img src="/images/bird.png" alt="夜莺悠吟"></a>
+  </div>
+  
+  <ul class="nav nav-main">
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/">主页</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/archives">归档</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/categories">分类</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/tags">标签</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/categories/%E7%9B%B8%E5%86%8C">相册</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/photos">壁纸</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/friends">社交</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/about/me">关于我</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/about/site">关于博客</a>
+    </li>
+    
+  </ul>
+</nav>
+<nav class="navbar navbar-bottom">
+  <ul class="nav">
+    <li class="nav-item">
+      
+      <a class="nav-item-link nav-item-search"  title="搜索">
+        <i class="ri-search-line"></i>
+      </a>
+      
+      
+      <a class="nav-item-link" target="_blank" href="/atom.xml" title="RSS Feed">
+        <i class="ri-rss-line"></i>
+      </a>
+      
+    </li>
+  </ul>
+</nav>
+<div class="search-form-wrap">
+  <div class="local-search local-search-plugin">
+  <input type="search" id="local-search-input" class="local-search-input" placeholder="Search...">
+  <div id="local-search-result" class="local-search-result"></div>
+</div>
+</div>
+    </aside>
+    <div id="mask"></div>
+
+<!-- #reward -->
+<div id="reward">
+  <span class="close"><i class="ri-close-line"></i></span>
+  <p class="reward-p"><i class="ri-cup-line"></i>感谢您的支持😊</p>
+  <div class="reward-box">
+    
+    <div class="reward-item">
+      <img class="reward-img" src="https://cdn.jsdelivr.net/gh/payiz-asj/CDN/images/alipay.png">
+      <span class="reward-type">支付宝</span>
+    </div>
+    
+    
+    <div class="reward-item">
+      <img class="reward-img" src="https://cdn.jsdelivr.net/gh/payiz-asj/CDN/images/wechatpay.png">
+      <span class="reward-type">微信</span>
+    </div>
+    
+  </div>
+</div>
+    
+<script src="/js/jquery-2.0.3.min.js"></script>
+ 
+<script src="/js/lazyload.min.js"></script>
+
+<!-- Tocbot -->
+ 
+<script src="/js/tocbot.min.js"></script>
+
+<script>
+  tocbot.init({
+    tocSelector: ".tocbot",
+    contentSelector: ".article-entry",
+    headingSelector: "h1, h2, h3, h4, h5, h6",
+    hasInnerContainers: true,
+    scrollSmooth: true,
+    scrollContainer: "main",
+    positionFixedSelector: ".tocbot",
+    positionFixedClass: "is-position-fixed",
+    fixedSidebarOffset: "auto",
+  });
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.js"></script>
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.css"
+/>
+<script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js"></script>
+
+<script src="/dist/main.js"></script>
+
+<!-- ImageViewer -->
+ <!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" style="display:none" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css">
+<script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"></script>
+
+<script>
+    function viewer_init() {
+        let pswpElement = document.querySelectorAll('.pswp')[0];
+        let $imgArr = document.querySelectorAll(('.article-entry img:not(.reward-img)'))
+
+        $imgArr.forEach(($em, i) => {
+            $em.onclick = () => {
+                // slider展开状态
+                // todo: 这样不好，后面改成状态
+                if (document.querySelector('.left-col.show')) return
+                let items = []
+                $imgArr.forEach(($em2, i2) => {
+                    let img = $em2.getAttribute('data-idx', i2)
+                    let src = $em2.getAttribute('data-target') || $em2.getAttribute('src')
+                    let title = $em2.getAttribute('alt')
+                    // 获得原图尺寸
+                    const image = new Image()
+                    image.src = src
+                    items.push({
+                        src: src,
+                        w: image.width || $em2.width,
+                        h: image.height || $em2.height,
+                        title: title
+                    })
+                })
+                var gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, {
+                    index: parseInt(i)
+                });
+                gallery.init()
+            }
+        })
+    }
+    viewer_init()
+</script> 
+<!-- MathJax -->
+
+<!-- Katex -->
+
+<!-- busuanzi  -->
+ 
+<script src="/js/busuanzi-2.3.pure.min.js"></script>
+ 
+<!-- ClickLove -->
+ 
+<script src="/js/clickLove.js"></script>
+ 
+<!-- ClickBoom1 -->
+
+<!-- ClickBoom2 -->
+
+<!-- CodeCopy -->
+ 
+<link rel="stylesheet" href="/css/clipboard.css">
+ <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+<script>
+  function wait(callback, seconds) {
+    var timelag = null;
+    timelag = window.setTimeout(callback, seconds);
+  }
+  !function (e, t, a) {
+    var initCopyCode = function(){
+      var copyHtml = '';
+      copyHtml += '<button class="btn-copy" data-clipboard-snippet="">';
+      copyHtml += '<i class="ri-file-copy-2-line"></i><span>COPY</span>';
+      copyHtml += '</button>';
+      $(".highlight .code pre").before(copyHtml);
+      $(".article pre code").before(copyHtml);
+      var clipboard = new ClipboardJS('.btn-copy', {
+        target: function(trigger) {
+          return trigger.nextElementSibling;
+        }
+      });
+      clipboard.on('success', function(e) {
+        let $btn = $(e.trigger);
+        $btn.addClass('copied');
+        let $icon = $($btn.find('i'));
+        $icon.removeClass('ri-file-copy-2-line');
+        $icon.addClass('ri-checkbox-circle-line');
+        let $span = $($btn.find('span'));
+        $span[0].innerText = 'COPIED';
+        
+        wait(function () { // 等待两秒钟后恢复
+          $icon.removeClass('ri-checkbox-circle-line');
+          $icon.addClass('ri-file-copy-2-line');
+          $span[0].innerText = 'COPY';
+        }, 2000);
+      });
+      clipboard.on('error', function(e) {
+        e.clearSelection();
+        let $btn = $(e.trigger);
+        $btn.addClass('copy-failed');
+        let $icon = $($btn.find('i'));
+        $icon.removeClass('ri-file-copy-2-line');
+        $icon.addClass('ri-time-line');
+        let $span = $($btn.find('span'));
+        $span[0].innerText = 'COPY FAILED';
+        
+        wait(function () { // 等待两秒钟后恢复
+          $icon.removeClass('ri-time-line');
+          $icon.addClass('ri-file-copy-2-line');
+          $span[0].innerText = 'COPY';
+        }, 2000);
+      });
+    }
+    initCopyCode();
+  }(window, document);
+</script>
+ 
+<!-- CanvasBackground -->
+
+<script>
+  if (window.mermaid) {
+    mermaid.initialize({ theme: "forest" });
+  }
+</script>
+
+
+    
+  </div>
+</body>
+
+</html>
