@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+
+
+<html lang="zh-CN">
+  
+
+    <head>
+      <meta charset="utf-8" />
+       
+      <meta name="keywords" content="YeYing,Blog,夜莺,博客,夜莺悠吟,yeying.tech,www.yeying.tech" />
+       
+      <meta name="description" content="挑灯夜战，常闻夜莺悠吟...停笔共鸣...悲壮、坚定！&lt;br&gt;心酸背后总有值得坚持的理由💪请坚持！&lt;br&gt; 珍惜身边的人！ 小快y你❤" />
+      
+      <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1"
+      />
+      <title>软件测试-11 |  夜莺悠吟</title>
+  <meta name="generator" content="hexo-theme-ayer">
+      
+      <link rel="shortcut icon" href="/favicon.ico" />
+       
+<link rel="stylesheet" href="/dist/main.css">
+
+      <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/Shen-Yu/cdn/css/remixicon.min.css"
+      />
+      
+<link rel="stylesheet" href="/css/custom.css">
+ 
+      <script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+       
+ 
+
+      <!-- mermaid -->
+      
+    <link rel="alternate" href="/atom.xml" title="夜莺悠吟" type="application/atom+xml">
+</head>
+  </html>
+</html>
+
+
+<body>
+  <div id="app">
+    
+      
+    <main class="content on">
+      <section class="outer">
+  
+<article
+  id="post-software-testing-11"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h1 class="article-title sea-center" style="border-left:0" itemprop="name">
+  软件测试-11
+</h1>
+ 
+
+      
+    </header>
+     
+    <div class="article-meta">
+      <a href="/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/software-testing-11/" class="article-date">
+  <time datetime="2019-05-28T07:29:21.000Z" itemprop="datePublished">2019-05-28</time>
+</a> 
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/">软件测试</a>
+  </div>
+  
+<div class="word_count">
+    <span class="post-time">
+        <span class="post-meta-item-icon">
+            <i class="ri-quill-pen-line"></i>
+            <span class="post-meta-item-text"> 字数统计:</span>
+            <span class="post-count">4.5k</span>
+        </span>
+    </span>
+
+    <span class="post-time">
+        &nbsp; | &nbsp;
+        <span class="post-meta-item-icon">
+            <i class="ri-book-open-line"></i>
+            <span class="post-meta-item-text"> 阅读时长≈</span>
+            <span class="post-count">15 分钟</span>
+        </span>
+    </span>
+</div>
+ 
+    </div>
+      
+    <div class="tocbot"></div>
+
+
+
+
+  
+    <div class="article-entry" itemprop="articleBody">
+       
+  <h1 id="对Bug起争议时的处理"><a href="#对Bug起争议时的处理" class="headerlink" title="对Bug起争议时的处理"></a>对Bug起争议时的处理</h1><p>测试人员和开发人员因Bug起争议的事情常有发生，例如开发人员认为这不算是一个Bug，或认为这个Bug不重要，不需要修改，而测试人员认为这是一个很严重的Bug，需要开发人员修改，或因其他原因起了争议等。如果出现了这些情况，测试人员应如何处理呢？</p>
+<p>(1）任何争议都需要“对事不对人”，不能因为Bug而激化了双方的矛盾。</p>
+<p>（2）有很多初级软件测试人员提交的Bug单流转到开发人员那里后，开发人员看不懂。原因在于测试人员提交的Bug单没有描述清楚，这是一个非常常见的现象。测试人员提交的Bug单一定要描述清楚，并需要有充足的依据和理由。</p>
+<p>（3）如果Bug单写清楚了，但开发人员还是不愿意修改的话，可以找一个合适的时间，心平气和地与开发人员沟通，说明此Bug对产品质量可能产生的不良影响，测试人员在沟通过程中不能意气用事。</p>
+<p>（4）经沟通后，如果开发人员还是不愿意修改的话（当然开发人员不修改也有他们的原因），那么此时可以向测试经理汇报这一情况，由测试经理出面解决，或是由测试经理召开Bug评审大会（开发人员、测试人员、产品经理三方人员参与，有时也包括项目经理），共同定夺。</p>
+<p>（5）有些初级软件测试人员把Bug提交到开发人员那后，经过开发人员的各种解释，就会同意开发人员的意见，也认为这确实不是一个Bug，从而忽略这个问题，这也是经常发生在初级软件测试人员身上的事情。这就要求测试人员提交Bug的过程要有原则性，这也是作为一名合格的测试人员最重要的特征之一，对待问题需要坚持原则。</p>
+<p>（6）测试人员应和开发人员面对面或通过电子邮件、电话等方式保持密切沟通，共同协商和处理Bug，以减少两者间的隔膜，增加测试人员与开发人员之间的信任和了解。直接沟通也应贯穿到产品开发、测试的每个环节当中。</p>
+<span id="more"></span>
+
+<h1 id="回归测试的策略"><a href="#回归测试的策略" class="headerlink" title="回归测试的策略"></a>回归测试的策略</h1><p>假如XYC邮箱的测试工作已完成，Bug已全部修复，并已达到上线标准。接下来就以XYC邮箱为例来回顾一下XYC邮箱回归测试的基本流程</p>
+<p><img src="https://cdn.nlark.com/yuque/0/2021/png/87080/1611068189193-645fccd3-269e-4d65-ae65-42e44de27439.png" alt="img"></p>
+<p>下面对以上流程图进行一个简要说明。</p>
+<p>（1）开发人员把最初开发出来的XYC邮箱命名为XYC邮箱V1.0版本。测试人员就会针对XYC邮箱V1.0版本进行第一轮测试。第一轮测试执行完成后，测试人员一共发现了100个Bug，其中存在多个严重问题，XYC邮箱无法达到上线标准。</p>
+<p>（2）开发人员随后对XYC邮箱V1.0版本的这100个Bug进行修复。Bug修复完成后，就把修复后的软件命名为XYC邮箱V1.1版本，以区别V1.0版本。接着测试人员就会在V1.1版本上进行第二轮的回归测试以验证开发人员是否修复了这100个Bug，结果发现100个Bug中有15个Bug并没有修复好，另外还新引入了25个Bug，相当于XYC邮箱V1.1版本还存在40个Bug，且存在多个严重问题，故达不到上线标准。</p>
+<p>（3）开发人员随后对XYC邮箱V1.1版本上的这40个Bug进行修复，Bug修复完成后，就把修复后的软件命名为XYC邮箱V1.2版本，以区别V1.1版本。接着测试人员就会在V1.2的版本上进行第三轮的回归测试以验证开发人员是否修复了这40个Bug，结果发现40个Bug中有2个Bug并没有修复好，另外还新引入了10个Bug，相当于XYC邮箱V1.2版本存在12个Bug，且存在1个严重问题，故达不到上线标准。</p>
+<p>（4）开发人员随后对XYC邮箱V1.2版本的这12个Bug进行修复，Bug修复完成后，就把修复后的软件重新命名为XYC邮箱V1.3版本，以区别V1.2版本。接着测试人员就会在V1.3的版本上进行第四轮的回归测试以验证开发人员是否修复了这12个Bug，结果发现仅有2个Bug存在，且这2个Bug都是建议性的问题，并不影响用户对功能的使用和体验，达到上线标准，此时XYC邮箱V1.3版本就可以上线让用户使用了。</p>
+<p>以上展示的就是一个回归测试的基本流程，从中可以看到：</p>
+<p>（1）即使上一轮的Bug被修复了，在下一轮的测试中还可能发现新的Bug，并不是说上一轮的Bug修复好了就不会再出现其他问题了；</p>
+<p>（2）软件测试并不是测试一轮就完成了，一般情况下，一个软件产品可能需要经过多轮反复测试和验证才能达到上线标准。</p>
+<h1 id="回归测试的基本策略"><a href="#回归测试的基本策略" class="headerlink" title="回归测试的基本策略"></a>回归测试的基本策略</h1><p>回归测试的策略一般由测试经理或测试组长制定，初级软件测试人员只要按相应的策略执行测试即可。现以XYC邮箱的测试为例，简要介绍一下回归测试的基本策略。</p>
+<p>（1）回归测试时执行全部的测试用例。</p>
+<p>XYC邮箱V1.0版本的第一轮测试中发现100个Bug，那么在第二轮的回归测试中，除了测试这100个Bug之外，其他所有功能点的测试用例需要重新再执行一遍，这样做的原因在于，回归测试的V1.1版本是在修改了V1.0版本存在的100个Bug的基础上建立起来的。由于修复了大量的Bug，这就意味着要改动大量的代码，当多处代码被改动后谁也不能保证其他功能点不受影响，所以对所有的功能点进行测试是比较保险的，也是比较周密的，不会遗漏任何的测试点。使用此策略的时间周期和人力成本也是比较高的，一般情况下，当第一轮测试发现的Bug数量过多的情况下，第二轮回归测试应该执行全部的测试用例。</p>
+<p>（2）选择重要的功能点、常用的功能点、与Bug相关联的功能点进行回归测试。</p>
+<p>XYC邮箱的第二轮回归测试中又发现了40个Bug，那么在第三轮的回归测试过程中，除了要测试这40个Bug之外，还应当把重要的功能点、常用的功能点、与Bug相关联的功能点的测试用例再执行一遍，其他次要的测试用例可在时间充足的情况下选择性执行。</p>
+<p>（3）选择性执行关键功能点的测试用例。</p>
+<p>XYC邮箱的第三轮回归测试中又发现了12个Bug，那么在第四轮的回归测试过程中，除了测试这12个Bug之外，还可以选择性地执行一些关键功能点的测试用例，其他测试用例可在时间充足的情况下选择性执行。</p>
+<p>（4）仅测试出现Bug的功能点。</p>
+<p>如果测试组认为软件的功能点已经十分稳定了，回归测试的时候可选择仅测试出现Bug的功能点。每个策略都有其适应的场景，不能一概而论，应当以Bug的数量和严重程度为导向，深入分析，然后得出适合本项目的回归测试策略。</p>
+<p>回归测试是在系统测试人员完成了需求评审、测试计划、用例设计、环境搭建、Bug提交等关键性的测试工作之后所要开展的工作，可以说此时的测试人员已经完全融入测试体系当中，也完全可以胜任相应的测试工作了。至于回归测试的策略，初级软件测试人员可通过先学习测试经理制定的策略，再从执行回归测试策略过程中进一步提升自己的测试经验。</p>
+<h1 id="测试如何应对新的开发模式？"><a href="#测试如何应对新的开发模式？" class="headerlink" title="测试如何应对新的开发模式？"></a>测试如何应对新的开发模式？</h1><h1 id="为什么需要测试左移，测试右移？"><a href="#为什么需要测试左移，测试右移？" class="headerlink" title="为什么需要测试左移，测试右移？"></a>为什么需要测试左移，测试右移？</h1><p>测试可以保证产品质量，重要性不言而喻。但，要做好测试也比较困难，需要克服很多挑战。尤其是，持续交付、敏捷开发等开发模式为传统     软件测试方式带来了更大的时间压力。</p>
+<p>我们先来看看下面这种熟悉的测试方式都有什么问题：测试人员接到项目后参与需求评审，然后根据需求文档写用例、准备脚本，等开发提测之后正式开始测试、提 Bug、回归，测试通过后就结束了，项目交给运维上线，之后投入下一个项目继续重复这样的流程。</p>
+<p>这样的流程看似没什么错，但有两大问题：</p>
+<ul>
+<li>测试人员非常被动。当需求质量、开发质量较差的时候，测试人员只能被动接受。</li>
+<li>但同时，测试又被认为是质量的责任人。如果因为需求质量、开发提测质量差而导致上线延期，大家通常会首先怪罪测试团队。</li>
+</ul>
+<p>这些问题，在新的开发模式下愈发严重。因为这些新的开发模式有一个共同点，就是要缩短产品的交付周期，对自动化的要求越来越高，能够专门留给传统竖井流程中测试环节的时间越来越短，自然更难保证质量。在极端的情况下，比如在持续部署的模式下，所有测试都是自动化的，已经完全没有留给测试人员专门进行手工测试的时间了。与此同时，测试的能力和质量又是这些开发模式成功的关键。否则，即使可以频繁地构建产品，质量不过关价值也为零。所以，在快速开发模式的挑战下，测试左移、测试右移就应运而生了。这些测试模式，能让测试人员拥有更多主动权，以及更多的时间进行测试。</p>
+<p>那，到底什么是测试左移和测试右移呢？</p>
+<h1 id="什么是测试左移和测试右移？"><a href="#什么是测试左移和测试右移？" class="headerlink" title="什么是测试左移和测试右移？"></a>什么是测试左移和测试右移？</h1><p>测试左移和右移，就是把测试的范围从传统测试的节点中释放出来，向左和右扩展。</p>
+<p>向左扩展，就是让测试介入代码提测之前的部分。比如，扩展到开发阶段，在架构设计时就考虑产品的可测试性，并尽量进行开发自测等。另外，测试可以更进一步扩展到需求评审阶段，让测试人员不只是了解需求，更要评估需求的质量，比如分析需求的合理性以及完整性等。</p>
+<p>类似的，测试右移，是让测试介入代码提测之后的部分。比如，测试人员在产品上线过程中，利用线上的真实环境测试。另外产品上线之后，测试人员仍然介入，通过线上监控和预警，及时发现问题并跟进解决，将影响范围降到最低。这样一来，测试人员不但有更多的时间进行测试，还能发现在非生产环境中难以发现的问题。</p>
+<h1 id="测试左移的原则和实践"><a href="#测试左移的原则和实践" class="headerlink" title="测试左移的原则和实践"></a>测试左移的原则和实践</h1><ul>
+<li><p>调整团队对测试的态度；</p>
+</li>
+<li><p>把测试添加到开发和产品需求步骤中；</p>
+</li>
+<li><p>频繁测试，快速测试。</p>
+</li>
+</ul>
+<h2 id="测试左移原则一：调整团队对测试的态度"><a href="#测试左移原则一：调整团队对测试的态度" class="headerlink" title="测试左移原则一：调整团队对测试的态度"></a>测试左移原则一：调整团队对测试的态度</h2><p>调整团队对测试的态度，打破竖井的工作方式，是测试左移的前提。一个有效的办法是，按照功能的维度管理团队，让整个功能团队对产品负责。也就是说，如果产品质量出现问题，不只是测试团队“背锅”，而是会影响整个功能团队的绩效。同时，让质量问题的直接责任人承担更多的责任，来进一步增强团队成员的责任心。这种利益绑定的办法，虽然简单但非常有效，只不过出现质量问题时要记得进行根因分析，以避免再次出现类似问题。</p>
+<p>另外，还要改变团队成员对测试工作的认知。传统的工作方式中，我们通常认为发现 Bug 最重要，但其实为了提高产品质量，更重要的是预防 Bug。所以说，在测试左移的过程中，我们应该更聚焦在预防 Bug 上。</p>
+<h2 id="测试左移原则二：把测试添加到开发和产品需求步骤中"><a href="#测试左移原则二：把测试添加到开发和产品需求步骤中" class="headerlink" title="测试左移原则二：把测试添加到开发和产品需求步骤中"></a>测试左移原则二：把测试添加到开发和产品需求步骤中</h2><p>测试左移的第一步，是把测试工作融入到开发步骤中。常用的办法是，让测试人员参与到开发阶段的方案设计中，了解开发的实现方式。因为很多开发人员可能只熟悉他负责的那一部分，而测试人员往往对全局更加了解，所以测试人员要评估改动范围以及是否有遗漏的模块和系统。</p>
+<p>另外一个比较彻底，也很有效的方法是全栈开发，通过运维团队提供工具和支持，让开发人员尽量参与到运维工作中去。对于测试来说，也是同样的道理。我们可以让测试团队转型，进行工具开发，并更多地去支持专项测试，比如性能测试、安全测试等，通过“使能”的办法，让开发人员完成功能测试，包括单元测试、集成测试等。</p>
+<p>说到让开发人员完成部分测试工作，常常会听到很多质疑声。反对者认为，测试人员的心理模型跟开发人员不一样，他们更倾向于去找问题。而开发人员面对自己开发的产品，潜意识里就不愿意去找问题，比如，他们不愿意专门尝试各种边界输入进行测试，而把自己开发的功能搞崩溃。所以，开发人员和测试人员更适合分开。</p>
+<p>这种观念，在 10 年前瀑布开发模式盛行时就深入人心。我曾经也非常认同，但在 Facebook 工作了 5 年后改变了看法。如果你能够把开发人员的责任界定得很清楚，谁开发的产品谁要保证质量，那么开发人员自然而然地就会去尝试做好测试，比如进行边界测试。而且，开发人员最了解自己写的代码，所以他能够最高效地对自己的代码进行测试。</p>
+<p>当然，做全栈开发的同时我们仍会保留一部分功能测试人员，毕竟从竖井模式转变到全栈模式是一个循序渐进的长期过程。不过 Facebook 做到了极致，完全没有了功能测试人员，也就是我们所说的“去 QA”。</p>
+<p>测试左移到了开发阶段之后，再往左移一步就到了产品设计阶段，在这里，测试人员除了解需求外，更重要的是评估需求的质量。</p>
+<p>我推荐使用 BDD（Behavior Driven Development，行为驱动开发）的方法进行开发，促进团队在需求评审时更多地考虑测试。BDD 是通过特定的框架，用自然语言或类自然语言，按照编写用户故事或者用例的方式，从功能使用者的视角描述并编写测试用例，从而让业务人员、开发人员和测试人员着眼于代码要实现的业务行为，并以此为依据通过测试用例进行验证。</p>
+<h2 id="测试左移原则三：频繁测试，快速测试"><a href="#测试左移原则三：频繁测试，快速测试" class="headerlink" title="测试左移原则三：频繁测试，快速测试"></a>测试左移原则三：频繁测试，快速测试</h2><p>测试左移的第三个重要原则是，频繁测试、快速测试。在测试左移之前，我们需要等待提测，比较被动，不能频繁测试。但测试左移到开发阶段之后，我们就有了很大的自由度去频繁运行测试，从而更好地发挥测试的作用，尽早发现更多的问题。</p>
+<p>这里最重要的方法就是，我在讲持续开发时提到的几个关于验证的操作，具体包括：</p>
+<ul>
+<li><p>规范化、自动化化本地检查；</p>
+</li>
+<li><p>建设并自动化代码入库前的检查流程；</p>
+</li>
+<li><p>提供快速反馈，促进增量开发。</p>
+</li>
+</ul>
+<p>另外，为了能够顺利、频繁地运行测试，我们还要提升测试运行的速度。给测试提速的常见办法包括：</p>
+<ul>
+<li><p>并行运行。比如把测试用例放到多台机器上运行，用资源换时间。</p>
+</li>
+<li><p>提高构建速度。比如使用精准构建，因为通常构建之后才能运行测试。</p>
+</li>
+<li><p>精准测试，也就是只运行跟改动最相关的测试。可以建立需求与代码的关系，以及需求与测试用例的关系，从而在代码改动时重点关注与之最相关的测试用例。</p>
+</li>
+<li><p>分层测试，即不同情况运行不同测试用例集合。</p>
+</li>
+<li><p>减少不必要的用例。比如，识别不稳定的用例，对其删除或者优化。</p>
+</li>
+</ul>
+ 
+      <!-- reward -->
+      
+      <div id="reword-out">
+        <div id="reward-btn">
+          打赏
+        </div>
+      </div>
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <div class="declare">
+      <ul class="post-copyright">
+        <li>
+          <i class="ri-copyright-line"></i>
+          <strong>版权声明： </strong>
+          
+          本博客所有文章除特别声明外，著作权归作者所有。转载请注明出处！
+          
+        </li>
+      </ul>
+    </div>
+    
+    <footer class="article-footer">
+       
+<div class="share-btn">
+      <span class="share-sns share-outer">
+        <i class="ri-share-forward-line"></i>
+        分享
+      </span>
+      <div class="share-wrap">
+        <i class="arrow"></i>
+        <div class="share-icons">
+          
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="ri-weibo-fill"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="ri-wechat-fill"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="ri-qq-fill"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="ri-douban-line"></i>
+          </a>
+          <!-- <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a> -->
+          
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="ri-facebook-circle-fill"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="ri-twitter-fill"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="ri-google-fill"></i>
+          </a>
+        </div>
+      </div>
+</div>
+
+<div class="wx-share-modal">
+    <a class="modal-close" href="javascript:;"><i class="ri-close-circle-line"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://www.yeying.tech/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/software-testing-11/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div id="share-mask"></div>  
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E5%9F%BA%E7%A1%80/" rel="tag">软件测试基础</a></li></ul>
+
+    </footer>
+  </div>
+
+   
+  <nav class="article-nav">
+    
+      <a href="/Hackathon%E5%8D%8E%E4%B8%9C%E4%B9%9D%E6%A0%A1%E7%BC%96%E7%A8%8B%E5%88%9B%E5%AE%A2%E9%A9%AC%E6%8B%89%E6%9D%BE/hackathon-requirement-analysis/" class="article-nav-link">
+        <strong class="article-nav-caption">上一篇</strong>
+        <div class="article-nav-title">
+          
+            项目需求分析
+          
+        </div>
+      </a>
+    
+    
+      <a href="/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/software-testing-10/" class="article-nav-link">
+        <strong class="article-nav-caption">下一篇</strong>
+        <div class="article-nav-title">软件测试-10</div>
+      </a>
+    
+  </nav>
+
+   
+<!-- valine评论 -->
+<div id="vcomments-box">
+  <div id="vcomments"></div>
+</div>
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js"></script>
+<script>
+  new Valine({
+    el: "#vcomments",
+    app_id: "",
+    app_key: "",
+    path: window.location.pathname,
+    avatar: "monsterid",
+    placeholder: "给我的文章加点评论吧~",
+    recordIP: true,
+  });
+  const infoEle = document.querySelector("#vcomments .info");
+  if (infoEle && infoEle.childNodes && infoEle.childNodes.length > 0) {
+    infoEle.childNodes.forEach(function (item) {
+      item.parentNode.removeChild(item);
+    });
+  }
+</script>
+<style>
+  #vcomments-box {
+    padding: 5px 30px;
+  }
+
+  @media screen and (max-width: 800px) {
+    #vcomments-box {
+      padding: 5px 0px;
+    }
+  }
+
+  #vcomments-box #vcomments {
+    background-color: #fff;
+  }
+
+  .v .vlist .vcard .vh {
+    padding-right: 20px;
+  }
+
+  .v .vlist .vcard {
+    padding-left: 10px;
+  }
+</style>
+
+ 
+   
+     
+</article>
+
+
+</section>
+      <footer class="footer">
+  <div class="outer">
+    <ul>
+      <li>
+        Copyrights &copy;
+        2019-2021
+        <i class="ri-heart-fill heart_icon"></i> PAYIZ
+      </li>
+    </ul>
+    <ul>
+      <li>
+        
+        
+        <span>
+  <span><i class="ri-user-3-fill"></i><span id="busuanzi_value_site_uv"></span></span>
+  <span class="division">|</span>
+  <span><i class="ri-eye-fill"></i><span id="busuanzi_value_page_pv"></span></span>
+</span>
+        
+      </li>
+    </ul>
+    <ul>
+      
+    </ul>
+    <ul>
+      
+    </ul>
+    <ul>
+      <li>
+        <!-- cnzz统计 -->
+        
+        <script type="text/javascript" src='https://s9.cnzz.com/z_stat.php?id=1280147847&amp;web_id=1280147847'></script>
+        
+      </li>
+    </ul>
+  </div>
+</footer>
+      <div class="float_btns">
+        <div class="totop" id="totop">
+  <i class="ri-arrow-up-line"></i>
+</div>
+
+<div class="todark" id="todark">
+  <i class="ri-moon-line"></i>
+</div>
+
+      </div>
+    </main>
+    <aside class="sidebar on">
+      <button class="navbar-toggle"></button>
+<nav class="navbar">
+  
+  <div class="logo">
+    <a href="/"><img src="/images/bird.png" alt="夜莺悠吟"></a>
+  </div>
+  
+  <ul class="nav nav-main">
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/">主页</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/archives">归档</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/categories">分类</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/tags">标签</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/categories/%E7%9B%B8%E5%86%8C">相册</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/photos">壁纸</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/friends">社交</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/about/me">关于我</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/about/site">关于博客</a>
+    </li>
+    
+  </ul>
+</nav>
+<nav class="navbar navbar-bottom">
+  <ul class="nav">
+    <li class="nav-item">
+      
+      <a class="nav-item-link nav-item-search"  title="搜索">
+        <i class="ri-search-line"></i>
+      </a>
+      
+      
+      <a class="nav-item-link" target="_blank" href="/atom.xml" title="RSS Feed">
+        <i class="ri-rss-line"></i>
+      </a>
+      
+    </li>
+  </ul>
+</nav>
+<div class="search-form-wrap">
+  <div class="local-search local-search-plugin">
+  <input type="search" id="local-search-input" class="local-search-input" placeholder="Search...">
+  <div id="local-search-result" class="local-search-result"></div>
+</div>
+</div>
+    </aside>
+    <div id="mask"></div>
+
+<!-- #reward -->
+<div id="reward">
+  <span class="close"><i class="ri-close-line"></i></span>
+  <p class="reward-p"><i class="ri-cup-line"></i>感谢您的支持😊</p>
+  <div class="reward-box">
+    
+    <div class="reward-item">
+      <img class="reward-img" src="https://cdn.jsdelivr.net/gh/payiz-asj/CDN/images/alipay.png">
+      <span class="reward-type">支付宝</span>
+    </div>
+    
+    
+    <div class="reward-item">
+      <img class="reward-img" src="https://cdn.jsdelivr.net/gh/payiz-asj/CDN/images/wechatpay.png">
+      <span class="reward-type">微信</span>
+    </div>
+    
+  </div>
+</div>
+    
+<script src="/js/jquery-2.0.3.min.js"></script>
+ 
+<script src="/js/lazyload.min.js"></script>
+
+<!-- Tocbot -->
+ 
+<script src="/js/tocbot.min.js"></script>
+
+<script>
+  tocbot.init({
+    tocSelector: ".tocbot",
+    contentSelector: ".article-entry",
+    headingSelector: "h1, h2, h3, h4, h5, h6",
+    hasInnerContainers: true,
+    scrollSmooth: true,
+    scrollContainer: "main",
+    positionFixedSelector: ".tocbot",
+    positionFixedClass: "is-position-fixed",
+    fixedSidebarOffset: "auto",
+  });
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.js"></script>
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.css"
+/>
+<script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js"></script>
+
+<script src="/dist/main.js"></script>
+
+<!-- ImageViewer -->
+ <!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" style="display:none" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css">
+<script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"></script>
+
+<script>
+    function viewer_init() {
+        let pswpElement = document.querySelectorAll('.pswp')[0];
+        let $imgArr = document.querySelectorAll(('.article-entry img:not(.reward-img)'))
+
+        $imgArr.forEach(($em, i) => {
+            $em.onclick = () => {
+                // slider展开状态
+                // todo: 这样不好，后面改成状态
+                if (document.querySelector('.left-col.show')) return
+                let items = []
+                $imgArr.forEach(($em2, i2) => {
+                    let img = $em2.getAttribute('data-idx', i2)
+                    let src = $em2.getAttribute('data-target') || $em2.getAttribute('src')
+                    let title = $em2.getAttribute('alt')
+                    // 获得原图尺寸
+                    const image = new Image()
+                    image.src = src
+                    items.push({
+                        src: src,
+                        w: image.width || $em2.width,
+                        h: image.height || $em2.height,
+                        title: title
+                    })
+                })
+                var gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, {
+                    index: parseInt(i)
+                });
+                gallery.init()
+            }
+        })
+    }
+    viewer_init()
+</script> 
+<!-- MathJax -->
+
+<!-- Katex -->
+
+<!-- busuanzi  -->
+ 
+<script src="/js/busuanzi-2.3.pure.min.js"></script>
+ 
+<!-- ClickLove -->
+ 
+<script src="/js/clickLove.js"></script>
+ 
+<!-- ClickBoom1 -->
+
+<!-- ClickBoom2 -->
+
+<!-- CodeCopy -->
+ 
+<link rel="stylesheet" href="/css/clipboard.css">
+ <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+<script>
+  function wait(callback, seconds) {
+    var timelag = null;
+    timelag = window.setTimeout(callback, seconds);
+  }
+  !function (e, t, a) {
+    var initCopyCode = function(){
+      var copyHtml = '';
+      copyHtml += '<button class="btn-copy" data-clipboard-snippet="">';
+      copyHtml += '<i class="ri-file-copy-2-line"></i><span>COPY</span>';
+      copyHtml += '</button>';
+      $(".highlight .code pre").before(copyHtml);
+      $(".article pre code").before(copyHtml);
+      var clipboard = new ClipboardJS('.btn-copy', {
+        target: function(trigger) {
+          return trigger.nextElementSibling;
+        }
+      });
+      clipboard.on('success', function(e) {
+        let $btn = $(e.trigger);
+        $btn.addClass('copied');
+        let $icon = $($btn.find('i'));
+        $icon.removeClass('ri-file-copy-2-line');
+        $icon.addClass('ri-checkbox-circle-line');
+        let $span = $($btn.find('span'));
+        $span[0].innerText = 'COPIED';
+        
+        wait(function () { // 等待两秒钟后恢复
+          $icon.removeClass('ri-checkbox-circle-line');
+          $icon.addClass('ri-file-copy-2-line');
+          $span[0].innerText = 'COPY';
+        }, 2000);
+      });
+      clipboard.on('error', function(e) {
+        e.clearSelection();
+        let $btn = $(e.trigger);
+        $btn.addClass('copy-failed');
+        let $icon = $($btn.find('i'));
+        $icon.removeClass('ri-file-copy-2-line');
+        $icon.addClass('ri-time-line');
+        let $span = $($btn.find('span'));
+        $span[0].innerText = 'COPY FAILED';
+        
+        wait(function () { // 等待两秒钟后恢复
+          $icon.removeClass('ri-time-line');
+          $icon.addClass('ri-file-copy-2-line');
+          $span[0].innerText = 'COPY';
+        }, 2000);
+      });
+    }
+    initCopyCode();
+  }(window, document);
+</script>
+ 
+<!-- CanvasBackground -->
+
+<script>
+  if (window.mermaid) {
+    mermaid.initialize({ theme: "forest" });
+  }
+</script>
+
+
+    
+  </div>
+</body>
+
+</html>

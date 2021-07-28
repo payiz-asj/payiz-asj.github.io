@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+
+
+<html lang="zh-CN">
+  
+
+    <head>
+      <meta charset="utf-8" />
+       
+      <meta name="keywords" content="YeYing,Blog,夜莺,博客,夜莺悠吟,yeying.tech,www.yeying.tech" />
+       
+      <meta name="description" content="挑灯夜战，常闻夜莺悠吟...停笔共鸣...悲壮、坚定！&lt;br&gt;心酸背后总有值得坚持的理由💪请坚持！&lt;br&gt; 珍惜身边的人！ 小快y你❤" />
+      
+      <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1"
+      />
+      <title>软件测试-3 |  夜莺悠吟</title>
+  <meta name="generator" content="hexo-theme-ayer">
+      
+      <link rel="shortcut icon" href="/favicon.ico" />
+       
+<link rel="stylesheet" href="/dist/main.css">
+
+      <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/Shen-Yu/cdn/css/remixicon.min.css"
+      />
+      
+<link rel="stylesheet" href="/css/custom.css">
+ 
+      <script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+       
+ 
+
+      <!-- mermaid -->
+      
+    <link rel="alternate" href="/atom.xml" title="夜莺悠吟" type="application/atom+xml">
+</head>
+  </html>
+</html>
+
+
+<body>
+  <div id="app">
+    
+      
+    <main class="content on">
+      <section class="outer">
+  
+<article
+  id="post-software-testing-3"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h1 class="article-title sea-center" style="border-left:0" itemprop="name">
+  软件测试-3
+</h1>
+ 
+
+      
+    </header>
+     
+    <div class="article-meta">
+      <a href="/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/software-testing-3/" class="article-date">
+  <time datetime="2019-05-28T06:16:21.000Z" itemprop="datePublished">2019-05-28</time>
+</a> 
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/">软件测试</a>
+  </div>
+  
+<div class="word_count">
+    <span class="post-time">
+        <span class="post-meta-item-icon">
+            <i class="ri-quill-pen-line"></i>
+            <span class="post-meta-item-text"> 字数统计:</span>
+            <span class="post-count">2.8k</span>
+        </span>
+    </span>
+
+    <span class="post-time">
+        &nbsp; | &nbsp;
+        <span class="post-meta-item-icon">
+            <i class="ri-book-open-line"></i>
+            <span class="post-meta-item-text"> 阅读时长≈</span>
+            <span class="post-count">9 分钟</span>
+        </span>
+    </span>
+</div>
+ 
+    </div>
+      
+    <div class="tocbot"></div>
+
+
+
+
+  
+    <div class="article-entry" itemprop="articleBody">
+       
+  <h1 id="如何测试矿泉水瓶"><a href="#如何测试矿泉水瓶" class="headerlink" title="如何测试矿泉水瓶"></a>如何测试矿泉水瓶</h1><p>一个刚生产出来的矿泉水瓶要不要进行测试（检验）？答案是肯定的，当然要进行测试。只有通过测试，才能批量生产。如果产品生产出来后不进行测试，直接交给用户使用，在用户使用时出现了问题，那势必会给用户和企业带来不良的影响，甚至是严重的后果。那么测试人员该如何针对矿泉水瓶进行测试呢？</p>
+<span id="more"></span>
+
+<p>一个从未接触过软件测试的职场新人很可能会对矿泉水瓶的测试点总结如下。</p>
+<p>（1）矿泉水瓶的长度、宽度、高度和容积。</p>
+<p>（2）瓶盖拧紧是否需要很大的力度。</p>
+<p>（3）瓶盖内螺纹圈数、螺纹深度与样品是否一致。</p>
+<p>（4）瓶盖外的摩擦阻力是否良好。</p>
+<p>（5）瓶盖上的商标是否与样品要求一致。</p>
+<p>（6）是否有生产日期，是否过期。</p>
+<p>（7）包装是否精美，是否符合要求。</p>
+<p>（8）包装是否环保。</p>
+<p>（9）包装说明书是否字迹清楚，是否有错别字，是否有表达上的歧义。</p>
+<p>（10）各种标识，如容积、环保性、条码、公司地址等，是否清楚、正确和规范。</p>
+<p>（11）包装上的条码能否扫描。</p>
+<p>（12）瓶子是否容易倾斜。</p>
+<p>（13）瓶身是否光滑。</p>
+<p>（14）瓶身的雕纹走向是否自然、流畅、美观，并符合要求。</p>
+<p>（15）空瓶内是否有气味。</p>
+<p>（16）装满开水时瓶身的变化，瓶内气味及水的味道。</p>
+<p>（17）装满冷水时瓶身的变化，瓶内气味及水的味道。</p>
+<p>（18）冷热参半时瓶身的变化，瓶内气味及水的味道。</p>
+<p>（19）瓶子的材料是否环保，是否有环保标识。</p>
+<p>（20）瓶子承受的最大压力。</p>
+<p>（21）瓶子是否易燃。</p>
+<p>（22）观察瓶口是否容易漏水。</p>
+<p>（23）瓶口是否光滑舒适。</p>
+<p>（24）装食用油后瓶身变化及瓶内气味。</p>
+<p>（25）装汽油后瓶身变化及瓶内气味。</p>
+<p>（26）水油混合后瓶身变化及瓶内气味。</p>
+<p>（27）装醋后瓶身变化及瓶内气味。</p>
+<p>（28）商标是否显眼，易于识别。</p>
+<p>很容易就可以写出28个测试点，为什么能写出这么多的测试点呢？原因很简单，因为大家经常喝矿泉水，所以对矿泉水瓶的使用非常熟悉，能写出一些测试点来也不足为奇，测试有时候就是这么简单。但是对于其中一些测试点，例如“观察瓶口是否容易漏水”，这个测试点写清楚了吗？显然是没有写清楚，因为只是写出了测试的地方是瓶口，随后提出了一个问题——瓶口是否容易漏水。但是测试工作并不是提出问题，而是要用具体的方法去测试瓶口是否容易漏水。也就是说除了要写清楚测试对象外，还要写清楚如何去测试它。那么这个测试点可以这样写：用瓶子装满水之后，扭紧瓶盖，然后使劲摇晃和挤压，观察瓶口是否有水渗出。这样一来测试对象和方法都写出来了，测试点才会更加清晰。</p>
+<p>按照同样的思路，可以重新修改整理一下测试点，并加入测试的方法，具体如下。</p>
+<p>（1）瓶身上广告和图案的背景颜色是否符合公司的设计要求。</p>
+<p>（2）瓶身上所有的字体颜色是否符合公司的设计要求，是否有错别字。</p>
+<p>（3）带广告的图案遇水后是否会掉色或变模糊，广告内容与图案是否合法。</p>
+<p>（4）瓶身上是否有防止烫伤、垃圾回收、年龄限制等提示。</p>
+<p>（5）瓶身上图标布局是否合理，其间距、大小是否符合公司的设计要求。</p>
+<p>（6）瓶子底座尺寸、高度尺寸是否符合公司的设计要求。</p>
+<p>（7）瓶子的口径尺寸是否符合公司最初的设计要求。</p>
+<p>（8）瓶身上的纹路及线条是否符合公司的设计要求。</p>
+<p>（9）在装少量的水、装半瓶水、装满水这几种情况下，分别将水倒入准备好的量筒中，查看量筒的读数，检查矿泉水瓶的容量是否符合设计要求、装满多少水后会漏水。</p>
+<p>（10）将空瓶和装满水的瓶子放在电子秤上，检查瓶子装满水前后的重量，看是否符合公司的设计要求。</p>
+<p>（11）将瓶子装满水后拧紧瓶盖，将其倒置或使劲摇晃、挤压，看是否漏水。</p>
+<p>（12）拧紧瓶盖后，请小孩、成年男性、成年女性分别去拧瓶盖看是否都能拧开。</p>
+<p>（13）将瓶子装满水后倒入口中看能不能喝到水，是否存在漏水的现象。</p>
+<p>（14）用手挤压空瓶子，挤扁后观察瓶身能否自动复原。</p>
+<p>（15）分别在装水或不装水的情况下观察瓶身的透明度，看是否清澈透底。</p>
+<p>（16）将空瓶、装半瓶水的瓶子、装满水的瓶子分别放在水平桌上及放在有20°和30°倾斜角度的桌面上，看瓶子是否倾斜或不稳。</p>
+<p>（17）将装满水的瓶子和装半瓶水的瓶子分别放置于－10℃、－20℃、10℃、30℃、50℃、80℃、100℃的环境中，连续放1天、10天、20天、30天，然后观察瓶子是否漏水，瓶身是否破裂。</p>
+<p>（18）将空瓶、装半瓶水的瓶子、装满水的瓶子分别置于太阳光下曝晒（0.5h、1h、3h、5h），观察瓶子是否漏水，瓶身是否破裂。</p>
+<p>（19）将空瓶、装半瓶水的瓶子、装满水的瓶子分别从不同高度（1m、3m、8m、15m）摔下来，观察瓶身是否摔破，是否漏水。</p>
+<p>（20）成年人分别使劲摔（或者是各种角度按压）空瓶、装半瓶水的瓶子、装满水的瓶子，摔一次和摔多次，看瓶子是否摔坏（漏水和破裂）。</p>
+<p>（21）将空瓶、装半瓶水的瓶子、装满水的瓶子分别置于水平桌面上，用电风扇吹桌面上的瓶子，调节电风扇的风力大小，观察瓶子是否会被吹倒或吹走。</p>
+<p>（22）满瓶的水加包装后，六面震动，检查产品是否能应对铁路/公路/航空等运输环境。</p>
+<p>（23）将空瓶子燃烧掉，观察燃烧时的火焰，闻燃烧时的气味，查看燃烧的残留物是否符合材质的燃烧特性，是否产生有害的毒气。</p>
+<p>（24）空瓶长时间放置（一个月、三个月、半年），用仪器检测是否会产生塑化剂或细菌。</p>
+<p>（25）装满水后（其次可装入不同的液体，如果汁、碳酸饮料）分别放置1天、5天、10天后，检测瓶身与液体间是否发生化学反应，是否产生有毒物质或细菌。</p>
+<p>（26）装入热水（50℃～100℃），分别放置1min、5min、10min，然后观察瓶子是否变形，是否有异味产生。（27）用手去抚摸瓶身的内壁和外壁，是否感觉光滑舒适不刺手。</p>
+<p>（28）试着喝口水，并将瓶口在嘴中转动，感受瓶口的舒适度和圆滑度。</p>
+<p>（29）用手轻拿已装满水的瓶子看是否容易掉落，检查瓶身是否有防滑措施。</p>
+<p>（30）瓶子分别装入30℃、60℃、80℃的水时用手掌感受瓶身的温度，因为感受不到的话更容易烫嘴。</p>
+<p>（31）分别将瓶子放入手中、口袋、包中、车上，观察是否易于携带。</p>
+<p>（32）瓶中分别装入碳酸饮料（如可乐）、果汁、咖啡、茶水、油类（如菜油）等液体，放置0.5h后再倒入口中测试是否变味。</p>
+<p>（33）瓶中是否可以装入固体（例如饼干、沙子，石头等），且瓶子与装入的固体是否会发生化学反应。</p>
+<p>这次写出了33个测试点，比之前写的测试点详细了很多。但是在写测试点的时候，并没有预先梳理测试点，而是想到一条写一条，导致测试点的编写缺乏条理性，而且也不知道写得是否全面。那么对于一个矿泉水瓶的测试到底要基于哪些方面呢？</p>
+<p>第一，瓶子的外观界面测试。</p>
+<p>瓶子的外观界面测试主要是测试瓶子的大小、瓶身所体现的各种信息（如字体、颜色）等瓶子的外观特征是否满足公司最初对瓶子的设计要求，那么示例中编号为（1）、（2）、（3）、（4）、（5）、（6）、（7）、（8）的测试点就可以归到瓶子的外观界面测试当中。</p>
+<p>第二，瓶子的功能测试。</p>
+<p>瓶子的功能测试主要是测试瓶子的装水功能、喝水功能以及瓶子自带的一些功能特点。围绕这些特点，示例中编号为（9）、（10）、（11）、（12）、（13）、（14）、（15）的测试点都可以归到瓶子的功能测试当中。</p>
+<p>第三，瓶子的性能测试。</p>
+<p>瓶子的性能测试主要是测试瓶子的抗摔、抗压、抗高低温的这些情况。围绕这些特点，示例中编号为（16）、（17）、（18）、（19）、（20）、（21）、（22）的测试点都可以归到瓶子的性能测试当中。</p>
+<p>第四，瓶子的安全性测试。</p>
+<p>瓶子的安全性测试主要是测试瓶子在使用过程中瓶子本身是否会对人体或环境造成一些伤害，是否存在潜在的安全问题。围绕这些特点，示例中编号为（23）、（24）、（25）、（26）的测试点都可以归到瓶子的安全性测试当中。</p>
+<p>第五，瓶子的易用性测试。</p>
+<p>瓶子的易用性测试主要是测试瓶子用起来是否方便，例如拿在手上或装在包里是否方便等，如果瓶子设计得太复杂估计就没有多少人用了。围绕这些特点，示例中编号为（27）、（28）、（29）、（30）、（31）的测试点都可以归到瓶子的易用性测试当中。</p>
+<p>第六，瓶子的兼容性测试。</p>
+<p>瓶子的兼容性测试主要是测试瓶子除了可以装水之外，是否还可以装一些其他的东西，例如其他液体或固体等。围绕这些特点，示例中编号为（32）、（33）的测试点都可以归到瓶子的兼容性测试当中。</p>
+<p>将测试点进行这样的简要划分后，编写测试点时就会更加清晰、有条理了。当然不一定非要这样划分，只是想告诉读者对一个产品做通用测试的时候，最初是可以基于产品的外观界面、功能、性能、安全性、易用性、兼容性这6个方面进行测试的，而事实上这6个方面也是必须要测试的。</p>
+ 
+      <!-- reward -->
+      
+      <div id="reword-out">
+        <div id="reward-btn">
+          打赏
+        </div>
+      </div>
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <div class="declare">
+      <ul class="post-copyright">
+        <li>
+          <i class="ri-copyright-line"></i>
+          <strong>版权声明： </strong>
+          
+          本博客所有文章除特别声明外，著作权归作者所有。转载请注明出处！
+          
+        </li>
+      </ul>
+    </div>
+    
+    <footer class="article-footer">
+       
+<div class="share-btn">
+      <span class="share-sns share-outer">
+        <i class="ri-share-forward-line"></i>
+        分享
+      </span>
+      <div class="share-wrap">
+        <i class="arrow"></i>
+        <div class="share-icons">
+          
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="ri-weibo-fill"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="ri-wechat-fill"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="ri-qq-fill"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="ri-douban-line"></i>
+          </a>
+          <!-- <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a> -->
+          
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="ri-facebook-circle-fill"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="ri-twitter-fill"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="ri-google-fill"></i>
+          </a>
+        </div>
+      </div>
+</div>
+
+<div class="wx-share-modal">
+    <a class="modal-close" href="javascript:;"><i class="ri-close-circle-line"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://www.yeying.tech/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/software-testing-3/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div id="share-mask"></div>  
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E5%9F%BA%E7%A1%80/" rel="tag">软件测试基础</a></li></ul>
+
+    </footer>
+  </div>
+
+   
+  <nav class="article-nav">
+    
+      <a href="/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/software-testing-4/" class="article-nav-link">
+        <strong class="article-nav-caption">上一篇</strong>
+        <div class="article-nav-title">
+          
+            软件测试-4
+          
+        </div>
+      </a>
+    
+    
+      <a href="/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/software-testing-2/" class="article-nav-link">
+        <strong class="article-nav-caption">下一篇</strong>
+        <div class="article-nav-title">软件测试-2</div>
+      </a>
+    
+  </nav>
+
+   
+<!-- valine评论 -->
+<div id="vcomments-box">
+  <div id="vcomments"></div>
+</div>
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js"></script>
+<script>
+  new Valine({
+    el: "#vcomments",
+    app_id: "",
+    app_key: "",
+    path: window.location.pathname,
+    avatar: "monsterid",
+    placeholder: "给我的文章加点评论吧~",
+    recordIP: true,
+  });
+  const infoEle = document.querySelector("#vcomments .info");
+  if (infoEle && infoEle.childNodes && infoEle.childNodes.length > 0) {
+    infoEle.childNodes.forEach(function (item) {
+      item.parentNode.removeChild(item);
+    });
+  }
+</script>
+<style>
+  #vcomments-box {
+    padding: 5px 30px;
+  }
+
+  @media screen and (max-width: 800px) {
+    #vcomments-box {
+      padding: 5px 0px;
+    }
+  }
+
+  #vcomments-box #vcomments {
+    background-color: #fff;
+  }
+
+  .v .vlist .vcard .vh {
+    padding-right: 20px;
+  }
+
+  .v .vlist .vcard {
+    padding-left: 10px;
+  }
+</style>
+
+ 
+   
+     
+</article>
+
+
+</section>
+      <footer class="footer">
+  <div class="outer">
+    <ul>
+      <li>
+        Copyrights &copy;
+        2019-2021
+        <i class="ri-heart-fill heart_icon"></i> PAYIZ
+      </li>
+    </ul>
+    <ul>
+      <li>
+        
+        
+        <span>
+  <span><i class="ri-user-3-fill"></i><span id="busuanzi_value_site_uv"></span></span>
+  <span class="division">|</span>
+  <span><i class="ri-eye-fill"></i><span id="busuanzi_value_page_pv"></span></span>
+</span>
+        
+      </li>
+    </ul>
+    <ul>
+      
+    </ul>
+    <ul>
+      
+    </ul>
+    <ul>
+      <li>
+        <!-- cnzz统计 -->
+        
+        <script type="text/javascript" src='https://s9.cnzz.com/z_stat.php?id=1280147847&amp;web_id=1280147847'></script>
+        
+      </li>
+    </ul>
+  </div>
+</footer>
+      <div class="float_btns">
+        <div class="totop" id="totop">
+  <i class="ri-arrow-up-line"></i>
+</div>
+
+<div class="todark" id="todark">
+  <i class="ri-moon-line"></i>
+</div>
+
+      </div>
+    </main>
+    <aside class="sidebar on">
+      <button class="navbar-toggle"></button>
+<nav class="navbar">
+  
+  <div class="logo">
+    <a href="/"><img src="/images/bird.png" alt="夜莺悠吟"></a>
+  </div>
+  
+  <ul class="nav nav-main">
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/">主页</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/archives">归档</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/categories">分类</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/tags">标签</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/categories/%E7%9B%B8%E5%86%8C">相册</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/photos">壁纸</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/friends">社交</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/about/me">关于我</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/about/site">关于博客</a>
+    </li>
+    
+  </ul>
+</nav>
+<nav class="navbar navbar-bottom">
+  <ul class="nav">
+    <li class="nav-item">
+      
+      <a class="nav-item-link nav-item-search"  title="搜索">
+        <i class="ri-search-line"></i>
+      </a>
+      
+      
+      <a class="nav-item-link" target="_blank" href="/atom.xml" title="RSS Feed">
+        <i class="ri-rss-line"></i>
+      </a>
+      
+    </li>
+  </ul>
+</nav>
+<div class="search-form-wrap">
+  <div class="local-search local-search-plugin">
+  <input type="search" id="local-search-input" class="local-search-input" placeholder="Search...">
+  <div id="local-search-result" class="local-search-result"></div>
+</div>
+</div>
+    </aside>
+    <div id="mask"></div>
+
+<!-- #reward -->
+<div id="reward">
+  <span class="close"><i class="ri-close-line"></i></span>
+  <p class="reward-p"><i class="ri-cup-line"></i>感谢您的支持😊</p>
+  <div class="reward-box">
+    
+    <div class="reward-item">
+      <img class="reward-img" src="https://cdn.jsdelivr.net/gh/payiz-asj/CDN/images/alipay.png">
+      <span class="reward-type">支付宝</span>
+    </div>
+    
+    
+    <div class="reward-item">
+      <img class="reward-img" src="https://cdn.jsdelivr.net/gh/payiz-asj/CDN/images/wechatpay.png">
+      <span class="reward-type">微信</span>
+    </div>
+    
+  </div>
+</div>
+    
+<script src="/js/jquery-2.0.3.min.js"></script>
+ 
+<script src="/js/lazyload.min.js"></script>
+
+<!-- Tocbot -->
+ 
+<script src="/js/tocbot.min.js"></script>
+
+<script>
+  tocbot.init({
+    tocSelector: ".tocbot",
+    contentSelector: ".article-entry",
+    headingSelector: "h1, h2, h3, h4, h5, h6",
+    hasInnerContainers: true,
+    scrollSmooth: true,
+    scrollContainer: "main",
+    positionFixedSelector: ".tocbot",
+    positionFixedClass: "is-position-fixed",
+    fixedSidebarOffset: "auto",
+  });
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.js"></script>
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.css"
+/>
+<script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js"></script>
+
+<script src="/dist/main.js"></script>
+
+<!-- ImageViewer -->
+ <!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" style="display:none" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css">
+<script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"></script>
+
+<script>
+    function viewer_init() {
+        let pswpElement = document.querySelectorAll('.pswp')[0];
+        let $imgArr = document.querySelectorAll(('.article-entry img:not(.reward-img)'))
+
+        $imgArr.forEach(($em, i) => {
+            $em.onclick = () => {
+                // slider展开状态
+                // todo: 这样不好，后面改成状态
+                if (document.querySelector('.left-col.show')) return
+                let items = []
+                $imgArr.forEach(($em2, i2) => {
+                    let img = $em2.getAttribute('data-idx', i2)
+                    let src = $em2.getAttribute('data-target') || $em2.getAttribute('src')
+                    let title = $em2.getAttribute('alt')
+                    // 获得原图尺寸
+                    const image = new Image()
+                    image.src = src
+                    items.push({
+                        src: src,
+                        w: image.width || $em2.width,
+                        h: image.height || $em2.height,
+                        title: title
+                    })
+                })
+                var gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, {
+                    index: parseInt(i)
+                });
+                gallery.init()
+            }
+        })
+    }
+    viewer_init()
+</script> 
+<!-- MathJax -->
+
+<!-- Katex -->
+
+<!-- busuanzi  -->
+ 
+<script src="/js/busuanzi-2.3.pure.min.js"></script>
+ 
+<!-- ClickLove -->
+ 
+<script src="/js/clickLove.js"></script>
+ 
+<!-- ClickBoom1 -->
+
+<!-- ClickBoom2 -->
+
+<!-- CodeCopy -->
+ 
+<link rel="stylesheet" href="/css/clipboard.css">
+ <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+<script>
+  function wait(callback, seconds) {
+    var timelag = null;
+    timelag = window.setTimeout(callback, seconds);
+  }
+  !function (e, t, a) {
+    var initCopyCode = function(){
+      var copyHtml = '';
+      copyHtml += '<button class="btn-copy" data-clipboard-snippet="">';
+      copyHtml += '<i class="ri-file-copy-2-line"></i><span>COPY</span>';
+      copyHtml += '</button>';
+      $(".highlight .code pre").before(copyHtml);
+      $(".article pre code").before(copyHtml);
+      var clipboard = new ClipboardJS('.btn-copy', {
+        target: function(trigger) {
+          return trigger.nextElementSibling;
+        }
+      });
+      clipboard.on('success', function(e) {
+        let $btn = $(e.trigger);
+        $btn.addClass('copied');
+        let $icon = $($btn.find('i'));
+        $icon.removeClass('ri-file-copy-2-line');
+        $icon.addClass('ri-checkbox-circle-line');
+        let $span = $($btn.find('span'));
+        $span[0].innerText = 'COPIED';
+        
+        wait(function () { // 等待两秒钟后恢复
+          $icon.removeClass('ri-checkbox-circle-line');
+          $icon.addClass('ri-file-copy-2-line');
+          $span[0].innerText = 'COPY';
+        }, 2000);
+      });
+      clipboard.on('error', function(e) {
+        e.clearSelection();
+        let $btn = $(e.trigger);
+        $btn.addClass('copy-failed');
+        let $icon = $($btn.find('i'));
+        $icon.removeClass('ri-file-copy-2-line');
+        $icon.addClass('ri-time-line');
+        let $span = $($btn.find('span'));
+        $span[0].innerText = 'COPY FAILED';
+        
+        wait(function () { // 等待两秒钟后恢复
+          $icon.removeClass('ri-time-line');
+          $icon.addClass('ri-file-copy-2-line');
+          $span[0].innerText = 'COPY';
+        }, 2000);
+      });
+    }
+    initCopyCode();
+  }(window, document);
+</script>
+ 
+<!-- CanvasBackground -->
+
+<script>
+  if (window.mermaid) {
+    mermaid.initialize({ theme: "forest" });
+  }
+</script>
+
+
+    
+  </div>
+</body>
+
+</html>
