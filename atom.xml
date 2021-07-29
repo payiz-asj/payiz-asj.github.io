@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>夜莺悠吟</title>
-  <icon>https://www.yeying.tech/favicon.ico</icon>
-  <subtitle>yyyy你❤</subtitle>
-  <link href="https://www.yeying.tech/atom.xml" rel="self"/>
+  <icon>https://yeying.tech/favicon.ico</icon>
+  <subtitle>yyyZy你❤</subtitle>
+  <link href="https://yeying.tech/atom.xml" rel="self"/>
   
-  <link href="https://www.yeying.tech/"/>
-  <updated>2021-07-28T09:42:28.620Z</updated>
-  <id>https://www.yeying.tech/</id>
+  <link href="https://yeying.tech/"/>
+  <updated>2021-07-28T20:40:17.091Z</updated>
+  <id>https://yeying.tech/</id>
   
   <author>
     <name>PAYIZ</name>
@@ -17,9 +17,172 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Git 学习笔记</title>
+    <link href="https://yeying.tech/%E7%AC%94%E8%AE%B0/git-learning/"/>
+    <id>https://yeying.tech/%E7%AC%94%E8%AE%B0/git-learning/</id>
+    <published>2019-04-06T09:29:41.000Z</published>
+    <updated>2021-07-28T20:40:17.091Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;记录 Git 的一些常用指令与问题解决方案。&lt;/p&gt;
+&lt;p&gt;更加具体的内容请看以下仓库：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/payiz-asj/git-tips&quot;&gt;Git 的奇技淫巧&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/payiz-asj/HelloGitHub&quot;&gt;GitHub 上有趣、入门级的开源项目&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</summary>
+    
+    
+    
+    <category term="笔记" scheme="https://yeying.tech/categories/%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="github" scheme="https://yeying.tech/tags/github/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>希腊字母及读音</title>
+    <link href="https://yeying.tech/%E7%AC%94%E8%AE%B0/Greek-alphabet/"/>
+    <id>https://yeying.tech/%E7%AC%94%E8%AE%B0/Greek-alphabet/</id>
+    <published>2019-04-09T10:02:54.000Z</published>
+    <updated>2021-07-28T20:39:46.703Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;给大家安利一张表格，方便记下希腊字母的读音。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="笔记" scheme="https://yeying.tech/categories/%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="希腊字母" scheme="https://yeying.tech/tags/%E5%B8%8C%E8%85%8A%E5%AD%97%E6%AF%8D/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Visual Studio 快捷键</title>
+    <link href="https://yeying.tech/%E7%AC%94%E8%AE%B0/vs-keys/"/>
+    <id>https://yeying.tech/%E7%AC%94%E8%AE%B0/vs-keys/</id>
+    <published>2019-04-10T09:52:55.000Z</published>
+    <updated>2021-07-28T20:38:15.974Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;总结了几个Visual Studio 好用的快捷键，以后会再继续加。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="笔记" scheme="https://yeying.tech/categories/%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="快捷键" scheme="https://yeying.tech/tags/%E5%BF%AB%E6%8D%B7%E9%94%AE/"/>
+    
+    <category term="Visual Studio" scheme="https://yeying.tech/tags/Visual-Studio/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ADB命令详解及用法大全</title>
+    <link href="https://yeying.tech/%E7%AC%94%E8%AE%B0/adb-keys/"/>
+    <id>https://yeying.tech/%E7%AC%94%E8%AE%B0/adb-keys/</id>
+    <published>2019-04-16T07:30:07.000Z</published>
+    <updated>2021-07-28T20:36:39.409Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;一、ADB是什么？&quot;&gt;&lt;a href=&quot;#一、ADB是什么？&quot; class=&quot;headerlink&quot; title=&quot;一、ADB是什么？&quot;&gt;&lt;/a&gt;一、ADB是什么？&lt;/h2&gt;&lt;p&gt;ADB，即 &lt;a href=&quot;https://developer.android.com/studio/command-line/adb.html&quot;&gt;Android Debug Bridge&lt;/a&gt; 是一种允许模拟器或已连接的 Android 设备进行通信的命令行工具，它可为各种设备操作提供便利，如安装和调试应用，并提供对 &lt;code&gt;Unix shell&lt;/code&gt;（可用来在模拟器或连接的设备上运行各种命令）的访问。可以在&lt;code&gt;Android SDK/platform-tools&lt;/code&gt;中找到 &lt;code&gt;adb&lt;/code&gt; 工具。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;注： 有部分命令的支持情况可能与 Android 系统版本及定制 ROM 的实现有关。&lt;/strong&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="笔记" scheme="https://yeying.tech/categories/%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="使用手册" scheme="https://yeying.tech/tags/%E4%BD%BF%E7%94%A8%E6%89%8B%E5%86%8C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>项目需求分析</title>
+    <link href="https://yeying.tech/Hackathon%E5%8D%8E%E4%B8%9C%E4%B9%9D%E6%A0%A1%E7%BC%96%E7%A8%8B%E5%88%9B%E5%AE%A2%E9%A9%AC%E6%8B%89%E6%9D%BE/hackathon-requirement-analysis/"/>
+    <id>https://yeying.tech/Hackathon%E5%8D%8E%E4%B8%9C%E4%B9%9D%E6%A0%A1%E7%BC%96%E7%A8%8B%E5%88%9B%E5%AE%A2%E9%A9%AC%E6%8B%89%E6%9D%BE/hackathon-requirement-analysis/</id>
+    <published>2020-11-29T04:20:34.000Z</published>
+    <updated>2021-07-28T20:35:08.167Z</updated>
+    
+    
+    <summary type="html">&lt;h2 align = &quot;center&quot;&gt;——“送信鸭”小程序&lt;/h2&gt;
+## 1. 需求获取 / 需求调研：
+
+&lt;h3 id=&quot;1-1-访谈&quot;&gt;&lt;a href=&quot;#1-1-访谈&quot; class=&quot;headerlink&quot; title=&quot;1.1 访谈&quot;&gt;&lt;/a&gt;1.1 访谈&lt;/h3&gt;&lt;p&gt;​    通过访谈获取需求是需求获取方法中最直接、最快速的一种方法了，往往能够&lt;strong&gt;最直接、最具体、清晰、客观地&lt;/strong&gt;了解目标用户的需求。   &lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Hackathon华东九校编程创客马拉松" scheme="https://yeying.tech/categories/Hackathon%E5%8D%8E%E4%B8%9C%E4%B9%9D%E6%A0%A1%E7%BC%96%E7%A8%8B%E5%88%9B%E5%AE%A2%E9%A9%AC%E6%8B%89%E6%9D%BE/"/>
+    
+    
+    <category term="个人项目" scheme="https://yeying.tech/tags/%E4%B8%AA%E4%BA%BA%E9%A1%B9%E7%9B%AE/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>比赛回忆</title>
+    <link href="https://yeying.tech/Hackathon%E5%8D%8E%E4%B8%9C%E4%B9%9D%E6%A0%A1%E7%BC%96%E7%A8%8B%E5%88%9B%E5%AE%A2%E9%A9%AC%E6%8B%89%E6%9D%BE/hackathon-memory/"/>
+    <id>https://yeying.tech/Hackathon%E5%8D%8E%E4%B8%9C%E4%B9%9D%E6%A0%A1%E7%BC%96%E7%A8%8B%E5%88%9B%E5%AE%A2%E9%A9%AC%E6%8B%89%E6%9D%BE/hackathon-memory/</id>
+    <published>2020-11-29T12:20:34.000Z</published>
+    <updated>2021-07-28T20:01:15.457Z</updated>
+    
+    
+    <summary type="html">&lt;h1 align = &quot;center&quot;&gt;Hackathon编程马拉松项目&lt;/h1&gt;
+&lt;h3 align = &quot;center&quot;&gt;——微信小程序“送信鸭”&lt;/h3&gt;
+&lt;p&gt;
+    &lt;img align =&quot;center&quot; src = &quot;https://pic.imgdb.cn/item/60fe7e585132923bf8be7495.png&quot; style = &quot;width:81px&quot;/&gt;
+&lt;/p&gt;
+
+
+
+&lt;p&gt;这周末参加了一个很有意思的编程比赛，想写篇文章记录一下比赛经历。 &lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Hackathon华东九校编程创客马拉松" scheme="https://yeying.tech/categories/Hackathon%E5%8D%8E%E4%B8%9C%E4%B9%9D%E6%A0%A1%E7%BC%96%E7%A8%8B%E5%88%9B%E5%AE%A2%E9%A9%AC%E6%8B%89%E6%9D%BE/"/>
+    
+    
+    <category term="个人项目" scheme="https://yeying.tech/tags/%E4%B8%AA%E4%BA%BA%E9%A1%B9%E7%9B%AE/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>博客初建</title>
+    <link href="https://yeying.tech/%E5%8D%9A%E4%B8%BB%E5%AF%84%E8%AF%AD/blog-firstday/"/>
+    <id>https://yeying.tech/%E5%8D%9A%E4%B8%BB%E5%AF%84%E8%AF%AD/blog-firstday/</id>
+    <published>2019-03-05T02:13:34.000Z</published>
+    <updated>2021-07-28T19:01:33.367Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 align=&quot;center&quot;&gt;HELLO 👋&lt;/h1&gt;
+您好，
+
+&lt;p&gt;​        欢迎来到我的个人博客！&lt;/p&gt;
+&lt;p&gt;​        平时会抽空分享一些技术文章和我学习、生活中一些有趣的事情。🎶&lt;/p&gt;
+&lt;p&gt;​        此外，还可通过 “</summary>
+        
+      
+    
+    
+    
+    <category term="博主寄语" scheme="https://yeying.tech/categories/%E5%8D%9A%E4%B8%BB%E5%AF%84%E8%AF%AD/"/>
+    
+    
+    <category term="欢迎" scheme="https://yeying.tech/tags/%E6%AC%A2%E8%BF%8E/"/>
+    
+  </entry>
+  
+  <entry>
     <title>足协杯小组赛第一场</title>
-    <link href="https://www.yeying.tech/%E7%9B%B8%E5%86%8C/football-match-04-06/"/>
-    <id>https://www.yeying.tech/%E7%9B%B8%E5%86%8C/football-match-04-06/</id>
+    <link href="https://yeying.tech/%E7%9B%B8%E5%86%8C/football-match-04-06/"/>
+    <id>https://yeying.tech/%E7%9B%B8%E5%86%8C/football-match-04-06/</id>
     <published>2021-04-06T08:18:23.000Z</published>
     <updated>2021-07-28T09:42:28.620Z</updated>
     
@@ -37,17 +200,17 @@
     
     
     
-    <category term="相册" scheme="https://www.yeying.tech/categories/%E7%9B%B8%E5%86%8C/"/>
+    <category term="相册" scheme="https://yeying.tech/categories/%E7%9B%B8%E5%86%8C/"/>
     
     
-    <category term="足球比赛" scheme="https://www.yeying.tech/tags/%E8%B6%B3%E7%90%83%E6%AF%94%E8%B5%9B/"/>
+    <category term="足球比赛" scheme="https://yeying.tech/tags/%E8%B6%B3%E7%90%83%E6%AF%94%E8%B5%9B/"/>
     
   </entry>
   
   <entry>
     <title>足协杯1/4决赛</title>
-    <link href="https://www.yeying.tech/%E7%9B%B8%E5%86%8C/football-match-06-03/"/>
-    <id>https://www.yeying.tech/%E7%9B%B8%E5%86%8C/football-match-06-03/</id>
+    <link href="https://yeying.tech/%E7%9B%B8%E5%86%8C/football-match-06-03/"/>
+    <id>https://yeying.tech/%E7%9B%B8%E5%86%8C/football-match-06-03/</id>
     <published>2021-06-04T08:14:56.000Z</published>
     <updated>2021-07-28T09:41:57.870Z</updated>
     
@@ -70,17 +233,17 @@
     
     
     
-    <category term="相册" scheme="https://www.yeying.tech/categories/%E7%9B%B8%E5%86%8C/"/>
+    <category term="相册" scheme="https://yeying.tech/categories/%E7%9B%B8%E5%86%8C/"/>
     
     
-    <category term="足球比赛" scheme="https://www.yeying.tech/tags/%E8%B6%B3%E7%90%83%E6%AF%94%E8%B5%9B/"/>
+    <category term="足球比赛" scheme="https://yeying.tech/tags/%E8%B6%B3%E7%90%83%E6%AF%94%E8%B5%9B/"/>
     
   </entry>
   
   <entry>
     <title>足协杯半决赛</title>
-    <link href="https://www.yeying.tech/%E7%9B%B8%E5%86%8C/football-match-06-06/"/>
-    <id>https://www.yeying.tech/%E7%9B%B8%E5%86%8C/football-match-06-06/</id>
+    <link href="https://yeying.tech/%E7%9B%B8%E5%86%8C/football-match-06-06/"/>
+    <id>https://yeying.tech/%E7%9B%B8%E5%86%8C/football-match-06-06/</id>
     <published>2021-06-07T07:51:03.000Z</published>
     <updated>2021-07-28T09:40:56.533Z</updated>
     
@@ -96,17 +259,17 @@
     
     
     
-    <category term="相册" scheme="https://www.yeying.tech/categories/%E7%9B%B8%E5%86%8C/"/>
+    <category term="相册" scheme="https://yeying.tech/categories/%E7%9B%B8%E5%86%8C/"/>
     
     
-    <category term="足球比赛" scheme="https://www.yeying.tech/tags/%E8%B6%B3%E7%90%83%E6%AF%94%E8%B5%9B/"/>
+    <category term="足球比赛" scheme="https://yeying.tech/tags/%E8%B6%B3%E7%90%83%E6%AF%94%E8%B5%9B/"/>
     
   </entry>
   
   <entry>
     <title>足协杯决赛</title>
-    <link href="https://www.yeying.tech/%E7%9B%B8%E5%86%8C/football-match-06-12/"/>
-    <id>https://www.yeying.tech/%E7%9B%B8%E5%86%8C/football-match-06-12/</id>
+    <link href="https://yeying.tech/%E7%9B%B8%E5%86%8C/football-match-06-12/"/>
+    <id>https://yeying.tech/%E7%9B%B8%E5%86%8C/football-match-06-12/</id>
     <published>2021-06-13T08:36:45.000Z</published>
     <updated>2021-07-28T09:39:42.799Z</updated>
     
@@ -122,63 +285,17 @@
     
     
     
-    <category term="相册" scheme="https://www.yeying.tech/categories/%E7%9B%B8%E5%86%8C/"/>
+    <category term="相册" scheme="https://yeying.tech/categories/%E7%9B%B8%E5%86%8C/"/>
     
     
-    <category term="足球比赛" scheme="https://www.yeying.tech/tags/%E8%B6%B3%E7%90%83%E6%AF%94%E8%B5%9B/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Git 学习笔记</title>
-    <link href="https://www.yeying.tech/%E7%AC%94%E8%AE%B0/git-learning/"/>
-    <id>https://www.yeying.tech/%E7%AC%94%E8%AE%B0/git-learning/</id>
-    <published>2019-04-06T09:29:41.000Z</published>
-    <updated>2021-07-28T09:32:14.020Z</updated>
-    
-    
-    <summary type="html">&lt;h1 align = &quot;center&quot;&gt;Git 学习笔记&lt;/h1&gt;
-记录 Git 的一些常用指令与问题解决方案。
-
-&lt;p&gt;更加具体的内容请看以下仓库：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://github.com/payiz-asj/git-tips&quot;&gt;Git 的奇技淫巧&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://github.com/payiz-asj/HelloGitHub&quot;&gt;GitHub 上有趣、入门级的开源项目&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</summary>
-    
-    
-    
-    <category term="笔记" scheme="https://www.yeying.tech/categories/%E7%AC%94%E8%AE%B0/"/>
-    
-    
-    <category term="github" scheme="https://www.yeying.tech/tags/github/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>adb命令详解</title>
-    <link href="https://www.yeying.tech/%E7%AC%94%E8%AE%B0/adb-keys/"/>
-    <id>https://www.yeying.tech/%E7%AC%94%E8%AE%B0/adb-keys/</id>
-    <published>2019-04-16T07:30:07.000Z</published>
-    <updated>2021-07-28T09:31:52.638Z</updated>
-    
-    
-    <summary type="html">&lt;h1 id=&quot;ADB-操作命令详解及用法大全&quot;&gt;&lt;a href=&quot;#ADB-操作命令详解及用法大全&quot; class=&quot;headerlink&quot; title=&quot;ADB 操作命令详解及用法大全&quot;&gt;&lt;/a&gt;ADB 操作命令详解及用法大全&lt;/h1&gt;&lt;h2 id=&quot;一、ADB是什么？&quot;&gt;&lt;a href=&quot;#一、ADB是什么？&quot; class=&quot;headerlink&quot; title=&quot;一、ADB是什么？&quot;&gt;&lt;/a&gt;一、ADB是什么？&lt;/h2&gt;&lt;p&gt;ADB，即 &lt;a href=&quot;https://developer.android.com/studio/command-line/adb.html&quot;&gt;Android Debug Bridge&lt;/a&gt; 是一种允许模拟器或已连接的 Android 设备进行通信的命令行工具，它可为各种设备操作提供便利，如安装和调试应用，并提供对 &lt;code&gt;Unix shell&lt;/code&gt;（可用来在模拟器或连接的设备上运行各种命令）的访问。可以在&lt;code&gt;Android SDK/platform-tools&lt;/code&gt;中找到 &lt;code&gt;adb&lt;/code&gt; 工具。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;注： 有部分命令的支持情况可能与 Android 系统版本及定制 ROM 的实现有关。&lt;/strong&gt;&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="笔记" scheme="https://www.yeying.tech/categories/%E7%AC%94%E8%AE%B0/"/>
-    
-    
-    <category term="使用手册" scheme="https://www.yeying.tech/tags/%E4%BD%BF%E7%94%A8%E6%89%8B%E5%86%8C/"/>
+    <category term="足球比赛" scheme="https://yeying.tech/tags/%E8%B6%B3%E7%90%83%E6%AF%94%E8%B5%9B/"/>
     
   </entry>
   
   <entry>
     <title>软件测试-11</title>
-    <link href="https://www.yeying.tech/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/software-testing-11/"/>
-    <id>https://www.yeying.tech/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/software-testing-11/</id>
+    <link href="https://yeying.tech/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/software-testing-11/"/>
+    <id>https://yeying.tech/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/software-testing-11/</id>
     <published>2019-05-28T07:29:21.000Z</published>
     <updated>2021-07-28T09:30:25.069Z</updated>
     
@@ -193,17 +310,17 @@
     
     
     
-    <category term="软件测试" scheme="https://www.yeying.tech/categories/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/"/>
+    <category term="软件测试" scheme="https://yeying.tech/categories/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/"/>
     
     
-    <category term="软件测试基础" scheme="https://www.yeying.tech/tags/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E5%9F%BA%E7%A1%80/"/>
+    <category term="软件测试基础" scheme="https://yeying.tech/tags/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E5%9F%BA%E7%A1%80/"/>
     
   </entry>
   
   <entry>
     <title>软件测试-10</title>
-    <link href="https://www.yeying.tech/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/software-testing-10/"/>
-    <id>https://www.yeying.tech/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/software-testing-10/</id>
+    <link href="https://yeying.tech/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/software-testing-10/"/>
+    <id>https://yeying.tech/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/software-testing-10/</id>
     <published>2019-05-28T07:12:21.000Z</published>
     <updated>2021-07-28T09:29:46.611Z</updated>
     
@@ -212,17 +329,17 @@
     
     
     
-    <category term="软件测试" scheme="https://www.yeying.tech/categories/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/"/>
+    <category term="软件测试" scheme="https://yeying.tech/categories/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/"/>
     
     
-    <category term="软件测试基础" scheme="https://www.yeying.tech/tags/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E5%9F%BA%E7%A1%80/"/>
+    <category term="软件测试基础" scheme="https://yeying.tech/tags/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E5%9F%BA%E7%A1%80/"/>
     
   </entry>
   
   <entry>
     <title>软件测试-9</title>
-    <link href="https://www.yeying.tech/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/software-testing-9/"/>
-    <id>https://www.yeying.tech/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/software-testing-9/</id>
+    <link href="https://yeying.tech/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/software-testing-9/"/>
+    <id>https://yeying.tech/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/software-testing-9/</id>
     <published>2019-05-28T06:49:21.000Z</published>
     <updated>2021-07-28T09:29:01.039Z</updated>
     
@@ -231,17 +348,17 @@
     
     
     
-    <category term="软件测试" scheme="https://www.yeying.tech/categories/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/"/>
+    <category term="软件测试" scheme="https://yeying.tech/categories/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/"/>
     
     
-    <category term="软件测试基础" scheme="https://www.yeying.tech/tags/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E5%9F%BA%E7%A1%80/"/>
+    <category term="软件测试基础" scheme="https://yeying.tech/tags/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E5%9F%BA%E7%A1%80/"/>
     
   </entry>
   
   <entry>
     <title>软件测试-8</title>
-    <link href="https://www.yeying.tech/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/software-testing-8/"/>
-    <id>https://www.yeying.tech/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/software-testing-8/</id>
+    <link href="https://yeying.tech/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/software-testing-8/"/>
+    <id>https://yeying.tech/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/software-testing-8/</id>
     <published>2019-05-28T06:39:21.000Z</published>
     <updated>2021-07-28T09:28:51.539Z</updated>
     
@@ -250,17 +367,17 @@
     
     
     
-    <category term="软件测试" scheme="https://www.yeying.tech/categories/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/"/>
+    <category term="软件测试" scheme="https://yeying.tech/categories/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/"/>
     
     
-    <category term="软件测试基础" scheme="https://www.yeying.tech/tags/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E5%9F%BA%E7%A1%80/"/>
+    <category term="软件测试基础" scheme="https://yeying.tech/tags/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E5%9F%BA%E7%A1%80/"/>
     
   </entry>
   
   <entry>
     <title>软件测试-7</title>
-    <link href="https://www.yeying.tech/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/software-testing-7/"/>
-    <id>https://www.yeying.tech/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/software-testing-7/</id>
+    <link href="https://yeying.tech/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/software-testing-7/"/>
+    <id>https://yeying.tech/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/software-testing-7/</id>
     <published>2019-05-28T06:33:21.000Z</published>
     <updated>2021-07-28T09:28:40.421Z</updated>
     
@@ -269,17 +386,17 @@
     
     
     
-    <category term="软件测试" scheme="https://www.yeying.tech/categories/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/"/>
+    <category term="软件测试" scheme="https://yeying.tech/categories/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/"/>
     
     
-    <category term="软件测试基础" scheme="https://www.yeying.tech/tags/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E5%9F%BA%E7%A1%80/"/>
+    <category term="软件测试基础" scheme="https://yeying.tech/tags/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E5%9F%BA%E7%A1%80/"/>
     
   </entry>
   
   <entry>
     <title>软件测试-6</title>
-    <link href="https://www.yeying.tech/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/software-testing-6/"/>
-    <id>https://www.yeying.tech/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/software-testing-6/</id>
+    <link href="https://yeying.tech/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/software-testing-6/"/>
+    <id>https://yeying.tech/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/software-testing-6/</id>
     <published>2019-05-28T06:24:21.000Z</published>
     <updated>2021-07-28T09:28:28.462Z</updated>
     
@@ -297,17 +414,17 @@
     
     
     
-    <category term="软件测试" scheme="https://www.yeying.tech/categories/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/"/>
+    <category term="软件测试" scheme="https://yeying.tech/categories/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/"/>
     
     
-    <category term="软件测试基础" scheme="https://www.yeying.tech/tags/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E5%9F%BA%E7%A1%80/"/>
+    <category term="软件测试基础" scheme="https://yeying.tech/tags/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E5%9F%BA%E7%A1%80/"/>
     
   </entry>
   
   <entry>
     <title>软件测试-5</title>
-    <link href="https://www.yeying.tech/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/software-testing-5/"/>
-    <id>https://www.yeying.tech/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/software-testing-5/</id>
+    <link href="https://yeying.tech/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/software-testing-5/"/>
+    <id>https://yeying.tech/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/software-testing-5/</id>
     <published>2019-05-28T06:21:21.000Z</published>
     <updated>2021-07-28T09:28:20.150Z</updated>
     
@@ -329,17 +446,17 @@
     
     
     
-    <category term="软件测试" scheme="https://www.yeying.tech/categories/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/"/>
+    <category term="软件测试" scheme="https://yeying.tech/categories/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/"/>
     
     
-    <category term="软件测试基础" scheme="https://www.yeying.tech/tags/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E5%9F%BA%E7%A1%80/"/>
+    <category term="软件测试基础" scheme="https://yeying.tech/tags/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E5%9F%BA%E7%A1%80/"/>
     
   </entry>
   
   <entry>
     <title>软件测试-4</title>
-    <link href="https://www.yeying.tech/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/software-testing-4/"/>
-    <id>https://www.yeying.tech/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/software-testing-4/</id>
+    <link href="https://yeying.tech/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/software-testing-4/"/>
+    <id>https://yeying.tech/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/software-testing-4/</id>
     <published>2019-05-28T06:19:21.000Z</published>
     <updated>2021-07-28T09:28:08.379Z</updated>
     
@@ -355,17 +472,17 @@
     
     
     
-    <category term="软件测试" scheme="https://www.yeying.tech/categories/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/"/>
+    <category term="软件测试" scheme="https://yeying.tech/categories/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/"/>
     
     
-    <category term="软件测试基础" scheme="https://www.yeying.tech/tags/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E5%9F%BA%E7%A1%80/"/>
+    <category term="软件测试基础" scheme="https://yeying.tech/tags/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E5%9F%BA%E7%A1%80/"/>
     
   </entry>
   
   <entry>
     <title>软件测试-3</title>
-    <link href="https://www.yeying.tech/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/software-testing-3/"/>
-    <id>https://www.yeying.tech/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/software-testing-3/</id>
+    <link href="https://yeying.tech/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/software-testing-3/"/>
+    <id>https://yeying.tech/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/software-testing-3/</id>
     <published>2019-05-28T06:16:21.000Z</published>
     <updated>2021-07-28T09:27:55.882Z</updated>
     
@@ -374,137 +491,10 @@
     
     
     
-    <category term="软件测试" scheme="https://www.yeying.tech/categories/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/"/>
+    <category term="软件测试" scheme="https://yeying.tech/categories/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/"/>
     
     
-    <category term="软件测试基础" scheme="https://www.yeying.tech/tags/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E5%9F%BA%E7%A1%80/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>软件测试-2</title>
-    <link href="https://www.yeying.tech/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/software-testing-2/"/>
-    <id>https://www.yeying.tech/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/software-testing-2/</id>
-    <published>2019-05-28T06:14:21.000Z</published>
-    <updated>2021-07-28T09:27:42.504Z</updated>
-    
-    
-    <summary type="html">&lt;h1 id=&quot;软件测试阶段划分&quot;&gt;&lt;a href=&quot;#软件测试阶段划分&quot; class=&quot;headerlink&quot; title=&quot;软件测试阶段划分&quot;&gt;&lt;/a&gt;软件测试阶段划分&lt;/h1&gt;&lt;h2 id=&quot;单元测试&quot;&gt;&lt;a href=&quot;#单元测试&quot; class=&quot;headerlink&quot; title=&quot;单元测试&quot;&gt;&lt;/a&gt;单元测试&lt;/h2&gt;&lt;p&gt;单元测试（Unit Testing，简称UT）是对软件基本组成单元（函数或类）进行检测的测试工作。其目的是检测与详细设计说明书（Low Level Design，简称LLD）的符合程度。&lt;/p&gt;
-&lt;h2 id=&quot;集成测试&quot;&gt;&lt;a href=&quot;#集成测试&quot; class=&quot;headerlink&quot; title=&quot;集成测试&quot;&gt;&lt;/a&gt;集成测试&lt;/h2&gt;&lt;p&gt;集成测试（Integration Testing，简称IT）是在单元测试的基础上，将所有的模块按照设计的要求进行集成，主要验证组装后的功能以及模块之间的接口是否正确安装的测试工作。主要目的是检测软件与概要设计说明书（High Level Design，简称HLD）的符合程度。集成测试的主要工作是测试模块之间的接口，但是接口测试不等于集成测试，这是个以面盖点的问题。比如，可以说北京是中国的城市，但不能说中国的城市就是北京。&lt;/p&gt;
-&lt;h2 id=&quot;集成测试工具&quot;&gt;&lt;a href=&quot;#集成测试工具&quot; class=&quot;headerlink&quot; title=&quot;集成测试工具&quot;&gt;&lt;/a&gt;集成测试工具&lt;/h2&gt;&lt;p&gt;能够直接用于集成测试的测试工具不是很多，一般来说，一些通用的商用测试工具由于需要满足一定的通用性，因此在实际使用的时候功能是有限的，大部分工具需要进行二次开发。集成测试主要关注接口的测试，常用的接口测试工具：POSTMan、HTTPRequest、jmeter等。&lt;/p&gt;
-&lt;h2 id=&quot;系统测试&quot;&gt;&lt;a href=&quot;#系统测试&quot; class=&quot;headerlink&quot; title=&quot;系统测试&quot;&gt;&lt;/a&gt;系统测试&lt;/h2&gt;&lt;p&gt;系统测试（System Testing，简称ST）是将已经通过集成测试的软件系统，与计算机硬件、外设、数据库、网络等其他元素结合在一起，在实际运行环境下，进行的一系列的测试工作。&lt;/p&gt;
-&lt;p&gt;系统测试通常是由独立的测试团队来完成，其测试的主要依据是需求规格说明书。&lt;/p&gt;
-&lt;p&gt;系统测试的类型主要有：&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="软件测试" scheme="https://www.yeying.tech/categories/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/"/>
-    
-    
-    <category term="软件测试基础" scheme="https://www.yeying.tech/tags/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E5%9F%BA%E7%A1%80/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>软件测试-1</title>
-    <link href="https://www.yeying.tech/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/software-testing-1/"/>
-    <id>https://www.yeying.tech/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/software-testing-1/</id>
-    <published>2019-05-28T06:12:21.000Z</published>
-    <updated>2021-07-28T09:27:15.084Z</updated>
-    
-    
-    <summary type="html">&lt;h1 id=&quot;软件测试基础理论&quot;&gt;&lt;a href=&quot;#软件测试基础理论&quot; class=&quot;headerlink&quot; title=&quot;软件测试基础理论&quot;&gt;&lt;/a&gt;&lt;strong&gt;软件测试基础理论&lt;/strong&gt;&lt;/h1&gt;&lt;h1 id=&quot;软件概念&quot;&gt;&lt;a href=&quot;#软件概念&quot; class=&quot;headerlink&quot; title=&quot;软件概念&quot;&gt;&lt;/a&gt;软件概念&lt;/h1&gt;&lt;p&gt;软件（Software）是一系列按照特定顺序组织的计算机数据和指令的集合。一般来讲，软件被划分为系统软件、应用软件和介于这两者之间的中间件。在国标中对软件的定义是与计算机系统操作有关的计算机程序、规程、规则以及可能有的文件、文档及数据等。&lt;/p&gt;
-&lt;h1 id=&quot;软件生命周期&quot;&gt;&lt;a href=&quot;#软件生命周期&quot; class=&quot;headerlink&quot; title=&quot;软件生命周期&quot;&gt;&lt;/a&gt;软件生命周期&lt;/h1&gt;&lt;p&gt;生命周期（Life Cycle）的概念应用很广泛，简单说就是指一个对象的“生老病死”。对一个软件产品或软件系统而言也需要经历同样阶段，一般称为软件生命周期。软件生命周期大致分为六个阶段。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://pic.imgdb.cn/item/6100fd355132923bf846d6ea.jpg&quot; alt=&quot;软件生命周期&quot;&gt;&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="软件测试" scheme="https://www.yeying.tech/categories/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/"/>
-    
-    
-    <category term="软件测试基础" scheme="https://www.yeying.tech/tags/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E5%9F%BA%E7%A1%80/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>足协杯夺冠照片</title>
-    <link href="https://www.yeying.tech/%E7%9B%B8%E5%86%8C/football-match-06-15/"/>
-    <id>https://www.yeying.tech/%E7%9B%B8%E5%86%8C/football-match-06-15/</id>
-    <published>2021-06-15T08:37:35.000Z</published>
-    <updated>2021-07-28T08:46:57.021Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 align = &quot;center&quot;&gt;足协杯夺冠照片&lt;/h1&gt;
-
-
-&lt;img align =&quot;center&quot; src = &quot;https://pic.imgdb.cn/item/610118a75132923bf8b719e9.jpg&quot;  style =</summary>
-        
-      
-    
-    
-    
-    <category term="相册" scheme="https://www.yeying.tech/categories/%E7%9B%B8%E5%86%8C/"/>
-    
-    
-    <category term="足球比赛" scheme="https://www.yeying.tech/tags/%E8%B6%B3%E7%90%83%E6%AF%94%E8%B5%9B/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Visual Studio 快捷键</title>
-    <link href="https://www.yeying.tech/%E7%AC%94%E8%AE%B0/vs-keys/"/>
-    <id>https://www.yeying.tech/%E7%AC%94%E8%AE%B0/vs-keys/</id>
-    <published>2019-04-10T09:52:55.000Z</published>
-    <updated>2021-07-27T15:50:35.272Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 align = &quot;center&quot;&gt;Visual Studio 快捷键&lt;/h1&gt;
-| 功能       | 快捷键               |
-| ---------- | -------------------- |
-| 注释       | Ctrl + K </summary>
-        
-      
-    
-    
-    
-    <category term="笔记" scheme="https://www.yeying.tech/categories/%E7%AC%94%E8%AE%B0/"/>
-    
-    
-    <category term="快捷键" scheme="https://www.yeying.tech/tags/%E5%BF%AB%E6%8D%B7%E9%94%AE/"/>
-    
-    <category term="Visual Studio" scheme="https://www.yeying.tech/tags/Visual-Studio/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>建立博客心路历程</title>
-    <link href="https://www.yeying.tech/%E5%8D%9A%E4%B8%BB%E5%AF%84%E8%AF%AD/blog-creation-process/"/>
-    <id>https://www.yeying.tech/%E5%8D%9A%E4%B8%BB%E5%AF%84%E8%AF%AD/blog-creation-process/</id>
-    <published>2019-03-27T03:22:49.000Z</published>
-    <updated>2021-07-27T10:20:49.565Z</updated>
-    
-    
-    <summary type="html">&lt;h1 align=&quot;center&quot;&gt;建立博客心路历程&lt;/h1&gt;
-​        还记得大一时就有老师告诉我们：“大家可以尝试在网上写博客、文章，好让自己记录下学习的点点滴滴，也可以跟他人交流经验，那将是件非常不错的事情。”
-
-&lt;p&gt;​        我大一就做了微信个人公众号，但是可惜啊，就写了一两片文章就没能坚持。后来在CSDN和博客园、知乎、简书等零零散散写了一些文章也没后文。&lt;/p&gt;
-&lt;p&gt;​        到现在终于下决心做个博客，花了3天3夜时间几乎没休息，啃完了HTML+CSS+JS大概用法，并且使用Gitpages+hexo成功搭建了这个免费的个人博客，说实话用Github这么长时间了了，现才才知道这个好东西，真是有点惭愧啊！&lt;/p&gt;
-&lt;p&gt;​        &lt;strong&gt;下面写一下我建立此博客的过程和心得吧，希望大家能够从中受益！&lt;/strong&gt;👉&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="博主寄语" scheme="https://www.yeying.tech/categories/%E5%8D%9A%E4%B8%BB%E5%AF%84%E8%AF%AD/"/>
-    
-    
-    <category term="欢迎" scheme="https://www.yeying.tech/tags/%E6%AC%A2%E8%BF%8E/"/>
+    <category term="软件测试基础" scheme="https://yeying.tech/tags/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E5%9F%BA%E7%A1%80/"/>
     
   </entry>
   
