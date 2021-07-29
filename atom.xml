@@ -6,7 +6,7 @@
   <link href="https://yeying.tech/atom.xml" rel="self"/>
   
   <link href="https://yeying.tech/"/>
-  <updated>2021-07-28T20:40:17.091Z</updated>
+  <updated>2021-07-29T09:18:03.399Z</updated>
   <id>https://yeying.tech/</id>
   
   <author>
@@ -15,6 +15,83 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>2020 东京奥运会</title>
+    <link href="https://yeying.tech/%E5%A5%A5%E8%BF%90%E4%BC%9A/olympic/"/>
+    <id>https://yeying.tech/%E5%A5%A5%E8%BF%90%E4%BC%9A/olympic/</id>
+    <published>2021-07-23T09:02:54.000Z</published>
+    <updated>2021-07-29T09:18:03.399Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;中国加油-💪💖💖&quot;&gt;&lt;a href=&quot;#中国加油-💪💖💖&quot; class=&quot;headerlink&quot; title=&quot;中国加油 💪💖💖&quot;&gt;&lt;/a&gt;中国加油 💪💖💖&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;https://www.screenshotmaster.com/api/v1/screenshot?url=https://tiyu.baidu.com/tokyoly/home/tab/%E5%A5%96%E7%89%8C%E6%A6%9C&amp;token=61026ce09e50e&amp;full_page=0&quot; alt=&quot;奖牌榜&quot;&gt;&lt;/p&gt;
+&lt;p&gt;阅读更多，以查看更多信息 👉&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="奥运会" scheme="https://yeying.tech/categories/%E5%A5%A5%E8%BF%90%E4%BC%9A/"/>
+    
+    
+    <category term="奥运会" scheme="https://yeying.tech/tags/%E5%A5%A5%E8%BF%90%E4%BC%9A/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>博客初建</title>
+    <link href="https://yeying.tech/%E5%8D%9A%E4%B8%BB%E5%AF%84%E8%AF%AD/blog-firstday/"/>
+    <id>https://yeying.tech/%E5%8D%9A%E4%B8%BB%E5%AF%84%E8%AF%AD/blog-firstday/</id>
+    <published>2019-03-05T02:13:34.000Z</published>
+    <updated>2021-07-28T20:41:27.505Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 align=&quot;center&quot;&gt;HELLO 👋&lt;/h1&gt;
+您好，
+
+&lt;p&gt;​        欢迎来到我的个人博客！&lt;/p&gt;
+&lt;p&gt;​        平时会抽空分享一些技术文章和我学习、生活中一些有趣的事情。🎶&lt;/p&gt;
+&lt;p&gt;​        此外，还可通过 “</summary>
+        
+      
+    
+    
+    
+    <category term="博主寄语" scheme="https://yeying.tech/categories/%E5%8D%9A%E4%B8%BB%E5%AF%84%E8%AF%AD/"/>
+    
+    
+    <category term="欢迎" scheme="https://yeying.tech/tags/%E6%AC%A2%E8%BF%8E/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>比赛回忆</title>
+    <link href="https://yeying.tech/Hackathon%E5%8D%8E%E4%B8%9C%E4%B9%9D%E6%A0%A1%E7%BC%96%E7%A8%8B%E5%88%9B%E5%AE%A2%E9%A9%AC%E6%8B%89%E6%9D%BE/hackathon-memory/"/>
+    <id>https://yeying.tech/Hackathon%E5%8D%8E%E4%B8%9C%E4%B9%9D%E6%A0%A1%E7%BC%96%E7%A8%8B%E5%88%9B%E5%AE%A2%E9%A9%AC%E6%8B%89%E6%9D%BE/hackathon-memory/</id>
+    <published>2020-11-29T12:20:34.000Z</published>
+    <updated>2021-07-28T20:41:20.792Z</updated>
+    
+    
+    <summary type="html">&lt;h1 align = &quot;center&quot;&gt;Hackathon编程马拉松项目&lt;/h1&gt;
+&lt;h3 align = &quot;center&quot;&gt;——微信小程序“送信鸭”&lt;/h3&gt;
+&lt;p&gt;
+    &lt;img align =&quot;center&quot; src = &quot;https://pic.imgdb.cn/item/60fe7e585132923bf8be7495.png&quot; style = &quot;width:81px&quot;/&gt;
+&lt;/p&gt;
+
+
+
+&lt;p&gt;这周末参加了一个很有意思的编程比赛，想写篇文章记录一下比赛经历。 &lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Hackathon华东九校编程创客马拉松" scheme="https://yeying.tech/categories/Hackathon%E5%8D%8E%E4%B8%9C%E4%B9%9D%E6%A0%A1%E7%BC%96%E7%A8%8B%E5%88%9B%E5%AE%A2%E9%A9%AC%E6%8B%89%E6%9D%BE/"/>
+    
+    
+    <category term="个人项目" scheme="https://yeying.tech/tags/%E4%B8%AA%E4%BA%BA%E9%A1%B9%E7%9B%AE/"/>
+    
+  </entry>
   
   <entry>
     <title>Git 学习笔记</title>
@@ -119,63 +196,6 @@
     
     
     <category term="个人项目" scheme="https://yeying.tech/tags/%E4%B8%AA%E4%BA%BA%E9%A1%B9%E7%9B%AE/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>比赛回忆</title>
-    <link href="https://yeying.tech/Hackathon%E5%8D%8E%E4%B8%9C%E4%B9%9D%E6%A0%A1%E7%BC%96%E7%A8%8B%E5%88%9B%E5%AE%A2%E9%A9%AC%E6%8B%89%E6%9D%BE/hackathon-memory/"/>
-    <id>https://yeying.tech/Hackathon%E5%8D%8E%E4%B8%9C%E4%B9%9D%E6%A0%A1%E7%BC%96%E7%A8%8B%E5%88%9B%E5%AE%A2%E9%A9%AC%E6%8B%89%E6%9D%BE/hackathon-memory/</id>
-    <published>2020-11-29T12:20:34.000Z</published>
-    <updated>2021-07-28T20:01:15.457Z</updated>
-    
-    
-    <summary type="html">&lt;h1 align = &quot;center&quot;&gt;Hackathon编程马拉松项目&lt;/h1&gt;
-&lt;h3 align = &quot;center&quot;&gt;——微信小程序“送信鸭”&lt;/h3&gt;
-&lt;p&gt;
-    &lt;img align =&quot;center&quot; src = &quot;https://pic.imgdb.cn/item/60fe7e585132923bf8be7495.png&quot; style = &quot;width:81px&quot;/&gt;
-&lt;/p&gt;
-
-
-
-&lt;p&gt;这周末参加了一个很有意思的编程比赛，想写篇文章记录一下比赛经历。 &lt;/p&gt;</summary>
-    
-    
-    
-    <category term="Hackathon华东九校编程创客马拉松" scheme="https://yeying.tech/categories/Hackathon%E5%8D%8E%E4%B8%9C%E4%B9%9D%E6%A0%A1%E7%BC%96%E7%A8%8B%E5%88%9B%E5%AE%A2%E9%A9%AC%E6%8B%89%E6%9D%BE/"/>
-    
-    
-    <category term="个人项目" scheme="https://yeying.tech/tags/%E4%B8%AA%E4%BA%BA%E9%A1%B9%E7%9B%AE/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>博客初建</title>
-    <link href="https://yeying.tech/%E5%8D%9A%E4%B8%BB%E5%AF%84%E8%AF%AD/blog-firstday/"/>
-    <id>https://yeying.tech/%E5%8D%9A%E4%B8%BB%E5%AF%84%E8%AF%AD/blog-firstday/</id>
-    <published>2019-03-05T02:13:34.000Z</published>
-    <updated>2021-07-28T19:01:33.367Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 align=&quot;center&quot;&gt;HELLO 👋&lt;/h1&gt;
-您好，
-
-&lt;p&gt;​        欢迎来到我的个人博客！&lt;/p&gt;
-&lt;p&gt;​        平时会抽空分享一些技术文章和我学习、生活中一些有趣的事情。🎶&lt;/p&gt;
-&lt;p&gt;​        此外，还可通过 “</summary>
-        
-      
-    
-    
-    
-    <category term="博主寄语" scheme="https://yeying.tech/categories/%E5%8D%9A%E4%B8%BB%E5%AF%84%E8%AF%AD/"/>
-    
-    
-    <category term="欢迎" scheme="https://yeying.tech/tags/%E6%AC%A2%E8%BF%8E/"/>
     
   </entry>
   
@@ -469,25 +489,6 @@
 &lt;p&gt;开发人员： 软件项目组中负责研发的技术人员。&lt;/p&gt;
 &lt;p&gt;测试人员：软件项目组中负责测试的人员。&lt;/p&gt;
 &lt;p&gt;产品人员：负责产品的设计，需求分析整理等工作。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="软件测试" scheme="https://yeying.tech/categories/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/"/>
-    
-    
-    <category term="软件测试基础" scheme="https://yeying.tech/tags/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E5%9F%BA%E7%A1%80/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>软件测试-3</title>
-    <link href="https://yeying.tech/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/software-testing-3/"/>
-    <id>https://yeying.tech/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/software-testing-3/</id>
-    <published>2019-05-28T06:16:21.000Z</published>
-    <updated>2021-07-28T09:27:55.882Z</updated>
-    
-    
-    <summary type="html">&lt;h1 id=&quot;如何测试矿泉水瓶&quot;&gt;&lt;a href=&quot;#如何测试矿泉水瓶&quot; class=&quot;headerlink&quot; title=&quot;如何测试矿泉水瓶&quot;&gt;&lt;/a&gt;如何测试矿泉水瓶&lt;/h1&gt;&lt;p&gt;一个刚生产出来的矿泉水瓶要不要进行测试（检验）？答案是肯定的，当然要进行测试。只有通过测试，才能批量生产。如果产品生产出来后不进行测试，直接交给用户使用，在用户使用时出现了问题，那势必会给用户和企业带来不良的影响，甚至是严重的后果。那么测试人员该如何针对矿泉水瓶进行测试呢？&lt;/p&gt;</summary>
     
     
     
