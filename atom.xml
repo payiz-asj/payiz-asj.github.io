@@ -6,7 +6,7 @@
   <link href="https://yeying.tech/atom.xml" rel="self"/>
   
   <link href="https://yeying.tech/"/>
-  <updated>2021-07-31T19:03:35.748Z</updated>
+  <updated>2021-08-03T10:01:21.186Z</updated>
   <id>https://yeying.tech/</id>
   
   <author>
@@ -15,6 +15,53 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Gis</title>
+    <link href="https://yeying.tech/%E4%B8%AA%E4%BA%BA%E9%A1%B9%E7%9B%AE/Gis/"/>
+    <id>https://yeying.tech/%E4%B8%AA%E4%BA%BA%E9%A1%B9%E7%9B%AE/Gis/</id>
+    <published>2020-12-20T09:39:26.000Z</published>
+    <updated>2021-08-03T10:01:21.186Z</updated>
+    
+    
+    <summary type="html">&lt;h3 id=&quot;项目介绍：&quot;&gt;&lt;a href=&quot;#项目介绍：&quot; class=&quot;headerlink&quot; title=&quot;项目介绍：&quot;&gt;&lt;/a&gt;项目介绍：&lt;/h3&gt;&lt;p&gt;​        受地海学院Gis专业朋友委托，做了一个解析、分析Gis数据的脚本，用来解析RINEX格式的导航电文到内存中（字典类型），计算其中所有卫星在瞬时地球坐标系(WGS-84)中的位置，并导出到txt或json格式文件。&lt;/p&gt;
+&lt;p&gt;​        里面用到的第三方库有os, sys, json,pandas,math,numpy。&lt;/p&gt;
+&lt;p&gt;​        数据解析函数返回值为字典格式数据。数据解析完还可导出为txt,json等文件。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="个人项目" scheme="https://yeying.tech/categories/%E4%B8%AA%E4%BA%BA%E9%A1%B9%E7%9B%AE/"/>
+    
+    
+    <category term="Gis" scheme="https://yeying.tech/tags/Gis/"/>
+    
+    <category term="python" scheme="https://yeying.tech/tags/python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>百度图片下载器</title>
+    <link href="https://yeying.tech/%E4%B8%AA%E4%BA%BA%E9%A1%B9%E7%9B%AE/baidu-pic/"/>
+    <id>https://yeying.tech/%E4%B8%AA%E4%BA%BA%E9%A1%B9%E7%9B%AE/baidu-pic/</id>
+    <published>2020-12-05T07:59:50.000Z</published>
+    <updated>2021-08-03T09:52:02.714Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;给大家分享一个自己写的程序，百度图片下载器&lt;/p&gt;
+&lt;h3 id=&quot;介绍：&quot;&gt;&lt;a href=&quot;#介绍：&quot; class=&quot;headerlink&quot; title=&quot;介绍：&quot;&gt;&lt;/a&gt;介绍：&lt;/h3&gt;&lt;p&gt;​        百度图片下载助手，能够个性化爬取&lt;a href=&quot;https://image.baidu.com/&quot;&gt;百度图片&lt;/a&gt;上的图片。&lt;/p&gt;
+&lt;h3 id=&quot;开发环境：&quot;&gt;&lt;a href=&quot;#开发环境：&quot; class=&quot;headerlink&quot; title=&quot;开发环境：&quot;&gt;&lt;/a&gt;开发环境：&lt;/h3&gt;&lt;p&gt;​         Pycharm（python3.8），第三方库：requests、selenium、multiprocessing、json&lt;/p&gt;
+&lt;h3 id=&quot;使用说明：&quot;&gt;&lt;a href=&quot;#使用说明：&quot; class=&quot;headerlink&quot; title=&quot;使用说明：&quot;&gt;&lt;/a&gt;使用说明：&lt;/h3&gt;&lt;p&gt;​        &lt;strong&gt;共做了两个方案：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;（1）直接分析解码百度图片后台AJAX请求，直接爬取图片。这种方法虽简单，但容易被百度反爬机制发现，不太稳定。&lt;/p&gt;
+&lt;p&gt;（2）通过Selenium模拟浏览器操作来避免百度反爬，这种方法比较稳定。此外，通过多进程提高了效率。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="个人项目" scheme="https://yeying.tech/categories/%E4%B8%AA%E4%BA%BA%E9%A1%B9%E7%9B%AE/"/>
+    
+    
+    <category term="python" scheme="https://yeying.tech/tags/python/"/>
+    
+  </entry>
   
   <entry>
     <title>足协杯决赛</title>
@@ -450,44 +497,6 @@
     
     
     <summary type="html">&lt;h1 id=&quot;测试用例的评审&quot;&gt;&lt;a href=&quot;#测试用例的评审&quot; class=&quot;headerlink&quot; title=&quot;测试用例的评审&quot;&gt;&lt;/a&gt;测试用例的评审&lt;/h1&gt;&lt;p&gt;测试人员依据需求文档将测试用例设计完成后，如何确保设计的测试用例是正确无误的呢？这里有一个很重要的任务就是进行用例评审，通过对测试用例的评审以确保用例是&lt;strong&gt;全面的、正确的、没有冗余的。&lt;/strong&gt;&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="软件测试" scheme="https://yeying.tech/categories/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/"/>
-    
-    
-    <category term="软件测试基础" scheme="https://yeying.tech/tags/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E5%9F%BA%E7%A1%80/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>软件测试-8</title>
-    <link href="https://yeying.tech/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/software-testing-8/"/>
-    <id>https://yeying.tech/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/software-testing-8/</id>
-    <published>2019-05-28T06:39:21.000Z</published>
-    <updated>2021-07-28T09:28:51.539Z</updated>
-    
-    
-    <summary type="html">&lt;h1 id=&quot;用例设计的基本思路&quot;&gt;&lt;a href=&quot;#用例设计的基本思路&quot; class=&quot;headerlink&quot; title=&quot;用例设计的基本思路&quot;&gt;&lt;/a&gt;用例设计的基本思路&lt;/h1&gt;&lt;p&gt;用例设计的基本思路在实际工作中，稍微大型一点的软件系统一般都包括用户注册、登录、搜索以及附件上传等常见模块。本节就以这些模块为例，结合已介绍过的用例设计方法来分别讲解这些模块的设计思路。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="软件测试" scheme="https://yeying.tech/categories/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/"/>
-    
-    
-    <category term="软件测试基础" scheme="https://yeying.tech/tags/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E5%9F%BA%E7%A1%80/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>软件测试-7</title>
-    <link href="https://yeying.tech/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/software-testing-7/"/>
-    <id>https://yeying.tech/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/software-testing-7/</id>
-    <published>2019-05-28T06:33:21.000Z</published>
-    <updated>2021-07-28T09:28:40.421Z</updated>
-    
-    
-    <summary type="html">&lt;h1 id=&quot;测试用例的设计&quot;&gt;&lt;a href=&quot;#测试用例的设计&quot; class=&quot;headerlink&quot; title=&quot;测试用例的设计&quot;&gt;&lt;/a&gt;测试用例的设计&lt;/h1&gt;&lt;p&gt;什么是测试用例呢？测试用例对测试工作会起到怎样的作用呢？测试用例与需求文档之间存在什么样的关系呢？&lt;/p&gt;</summary>
     
     
     

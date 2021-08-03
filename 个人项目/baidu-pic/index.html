@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+
+
+<html lang="zh-CN">
+  
+
+    <head>
+      <meta charset="utf-8" />
+       
+      <meta name="keywords" content="YeYing,Blog,夜莺,博客,夜莺悠吟,yeying.tech,www.yeying.tech" />
+       
+      <meta name="description" content="挑灯夜战，常闻夜莺悠吟...停笔共鸣...悲壮、坚定！&lt;br&gt;心酸背后总有值得坚持的理由💪请坚持！&lt;br&gt; 珍惜身边的人！ 小快y你❤" />
+      
+      <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1"
+      />
+      <title>百度图片下载器 |  夜莺悠吟</title>
+  <meta name="generator" content="hexo-theme-ayer">
+      
+      <link rel="shortcut icon" href="/favicon.ico" />
+       
+<link rel="stylesheet" href="/dist/main.css">
+
+      <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/Shen-Yu/cdn/css/remixicon.min.css"
+      />
+      
+<link rel="stylesheet" href="/css/custom.css">
+ 
+      <script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+       
+ 
+
+      <!-- mermaid -->
+      
+    <link rel="alternate" href="/atom.xml" title="夜莺悠吟" type="application/atom+xml">
+</head>
+  </html>
+</html>
+
+
+<body>
+  <div id="app">
+    
+      
+    <main class="content on">
+      <section class="outer">
+  
+<article
+  id="post-baidu-pic"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h1 class="article-title sea-center" style="border-left:0" itemprop="name">
+  百度图片下载器
+</h1>
+ 
+
+      
+    </header>
+     
+    <div class="article-meta">
+      <a href="/%E4%B8%AA%E4%BA%BA%E9%A1%B9%E7%9B%AE/baidu-pic/" class="article-date">
+  <time datetime="2020-12-05T07:59:50.000Z" itemprop="datePublished">2020-12-05</time>
+</a> 
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E4%B8%AA%E4%BA%BA%E9%A1%B9%E7%9B%AE/">个人项目</a>
+  </div>
+  
+<div class="word_count">
+    <span class="post-time">
+        <span class="post-meta-item-icon">
+            <i class="ri-quill-pen-line"></i>
+            <span class="post-meta-item-text"> 字数统计:</span>
+            <span class="post-count">3k</span>
+        </span>
+    </span>
+
+    <span class="post-time">
+        &nbsp; | &nbsp;
+        <span class="post-meta-item-icon">
+            <i class="ri-book-open-line"></i>
+            <span class="post-meta-item-text"> 阅读时长≈</span>
+            <span class="post-count">15 分钟</span>
+        </span>
+    </span>
+</div>
+ 
+    </div>
+      
+    <div class="tocbot"></div>
+
+
+
+
+  
+    <div class="article-entry" itemprop="articleBody">
+       
+  <p>给大家分享一个自己写的程序，百度图片下载器</p>
+<h3 id="介绍："><a href="#介绍：" class="headerlink" title="介绍："></a>介绍：</h3><p>​        百度图片下载助手，能够个性化爬取<a target="_blank" rel="noopener" href="https://image.baidu.com/">百度图片</a>上的图片。</p>
+<h3 id="开发环境："><a href="#开发环境：" class="headerlink" title="开发环境："></a>开发环境：</h3><p>​         Pycharm（python3.8），第三方库：requests、selenium、multiprocessing、json</p>
+<h3 id="使用说明："><a href="#使用说明：" class="headerlink" title="使用说明："></a>使用说明：</h3><p>​        <strong>共做了两个方案：</strong></p>
+<p>（1）直接分析解码百度图片后台AJAX请求，直接爬取图片。这种方法虽简单，但容易被百度反爬机制发现，不太稳定。</p>
+<p>（2）通过Selenium模拟浏览器操作来避免百度反爬，这种方法比较稳定。此外，通过多进程提高了效率。</p>
+<span id="more"></span>
+
+
+
+<h3 id="Show-Me-The-Code-："><a href="#Show-Me-The-Code-：" class="headerlink" title="Show Me The Code ："></a>Show Me The Code ：</h3><p>​        版本1：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#!/usr/bin/env python</span></span><br><span class="line"><span class="comment"># -*- coding: utf-8 -*- </span></span><br><span class="line"><span class="comment"># @Author: Payiz</span></span><br><span class="line"><span class="comment"># @project: 百度图片下载器</span></span><br><span class="line"><span class="comment"># @File : 下载器1.0.py</span></span><br><span class="line"><span class="comment"># @Time : 2020/12/5 05:35:22</span></span><br><span class="line"><span class="comment"># 需要安装第三方库？试试下面语句(使用清华镜像源)</span></span><br><span class="line"><span class="comment"># pip --default-timeout=100 install -i https://pypi.tuna.tsinghua.edu.cn/simple name</span></span><br><span class="line"><span class="comment"># -----------------------------------</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"><span class="keyword">import</span> re</span><br><span class="line"><span class="keyword">import</span> time</span><br><span class="line"><span class="keyword">import</span> os</span><br><span class="line"><span class="keyword">import</span> urllib.parse</span><br><span class="line"><span class="keyword">import</span> json</span><br><span class="line"></span><br><span class="line"><span class="comment"># 每次json出的数据量</span></span><br><span class="line">page_num = <span class="number">30</span></span><br><span class="line">photo_dir = <span class="string">&#x27;./下载结果/&#x27;</span>  <span class="comment"># path 地址</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">getDetailImage</span>(<span class="params">word, width, height</span>):</span></span><br><span class="line">    num = <span class="number">0</span></span><br><span class="line">    url = <span class="string">&#x27;https://image.baidu.com/search/acjson?&#x27;</span></span><br><span class="line">    string_parameters = <span class="string">&#x27;tn=resultjson_com&amp;ipn=rj&amp;ct=201326592&amp;is=&amp;fp=result&amp;queryWord=&#123;0&#125;&amp;cl=2&amp;lm=-1&amp;ie=utf-8&amp;oe=utf-8&amp;adpicid=&amp;st=-1&amp;z=&amp;ic=&amp;hd=&amp;latest=&amp;copyright=&amp;word=&#123;0&#125;&amp;s=&amp;se=&amp;tab=&amp;width=&#123;2&#125;&amp;height=&#123;3&#125;&amp;face=&amp;istype=&amp;qc=&amp;nc=1&amp;fr=&amp;expermode=&amp;nojc=&amp;pn=&#123;1&#125;&amp;rn=&#x27;</span> + <span class="built_in">str</span>(</span><br><span class="line">        page_num) + <span class="string">&#x27;&amp;gsm=3c&amp;1627926209=&#x27;</span></span><br><span class="line">    url = url + string_parameters</span><br><span class="line">    <span class="comment"># 页数</span></span><br><span class="line">    <span class="keyword">while</span> num &lt; <span class="number">3</span>:</span><br><span class="line">        page_url = url.<span class="built_in">format</span>(urllib.parse.quote(word), num * page_num, width, height)</span><br><span class="line">        <span class="built_in">print</span>(page_url)</span><br><span class="line">        <span class="comment"># response = requests.get(page_url)  # , allow_redirects=False)</span></span><br><span class="line"></span><br><span class="line">        headers = &#123;</span><br><span class="line">            <span class="string">&#x27;Accept&#x27;</span>: <span class="string">&#x27;text / plain, * / *;q = 0.01&#x27;</span>,</span><br><span class="line">            <span class="string">&#x27;Accept - Encoding&#x27;</span>: <span class="string">&#x27;gzip, deflate, br&#x27;</span>,</span><br><span class="line">            <span class="string">&#x27;Accept - Language&#x27;</span>: <span class="string">&#x27;zh-CN,zh;q=0.9,en;q=0.8&#x27;</span>,</span><br><span class="line">            <span class="string">&#x27;Connection&#x27;</span>: <span class="string">&#x27;keep - alive&#x27;</span>,</span><br><span class="line">            <span class="string">&#x27;Host&#x27;</span>: <span class="string">&#x27;image.baidu.com&#x27;</span>,</span><br><span class="line">            <span class="string">&#x27;Cache-Control&#x27;</span>: <span class="string">&#x27;max-age=0&#x27;</span>,</span><br><span class="line">            <span class="string">&#x27;Connection&#x27;</span>: <span class="string">&#x27;keep-alive&#x27;</span>,</span><br><span class="line">            <span class="string">&#x27;Upgrade-Insecure-Requests&#x27;</span>: <span class="string">&#x27;1&#x27;</span>,</span><br><span class="line">            <span class="string">&#x27;User_Agent&#x27;</span>: <span class="string">&#x27;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.107 Safari/537.36&#x27;</span>,</span><br><span class="line">            <span class="string">&#x27;Accept&#x27;</span>: <span class="string">&#x27;text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/siqned-exchange;v=b3;q=0.9&#x27;</span></span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        sessions = requests.session()</span><br><span class="line">        sessions.headers = headers</span><br><span class="line">        response = sessions.get(url, allow_redirects=<span class="literal">True</span>)</span><br><span class="line"></span><br><span class="line">        regex = re.<span class="built_in">compile</span>(<span class="string">r&#x27;\\(?![/u&quot;])&#x27;</span>)</span><br><span class="line">        <span class="keyword">try</span>:</span><br><span class="line">            json_data = json.loads(regex.sub(<span class="string">r&quot;\\\\&quot;</span>, response.text))  <span class="comment"># 转义nbjk jkkjjhkjh</span></span><br><span class="line"></span><br><span class="line">            <span class="keyword">for</span> item <span class="keyword">in</span> json_data[<span class="string">&#x27;data&#x27;</span>]:</span><br><span class="line">                URL = item[<span class="string">&#x27;objURL&#x27;</span>]</span><br><span class="line">                <span class="built_in">type</span> = item[<span class="string">&#x27;type&#x27;</span>]</span><br><span class="line">                pic_url = baidtu_uncomplie(URL)</span><br><span class="line">                <span class="built_in">print</span>(pic_url)</span><br><span class="line">                html = requests.get(pic_url, timeout=<span class="number">5</span>)</span><br><span class="line"></span><br><span class="line">                <span class="keyword">with</span> <span class="built_in">open</span>(word_dir2 + <span class="string">&#x27;/&#x27;</span> + <span class="built_in">str</span>(time.time()).replace(<span class="string">&#x27;.&#x27;</span>, <span class="string">&#x27;1&#x27;</span>) + <span class="string">&#x27;.&#x27;</span> + <span class="built_in">type</span>, <span class="string">&#x27;wb&#x27;</span>)<span class="keyword">as</span> f:</span><br><span class="line">                    f.write(html.content)</span><br><span class="line">        <span class="keyword">except</span> Exception <span class="keyword">as</span> e:</span><br><span class="line">            <span class="built_in">print</span>(<span class="string">&#x27;出错了:&#x27;</span>, e)</span><br><span class="line">            <span class="keyword">pass</span></span><br><span class="line"></span><br><span class="line">        num = num + <span class="number">1</span></span><br><span class="line">        time.sleep(<span class="number">10</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># 解密</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">baidtu_uncomplie</span>(<span class="params">url</span>):</span></span><br><span class="line">    res = <span class="string">&#x27;&#x27;</span></span><br><span class="line">    c = [<span class="string">&#x27;_z2C$q&#x27;</span>, <span class="string">&#x27;_z&amp;e3B&#x27;</span>, <span class="string">&#x27;AzdH3F&#x27;</span>]</span><br><span class="line">    d = &#123;<span class="string">&#x27;w&#x27;</span>: <span class="string">&#x27;a&#x27;</span>, <span class="string">&#x27;k&#x27;</span>: <span class="string">&#x27;b&#x27;</span>, <span class="string">&#x27;v&#x27;</span>: <span class="string">&#x27;c&#x27;</span>, <span class="string">&#x27;1&#x27;</span>: <span class="string">&#x27;d&#x27;</span>, <span class="string">&#x27;j&#x27;</span>: <span class="string">&#x27;e&#x27;</span>, <span class="string">&#x27;u&#x27;</span>: <span class="string">&#x27;f&#x27;</span>, <span class="string">&#x27;2&#x27;</span>: <span class="string">&#x27;g&#x27;</span>, <span class="string">&#x27;i&#x27;</span>: <span class="string">&#x27;h&#x27;</span>, <span class="string">&#x27;t&#x27;</span>: <span class="string">&#x27;i&#x27;</span>, <span class="string">&#x27;3&#x27;</span>: <span class="string">&#x27;j&#x27;</span>, <span class="string">&#x27;h&#x27;</span>: <span class="string">&#x27;k&#x27;</span>,</span><br><span class="line">         <span class="string">&#x27;s&#x27;</span>: <span class="string">&#x27;l&#x27;</span>, <span class="string">&#x27;4&#x27;</span>: <span class="string">&#x27;m&#x27;</span>, <span class="string">&#x27;g&#x27;</span>: <span class="string">&#x27;n&#x27;</span>, <span class="string">&#x27;5&#x27;</span>: <span class="string">&#x27;o&#x27;</span>, <span class="string">&#x27;r&#x27;</span>: <span class="string">&#x27;p&#x27;</span>, <span class="string">&#x27;q&#x27;</span>: <span class="string">&#x27;q&#x27;</span>, <span class="string">&#x27;6&#x27;</span>: <span class="string">&#x27;r&#x27;</span>, <span class="string">&#x27;f&#x27;</span>: <span class="string">&#x27;s&#x27;</span>, <span class="string">&#x27;p&#x27;</span>: <span class="string">&#x27;t&#x27;</span>, <span class="string">&#x27;7&#x27;</span>: <span class="string">&#x27;u&#x27;</span>, <span class="string">&#x27;e&#x27;</span>: <span class="string">&#x27;v&#x27;</span>,</span><br><span class="line">         <span class="string">&#x27;o&#x27;</span>: <span class="string">&#x27;w&#x27;</span>, <span class="string">&#x27;8&#x27;</span>: <span class="string">&#x27;1&#x27;</span>, <span class="string">&#x27;d&#x27;</span>: <span class="string">&#x27;2&#x27;</span>, <span class="string">&#x27;n&#x27;</span>: <span class="string">&#x27;3&#x27;</span>, <span class="string">&#x27;9&#x27;</span>: <span class="string">&#x27;4&#x27;</span>, <span class="string">&#x27;c&#x27;</span>: <span class="string">&#x27;5&#x27;</span>, <span class="string">&#x27;m&#x27;</span>: <span class="string">&#x27;6&#x27;</span>, <span class="string">&#x27;0&#x27;</span>: <span class="string">&#x27;7&#x27;</span>, <span class="string">&#x27;b&#x27;</span>: <span class="string">&#x27;8&#x27;</span>, <span class="string">&#x27;l&#x27;</span>: <span class="string">&#x27;9&#x27;</span>, <span class="string">&#x27;a&#x27;</span>: <span class="string">&#x27;0&#x27;</span>,</span><br><span class="line">         <span class="string">&#x27;_z2C$q&#x27;</span>: <span class="string">&#x27;:&#x27;</span>, <span class="string">&#x27;_z&amp;e3B&#x27;</span>: <span class="string">&#x27;.&#x27;</span>, <span class="string">&#x27;AzdH3F&#x27;</span>: <span class="string">&#x27;/&#x27;</span>&#125;</span><br><span class="line">    <span class="keyword">if</span> (url == <span class="literal">None</span> <span class="keyword">or</span> <span class="string">&#x27;http&#x27;</span> <span class="keyword">in</span> url):</span><br><span class="line">        <span class="keyword">return</span> url</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        j = url</span><br><span class="line">        <span class="keyword">for</span> m <span class="keyword">in</span> c:</span><br><span class="line">            j = j.replace(m, d[m])</span><br><span class="line">        <span class="keyword">for</span> char <span class="keyword">in</span> j:</span><br><span class="line">            <span class="keyword">if</span> re.match(<span class="string">&#x27;^[a-w\d]+$&#x27;</span>, char):</span><br><span class="line">                char = d[char]</span><br><span class="line">            res = res + char</span><br><span class="line">        <span class="keyword">return</span> res</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&quot;__main__&quot;</span>:</span><br><span class="line">    <span class="comment"># 用户交互，获取输入</span></span><br><span class="line">    words = <span class="built_in">input</span>(<span class="string">&quot;请输入需要查找的关键词：若多条，可用空格分割\n&quot;</span>).split(<span class="string">&#x27; &#x27;</span>)</span><br><span class="line">    <span class="built_in">print</span>(words)</span><br><span class="line">    <span class="keyword">for</span> word <span class="keyword">in</span> words:</span><br><span class="line">        word_dir = os.path.join(photo_dir, word)</span><br><span class="line">        <span class="keyword">if</span> <span class="keyword">not</span> os.path.exists(word_dir):</span><br><span class="line">            os.makedirs(word_dir)</span><br><span class="line">        widths = [<span class="string">&#x27;1920&#x27;</span>, ]</span><br><span class="line">        heights = [<span class="string">&#x27;1080&#x27;</span>, ]</span><br><span class="line">        <span class="keyword">for</span> width, height <span class="keyword">in</span> <span class="built_in">zip</span>(widths, heights):</span><br><span class="line">            word_dir2 = word_dir + <span class="string">&#x27;/&#x27;</span> + (width + <span class="string">&#x27;x&#x27;</span> + height)</span><br><span class="line">            <span class="keyword">if</span> <span class="keyword">not</span> os.path.exists(word_dir2):</span><br><span class="line">                os.makedirs(word_dir2)</span><br><span class="line">            getDetailImage(word, width, height)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+<p>​        版本2：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br><span class="line">175</span><br><span class="line">176</span><br><span class="line">177</span><br><span class="line">178</span><br><span class="line">179</span><br><span class="line">180</span><br><span class="line">181</span><br><span class="line">182</span><br><span class="line">183</span><br><span class="line">184</span><br><span class="line">185</span><br><span class="line">186</span><br><span class="line">187</span><br><span class="line">188</span><br><span class="line">189</span><br><span class="line">190</span><br><span class="line">191</span><br><span class="line">192</span><br><span class="line">193</span><br><span class="line">194</span><br><span class="line">195</span><br><span class="line">196</span><br><span class="line">197</span><br><span class="line">198</span><br><span class="line">199</span><br><span class="line">200</span><br><span class="line">201</span><br><span class="line">202</span><br><span class="line">203</span><br><span class="line">204</span><br><span class="line">205</span><br><span class="line">206</span><br><span class="line">207</span><br><span class="line">208</span><br><span class="line">209</span><br><span class="line">210</span><br><span class="line">211</span><br><span class="line">212</span><br><span class="line">213</span><br><span class="line">214</span><br><span class="line">215</span><br><span class="line">216</span><br><span class="line">217</span><br><span class="line">218</span><br><span class="line">219</span><br><span class="line">220</span><br><span class="line">221</span><br><span class="line">222</span><br><span class="line">223</span><br><span class="line">224</span><br><span class="line">225</span><br><span class="line">226</span><br><span class="line">227</span><br><span class="line">228</span><br><span class="line">229</span><br><span class="line">230</span><br><span class="line">231</span><br><span class="line">232</span><br><span class="line">233</span><br><span class="line">234</span><br><span class="line">235</span><br><span class="line">236</span><br><span class="line">237</span><br><span class="line">238</span><br><span class="line">239</span><br><span class="line">240</span><br><span class="line">241</span><br><span class="line">242</span><br><span class="line">243</span><br><span class="line">244</span><br><span class="line">245</span><br><span class="line">246</span><br><span class="line">247</span><br><span class="line">248</span><br><span class="line">249</span><br><span class="line">250</span><br><span class="line">251</span><br><span class="line">252</span><br><span class="line">253</span><br><span class="line">254</span><br><span class="line">255</span><br><span class="line">256</span><br><span class="line">257</span><br><span class="line">258</span><br><span class="line">259</span><br><span class="line">260</span><br><span class="line">261</span><br><span class="line">262</span><br><span class="line">263</span><br><span class="line">264</span><br><span class="line">265</span><br><span class="line">266</span><br><span class="line">267</span><br><span class="line">268</span><br><span class="line">269</span><br><span class="line">270</span><br><span class="line">271</span><br><span class="line">272</span><br><span class="line">273</span><br><span class="line">274</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#!/usr/bin/env python</span></span><br><span class="line"><span class="comment"># -*- coding: utf-8 -*- </span></span><br><span class="line"><span class="comment"># @Author: Payiz</span></span><br><span class="line"><span class="comment"># @project: 百度图片下载器</span></span><br><span class="line"><span class="comment"># @File : 下载器2.0.py</span></span><br><span class="line"><span class="comment"># @Time : 2020/12/5 05:03:33</span></span><br><span class="line"><span class="comment"># 需要安装第三方库？试试下面语句(使用清华镜像源)</span></span><br><span class="line"><span class="comment"># pip --default-timeout=100 install -i https://pypi.tuna.tsinghua.edu.cn/simple name</span></span><br><span class="line"><span class="comment"># -----------------------------------</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> csv</span><br><span class="line"><span class="keyword">import</span> multiprocessing</span><br><span class="line"><span class="keyword">import</span> os</span><br><span class="line"><span class="keyword">import</span> random</span><br><span class="line"><span class="keyword">import</span> re</span><br><span class="line"><span class="keyword">import</span> time</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"><span class="keyword">import</span> requests.adapters</span><br><span class="line"><span class="comment"># from 付费ip import zhiliu</span></span><br><span class="line"><span class="comment"># from Report_to_wechat.report import send_report</span></span><br><span class="line"><span class="keyword">from</span> selenium <span class="keyword">import</span> webdriver  <span class="comment"># 用来驱动浏览器的</span></span><br><span class="line"><span class="keyword">from</span> selenium.webdriver.chrome.options <span class="keyword">import</span> Options  <span class="comment"># 浏览器设置</span></span><br><span class="line"><span class="comment"># from selenium.webdriver import ActionChains  # 破解滑动验证码的时候用的 可以拖动图片</span></span><br><span class="line"><span class="keyword">from</span> selenium.webdriver.common.action_chains <span class="keyword">import</span> ActionChains  <span class="comment"># 鼠标悬停</span></span><br><span class="line"><span class="keyword">from</span> selenium.webdriver.common.by <span class="keyword">import</span> By  <span class="comment"># 定位器 按照什么方式查找，By.ID,By.CSS_SELECTOR</span></span><br><span class="line"><span class="comment"># 判断器  和下面WebDriverWait一起用的</span></span><br><span class="line"><span class="keyword">from</span> selenium.webdriver.support <span class="keyword">import</span> expected_conditions <span class="keyword">as</span> ec</span><br><span class="line"><span class="comment"># 选择器，两种方法任选其一，都是指向同一个文件</span></span><br><span class="line"><span class="comment"># from selenium.webdriver.support.ui import Select</span></span><br><span class="line"><span class="comment"># 键盘操作</span></span><br><span class="line"><span class="keyword">from</span> selenium.webdriver.support.wait <span class="keyword">import</span> WebDriverWait  <span class="comment"># 浏览器等待对象，等待页面加载某些元素</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 读文件，建立用户请求头</span></span><br><span class="line">all_user_agents = []</span><br><span class="line"><span class="keyword">with</span> <span class="built_in">open</span>(<span class="string">&quot;./请求头.txt&quot;</span>, <span class="string">&#x27;r&#x27;</span>, encoding=<span class="string">&#x27;utf-8&#x27;</span>) <span class="keyword">as</span> f:</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> f:</span><br><span class="line">        all_user_agents.append(i.replace(<span class="string">&quot;\n&quot;</span>, <span class="string">&#x27;&#x27;</span>).replace(<span class="string">&#x27;\r&#x27;</span>, <span class="string">&#x27;&#x27;</span>))</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># 获取一个图片</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">get_baidu_pic</span>(<span class="params">keyword, select_size=<span class="number">1</span>, pages=<span class="number">1</span></span>):</span></span><br><span class="line">    <span class="comment">#########################################################################</span></span><br><span class="line">    <span class="comment"># 接口说明：</span></span><br><span class="line">    <span class="comment"># keyword                   搜索的图片关键词</span></span><br><span class="line">    <span class="comment"># select_size               筛选尺寸：1 全部尺寸  2 特大  3 大  4 中  5 小</span></span><br><span class="line">    <span class="comment"># pages                     爬取页数：一般1页含20-50个图片</span></span><br><span class="line">    <span class="comment">#########################################################################</span></span><br><span class="line"></span><br><span class="line">    <span class="comment"># 目标网址</span></span><br><span class="line">    url = <span class="string">&#x27;https://image.baidu.com/&#x27;</span></span><br><span class="line"></span><br><span class="line">    <span class="comment"># 0.建立浏览器对象，并设置参数</span></span><br><span class="line">    chrome_options = Options()</span><br><span class="line">    <span class="comment"># 关于窗口</span></span><br><span class="line">    chrome_options.add_argument(<span class="string">&#x27;--disable-gpu&#x27;</span>)  <span class="comment"># 谷歌文档提到需要加上这个属性来规避bug</span></span><br><span class="line">    <span class="comment"># chrome_options.add_argument(&quot;--start-maximized&quot;)  # 窗口最大化</span></span><br><span class="line">    <span class="comment"># chrome_options.add_argument(&#x27;window-size=100x100&#x27;)  # 自定义窗口大小</span></span><br><span class="line">    chrome_options.add_argument(<span class="string">&#x27;--headless&#x27;</span>)  <span class="comment"># 后台运行</span></span><br><span class="line">    <span class="comment"># 关于页面加载</span></span><br><span class="line">    chrome_options.add_argument(<span class="string">&#x27;--no-sandbox&#x27;</span>)  <span class="comment"># 禁止消息框</span></span><br><span class="line">    chrome_options.add_argument(<span class="string">&quot;--disable-infobars&quot;</span>)  <span class="comment"># 禁止警告语</span></span><br><span class="line">    chrome_options.add_argument(<span class="string">&#x27;--hide-scrollbars&#x27;</span>)  <span class="comment"># 隐藏滚动条, 应对一些特殊页面</span></span><br><span class="line">    chrome_options.add_argument(<span class="string">&#x27;blink-settings=imagesEnabled=false&#x27;</span>)  <span class="comment"># 不加载图片, 提升速度</span></span><br><span class="line">    <span class="comment"># 另一种不加载图片的方法</span></span><br><span class="line">    <span class="comment"># prefs = &#123;&quot;profile.managed_default_content_settings.images&quot;: 2&#125;</span></span><br><span class="line">    <span class="comment"># chrome_options.add_experimental_option(&quot;prefs&quot;, prefs)</span></span><br><span class="line">    <span class="comment"># 增加扩展</span></span><br><span class="line">    <span class="comment"># chrome_options.add_extension(extension_path)</span></span><br><span class="line">    <span class="comment"># chrome_options.add_argument(&quot;--disable-dev-shm-usage&quot;) # 这个不知道是什么</span></span><br><span class="line">    <span class="comment"># 设置中文</span></span><br><span class="line">    chrome_options.add_argument(<span class="string">&#x27;lang=zh_CN.UTF-8&#x27;</span>)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 添加请求头和代理ip</span></span><br><span class="line">    <span class="comment"># global ua</span></span><br><span class="line">    <span class="comment"># global all_ips</span></span><br><span class="line">    <span class="comment"># ip = random.choice(all_ips)</span></span><br><span class="line">    <span class="comment"># chrome_options.add_argument(&#x27;user-agent=%s&#x27;%ua.random())</span></span><br><span class="line">    <span class="comment"># chrome_options.add_argument(&#x27;--proxy-server=&#x27;+ip)</span></span><br><span class="line">    <span class="keyword">global</span> all_user_agents</span><br><span class="line">    chrome_options.add_argument(<span class="string">&#x27;user-agent=&#123;&#125;&#x27;</span>.<span class="built_in">format</span>(random.choice(all_user_agents)))</span><br><span class="line">    <span class="comment"># chrome_options.add_argument(&#x27;Authorization=&quot;token 5325ebf07a0cbebf60780f4ebd016e7b4023065f&quot;&#x27;)</span></span><br><span class="line">    <span class="comment"># chrome_options.add_argument(&#x27;Referer=&quot;https://statistic.hackathon2020eastchina.top/&quot;&#x27;)</span></span><br><span class="line"></span><br><span class="line">    <span class="comment"># 创建浏览器对象</span></span><br><span class="line">    browser = <span class="literal">None</span></span><br><span class="line">    <span class="keyword">try</span>:</span><br><span class="line">        browser = webdriver.Chrome(options=chrome_options)</span><br><span class="line">    <span class="keyword">except</span> Exception <span class="keyword">as</span> message:</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&#x27;创建浏览器对象失败，错误代码：&#x27;</span>, message)</span><br><span class="line"></span><br><span class="line">    result = []  <span class="comment"># 结果列表</span></span><br><span class="line">    <span class="keyword">try</span>:</span><br><span class="line">        <span class="comment"># 1.打开网页</span></span><br><span class="line">        browser.get(url)</span><br><span class="line">        time.sleep(<span class="number">0.2</span>)</span><br><span class="line">        <span class="comment"># 2.输入需要查找的图片名</span></span><br><span class="line">        wait = WebDriverWait(browser, <span class="number">10</span>, <span class="number">0.1</span>)</span><br><span class="line">        wait.until(ec.presence_of_all_elements_located((By.ID, <span class="string">&quot;kw&quot;</span>)))</span><br><span class="line">        inputs = browser.find_element_by_id(<span class="string">&quot;kw&quot;</span>)</span><br><span class="line">        inputs.send_keys(keyword)</span><br><span class="line"></span><br><span class="line">        <span class="comment"># 4.输入完信息后，执行查询操作</span></span><br><span class="line">        <span class="comment"># inputs.send_keys(Keys.ENTER)  # &#x27;按下&#x27;回车键，这个网站此方法不行，会跳转到别的网站</span></span><br><span class="line">        browser.find_element_by_class_name(<span class="string">&quot;s_newBtn&quot;</span>).click()  <span class="comment"># 点击&#x27;查询&#x27;</span></span><br><span class="line"></span><br><span class="line">        <span class="comment"># 5. 开始加载网页获取目标图片</span></span><br><span class="line">        <span class="keyword">try</span>:</span><br><span class="line">            <span class="comment"># 筛选尺寸</span></span><br><span class="line">            <span class="comment"># 等待加载</span></span><br><span class="line">            wait = WebDriverWait(browser, <span class="number">10</span>, <span class="number">0.1</span>)</span><br><span class="line">            wait.until(ec.presence_of_all_elements_located((By.CLASS_NAME, <span class="string">&quot;sizeFilter&quot;</span>)))</span><br><span class="line">            <span class="comment"># 鼠标悬停</span></span><br><span class="line">            element = browser.find_element_by_class_name(<span class="string">&#x27;sizeFilter&#x27;</span>)</span><br><span class="line">            actions = ActionChains(browser)</span><br><span class="line">            actions.move_to_element(element).perform()</span><br><span class="line">            <span class="comment"># 选择尺寸，并点击</span></span><br><span class="line">            time.sleep(<span class="number">0.3</span>)</span><br><span class="line">            choose_size = browser.find_element_by_xpath(</span><br><span class="line">                <span class="string">&#x27;/html/body/div[1]/div[4]/div[2]/div/div[2]/div/div[2]/ul/li[&#123;&#125;]&#x27;</span>.<span class="built_in">format</span>(<span class="built_in">str</span>(select_size)))</span><br><span class="line">            choose_size.click()</span><br><span class="line">            <span class="comment"># 加载图片</span></span><br><span class="line">            <span class="keyword">for</span> one_page <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">1</span>, pages + <span class="number">1</span>):</span><br><span class="line">                <span class="comment"># 获取该页</span></span><br><span class="line">                wait = WebDriverWait(browser, <span class="number">10</span>, <span class="number">0.1</span>)</span><br><span class="line">                wait.until(ec.presence_of_all_elements_located((By.ID, <span class="string">&quot;imgid&quot;</span>)))</span><br><span class="line">                <span class="comment"># time.sleep(0.5)</span></span><br><span class="line">                <span class="comment"># 等待该页中所有图片加载完毕</span></span><br><span class="line">                page_item = <span class="string">&#x27;//*[@id=&quot;imgid&quot;]/div[&#123;&#125;]/ul&#x27;</span>.<span class="built_in">format</span>(<span class="built_in">str</span>(one_page))</span><br><span class="line">                wait = WebDriverWait(browser, <span class="number">10</span>, <span class="number">0.1</span>)</span><br><span class="line">                <span class="comment"># 取得该页所有图片</span></span><br><span class="line">                wait.until(ec.presence_of_all_elements_located((By.XPATH, page_item)))</span><br><span class="line">                imgitems = browser.find_element_by_xpath(page_item).find_elements_by_class_name(<span class="string">&quot;imgitem&quot;</span>)</span><br><span class="line">                <span class="comment"># print(&quot;第&#123;&#125;页共有&#123;&#125;张图片：&quot;.format(one_page, len(imgitems)))</span></span><br><span class="line">                <span class="keyword">for</span> i <span class="keyword">in</span> imgitems:</span><br><span class="line">                    title = i.get_attribute(<span class="string">&#x27;data-title&#x27;</span>).replace(<span class="string">&#x27;&lt;strong&gt;&#x27;</span>, <span class="string">&#x27;&#x27;</span>).replace(<span class="string">&#x27;&lt;/strong&gt;&#x27;</span>, <span class="string">&#x27;&#x27;</span>)</span><br><span class="line">                    pic_url = i.get_attribute(<span class="string">&#x27;data-objurl&#x27;</span>)</span><br><span class="line">                    <span class="comment"># print(title, pic_url)</span></span><br><span class="line">                    result.append(&#123;<span class="string">&quot;title&quot;</span>: title, <span class="string">&quot;pic_url&quot;</span>: pic_url&#125;)</span><br><span class="line">                <span class="comment"># time.sleep(0.3)</span></span><br><span class="line">                browser.execute_script(<span class="string">&#x27;window.scrollTo(0,document.body.scrollHeight)&#x27;</span>)  <span class="comment"># 滑到底部</span></span><br><span class="line"></span><br><span class="line">        <span class="keyword">except</span> Exception <span class="keyword">as</span> message:</span><br><span class="line">            <span class="built_in">print</span>(<span class="string">&#x27;定位报错：&#x27;</span>, message)</span><br><span class="line">        <span class="keyword">finally</span>:</span><br><span class="line">            <span class="comment"># source = browser.page_source</span></span><br><span class="line">            <span class="comment"># content = parsel.Selector(source)</span></span><br><span class="line">            <span class="comment"># print(&#x27;打开成功：&#x27;, keyword)</span></span><br><span class="line">            <span class="comment"># # print(source)</span></span><br><span class="line">            <span class="keyword">pass</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">except</span> Exception <span class="keyword">as</span> e:</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&#x27;打开失败：&#x27;</span>, keyword)</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&#x27;打开网页失败，网址：&#123;&#125;  错误代码：&#x27;</span>.<span class="built_in">format</span>(url), e)</span><br><span class="line">    <span class="keyword">finally</span>:</span><br><span class="line">        <span class="comment"># 等待几秒</span></span><br><span class="line">        <span class="comment"># time.sleep(10)</span></span><br><span class="line">        <span class="comment"># 关闭浏览器对象</span></span><br><span class="line">        browser.close()</span><br><span class="line">        <span class="keyword">return</span> result</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">error_handler</span>(<span class="params">e</span>):</span></span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&#x27;多进程出错啦！&#x27;</span>)</span><br><span class="line">    <span class="built_in">print</span>(<span class="built_in">dir</span>(e), <span class="string">&quot;\n&quot;</span>)</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;--&gt;&#123;&#125;&lt;--&quot;</span>.<span class="built_in">format</span>(e.__cause__))</span><br><span class="line"></span><br><span class="line"><span class="comment"># 下载一个图片</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">down_load_one_pic</span>(<span class="params">file_path, name, url</span>):</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">validateTitle</span>(<span class="params">title</span>):</span></span><br><span class="line">        rstr = <span class="string">r&quot;[\/\\\:\*\?\&quot;\&lt;\&gt;\|]&quot;</span>  <span class="comment"># &#x27;/ \ : * ? &quot; &lt; &gt; |&#x27;</span></span><br><span class="line">        new_title = re.sub(rstr, <span class="string">&quot;_&quot;</span>, title)  <span class="comment"># 替换为下划线</span></span><br><span class="line">        <span class="keyword">return</span> new_title</span><br><span class="line"></span><br><span class="line">    <span class="keyword">try</span>:</span><br><span class="line">        <span class="comment"># 设置重连次数</span></span><br><span class="line">        requests.adapters.DEFAULT_RETRIES = <span class="number">5</span></span><br><span class="line">        ses = requests.Session()</span><br><span class="line">        <span class="comment"># 设置连接活跃状态为False</span></span><br><span class="line">        ses.keep_alive = <span class="literal">False</span></span><br><span class="line">        <span class="keyword">global</span> all_user_agents</span><br><span class="line">        head = &#123;</span><br><span class="line">            <span class="string">&#x27;Accept&#x27;</span>: <span class="string">&#x27;text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,&#x27;</span></span><br><span class="line">                      <span class="string">&#x27;*/*;q=0.8,application/signed-exchange;v=b3;q=0.9&#x27;</span>,</span><br><span class="line">            <span class="string">&#x27;Accept-Encoding&#x27;</span>: <span class="string">&#x27;gzip, deflate&#x27;</span>,</span><br><span class="line">            <span class="string">&#x27;Accept-Language&#x27;</span>: <span class="string">&#x27;zh-CN,zh;q=0.9,en;q=0.8&#x27;</span>,</span><br><span class="line">            <span class="comment"># &#x27;Cache-Control&#x27;: &#x27;max-age=0&#x27;,</span></span><br><span class="line">            <span class="comment"># &#x27;Connection&#x27;: &#x27;keep-alive&#x27;,</span></span><br><span class="line">            <span class="comment"># &#x27;If-Modified-Since&#x27;: &#x27;Thu, 24 Jan 2019 11:06:45 GMT&#x27;,</span></span><br><span class="line">            <span class="comment"># &#x27;If-None-Match&#x27;: &#x27;56de0e5b196e494a8dfbe1f638eefd7e&#x27;,</span></span><br><span class="line">            <span class="comment"># &#x27;Upgrade-Insecure-Requests&#x27;: &#x27;1&#x27;,</span></span><br><span class="line">            <span class="string">&#x27;user-agent&#x27;</span>: random.choice(all_user_agents)</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        res = requests.get(url, headers=head, timeout=<span class="number">10</span>)</span><br><span class="line">        <span class="comment"># print(&quot;正在访问：&quot;, name, url)</span></span><br><span class="line">        <span class="keyword">if</span> res.status_code == <span class="number">200</span> <span class="keyword">or</span> res.status_code == <span class="number">403</span>:</span><br><span class="line">            <span class="comment"># print(res.text)</span></span><br><span class="line">            <span class="keyword">if</span> <span class="keyword">not</span> os.path.exists(file_path):</span><br><span class="line">                os.makedirs(file_path)</span><br><span class="line">            ss = name <span class="keyword">if</span> <span class="built_in">len</span>(name) &lt; <span class="number">30</span> <span class="keyword">else</span> name[<span class="number">0</span>:<span class="number">30</span>]</span><br><span class="line">            ss = validateTitle(ss)</span><br><span class="line">            path = file_path + <span class="string">&#x27;/&#x27;</span> + ss + <span class="string">&#x27;.png&#x27;</span></span><br><span class="line">            <span class="keyword">with</span> <span class="built_in">open</span>(path, <span class="string">&#x27;wb&#x27;</span>) <span class="keyword">as</span> f:</span><br><span class="line">                f.write(res.content)</span><br><span class="line">            <span class="comment"># # with open(file_path, &#x27;a+&#x27;, newline=&#x27;&#x27;, encoding=&#x27;utf-8-sig&#x27;)as f:</span></span><br><span class="line">            <span class="comment">#     writer = csv.writer(f)</span></span><br><span class="line">            <span class="comment">#     writer.writerow([prox, origin_ip, where, datetime.datetime.now()])</span></span><br><span class="line">            <span class="built_in">print</span>(<span class="string">&quot;照片&quot;</span>, ss, <span class="string">&quot;下载成功&quot;</span>)</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            <span class="built_in">print</span>(<span class="string">&#x27;\n!!! 请求成功，但网页返回错误代码：&#123;&#125;,网址&#123;&#125;&#x27;</span>.<span class="built_in">format</span>(<span class="built_in">str</span>(res.status_code), url))</span><br><span class="line">        <span class="comment"># 关闭请求  释放内存</span></span><br><span class="line">        res.close()</span><br><span class="line">        <span class="keyword">del</span> res</span><br><span class="line">    <span class="keyword">except</span> Exception <span class="keyword">as</span> e:</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&quot;\n!!! 请求超失败，错误代码：&#123;&#125;，网址&#123;&#125;&quot;</span>.<span class="built_in">format</span>(e, url))</span><br><span class="line">        time.sleep(<span class="number">5</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&#x27;__main__&#x27;</span>:</span><br><span class="line">    start = time.time()</span><br><span class="line">    <span class="comment"># 用户交互，获取输入</span></span><br><span class="line">    keyword = <span class="built_in">input</span>(<span class="string">&quot;请输入需要查找的关键词：若多条，可用空格分割\n&quot;</span>).split(<span class="string">&#x27; &#x27;</span>)</span><br><span class="line">    <span class="built_in">print</span>(keyword)</span><br><span class="line">    size = <span class="built_in">int</span>(<span class="built_in">input</span>(<span class="string">&quot;请输入尺寸：如 1 全部尺寸  2 特大  3 大  4 中  5 小 ，默认1\n&quot;</span>))</span><br><span class="line">    count = <span class="built_in">int</span>(<span class="built_in">input</span>(<span class="string">&quot;请输入数量：默认：20\n&quot;</span>))</span><br><span class="line">    <span class="comment"># file_path = input(&quot;请输入下载地址\n&quot;)</span></span><br><span class="line">    file_path = <span class="string">&quot;./下载结果/&quot;</span></span><br><span class="line">    <span class="comment"># 处理交互数据</span></span><br><span class="line">    <span class="keyword">if</span> keyword == <span class="string">&#x27;&#x27;</span>:</span><br><span class="line">        keyword = <span class="string">&quot;404&quot;</span>    <span class="comment"># 哈哈哈</span></span><br><span class="line">    <span class="keyword">if</span> size <span class="keyword">not</span> <span class="keyword">in</span> [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>]:</span><br><span class="line">        size = <span class="number">1</span></span><br><span class="line">    <span class="keyword">if</span> <span class="keyword">not</span> <span class="number">0</span> &lt; count &lt; <span class="number">1000</span>:</span><br><span class="line">        count = <span class="number">20</span></span><br><span class="line">    pages = count // <span class="number">30</span> + <span class="number">1</span></span><br><span class="line">    <span class="comment"># 获取图片</span></span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;开始获取图片，请稍等💖💖💖&quot;</span>)</span><br><span class="line">    all_keywords = []</span><br><span class="line">    <span class="keyword">for</span> kw <span class="keyword">in</span> keyword:</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&quot;正在获取关键词： &quot;</span>, kw,<span class="string">&quot;  相关的图片...&quot;</span>)</span><br><span class="line">        get_one = &#123;&#125;</span><br><span class="line">        get_one[<span class="string">&#x27;key_word&#x27;</span>] = kw</span><br><span class="line">        get_one[<span class="string">&#x27;file_path&#x27;</span>] = file_path + kw</span><br><span class="line">        get_one[<span class="string">&#x27;all_pic&#x27;</span>] = get_baidu_pic(kw, size, pages)[<span class="number">0</span>:<span class="built_in">len</span>(keyword)*count]</span><br><span class="line">        all_keywords.append(get_one)</span><br><span class="line"></span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;开始下载啦！😘😘😘&quot;</span>)</span><br><span class="line">    <span class="comment"># 测试：单进程下载</span></span><br><span class="line">    <span class="comment"># for i in all_keywords:</span></span><br><span class="line">    <span class="comment">#     print(&quot;正在下载：&quot;, i[&#x27;key_word&#x27;])</span></span><br><span class="line">    <span class="comment">#     for j in i[&#x27;all_pic&#x27;]:</span></span><br><span class="line">    <span class="comment">#         down_load_one_pic(i[&#x27;file_path&#x27;], j[&#x27;title&#x27;], j[&#x27;pic_url&#x27;])</span></span><br><span class="line">    <span class="comment">#     # break</span></span><br><span class="line">    <span class="comment"># # break</span></span><br><span class="line"></span><br><span class="line">    <span class="comment"># 多进程下载</span></span><br><span class="line">    params = []</span><br><span class="line">    <span class="keyword">for</span> one <span class="keyword">in</span> all_keywords:</span><br><span class="line">        <span class="keyword">for</span> one_pic <span class="keyword">in</span> one[<span class="string">&#x27;all_pic&#x27;</span>]:</span><br><span class="line">            params.append((one[<span class="string">&#x27;file_path&#x27;</span>], one_pic[<span class="string">&#x27;title&#x27;</span>], one_pic[<span class="string">&#x27;pic_url&#x27;</span>]))</span><br><span class="line"></span><br><span class="line">    pool = multiprocessing.Pool(processes=<span class="number">32</span>)</span><br><span class="line">    res = pool.starmap_async(func=down_load_one_pic, iterable=params, error_callback=error_handler)</span><br><span class="line">    pool.close()</span><br><span class="line">    pool.join()</span><br><span class="line"></span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&#x27;\n------------------------------------------------&#x27;</span>)</span><br><span class="line">    end = time.time()</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&#x27;程序结束，总共耗时：&#x27;</span>, end - start, <span class="string">&#x27;秒&#x27;</span>)</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&#x27;\n欢迎下次再来！❤&#x27;</span>)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+<h4 id="程序运行展示："><a href="#程序运行展示：" class="headerlink" title="程序运行展示："></a>程序运行展示：</h4><p><img align = "center" src = "https://pic.imgdb.cn/item/610911b15132923bf8120a43.png" style = "with:580px; height:400px"></img></p>
+<h3 id="FAQ"><a href="#FAQ" class="headerlink" title="FAQ"></a>FAQ</h3><p>​        推荐使用版本2，要确保Selenium库以及chromedriver安装，不会的可以参考<a target="_blank" rel="noopener" href="https://www.cnblogs.com/lfri/p/10542797.html">这里</a></p>
+<h3 id="项目源代码"><a href="#项目源代码" class="headerlink" title="项目源代码"></a>项目源代码</h3><p>​        本项目已开源，<a target="_blank" rel="noopener" href="https://github.com/payiz-asj/baidu-pic">项目地址</a>。欢迎访问我的<a target="_blank" rel="noopener" href="https://github.com/payiz-asj">Github</a>了解更多有意思的项目！</p>
+ 
+      <!-- reward -->
+      
+      <div id="reword-out">
+        <div id="reward-btn">
+          打赏
+        </div>
+      </div>
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <div class="declare">
+      <ul class="post-copyright">
+        <li>
+          <i class="ri-copyright-line"></i>
+          <strong>版权声明： </strong>
+          
+          本博客所有文章除特别声明外，著作权归作者所有。转载请注明出处！
+          
+        </li>
+      </ul>
+    </div>
+    
+    <footer class="article-footer">
+       
+<div class="share-btn">
+      <span class="share-sns share-outer">
+        <i class="ri-share-forward-line"></i>
+        分享
+      </span>
+      <div class="share-wrap">
+        <i class="arrow"></i>
+        <div class="share-icons">
+          
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="ri-weibo-fill"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="ri-wechat-fill"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="ri-qq-fill"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="ri-douban-line"></i>
+          </a>
+          <!-- <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a> -->
+          
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="ri-facebook-circle-fill"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="ri-twitter-fill"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="ri-google-fill"></i>
+          </a>
+        </div>
+      </div>
+</div>
+
+<div class="wx-share-modal">
+    <a class="modal-close" href="javascript:;"><i class="ri-close-circle-line"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://yeying.tech/%E4%B8%AA%E4%BA%BA%E9%A1%B9%E7%9B%AE/baidu-pic/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div id="share-mask"></div>  
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/python/" rel="tag">python</a></li></ul>
+
+    </footer>
+  </div>
+
+   
+  <nav class="article-nav">
+    
+      <a href="/%E4%B8%AA%E4%BA%BA%E9%A1%B9%E7%9B%AE/Gis/" class="article-nav-link">
+        <strong class="article-nav-caption">上一篇</strong>
+        <div class="article-nav-title">
+          
+            Gis
+          
+        </div>
+      </a>
+    
+    
+      <a href="/%E4%B8%AA%E4%BA%BA%E9%A1%B9%E7%9B%AE/hackathon-memory/" class="article-nav-link">
+        <strong class="article-nav-caption">下一篇</strong>
+        <div class="article-nav-title">Hackathon华东九校编程创客马拉松</div>
+      </a>
+    
+  </nav>
+
+   
+<!-- valine评论 -->
+<div id="vcomments-box">
+  <div id="vcomments"></div>
+</div>
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js"></script>
+<script>
+  new Valine({
+    el: "#vcomments",
+    app_id: "",
+    app_key: "",
+    path: window.location.pathname,
+    avatar: "monsterid",
+    placeholder: "给我的文章加点评论吧~",
+    recordIP: true,
+  });
+  const infoEle = document.querySelector("#vcomments .info");
+  if (infoEle && infoEle.childNodes && infoEle.childNodes.length > 0) {
+    infoEle.childNodes.forEach(function (item) {
+      item.parentNode.removeChild(item);
+    });
+  }
+</script>
+<style>
+  #vcomments-box {
+    padding: 5px 30px;
+  }
+
+  @media screen and (max-width: 800px) {
+    #vcomments-box {
+      padding: 5px 0px;
+    }
+  }
+
+  #vcomments-box #vcomments {
+    background-color: #fff;
+  }
+
+  .v .vlist .vcard .vh {
+    padding-right: 20px;
+  }
+
+  .v .vlist .vcard {
+    padding-left: 10px;
+  }
+</style>
+
+ 
+   
+     
+</article>
+
+
+</section>
+      <footer class="footer">
+  <div class="outer">
+    <ul>
+      <li>
+        Copyrights &copy;
+        2019-2021
+        <i class="ri-heart-fill heart_icon"></i> PAYIZ
+      </li>
+    </ul>
+    <ul>
+      <li>
+        
+        
+        <span>
+  <span><i class="ri-user-3-fill"></i><span id="busuanzi_value_site_uv"></span></span>
+  <span class="division">|</span>
+  <span><i class="ri-eye-fill"></i><span id="busuanzi_value_page_pv"></span></span>
+</span>
+        
+      </li>
+    </ul>
+    <ul>
+      
+    </ul>
+    <ul>
+      
+    </ul>
+    <ul>
+      <li>
+        <!-- cnzz统计 -->
+        
+        <script type="text/javascript" src='https://s9.cnzz.com/z_stat.php?id=1280147847&amp;web_id=1280147847'></script>
+        
+      </li>
+    </ul>
+  </div>
+</footer>
+      <div class="float_btns">
+        <div class="totop" id="totop">
+  <i class="ri-arrow-up-line"></i>
+</div>
+
+<div class="todark" id="todark">
+  <i class="ri-moon-line"></i>
+</div>
+
+      </div>
+    </main>
+    <aside class="sidebar on">
+      <button class="navbar-toggle"></button>
+<nav class="navbar">
+  
+  <div class="logo">
+    <a href="/"><img src="/images/bird.png" alt="夜莺悠吟"></a>
+  </div>
+  
+  <ul class="nav nav-main">
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/">主页</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/archives">归档</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/categories">分类</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/tags">标签</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/categories/%E7%9B%B8%E5%86%8C">相册</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/photos">壁纸</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/friends">社交</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/about/me">关于我</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/about/site">关于博客</a>
+    </li>
+    
+  </ul>
+</nav>
+<nav class="navbar navbar-bottom">
+  <ul class="nav">
+    <li class="nav-item">
+      
+      <a class="nav-item-link nav-item-search"  title="搜索">
+        <i class="ri-search-line"></i>
+      </a>
+      
+      
+      <a class="nav-item-link" target="_blank" href="/atom.xml" title="RSS Feed">
+        <i class="ri-rss-line"></i>
+      </a>
+      
+    </li>
+  </ul>
+</nav>
+<div class="search-form-wrap">
+  <div class="local-search local-search-plugin">
+  <input type="search" id="local-search-input" class="local-search-input" placeholder="Search...">
+  <div id="local-search-result" class="local-search-result"></div>
+</div>
+</div>
+    </aside>
+    <div id="mask"></div>
+
+<!-- #reward -->
+<div id="reward">
+  <span class="close"><i class="ri-close-line"></i></span>
+  <p class="reward-p"><i class="ri-cup-line"></i>感谢您的支持😊</p>
+  <div class="reward-box">
+    
+    <div class="reward-item">
+      <img class="reward-img" src="https://cdn.jsdelivr.net/gh/payiz-asj/CDN/images/alipay.png">
+      <span class="reward-type">支付宝</span>
+    </div>
+    
+    
+    <div class="reward-item">
+      <img class="reward-img" src="https://cdn.jsdelivr.net/gh/payiz-asj/CDN/images/wechatpay.png">
+      <span class="reward-type">微信</span>
+    </div>
+    
+  </div>
+</div>
+    
+<script src="/js/jquery-2.0.3.min.js"></script>
+ 
+<script src="/js/lazyload.min.js"></script>
+
+<!-- Tocbot -->
+ 
+<script src="/js/tocbot.min.js"></script>
+
+<script>
+  tocbot.init({
+    tocSelector: ".tocbot",
+    contentSelector: ".article-entry",
+    headingSelector: "h1, h2, h3, h4, h5, h6",
+    hasInnerContainers: true,
+    scrollSmooth: true,
+    scrollContainer: "main",
+    positionFixedSelector: ".tocbot",
+    positionFixedClass: "is-position-fixed",
+    fixedSidebarOffset: "auto",
+  });
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.js"></script>
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.css"
+/>
+<script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js"></script>
+
+<script src="/dist/main.js"></script>
+
+<!-- ImageViewer -->
+ <!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" style="display:none" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css">
+<script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"></script>
+
+<script>
+    function viewer_init() {
+        let pswpElement = document.querySelectorAll('.pswp')[0];
+        let $imgArr = document.querySelectorAll(('.article-entry img:not(.reward-img)'))
+
+        $imgArr.forEach(($em, i) => {
+            $em.onclick = () => {
+                // slider展开状态
+                // todo: 这样不好，后面改成状态
+                if (document.querySelector('.left-col.show')) return
+                let items = []
+                $imgArr.forEach(($em2, i2) => {
+                    let img = $em2.getAttribute('data-idx', i2)
+                    let src = $em2.getAttribute('data-target') || $em2.getAttribute('src')
+                    let title = $em2.getAttribute('alt')
+                    // 获得原图尺寸
+                    const image = new Image()
+                    image.src = src
+                    items.push({
+                        src: src,
+                        w: image.width || $em2.width,
+                        h: image.height || $em2.height,
+                        title: title
+                    })
+                })
+                var gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, {
+                    index: parseInt(i)
+                });
+                gallery.init()
+            }
+        })
+    }
+    viewer_init()
+</script> 
+<!-- MathJax -->
+
+<!-- Katex -->
+
+<!-- busuanzi  -->
+ 
+<script src="/js/busuanzi-2.3.pure.min.js"></script>
+ 
+<!-- ClickLove -->
+ 
+<script src="/js/clickLove.js"></script>
+ 
+<!-- ClickBoom1 -->
+
+<!-- ClickBoom2 -->
+
+<!-- CodeCopy -->
+ 
+<link rel="stylesheet" href="/css/clipboard.css">
+ <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+<script>
+  function wait(callback, seconds) {
+    var timelag = null;
+    timelag = window.setTimeout(callback, seconds);
+  }
+  !function (e, t, a) {
+    var initCopyCode = function(){
+      var copyHtml = '';
+      copyHtml += '<button class="btn-copy" data-clipboard-snippet="">';
+      copyHtml += '<i class="ri-file-copy-2-line"></i><span>COPY</span>';
+      copyHtml += '</button>';
+      $(".highlight .code pre").before(copyHtml);
+      $(".article pre code").before(copyHtml);
+      var clipboard = new ClipboardJS('.btn-copy', {
+        target: function(trigger) {
+          return trigger.nextElementSibling;
+        }
+      });
+      clipboard.on('success', function(e) {
+        let $btn = $(e.trigger);
+        $btn.addClass('copied');
+        let $icon = $($btn.find('i'));
+        $icon.removeClass('ri-file-copy-2-line');
+        $icon.addClass('ri-checkbox-circle-line');
+        let $span = $($btn.find('span'));
+        $span[0].innerText = 'COPIED';
+        
+        wait(function () { // 等待两秒钟后恢复
+          $icon.removeClass('ri-checkbox-circle-line');
+          $icon.addClass('ri-file-copy-2-line');
+          $span[0].innerText = 'COPY';
+        }, 2000);
+      });
+      clipboard.on('error', function(e) {
+        e.clearSelection();
+        let $btn = $(e.trigger);
+        $btn.addClass('copy-failed');
+        let $icon = $($btn.find('i'));
+        $icon.removeClass('ri-file-copy-2-line');
+        $icon.addClass('ri-time-line');
+        let $span = $($btn.find('span'));
+        $span[0].innerText = 'COPY FAILED';
+        
+        wait(function () { // 等待两秒钟后恢复
+          $icon.removeClass('ri-time-line');
+          $icon.addClass('ri-file-copy-2-line');
+          $span[0].innerText = 'COPY';
+        }, 2000);
+      });
+    }
+    initCopyCode();
+  }(window, document);
+</script>
+ 
+<!-- CanvasBackground -->
+
+<script>
+  if (window.mermaid) {
+    mermaid.initialize({ theme: "forest" });
+  }
+</script>
+
+
+    
+  </div>
+</body>
+
+</html>
