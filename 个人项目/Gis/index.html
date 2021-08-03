@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+
+
+<html lang="zh-CN">
+  
+
+    <head>
+      <meta charset="utf-8" />
+       
+      <meta name="keywords" content="YeYing,Blog,夜莺,博客,夜莺悠吟,yeying.tech,www.yeying.tech" />
+       
+      <meta name="description" content="挑灯夜战，常闻夜莺悠吟...停笔共鸣...悲壮、坚定！&lt;br&gt;心酸背后总有值得坚持的理由💪请坚持！&lt;br&gt; 珍惜身边的人！ 小快y你❤" />
+      
+      <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1"
+      />
+      <title>Gis |  夜莺悠吟</title>
+  <meta name="generator" content="hexo-theme-ayer">
+      
+      <link rel="shortcut icon" href="/favicon.ico" />
+       
+<link rel="stylesheet" href="/dist/main.css">
+
+      <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/Shen-Yu/cdn/css/remixicon.min.css"
+      />
+      
+<link rel="stylesheet" href="/css/custom.css">
+ 
+      <script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+       
+ 
+
+      <!-- mermaid -->
+      
+    <link rel="alternate" href="/atom.xml" title="夜莺悠吟" type="application/atom+xml">
+</head>
+  </html>
+</html>
+
+
+<body>
+  <div id="app">
+    
+      
+    <main class="content on">
+      <section class="outer">
+  
+<article
+  id="post-Gis"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h1 class="article-title sea-center" style="border-left:0" itemprop="name">
+  Gis
+</h1>
+ 
+
+      
+    </header>
+     
+    <div class="article-meta">
+      <a href="/%E4%B8%AA%E4%BA%BA%E9%A1%B9%E7%9B%AE/Gis/" class="article-date">
+  <time datetime="2020-12-20T09:39:26.000Z" itemprop="datePublished">2020-12-20</time>
+</a> 
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E4%B8%AA%E4%BA%BA%E9%A1%B9%E7%9B%AE/">个人项目</a>
+  </div>
+  
+<div class="word_count">
+    <span class="post-time">
+        <span class="post-meta-item-icon">
+            <i class="ri-quill-pen-line"></i>
+            <span class="post-meta-item-text"> 字数统计:</span>
+            <span class="post-count">5.9k</span>
+        </span>
+    </span>
+
+    <span class="post-time">
+        &nbsp; | &nbsp;
+        <span class="post-meta-item-icon">
+            <i class="ri-book-open-line"></i>
+            <span class="post-meta-item-text"> 阅读时长≈</span>
+            <span class="post-count">26 分钟</span>
+        </span>
+    </span>
+</div>
+ 
+    </div>
+      
+    <div class="tocbot"></div>
+
+
+
+
+  
+    <div class="article-entry" itemprop="articleBody">
+       
+  <h3 id="项目介绍："><a href="#项目介绍：" class="headerlink" title="项目介绍："></a>项目介绍：</h3><p>​        受地海学院Gis专业朋友委托，做了一个解析、分析Gis数据的脚本，用来解析RINEX格式的导航电文到内存中（字典类型），计算其中所有卫星在瞬时地球坐标系(WGS-84)中的位置，并导出到txt或json格式文件。</p>
+<p>​        里面用到的第三方库有os, sys, json,pandas,math,numpy。</p>
+<p>​        数据解析函数返回值为字典格式数据。数据解析完还可导出为txt,json等文件。</p>
+<span id="more"></span>
+
+<h3 id="代码（已做好非常详细的注释）："><a href="#代码（已做好非常详细的注释）：" class="headerlink" title="代码（已做好非常详细的注释）："></a>代码（已做好非常详细的注释）：</h3><h4 id="解析RINEX文件"><a href="#解析RINEX文件" class="headerlink" title="解析RINEX文件:"></a>解析RINEX文件:</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br><span class="line">175</span><br><span class="line">176</span><br><span class="line">177</span><br><span class="line">178</span><br><span class="line">179</span><br><span class="line">180</span><br><span class="line">181</span><br><span class="line">182</span><br><span class="line">183</span><br><span class="line">184</span><br><span class="line">185</span><br><span class="line">186</span><br><span class="line">187</span><br><span class="line">188</span><br><span class="line">189</span><br><span class="line">190</span><br><span class="line">191</span><br><span class="line">192</span><br><span class="line">193</span><br><span class="line">194</span><br><span class="line">195</span><br><span class="line">196</span><br><span class="line">197</span><br><span class="line">198</span><br><span class="line">199</span><br><span class="line">200</span><br><span class="line">201</span><br><span class="line">202</span><br><span class="line">203</span><br><span class="line">204</span><br><span class="line">205</span><br><span class="line">206</span><br><span class="line">207</span><br><span class="line">208</span><br><span class="line">209</span><br><span class="line">210</span><br><span class="line">211</span><br><span class="line">212</span><br><span class="line">213</span><br><span class="line">214</span><br><span class="line">215</span><br><span class="line">216</span><br><span class="line">217</span><br><span class="line">218</span><br><span class="line">219</span><br><span class="line">220</span><br><span class="line">221</span><br><span class="line">222</span><br><span class="line">223</span><br><span class="line">224</span><br><span class="line">225</span><br><span class="line">226</span><br><span class="line">227</span><br><span class="line">228</span><br><span class="line">229</span><br><span class="line">230</span><br><span class="line">231</span><br><span class="line">232</span><br><span class="line">233</span><br><span class="line">234</span><br><span class="line">235</span><br><span class="line">236</span><br><span class="line">237</span><br><span class="line">238</span><br><span class="line">239</span><br><span class="line">240</span><br><span class="line">241</span><br><span class="line">242</span><br><span class="line">243</span><br><span class="line">244</span><br><span class="line">245</span><br><span class="line">246</span><br><span class="line">247</span><br><span class="line">248</span><br><span class="line">249</span><br><span class="line">250</span><br><span class="line">251</span><br><span class="line">252</span><br><span class="line">253</span><br><span class="line">254</span><br><span class="line">255</span><br><span class="line">256</span><br><span class="line">257</span><br><span class="line">258</span><br><span class="line">259</span><br><span class="line">260</span><br><span class="line">261</span><br><span class="line">262</span><br><span class="line">263</span><br><span class="line">264</span><br><span class="line">265</span><br><span class="line">266</span><br><span class="line">267</span><br><span class="line">268</span><br><span class="line">269</span><br><span class="line">270</span><br><span class="line">271</span><br><span class="line">272</span><br><span class="line">273</span><br><span class="line">274</span><br><span class="line">275</span><br><span class="line">276</span><br><span class="line">277</span><br><span class="line">278</span><br><span class="line">279</span><br><span class="line">280</span><br><span class="line">281</span><br><span class="line">282</span><br><span class="line">283</span><br><span class="line">284</span><br><span class="line">285</span><br><span class="line">286</span><br><span class="line">287</span><br><span class="line">288</span><br><span class="line">289</span><br><span class="line">290</span><br><span class="line">291</span><br><span class="line">292</span><br><span class="line">293</span><br><span class="line">294</span><br><span class="line">295</span><br><span class="line">296</span><br><span class="line">297</span><br><span class="line">298</span><br><span class="line">299</span><br><span class="line">300</span><br><span class="line">301</span><br><span class="line">302</span><br><span class="line">303</span><br><span class="line">304</span><br><span class="line">305</span><br><span class="line">306</span><br><span class="line">307</span><br><span class="line">308</span><br><span class="line">309</span><br><span class="line">310</span><br><span class="line">311</span><br><span class="line">312</span><br><span class="line">313</span><br><span class="line">314</span><br><span class="line">315</span><br><span class="line">316</span><br><span class="line">317</span><br><span class="line">318</span><br><span class="line">319</span><br><span class="line">320</span><br><span class="line">321</span><br><span class="line">322</span><br><span class="line">323</span><br><span class="line">324</span><br><span class="line">325</span><br><span class="line">326</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">    您好！</span></span><br><span class="line"><span class="string">    这个python文件, 是用来解析RINEX文件的，提供了解析导航电文文件(.N)和卫星观测数据文件(.O)</span></span><br><span class="line"><span class="string">    里面用到的第三方库有os, sys, json,（为了函数可移植性，将import字段直接放到函数里面了）</span></span><br><span class="line"><span class="string">    数据解析函数返回值为字典格式数据</span></span><br><span class="line"><span class="string">    数据解析完还可导出为txt,json等文件</span></span><br><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">read_navigation_data</span>(<span class="params">file_path: <span class="built_in">str</span></span>):</span></span><br><span class="line">    <span class="string">&quot;&quot;&quot;读取并解析导航电文文件&quot;&quot;&quot;</span></span><br><span class="line"></span><br><span class="line">    <span class="comment"># 这是个内部小函数，作用是将RINEX文件格式中D19.12解析为浮点数</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">change_d19_12_to_float</span>(<span class="params">src</span>):</span></span><br><span class="line">        <span class="comment"># 比如:-3.733104094863D-04</span></span><br><span class="line">        <span class="keyword">if</span> src[<span class="number">0</span>:<span class="number">2</span>] == <span class="string">&#x27;  &#x27;</span>:</span><br><span class="line">            qian = <span class="string">&#x27;0&#x27;</span></span><br><span class="line">        <span class="keyword">elif</span> src[<span class="number">0</span>:<span class="number">2</span>] == <span class="string">&#x27; -&#x27;</span>:</span><br><span class="line">            qian = <span class="string">&#x27;-0&#x27;</span></span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            qian = src[<span class="number">0</span>:<span class="number">2</span>]</span><br><span class="line">        <span class="keyword">return</span> <span class="built_in">float</span>(qian + <span class="string">&#x27;.&#x27;</span> + src[<span class="number">3</span>:-<span class="number">4</span>] + <span class="string">&#x27;e&#x27;</span> + src[-<span class="number">3</span>:])</span><br><span class="line"></span><br><span class="line">    <span class="string">&quot;&quot;&quot;读取RINEX格式的GPS导航电文文件，保存到一个字典返回&quot;&quot;&quot;</span></span><br><span class="line">    result = &#123;&#125;  <span class="comment"># 这是返回结果的字典</span></span><br><span class="line">    all_navigation_datas = []  <span class="comment"># 这是个列表，里面是所有卫星的导航电文数据</span></span><br><span class="line"></span><br><span class="line">    <span class="comment"># 将文件读到列表中</span></span><br><span class="line">    <span class="keyword">with</span> <span class="built_in">open</span>(file_path, <span class="string">&#x27;r&#x27;</span>) <span class="keyword">as</span> f:</span><br><span class="line">        all_lines = <span class="built_in">list</span>(f.readlines())</span><br><span class="line">    <span class="comment"># print(all_lines)</span></span><br><span class="line">    <span class="comment"># 去掉换行符&#x27;\n&#x27;</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="built_in">len</span>(all_lines)):</span><br><span class="line">        all_lines[i] = all_lines[i].replace(<span class="string">&#x27;\n&#x27;</span>, <span class="string">&#x27;&#x27;</span>)</span><br><span class="line">    <span class="comment"># 找到数据部分</span></span><br><span class="line">    data_start_line = <span class="number">0</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="built_in">len</span>(all_lines)):</span><br><span class="line">        <span class="keyword">if</span> all_lines[i].find(<span class="string">&#x27;END OF HEADER&#x27;</span>) != -<span class="number">1</span>:</span><br><span class="line">            data_start_line = i + <span class="number">1</span></span><br><span class="line">            <span class="keyword">break</span></span><br><span class="line">    <span class="comment"># 计算GPS导航电文数据的数量</span></span><br><span class="line">    nums = <span class="built_in">int</span>((<span class="built_in">len</span>(all_lines) - data_start_line) / <span class="number">8</span>)</span><br><span class="line">    <span class="keyword">if</span> nums &lt; <span class="number">1</span>:</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&quot;未找到GPS导航数据，请检查文件格式是否正确！&quot;</span>)</span><br><span class="line">        <span class="keyword">import</span> sys</span><br><span class="line">        sys.exit(-<span class="number">1</span>)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> one_nav_data <span class="keyword">in</span> <span class="built_in">range</span>(nums):</span><br><span class="line">        nav_data_dic = &#123;&#125;</span><br><span class="line">        nav_data_list = []</span><br><span class="line">        <span class="comment"># 先记录一下导航电文的序号,格式上补齐了前导0</span></span><br><span class="line">        nav_data_dic[<span class="string">&#x27;序号&#x27;</span>] = <span class="built_in">str</span>(one_nav_data + <span class="number">1</span>).zfill(<span class="built_in">len</span>(<span class="built_in">str</span>(nums)))</span><br><span class="line">        <span class="string">&quot;&quot;&quot; 开始解析数据区域！&quot;&quot;&quot;</span></span><br><span class="line">        <span class="comment"># 按卫星和参考时刻存放各颗卫星的时钟和轨道数据。</span></span><br><span class="line">        <span class="comment"># 每颗卫星一个参考时刻的数据占8行，第0行为该卫星的PRN号、参考时刻、改正模型参数，1-7行为该卫星的广播轨道数据。</span></span><br><span class="line">        <span class="comment"># 由于导航电文每2h更新依次，因此一个导航电文文件包含某卫星多个不同参考时刻的数据。</span></span><br><span class="line">        <span class="string">&quot;&quot;&quot; 明白了吗？，Let&#x27;s Go! &quot;&quot;&quot;</span></span><br><span class="line">        <span class="comment"># 将8行内容读到一个列表里</span></span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">8</span>):</span><br><span class="line">            nav_data_list.append(all_lines[data_start_line + <span class="number">8</span> * one_nav_data + i])</span><br><span class="line">        <span class="comment"># 一个导航电文一共就8行，除了第一行特殊外，其他7行都是3X,4D19.12格式，因此，用循环即可大大减少代码量</span></span><br><span class="line">        <span class="comment"># 第0行：PRN号，历元，卫星钟</span></span><br><span class="line">        data_content = nav_data_list[<span class="number">0</span>]</span><br><span class="line">        nav_data_dic[<span class="string">&#x27;卫星PRN号&#x27;</span>] = <span class="built_in">int</span>(data_content[<span class="number">0</span>:<span class="number">2</span>].replace(<span class="string">&#x27; &#x27;</span>, <span class="string">&#x27;&#x27;</span>).zfill(<span class="number">2</span>))  <span class="comment"># 如果想保留前导0，就不要类型强制转换</span></span><br><span class="line">        nav_data_dic[<span class="string">&#x27;历元&#x27;</span>] = data_content[<span class="number">2</span>:<span class="number">22</span>]</span><br><span class="line">        nav_data_dic[<span class="string">&#x27;卫星钟的偏差&#x27;</span>] = change_d19_12_to_float(data_content[<span class="number">22</span>:<span class="number">41</span>])</span><br><span class="line">        nav_data_dic[<span class="string">&#x27;卫星钟漂移&#x27;</span>] = change_d19_12_to_float(data_content[<span class="number">41</span>:<span class="number">60</span>])</span><br><span class="line">        nav_data_dic[<span class="string">&#x27;卫星钟漂移速度&#x27;</span>] = change_d19_12_to_float(data_content[<span class="number">60</span>:<span class="number">79</span>])</span><br><span class="line">        <span class="comment"># 第1-7行：广播轨道1-7</span></span><br><span class="line">        broadcast_tracks = [</span><br><span class="line">            [<span class="string">&#x27;IODE&#x27;</span>, <span class="string">&#x27;Crs&#x27;</span>, <span class="string">&#x27;n&#x27;</span>, <span class="string">&#x27;M0&#x27;</span>],</span><br><span class="line">            [<span class="string">&#x27;Cuc&#x27;</span>, <span class="string">&#x27;e&#x27;</span>, <span class="string">&#x27;Cus&#x27;</span>, <span class="string">&#x27;sqrt(A)&#x27;</span>],</span><br><span class="line">            [<span class="string">&#x27;TOE&#x27;</span>, <span class="string">&#x27;Cic&#x27;</span>, <span class="string">&#x27;OMEGA&#x27;</span>, <span class="string">&#x27;Cis&#x27;</span>],</span><br><span class="line">            [<span class="string">&#x27;i0&#x27;</span>, <span class="string">&#x27;Crc&#x27;</span>, <span class="string">&#x27;w&#x27;</span>, <span class="string">&#x27;OMEGA_DOT&#x27;</span>],</span><br><span class="line">            [<span class="string">&#x27;i&#x27;</span>, <span class="string">&#x27;L2_code&#x27;</span>, <span class="string">&#x27;GPS_week_num&#x27;</span>, <span class="string">&#x27;L2_P_code&#x27;</span>],</span><br><span class="line">            [<span class="string">&#x27;卫星精度&#x27;</span>, <span class="string">&#x27;卫星健康状态&#x27;</span>, <span class="string">&#x27;TGD&#x27;</span>, <span class="string">&#x27;IODC&#x27;</span>],</span><br><span class="line">            [<span class="string">&#x27;电文发送时刻&#x27;</span>, <span class="string">&#x27;拟合区间(h)&#x27;</span>, <span class="string">&#x27;备用1&#x27;</span>, <span class="string">&#x27;备用2&#x27;</span>]</span><br><span class="line">        ]</span><br><span class="line"></span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">1</span>, <span class="number">8</span>):</span><br><span class="line">            <span class="comment"># 每隔19个字符分割</span></span><br><span class="line">            data_content = nav_data_list[i][<span class="number">3</span>:<span class="number">79</span>]</span><br><span class="line">            data_content = [data_content[k:k + <span class="number">19</span>] <span class="keyword">for</span> k <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">0</span>, <span class="built_in">len</span>(data_content), <span class="number">19</span>)]</span><br><span class="line">            <span class="keyword">for</span> j <span class="keyword">in</span> <span class="built_in">range</span>(<span class="built_in">len</span>(data_content)):</span><br><span class="line">                nav_data_dic[broadcast_tracks[i - <span class="number">1</span>][j]] = change_d19_12_to_float(data_content[j])  <span class="comment"># 用上面的广播轨道列表进行字典的创建</span></span><br><span class="line"></span><br><span class="line">        all_navigation_datas.append(nav_data_dic)</span><br><span class="line">    <span class="keyword">pass</span></span><br><span class="line">    <span class="comment"># 至此，已完成读取导航电文并存储到内存中</span></span><br><span class="line">    <span class="comment"># print(all_navigation_datas)</span></span><br><span class="line">    result[<span class="string">&#x27;导航电文文件&#x27;</span>] = all_navigation_datas</span><br><span class="line">    <span class="keyword">return</span> result</span><br><span class="line">    <span class="keyword">pass</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">read_observation_data</span>(<span class="params">file_path: <span class="built_in">str</span></span>):</span></span><br><span class="line">    <span class="string">&quot;&quot;&quot;读取并解析观测数值文件&quot;&quot;&quot;</span></span><br><span class="line">    <span class="string">&quot;&quot;&quot;读取RINEX格式的观测值文件，并解析成字典返回&quot;&quot;&quot;</span></span><br><span class="line">    <span class="comment"># 将文件读到列表中</span></span><br><span class="line">    <span class="keyword">with</span> <span class="built_in">open</span>(file_path, <span class="string">&#x27;r&#x27;</span>) <span class="keyword">as</span> f:</span><br><span class="line">        all_lines = <span class="built_in">list</span>(f.readlines())</span><br><span class="line">    <span class="comment"># print(all_lines)</span></span><br><span class="line">    <span class="comment"># 去掉换行符&#x27;\n&#x27;</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="built_in">len</span>(all_lines)):</span><br><span class="line">        all_lines[i] = all_lines[i].replace(<span class="string">&#x27;\n&#x27;</span>, <span class="string">&#x27;&#x27;</span>)</span><br><span class="line"></span><br><span class="line">    <span class="string">&quot;&quot;&quot;解析观测值数据文件，保存到一个字典返回&quot;&quot;&quot;</span></span><br><span class="line">    result = &#123;&#125;  <span class="comment"># 这是返回结果的字典</span></span><br><span class="line">    all_observation_datas = []  <span class="comment"># 这是个列表，里面是所有历元的观测数据</span></span><br><span class="line"></span><br><span class="line">    <span class="comment"># 一、解析头文件</span></span><br><span class="line">    <span class="comment"># 1. 统计观测数据类型, 当类型大于9个时，超出部分将续行写在下n行，</span></span><br><span class="line">    <span class="comment"># 注意：类型数量理论上最大可为999999种，其实现实里没那么多，RINEX 2.0 定义的也就12种，不过咱不怕，有多少搞多少~~</span></span><br><span class="line">    types_of_observ = &#123;&#125;</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="built_in">len</span>(all_lines)):</span><br><span class="line">        <span class="keyword">if</span> all_lines[i].find(<span class="string">&#x27;TYPES OF OBSERV&#x27;</span>) != -<span class="number">1</span>:</span><br><span class="line">            types_line_content = all_lines[i]</span><br><span class="line">            data_num = <span class="built_in">int</span>(types_line_content[:<span class="number">6</span>].replace(<span class="string">&#x27; &#x27;</span>, <span class="string">&#x27;&#x27;</span>))</span><br><span class="line">            types_of_observ[<span class="string">&#x27;观测类型数量&#x27;</span>] = data_num</span><br><span class="line">            <span class="comment"># 观测值列表：</span></span><br><span class="line">            rows_of_types = data_num // <span class="number">9</span> <span class="keyword">if</span> data_num % <span class="number">9</span> == <span class="number">0</span> <span class="keyword">else</span> data_num // <span class="number">9</span> + <span class="number">1</span>  <span class="comment"># 列表所占行数</span></span><br><span class="line">            base_line_of_types = i  <span class="comment"># 记录当前一行</span></span><br><span class="line">            types_line_content = <span class="string">&#x27;&#x27;</span>  <span class="comment"># 先清空</span></span><br><span class="line">            <span class="keyword">for</span> row_num <span class="keyword">in</span> <span class="built_in">range</span>(rows_of_types):</span><br><span class="line">                types_line_content += all_lines[base_line_of_types][<span class="number">6</span>:<span class="number">60</span>]</span><br><span class="line">                base_line_of_types += <span class="number">1</span></span><br><span class="line">            types_line_content = types_line_content.split()  <span class="comment"># 针对空格切片，这时types_line_content将从str变成list</span></span><br><span class="line">            <span class="keyword">for</span> j <span class="keyword">in</span> <span class="built_in">range</span>(data_num):</span><br><span class="line">                types_of_observ[<span class="string">&#x27;观测类型&#x27;</span> + <span class="built_in">str</span>(j + <span class="number">1</span>)] = types_line_content[j]</span><br><span class="line">            <span class="comment"># 头文件其他信息不用遍历，统计完数据类型就可以退出了</span></span><br><span class="line">            <span class="keyword">break</span></span><br><span class="line">    <span class="keyword">pass</span></span><br><span class="line">    <span class="comment"># 二、解析数据区域，即观测数据</span></span><br><span class="line">    datas_of_observ = &#123;&#125;</span><br><span class="line">    <span class="comment"># 1. 定位数据区域</span></span><br><span class="line">    data_start_line = <span class="number">0</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="built_in">len</span>(all_lines)):</span><br><span class="line">        <span class="keyword">if</span> all_lines[i].find(<span class="string">&#x27;END OF HEADER&#x27;</span>) != -<span class="number">1</span>:</span><br><span class="line">            data_start_line = i + <span class="number">1</span></span><br><span class="line">            <span class="keyword">break</span></span><br><span class="line">    <span class="keyword">if</span> <span class="built_in">int</span>(<span class="built_in">len</span>(all_lines) - data_start_line) &lt; <span class="number">1</span>:</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&quot;未找到观测值数据，请检查文件格式是否正确！&quot;</span>)</span><br><span class="line">        <span class="keyword">import</span> sys</span><br><span class="line">        sys.exit(-<span class="number">1</span>)</span><br><span class="line">    <span class="comment"># 2. 解析数据区域</span></span><br><span class="line">    <span class="string">&quot;&quot;&quot; 开始解析数据区域！&quot;&quot;&quot;</span></span><br><span class="line">    <span class="comment"># 按历元依次存放观测数据或观测过程中发生的事件信息</span></span><br><span class="line">    <span class="comment"># 每个历元的数据包含两部分：</span></span><br><span class="line">    <span class="comment"># 1. 第一部分：每个历元/卫星或事件标志，通常为第一行，</span></span><br><span class="line">    <span class="comment"># 注意：当卫星数量超过12，或有事件发生时，会有紧跟着的多行。卫星数量理论上最大可为999个，不过现实里没那么多，最多也就十几个</span></span><br><span class="line">    <span class="comment"># 2. 第二部分：观测值，存放该历元所有卫星所采集到的所有观测值，所占行数与卫星数量、观测值类型数量有关。</span></span><br><span class="line">    <span class="comment"># 注意：当观测值类型数量超过5种时，超出部分将续行写在下一行，这是因为一行只能放5个数据(80/16)。</span></span><br><span class="line">    <span class="comment"># 3. 备注：历元之间的时间间隔在头文件中INTERVAL部分指出，通常为若干秒，例如10s，30s</span></span><br><span class="line">    <span class="string">&quot;&quot;&quot; 明白了吗？，Let&#x27;s Go! &quot;&quot;&quot;</span></span><br><span class="line"></span><br><span class="line">    Epoch_serial_number: <span class="built_in">int</span> = <span class="number">0</span>  <span class="comment"># 每个历元的序号</span></span><br><span class="line">    Epoch_serial_row: <span class="built_in">int</span> = data_start_line  <span class="comment"># 每个历元开始的行号</span></span><br><span class="line">    <span class="keyword">while</span> Epoch_serial_row &lt; <span class="built_in">len</span>(all_lines):</span><br><span class="line">        <span class="comment"># o_dic = &#123;&#125;</span></span><br><span class="line">        <span class="string">&quot;&quot;&quot;每次进入这个循环，都是一个新的历元&quot;&quot;&quot;</span></span><br><span class="line">        <span class="comment"># 1. 第一部分：每个历元，事件标志，卫星数量及列表</span></span><br><span class="line">        one_Epoch_dic = &#123;&#125;  <span class="comment"># 记录一个历元数据</span></span><br><span class="line">        part_one = all_lines[Epoch_serial_row]  <span class="comment"># 这是第一部分的一行字符串</span></span><br><span class="line">        Epoch_serial_number += <span class="number">1</span></span><br><span class="line">        one_Epoch_dic[<span class="string">&#x27;历元序号&#x27;</span>] = Epoch_serial_number</span><br><span class="line">        one_Epoch_dic[<span class="string">&#x27;观测历元时刻&#x27;</span>] = part_one[<span class="number">1</span>:<span class="number">26</span>]</span><br><span class="line">        one_Epoch_dic[<span class="string">&#x27;历元标志&#x27;</span>] = <span class="built_in">int</span>(part_one[<span class="number">28</span>:<span class="number">29</span>])</span><br><span class="line">        satellite_num = <span class="built_in">int</span>(part_one[<span class="number">29</span>:<span class="number">32</span>].strip(<span class="string">&#x27; &#x27;</span>))  <span class="comment"># 卫星数量</span></span><br><span class="line">        one_Epoch_dic[<span class="string">&#x27;卫星数量&#x27;</span>] = satellite_num</span><br><span class="line">        satellites_observ_data = []  <span class="comment"># 记录所有卫星的所有数据</span></span><br><span class="line">        <span class="comment"># 卫星列表：</span></span><br><span class="line">        <span class="comment"># 当数量大于12时，超出部分将续行写在下n行，</span></span><br><span class="line">        <span class="comment"># 注意：卫星数量理论上最大可为999个，其实现实里没那么多，最多也就十几个，不过咱不怕，继续有多少搞多少~~</span></span><br><span class="line">        rows_of_satellites = satellite_num // <span class="number">12</span> <span class="keyword">if</span> satellite_num % <span class="number">12</span> == <span class="number">0</span> <span class="keyword">else</span> satellite_num // <span class="number">12</span> + <span class="number">1</span></span><br><span class="line">        base_line_of_sat = Epoch_serial_row  <span class="comment"># 记录当前一行</span></span><br><span class="line">        part_one = <span class="string">&#x27;&#x27;</span>  <span class="comment"># 先清空</span></span><br><span class="line">        <span class="keyword">for</span> row_num <span class="keyword">in</span> <span class="built_in">range</span>(rows_of_satellites):</span><br><span class="line">            part_one += all_lines[base_line_of_sat][<span class="number">32</span>:<span class="number">68</span>]</span><br><span class="line">            base_line_of_sat += <span class="number">1</span></span><br><span class="line">        part_one = [part_one[i:i + <span class="number">3</span>] <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">0</span>, <span class="built_in">len</span>(part_one), <span class="number">3</span>)]  <span class="comment"># 每隔三个字符串切片，这个方法很实用，请尽量掌握~~</span></span><br><span class="line">        <span class="keyword">for</span> j <span class="keyword">in</span> <span class="built_in">range</span>(satellite_num):</span><br><span class="line">            one_satellite_dic = &#123;<span class="string">&#x27;卫星&#123;&#125;的PRN号&#x27;</span>.<span class="built_in">format</span>(<span class="built_in">str</span>(j + <span class="number">1</span>)): part_one[j]&#125;  <span class="comment"># 一个卫星一个新的字典</span></span><br><span class="line">            satellites_observ_data.append(one_satellite_dic)</span><br><span class="line">        <span class="keyword">pass</span></span><br><span class="line"></span><br><span class="line">        <span class="comment"># 2. 第二部分：观测值，存放该历元所有卫星所采集到的所有观测值，所占行数与卫星数量、观测值类型数量有关。</span></span><br><span class="line">        <span class="comment"># 注意：当观测值类型数量超过5种时，超出部分将续行写在下一行，这是因为一行只能放5个数据(80/16)。不过咱还是不怕，干就完了！</span></span><br><span class="line">        <span class="comment"># 2.1 通过观测类型数量，计算每个卫星的观测数据占几行</span></span><br><span class="line">        rows_of_each_satellite_data = types_of_observ[<span class="string">&#x27;观测类型数量&#x27;</span>] // <span class="number">5</span> <span class="keyword">if</span> types_of_observ[<span class="string">&#x27;观测类型数量&#x27;</span>] % <span class="number">5</span> == <span class="number">0</span> <span class="keyword">else</span> \</span><br><span class="line">            types_of_observ[<span class="string">&#x27;观测类型数量&#x27;</span>] // <span class="number">5</span> + <span class="number">1</span></span><br><span class="line">        <span class="comment"># 2.2 遍历该历元下所有卫星，读取所有卫星的观测值</span></span><br><span class="line">        base_line_of_data_type = base_line_of_sat  <span class="comment"># 记录当前一行</span></span><br><span class="line">        <span class="keyword">for</span> sn <span class="keyword">in</span> <span class="built_in">range</span>(satellite_num):</span><br><span class="line">            <span class="comment"># sn_PRN = satellites_observ_data[sn][&#x27;卫星PRN号&#x27;]  # 当前正在处理的卫星的PRN号</span></span><br><span class="line">            <span class="comment"># print(&#x27;当前读取数据的卫星号&#x27;, sn_PRN)</span></span><br><span class="line">            <span class="string">&quot;&quot;&quot;再次使用上面那个厉害的算法（核心：循环+切片），循环读取该卫星所有观测类型的数据~~&quot;&quot;&quot;</span></span><br><span class="line">            part_two = <span class="string">&#x27;&#x27;</span></span><br><span class="line">            <span class="keyword">for</span> row_num <span class="keyword">in</span> <span class="built_in">range</span>(rows_of_each_satellite_data):</span><br><span class="line">                temp = all_lines[base_line_of_data_type][<span class="number">0</span>:<span class="number">80</span>]</span><br><span class="line">                <span class="keyword">if</span> row_num &lt; rows_of_each_satellite_data - <span class="number">1</span>:</span><br><span class="line">                    <span class="keyword">if</span> <span class="built_in">len</span>(temp) == <span class="number">0</span>:</span><br><span class="line">                        <span class="keyword">for</span> jj <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">5</span>):</span><br><span class="line">                            part_two += <span class="string">&#x27;                &#x27;</span></span><br><span class="line">                    <span class="keyword">if</span> <span class="built_in">len</span>(temp) % <span class="number">16</span> == <span class="number">14</span>:</span><br><span class="line">                        part_two += temp + <span class="string">&#x27;  &#x27;</span></span><br><span class="line">                    <span class="keyword">elif</span> <span class="built_in">len</span>(temp) % <span class="number">16</span> == <span class="number">15</span>:</span><br><span class="line">                        part_two += temp + <span class="string">&#x27; &#x27;</span></span><br><span class="line">                    <span class="keyword">else</span>:</span><br><span class="line">                        part_two += temp</span><br><span class="line">                <span class="keyword">else</span>:</span><br><span class="line">                    <span class="keyword">if</span> <span class="built_in">len</span>(temp) &lt; <span class="number">16</span>*(types_of_observ[<span class="string">&#x27;观测类型数量&#x27;</span>] - row_num * <span class="number">5</span>) -<span class="number">2</span>:</span><br><span class="line">                        <span class="keyword">if</span> <span class="built_in">len</span>(temp) % <span class="number">16</span> == <span class="number">14</span>:</span><br><span class="line">                            temp += temp + <span class="string">&#x27;  &#x27;</span></span><br><span class="line">                        <span class="keyword">elif</span> <span class="built_in">len</span>(temp) % <span class="number">16</span> == <span class="number">15</span>:</span><br><span class="line">                            temp += temp + <span class="string">&#x27; &#x27;</span></span><br><span class="line">                        part_two += temp</span><br><span class="line">                        <span class="keyword">for</span> jj <span class="keyword">in</span> <span class="built_in">range</span>(<span class="built_in">int</span>(types_of_observ[<span class="string">&#x27;观测类型数量&#x27;</span>]) - row_num * <span class="number">5</span>-<span class="built_in">len</span>(temp)//<span class="number">16</span>):</span><br><span class="line">                            part_two += <span class="string">&#x27;                &#x27;</span></span><br><span class="line">                    <span class="keyword">else</span>:</span><br><span class="line">                        <span class="keyword">if</span> <span class="built_in">len</span>(temp) % <span class="number">16</span> == <span class="number">14</span>:</span><br><span class="line">                            part_two += temp + <span class="string">&#x27;  &#x27;</span></span><br><span class="line">                        <span class="keyword">elif</span> <span class="built_in">len</span>(temp) % <span class="number">16</span> == <span class="number">15</span>:</span><br><span class="line">                            part_two += temp + <span class="string">&#x27; &#x27;</span></span><br><span class="line">                        <span class="keyword">else</span>:</span><br><span class="line">                            part_two += temp</span><br><span class="line">                base_line_of_data_type += <span class="number">1</span></span><br><span class="line">            dd = part_two</span><br><span class="line">            part_two = [part_two[i:i + <span class="number">16</span>] <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">0</span>, <span class="built_in">len</span>(part_two), <span class="number">16</span>)]  <span class="comment"># 每隔16个字符串切片，每一个对应一个观测数据(F14.3,I1,I1)</span></span><br><span class="line">            <span class="comment"># 读取完毕，那就用一个循环把数据记到字典里吧！(字典里添加新元素)</span></span><br><span class="line">            <span class="keyword">for</span> each_type_num <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">0</span>, types_of_observ[<span class="string">&#x27;观测类型数量&#x27;</span>]):</span><br><span class="line">                <span class="keyword">try</span>:</span><br><span class="line">                    one_record = &#123;</span><br><span class="line">                        <span class="string">&#x27;观测值&#x27;</span>: <span class="string">&#x27;空&#x27;</span> <span class="keyword">if</span> part_two[each_type_num][<span class="number">0</span>:<span class="number">14</span>] == <span class="string">&#x27;              &#x27;</span> <span class="keyword">else</span> <span class="built_in">float</span>(</span><br><span class="line">                            part_two[each_type_num][<span class="number">0</span>:<span class="number">14</span>].strip()),</span><br><span class="line">                        <span class="string">&#x27;LLI失锁标识符&#x27;</span>: <span class="string">&#x27;空&#x27;</span> <span class="keyword">if</span> part_two[each_type_num][<span class="number">14</span>] == <span class="string">&#x27; &#x27;</span> <span class="keyword">else</span> <span class="built_in">int</span>(</span><br><span class="line">                            part_two[each_type_num][<span class="number">14</span>]),</span><br><span class="line">                        <span class="string">&#x27;信号强度&#x27;</span>: <span class="string">&#x27;空&#x27;</span> <span class="keyword">if</span> part_two[each_type_num][<span class="number">15</span>] == <span class="string">&#x27; &#x27;</span> <span class="keyword">else</span> <span class="built_in">int</span>(</span><br><span class="line">                            part_two[each_type_num][<span class="number">15</span>])</span><br><span class="line">                    &#125;</span><br><span class="line">                    satellites_observ_data[sn][types_of_observ[<span class="string">&#x27;观测类型&#x27;</span> + <span class="built_in">str</span>(each_type_num + <span class="number">1</span>)]] = one_record</span><br><span class="line">                    <span class="comment"># print(types_of_observ[&#x27;观测类型&#x27; + str(each_type_num + 1)], &#x27; 未处理的观测值: &#x27;, part_two[each_type_num])  # 测试用</span></span><br><span class="line">                <span class="keyword">except</span> Exception <span class="keyword">as</span> e:</span><br><span class="line">                    <span class="built_in">print</span>(<span class="string">&#x27;源文件格式错误？请检查文件&#123;&#125;的第&#123;&#125;行附近有没有格式错误！具体错误代码：&#123;&#125;&#x27;</span>.<span class="built_in">format</span>(file_name, base_line_of_data_type-<span class="number">1</span>, e))</span><br><span class="line">            <span class="comment"># 一个卫星结束</span></span><br><span class="line">        <span class="keyword">pass</span></span><br><span class="line">        <span class="comment"># 至此，一个历元下所有卫星的数据读取完毕，保存一下，就进入下一个历元接着读~~</span></span><br><span class="line">        one_Epoch_dic[<span class="string">&#x27;所有卫星数据&#x27;</span>] = satellites_observ_data</span><br><span class="line">        all_observation_datas.append(one_Epoch_dic)</span><br><span class="line">        Epoch_serial_row = base_line_of_data_type</span><br><span class="line">    <span class="keyword">pass</span></span><br><span class="line">    <span class="comment"># 至此，已完成读取卫星观测数据并存储到内存中</span></span><br><span class="line">    <span class="comment"># print(all_observation_datas)</span></span><br><span class="line">    result[<span class="string">&#x27;卫星观测数据文件&#x27;</span>] = all_observation_datas</span><br><span class="line">    <span class="keyword">return</span> result</span><br><span class="line">    <span class="keyword">pass</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">write_dict_to_file</span>(<span class="params">dict_data, file_path, file_name</span>):</span></span><br><span class="line">    <span class="string">&quot;&quot;&quot;将读到内存中的字典类型数据保存到各种文件中&quot;&quot;&quot;</span></span><br><span class="line">    <span class="comment"># 目前只写了txt和json两种格式</span></span><br><span class="line">    <span class="keyword">import</span> os</span><br><span class="line">    <span class="keyword">if</span> <span class="keyword">not</span> os.path.exists(file_path):</span><br><span class="line">        os.makedirs(file_path)</span><br><span class="line">    output_type = file_name.split(<span class="string">&#x27;.&#x27;</span>)[-<span class="number">1</span>]</span><br><span class="line">    <span class="keyword">if</span> output_type == <span class="string">&#x27;txt&#x27;</span>:</span><br><span class="line">        <span class="comment"># txt文件</span></span><br><span class="line">        <span class="keyword">with</span> <span class="built_in">open</span>(file_path + file_name, <span class="string">&#x27;w&#x27;</span>, encoding=<span class="string">&#x27;utf-8&#x27;</span>) <span class="keyword">as</span> f_c:</span><br><span class="line">            f_c.write(<span class="built_in">str</span>(dict_data))</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="comment"># json文件</span></span><br><span class="line">        <span class="keyword">import</span> json</span><br><span class="line">        <span class="keyword">with</span> <span class="built_in">open</span>(file_path + file_name.replace(file_name.split(<span class="string">&#x27;.&#x27;</span>)[-<span class="number">1</span>], <span class="string">&#x27;&#x27;</span>) + <span class="string">&#x27;json&#x27;</span>, <span class="string">&#x27;w&#x27;</span>, encoding=<span class="string">&#x27;utf-8&#x27;</span>) <span class="keyword">as</span> f:</span><br><span class="line">            json.dump(dict_data, f, indent=<span class="number">4</span>, ensure_ascii=<span class="literal">False</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&#x27;__main__&#x27;</span>:</span><br><span class="line">    <span class="comment"># 解析RINEX格式的导航电文和卫星观测数据到内存中（字典类型），并导出到txt或json格式文件</span></span><br><span class="line">    <span class="comment"># 打招呼</span></span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;Hello, 这个程序的作用是：\n解析RINEX格式的导航电文和卫星观测数据到内存中（字典类型），并导出到txt或json格式文件&quot;</span>)</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;\n-------------------------- 这是一个分割线 --------------------------------\n&quot;</span>)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 解析导航电文文件</span></span><br><span class="line">    file_name = <span class="built_in">input</span>(<span class="string">&quot;输入要解析的导航电文文件地址和名字：(例如：./原始数据/00052731.98N)\n&quot;</span>)</span><br><span class="line">    nav_data = read_navigation_data(file_name)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 打印数据</span></span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;解析完毕，是否需要打印到控制台(1：是  2： 否)&quot;</span>)</span><br><span class="line">    is_print = <span class="built_in">input</span>(<span class="string">&quot;请输入您的选择：&quot;</span>)</span><br><span class="line">    <span class="keyword">if</span> is_print == <span class="string">&quot;1&quot;</span>:</span><br><span class="line">        <span class="built_in">print</span>(nav_data)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 导出数据</span></span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;是否需要保存到文件(1：是  2： 否)&quot;</span>)</span><br><span class="line">    is_write = <span class="built_in">input</span>(<span class="string">&quot;请输入您的选择：&quot;</span>)</span><br><span class="line">    <span class="keyword">if</span> is_write == <span class="string">&quot;1&quot;</span>:</span><br><span class="line">        path = <span class="built_in">input</span>(<span class="string">&quot;保存地址：(例如：./解析结果/)\n&quot;</span>)</span><br><span class="line">        name = file_name.split(<span class="string">&#x27;/&#x27;</span>)[-<span class="number">1</span>]</span><br><span class="line">        write_dict_to_file(nav_data, path, name + <span class="string">&#x27;.txt&#x27;</span>)</span><br><span class="line">        write_dict_to_file(nav_data, path, name + <span class="string">&#x27;.json&#x27;</span>)</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&quot;保存完毕，结果已保存到：&quot;</span>, path)</span><br><span class="line"></span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;\n-------------------------- 这是一个分割线 --------------------------------\n&quot;</span>)</span><br><span class="line">    <span class="comment"># 解析卫星观测数据文件，用户交互菜单同上</span></span><br><span class="line">    file_name = <span class="built_in">input</span>(<span class="string">&quot;输入要解析的卫星观测数据文件地址和名字：(例如：./原始数据/00052731.98O)\n&quot;</span>)</span><br><span class="line">    obs_data = read_observation_data(file_name)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 打印数据</span></span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;解析完毕，是否需要打印到控制台(1：是  2： 否)&quot;</span>)</span><br><span class="line">    is_print2 = <span class="built_in">input</span>(<span class="string">&quot;请输入您的选择：&quot;</span>)</span><br><span class="line">    <span class="keyword">if</span> is_print2 == <span class="string">&quot;1&quot;</span>:</span><br><span class="line">        <span class="built_in">print</span>(obs_data)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 导出数据</span></span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;是否需要保存到文件(1：是  2： 否)&quot;</span>)</span><br><span class="line">    is_write2 = <span class="built_in">input</span>(<span class="string">&quot;请输入您的选择：&quot;</span>)</span><br><span class="line">    <span class="keyword">if</span> is_write2 == <span class="string">&quot;1&quot;</span>:</span><br><span class="line">        path = <span class="built_in">input</span>(<span class="string">&quot;保存地址：(例如：./解析结果/)\n&quot;</span>)</span><br><span class="line">        name = file_name.split(<span class="string">&#x27;/&#x27;</span>)[-<span class="number">1</span>]</span><br><span class="line">        write_dict_to_file(obs_data, path, name + <span class="string">&#x27;.txt&#x27;</span>)</span><br><span class="line">        write_dict_to_file(obs_data, path, name + <span class="string">&#x27;.json&#x27;</span>)</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&quot;保存完毕，结果已保存到：&quot;</span>, path)</span><br><span class="line"></span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;\n-------------------------- 这是一个分割线 --------------------------------\n&quot;</span>)</span><br><span class="line">    <span class="comment"># 结束语</span></span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;很高兴为您服务，下次再见~~&quot;</span>)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+<p>计算卫星位置:</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br><span class="line">175</span><br><span class="line">176</span><br><span class="line">177</span><br><span class="line">178</span><br><span class="line">179</span><br><span class="line">180</span><br><span class="line">181</span><br><span class="line">182</span><br><span class="line">183</span><br><span class="line">184</span><br><span class="line">185</span><br><span class="line">186</span><br><span class="line">187</span><br><span class="line">188</span><br><span class="line">189</span><br><span class="line">190</span><br><span class="line">191</span><br><span class="line">192</span><br><span class="line">193</span><br><span class="line">194</span><br><span class="line">195</span><br><span class="line">196</span><br><span class="line">197</span><br><span class="line">198</span><br><span class="line">199</span><br><span class="line">200</span><br><span class="line">201</span><br><span class="line">202</span><br><span class="line">203</span><br><span class="line">204</span><br><span class="line">205</span><br><span class="line">206</span><br><span class="line">207</span><br><span class="line">208</span><br><span class="line">209</span><br><span class="line">210</span><br><span class="line">211</span><br><span class="line">212</span><br><span class="line">213</span><br><span class="line">214</span><br><span class="line">215</span><br><span class="line">216</span><br><span class="line">217</span><br><span class="line">218</span><br><span class="line">219</span><br><span class="line">220</span><br><span class="line">221</span><br><span class="line">222</span><br><span class="line">223</span><br><span class="line">224</span><br><span class="line">225</span><br><span class="line">226</span><br><span class="line">227</span><br><span class="line">228</span><br><span class="line">229</span><br><span class="line">230</span><br><span class="line">231</span><br><span class="line">232</span><br><span class="line">233</span><br><span class="line">234</span><br><span class="line">235</span><br><span class="line">236</span><br><span class="line">237</span><br><span class="line">238</span><br><span class="line">239</span><br><span class="line">240</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#!/usr/bin/env python</span></span><br><span class="line"><span class="comment"># -*- coding: utf-8 -*- </span></span><br><span class="line"><span class="comment"># @Author: PAYIZ</span></span><br><span class="line"><span class="comment"># @project: GPS卫星位置的计算</span></span><br><span class="line"><span class="comment"># @File : 计算卫星位置.py</span></span><br><span class="line"><span class="comment"># @Time : 2020/12/20 21:30</span></span><br><span class="line"><span class="comment"># 需要安装第三方库？试试这个语句(使用清华镜像源)：pip --default-timeout=100 install -i https://pypi.tuna.tsinghua.edu.cn/simple name</span></span><br><span class="line"><span class="comment"># -----------------------------------</span></span><br><span class="line"></span><br><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">    您好！</span></span><br><span class="line"><span class="string">    这个python文件, 是用来解析RINEX格式的导航电文到内存中（字典类型），</span></span><br><span class="line"><span class="string">    计算其中所有卫星在瞬时地球坐标系(WGS-84)中的位置，并导出到txt或json格式文件</span></span><br><span class="line"><span class="string">    里面用到的第三方库有os, sys, json,pandas,math（为了函数可移植性，将有些import字段直接放到函数里面了）</span></span><br><span class="line"><span class="string">    数据解析函数返回值为字典格式数据</span></span><br><span class="line"><span class="string">    数据解析完还可导出为txt,json等文件</span></span><br><span class="line"><span class="string">    注意：本文件还用到了我自己写的 解析RINEX文件.py 文件中的函数： read_navigation_data</span></span><br><span class="line"><span class="string">    若无该文件请联系本人获取，谢谢！</span></span><br><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> math</span><br><span class="line"></span><br><span class="line"><span class="keyword">from</span> 解析RINEX文件 <span class="keyword">import</span> read_navigation_data</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">calculation_of_gps_satellite_position</span>(<span class="params">file_path</span>):</span></span><br><span class="line">    <span class="string">&quot;&quot;&quot;读取导航电文并解析，这一部分调用了 ”解析RINEX文件.py“ 代码文件里面的函数&quot;&quot;&quot;</span></span><br><span class="line">    nav_file = read_navigation_data(file_path)</span><br><span class="line">    nav_data = nav_file[<span class="string">&#x27;导航电文文件&#x27;</span>]</span><br><span class="line">    <span class="comment"># 定义一些常量</span></span><br><span class="line">    e_E = <span class="number">1</span> / <span class="number">298.257223563</span>  <span class="comment"># 地球扁率：</span></span><br><span class="line">    OMEGA_E = <span class="number">7.292115</span> * <span class="number">10</span> ** (-<span class="number">5</span>)  <span class="comment"># 地球自转角速度：rad/s</span></span><br><span class="line">    GM = <span class="number">3.9860044</span> * <span class="number">10</span> ** <span class="number">14</span>  <span class="comment"># 地心引力常数： m3/s2</span></span><br><span class="line">    c = <span class="number">299792458</span>  <span class="comment"># 真空中的光速：m/s</span></span><br><span class="line"></span><br><span class="line">    <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">    # 这里是导航电文解析完保存成字典里面的广播轨道信息,为了写代码、读代码方面就以注释的方式放在此处</span></span><br><span class="line"><span class="string">    broadcast_tracks = [</span></span><br><span class="line"><span class="string">        [&#x27;IODE&#x27;, &#x27;Crs&#x27;, &#x27;n&#x27;, &#x27;M0&#x27;],</span></span><br><span class="line"><span class="string">        [&#x27;Cuc&#x27;, &#x27;e&#x27;, &#x27;Cus&#x27;, &#x27;sqrt(A)&#x27;],</span></span><br><span class="line"><span class="string">        [&#x27;TOE&#x27;, &#x27;Cic&#x27;, &#x27;OMEGA&#x27;, &#x27;Cis&#x27;],</span></span><br><span class="line"><span class="string">        [&#x27;i0&#x27;, &#x27;Crc&#x27;, &#x27;w&#x27;, &#x27;OMEGA_DOT&#x27;],</span></span><br><span class="line"><span class="string">        [&#x27;i&#x27;, &#x27;L2_code&#x27;, &#x27;GPS_week_num&#x27;, &#x27;L2_P_code&#x27;],</span></span><br><span class="line"><span class="string">        [&#x27;卫星精度&#x27;, &#x27;卫星健康状态&#x27;, &#x27;TGD&#x27;, &#x27;IODC&#x27;],</span></span><br><span class="line"><span class="string">        [&#x27;电文发送时刻&#x27;, &#x27;拟合区间(h)&#x27;, &#x27;备用1&#x27;, &#x27;备用2&#x27;]</span></span><br><span class="line"><span class="string">    ]</span></span><br><span class="line"><span class="string">    &quot;&quot;&quot;</span></span><br><span class="line">    <span class="comment"># 循环计算观测到的卫星的位置，结果依然保存到一个字典里</span></span><br><span class="line">    result = &#123;&#125;  <span class="comment"># 这是返回结果的字典</span></span><br><span class="line">    all_satellites_positions = []  <span class="comment"># 这是个列表，里面是所有卫星的位置数据</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> one_satellite <span class="keyword">in</span> nav_data:</span><br><span class="line">        <span class="comment"># print(one_satellite)</span></span><br><span class="line"></span><br><span class="line">        <span class="comment"># 1. 计算卫星运动的平均角速度n</span></span><br><span class="line">        square_A = one_satellite[<span class="string">&#x27;sqrt(A)&#x27;</span>]</span><br><span class="line">        n0 = math.sqrt(GM) / (square_A ** <span class="number">3</span>)</span><br><span class="line">        n = n0 + one_satellite[<span class="string">&#x27;n&#x27;</span>]</span><br><span class="line"></span><br><span class="line">        <span class="comment"># 2. 计算观测瞬间卫星的平近点角M</span></span><br><span class="line">        <span class="comment"># 2.1 计算离该历元的前周日零点的时间差t，即周内秒数</span></span><br><span class="line">        Epoch_list = [one_satellite[<span class="string">&#x27;历元&#x27;</span>][i:i + <span class="number">3</span>] <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">0</span>, <span class="built_in">len</span>(one_satellite[<span class="string">&#x27;历元&#x27;</span>]), <span class="number">3</span>)]</span><br><span class="line">        Epoch = &#123;</span><br><span class="line">            <span class="string">&#x27;year&#x27;</span>: <span class="built_in">int</span>(<span class="string">&#x27;19&#x27;</span> + Epoch_list[<span class="number">0</span>].strip()) <span class="keyword">if</span> <span class="number">80</span> &lt;= <span class="built_in">int</span>(Epoch_list[<span class="number">0</span>]) &lt;= <span class="number">99</span> <span class="keyword">else</span> <span class="built_in">int</span>(</span><br><span class="line">                <span class="string">&#x27;20&#x27;</span> + Epoch_list[<span class="number">0</span>].strip()),</span><br><span class="line">            <span class="string">&#x27;month&#x27;</span>: <span class="built_in">int</span>(Epoch_list[<span class="number">1</span>]),</span><br><span class="line">            <span class="string">&#x27;day&#x27;</span>: <span class="built_in">int</span>(Epoch_list[<span class="number">2</span>]),</span><br><span class="line">            <span class="string">&#x27;hour&#x27;</span>: <span class="built_in">int</span>(Epoch_list[<span class="number">3</span>]),</span><br><span class="line">            <span class="string">&#x27;min&#x27;</span>: <span class="built_in">int</span>(Epoch_list[<span class="number">4</span>]),</span><br><span class="line">            <span class="string">&#x27;sec&#x27;</span>: <span class="built_in">float</span>(Epoch_list[<span class="number">5</span>] + Epoch_list[<span class="number">6</span>])</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment"># 2.1.1 计算该历元是星期几</span></span><br><span class="line">        <span class="keyword">import</span> datetime</span><br><span class="line">        which_one = datetime.date(Epoch[<span class="string">&quot;year&quot;</span>], Epoch[<span class="string">&#x27;month&#x27;</span>], Epoch[<span class="string">&#x27;day&#x27;</span>]).weekday()</span><br><span class="line">        <span class="comment"># week_days = [&#x27;Monday&#x27;, &#x27;Tuesday&#x27;, &#x27;Wednesday&#x27;, &#x27;Thursday&#x27;, &#x27;Friday&#x27;, &#x27;Saturday&#x27;, &#x27;Sunday&#x27;]</span></span><br><span class="line">        <span class="comment"># date_name = week_days[which_one]   # 测试用</span></span><br><span class="line"></span><br><span class="line">        <span class="comment"># 2.1.2 计算周内秒数t</span></span><br><span class="line">        t = ((which_one + <span class="number">1</span>) * <span class="number">24</span> + Epoch[<span class="string">&#x27;hour&#x27;</span>]) * <span class="number">3600</span> + Epoch[<span class="string">&#x27;min&#x27;</span>] * <span class="number">60</span> + Epoch[<span class="string">&#x27;sec&#x27;</span>]</span><br><span class="line"></span><br><span class="line">        <span class="comment"># 2.2 通过公式计算卫星的平近点角M</span></span><br><span class="line">        TOE = one_satellite[<span class="string">&#x27;TOE&#x27;</span>]</span><br><span class="line">        M = one_satellite[<span class="string">&#x27;M0&#x27;</span>] + n * (t - TOE)</span><br><span class="line"></span><br><span class="line">        <span class="comment"># 3. 计算偏近点角 E</span></span><br><span class="line">        e = one_satellite[<span class="string">&#x27;e&#x27;</span>]</span><br><span class="line"></span><br><span class="line">        <span class="comment"># 用弧度表示的开普勒方程</span></span><br><span class="line">        <span class="comment"># E = M + e * math.sin(M)</span></span><br><span class="line">        <span class="comment"># 迭代法计算上述方程</span></span><br><span class="line">        E: <span class="built_in">float</span> = <span class="number">0</span></span><br><span class="line">        Ek = M</span><br><span class="line">        <span class="keyword">while</span> <span class="literal">True</span>:</span><br><span class="line">            Ek1 = Ek + e * math.sin(Ek)</span><br><span class="line">            <span class="keyword">if</span> math.fabs(Ek1 - Ek) &lt;= <span class="number">1e-12</span>:</span><br><span class="line">                E = Ek1  <span class="comment"># 将结果存到E,退出循环</span></span><br><span class="line">                <span class="keyword">break</span></span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                <span class="comment"># print(&#x27;现在二者相差：&#x27;, math.fabs(Ek1 - Ek))  # 测试用</span></span><br><span class="line">                Ek = Ek1  <span class="comment"># 继续迭代</span></span><br><span class="line">                <span class="keyword">continue</span></span><br><span class="line">            <span class="keyword">pass</span></span><br><span class="line"></span><br><span class="line">        <span class="comment"># 4. 计算真近点角f</span></span><br><span class="line">        f = math.atan2(math.sqrt(<span class="number">1</span> - e * e) * math.sin(E), (math.cos(E) - e))</span><br><span class="line"></span><br><span class="line">        <span class="comment"># 5. 计算升交距角u&#x27;, 在这里命名为u_pie</span></span><br><span class="line">        u_pie = one_satellite[<span class="string">&#x27;w&#x27;</span>] + f</span><br><span class="line"></span><br><span class="line">        <span class="comment"># 6. 计算摄动改正项δ_u、δ_r、δ_i , 这里命名时前缀用delta表示</span></span><br><span class="line">        delta_u = one_satellite[<span class="string">&#x27;Cuc&#x27;</span>] * math.cos(<span class="number">2</span> * u_pie) + one_satellite[<span class="string">&#x27;Cus&#x27;</span>] * math.sin(<span class="number">2</span> * u_pie)</span><br><span class="line">        delta_r = one_satellite[<span class="string">&#x27;Crc&#x27;</span>] * math.cos(<span class="number">2</span> * u_pie) + one_satellite[<span class="string">&#x27;Crs&#x27;</span>] * math.sin(<span class="number">2</span> * u_pie)</span><br><span class="line">        delta_i = one_satellite[<span class="string">&#x27;Cic&#x27;</span>] * math.cos(<span class="number">2</span> * u_pie) + one_satellite[<span class="string">&#x27;Cis&#x27;</span>] * math.sin(<span class="number">2</span> * u_pie)</span><br><span class="line"></span><br><span class="line">        <span class="comment"># 7. 对u&#x27;、r&#x27;、i0进行摄动改正</span></span><br><span class="line">        u = u_pie + delta_u</span><br><span class="line">        r = square_A ** <span class="number">2</span> * (<span class="number">1</span> - e * math.cos(E)) + delta_r</span><br><span class="line">        i = one_satellite[<span class="string">&#x27;i0&#x27;</span>] + delta_i + one_satellite[<span class="string">&#x27;i&#x27;</span>] * (t - TOE)</span><br><span class="line"></span><br><span class="line">        <span class="comment"># 8. 计算卫星在轨道面坐标系中的位置</span></span><br><span class="line">        x = r * math.cos(u)</span><br><span class="line">        y = r * math.sin(u)</span><br><span class="line">        z = <span class="number">0</span></span><br><span class="line"></span><br><span class="line">        <span class="comment"># 9.计算观测瞬间升交点的精度L</span></span><br><span class="line">        L = one_satellite[<span class="string">&#x27;OMEGA&#x27;</span>] + one_satellite[<span class="string">&#x27;OMEGA_DOT&#x27;</span>] * (t - TOE) - OMEGA_E * t</span><br><span class="line"></span><br><span class="line">        <span class="comment"># 10. 计算卫星在瞬时地球坐标系(WGS-84)中的位置</span></span><br><span class="line">        coordinate_wgs_84 = &#123;</span><br><span class="line">            <span class="string">&#x27;X&#x27;</span>: x * math.cos(L) - y * math.cos(i) * math.sin(L),</span><br><span class="line">            <span class="string">&#x27;Y&#x27;</span>: x * math.sin(L) - y * math.cos(i) * math.cos(L),</span><br><span class="line">            <span class="string">&#x27;Z&#x27;</span>: y * math.sin(i)</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="comment"># 11. 计算卫星在协议地球坐标系中的位置(考虑极移的影响),得出coordinate_cts:conventional terrestrial system</span></span><br><span class="line">        <span class="comment"># 极移参数采用了国际地球自转和参考系统服务（网址：http://www.iers.org）提供的美国海军天文台和法国巴黎天文台的地极移动预测结果</span></span><br><span class="line">        <span class="comment"># 找到2020年12月发表的标准参数，并只取了2020全年的平均值 0.049,0.032</span></span><br><span class="line">        <span class="comment"># 需要更精确的话请自行改成目标年份目标日期的地极参数（我不想实现了，因为没有找到往年的参数）</span></span><br><span class="line">        <span class="comment"># 如需更精确的方法，请参考ITRS和ITRF</span></span><br><span class="line"></span><br><span class="line">        <span class="comment"># polar coordinates xp, yp</span></span><br><span class="line">        xp = <span class="number">0.049</span></span><br><span class="line">        yp = <span class="number">0.032</span></span><br><span class="line"></span><br><span class="line">        coordinate_cts = &#123;</span><br><span class="line">            <span class="string">&#x27;X&#x27;</span>: coordinate_wgs_84[<span class="string">&#x27;X&#x27;</span>] + coordinate_wgs_84[<span class="string">&#x27;Z&#x27;</span>] * xp,</span><br><span class="line">            <span class="string">&#x27;Y&#x27;</span>: coordinate_wgs_84[<span class="string">&#x27;Y&#x27;</span>] - coordinate_wgs_84[<span class="string">&#x27;Z&#x27;</span>] * yp,</span><br><span class="line">            <span class="string">&#x27;Z&#x27;</span>: (-<span class="number">1</span>) * coordinate_wgs_84[<span class="string">&#x27;X&#x27;</span>] * xp + coordinate_wgs_84[<span class="string">&#x27;Y&#x27;</span>] * yp + coordinate_wgs_84[<span class="string">&#x27;Z&#x27;</span>]</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment"># print(&#x27;当前被计算的卫星：&#x27;, one_satellite[&#x27;卫星PRN号&#x27;], one_satellite[&#x27;历元&#x27;])</span></span><br><span class="line">        <span class="comment"># print(&#x27;计算卫星在瞬时地球坐标系(WGS-84)中的位置：&#x27;, coordinate_wgs_84)</span></span><br><span class="line">        <span class="comment"># print(&#x27;卫星在协议地球坐标系中的位置：&#x27;, coordinate_cts, &#x27;\n&#x27;)</span></span><br><span class="line"></span><br><span class="line">        <span class="comment"># 返回结果</span></span><br><span class="line">        <span class="comment"># 因为老师只要求瞬时地球坐标系(WGS-84)中的位置，因此就只返回这个</span></span><br><span class="line">        <span class="comment"># 因为导航电文每隔2h发一次，因此每颗卫星会有多个位置信息</span></span><br><span class="line">        one_satellite_positions = &#123;</span><br><span class="line">            <span class="string">&#x27;卫星PRN号&#x27;</span>: one_satellite[<span class="string">&#x27;卫星PRN号&#x27;</span>],</span><br><span class="line">            <span class="string">&#x27;所有位置&#x27;</span>: [</span><br><span class="line">                &#123;</span><br><span class="line">                    <span class="string">&#x27;历元&#x27;</span>: one_satellite[<span class="string">&#x27;历元&#x27;</span>],</span><br><span class="line">                    <span class="string">&#x27;WGS-84坐标系位置&#x27;</span>: coordinate_wgs_84</span><br><span class="line">                &#125;</span><br><span class="line">            ]</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="comment"># 状态标志</span></span><br><span class="line">        flag = <span class="number">0</span>  <span class="comment"># 0： 默认无该卫星</span></span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> all_satellites_positions:</span><br><span class="line">            <span class="keyword">if</span> i[<span class="string">&#x27;卫星PRN号&#x27;</span>] == one_satellite_positions[<span class="string">&#x27;卫星PRN号&#x27;</span>]:</span><br><span class="line">                flag = <span class="number">1</span></span><br><span class="line">                <span class="keyword">for</span> j <span class="keyword">in</span> i[<span class="string">&#x27;所有位置&#x27;</span>]:</span><br><span class="line">                    <span class="keyword">if</span> j[<span class="string">&#x27;历元&#x27;</span>] == one_satellite_positions[<span class="string">&#x27;所有位置&#x27;</span>][<span class="number">0</span>][<span class="string">&#x27;历元&#x27;</span>]:</span><br><span class="line">                        <span class="comment"># 存在该卫星及该历元时位置，处理方式：跳过</span></span><br><span class="line">                        flag = <span class="number">2</span></span><br><span class="line">                        <span class="keyword">break</span></span><br><span class="line">                <span class="keyword">if</span> flag == <span class="number">1</span>:</span><br><span class="line">                    <span class="comment"># 存在该卫星但没有该历元时位置，处理方式：添加新的位置</span></span><br><span class="line">                    i[<span class="string">&#x27;所有位置&#x27;</span>].append(one_satellite_positions[<span class="string">&#x27;所有位置&#x27;</span>][<span class="number">0</span>])</span><br><span class="line">                    <span class="keyword">break</span></span><br><span class="line">        <span class="keyword">pass</span></span><br><span class="line">        <span class="keyword">if</span> flag == <span class="number">0</span>:</span><br><span class="line">            <span class="comment"># 没找到该卫星的位置记录，处理方式：添加该卫星的记录</span></span><br><span class="line">            all_satellites_positions.append(one_satellite_positions)</span><br><span class="line"></span><br><span class="line">        <span class="comment"># break  # 这个停顿是测试时用的</span></span><br><span class="line">    <span class="comment"># 至此，已完成读取卫星位置的计算并存储到内存中</span></span><br><span class="line">    result[<span class="string">&#x27;所有卫星在瞬时地球坐标系(WGS-84)中的位置&#x27;</span>] = all_satellites_positions</span><br><span class="line">    <span class="keyword">return</span> result</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">write_dict_to_file</span>(<span class="params">dict_data, file_path, file_name</span>):</span></span><br><span class="line">    <span class="string">&quot;&quot;&quot;将读到内存中的字典类型数据保存到各种文件中&quot;&quot;&quot;</span></span><br><span class="line">    <span class="comment"># 目前只写了txt和json两种格式</span></span><br><span class="line">    <span class="keyword">import</span> os</span><br><span class="line">    <span class="keyword">if</span> <span class="keyword">not</span> os.path.exists(file_path):</span><br><span class="line">        os.makedirs(file_path)</span><br><span class="line">    output_type = file_name.split(<span class="string">&#x27;.&#x27;</span>)[-<span class="number">1</span>]</span><br><span class="line">    <span class="keyword">if</span> output_type == <span class="string">&#x27;txt&#x27;</span>:</span><br><span class="line">        <span class="comment"># txt文件</span></span><br><span class="line">        <span class="keyword">with</span> <span class="built_in">open</span>(file_path + file_name, <span class="string">&#x27;w&#x27;</span>, encoding=<span class="string">&#x27;utf-8&#x27;</span>) <span class="keyword">as</span> f_c:</span><br><span class="line">            f_c.write(<span class="built_in">str</span>(dict_data))</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="comment"># json文件</span></span><br><span class="line">        <span class="keyword">import</span> json</span><br><span class="line">        <span class="keyword">with</span> <span class="built_in">open</span>(file_path + file_name.replace(file_name.split(<span class="string">&#x27;.&#x27;</span>)[-<span class="number">1</span>], <span class="string">&#x27;&#x27;</span>) + <span class="string">&#x27;json&#x27;</span>, <span class="string">&#x27;w&#x27;</span>, encoding=<span class="string">&#x27;utf-8&#x27;</span>) <span class="keyword">as</span> f:</span><br><span class="line">            json.dump(dict_data, f, indent=<span class="number">4</span>, ensure_ascii=<span class="literal">False</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&#x27;__main__&#x27;</span>:</span><br><span class="line">    <span class="comment"># 解析RINEX格式的导航电文到内存中（字典类型），计算其中所有卫星在瞬时地球坐标系(WGS-84)中的位置，并导出到txt或json格式文件</span></span><br><span class="line">    <span class="comment"># 打招呼</span></span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;Hello, 这个程序的作用是：\n解析RINEX格式的导航电文到内存中（字典类型），计算其中所有卫星在瞬时地球坐标系(WGS-84)中的位置，并导出到txt或json格式文件&quot;</span>)</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;\n-------------------------- 这是一个分割线 --------------------------------\n&quot;</span>)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 解析导航电文文件</span></span><br><span class="line">    file_name = <span class="built_in">input</span>(<span class="string">&quot;输入要解析的导航电文文件地址和名字：(例如：./原始数据/00052731.98N)\n&quot;</span>)</span><br><span class="line">    positions = calculation_of_gps_satellite_position(file_name)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 打印数据</span></span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;解析完毕，是否需要打印到控制台(1：是  2： 否)&quot;</span>)</span><br><span class="line">    is_print = <span class="built_in">input</span>(<span class="string">&quot;请输入您的选择：&quot;</span>)</span><br><span class="line">    <span class="keyword">if</span> is_print == <span class="string">&quot;1&quot;</span>:</span><br><span class="line">        <span class="built_in">print</span>(positions)</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 导出数据</span></span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;是否需要保存到文件(1：是  2： 否)&quot;</span>)</span><br><span class="line">    is_write = <span class="built_in">input</span>(<span class="string">&quot;请输入您的选择：&quot;</span>)</span><br><span class="line">    <span class="keyword">if</span> is_write == <span class="string">&quot;1&quot;</span>:</span><br><span class="line">        path = <span class="built_in">input</span>(<span class="string">&quot;保存地址：(例如：./卫星位置计算结果/)\n&quot;</span>)</span><br><span class="line">        name = file_name.split(<span class="string">&#x27;/&#x27;</span>)[-<span class="number">1</span>]</span><br><span class="line">        write_dict_to_file(positions, path, name + <span class="string">&#x27;.txt&#x27;</span>)</span><br><span class="line">        write_dict_to_file(positions, path, name + <span class="string">&#x27;.json&#x27;</span>)</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&quot;保存完毕，结果已保存到：&quot;</span>, path)</span><br><span class="line"></span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;\n-------------------------- 这是一个分割线 --------------------------------\n&quot;</span>)</span><br><span class="line">    <span class="comment"># 结束语</span></span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;很高兴为您服务，下次再见~~&quot;</span>)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+<h4 id="最后计算结果展示："><a href="#最后计算结果展示：" class="headerlink" title="最后计算结果展示："></a>最后计算结果展示：</h4><p><img align = "center" src = "https://pic.imgdb.cn/item/610911475132923bf81111cf.png" style = "with:580px; height:400px"></img></p>
+<h3 id="FAQ"><a href="#FAQ" class="headerlink" title="FAQ"></a>FAQ</h3><p>​        本脚本能够处理任何RENIX格式文件，而且鲁棒性极强，能够应对文件格式的任何变化。</p>
+<p>​        如果使用过程中遇到任何问题，欢迎与我讨论！</p>
+<h3 id="项目源代码"><a href="#项目源代码" class="headerlink" title="项目源代码"></a>项目源代码</h3><p>​        本项目已开源，<a target="_blank" rel="noopener" href="https://github.com/payiz-asj/Gis">项目地址</a>。欢迎访问我的<a target="_blank" rel="noopener" href="https://github.com/payiz-asj">Github</a>了解更多有意思的项目！</p>
+ 
+      <!-- reward -->
+      
+      <div id="reword-out">
+        <div id="reward-btn">
+          打赏
+        </div>
+      </div>
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <div class="declare">
+      <ul class="post-copyright">
+        <li>
+          <i class="ri-copyright-line"></i>
+          <strong>版权声明： </strong>
+          
+          本博客所有文章除特别声明外，著作权归作者所有。转载请注明出处！
+          
+        </li>
+      </ul>
+    </div>
+    
+    <footer class="article-footer">
+       
+<div class="share-btn">
+      <span class="share-sns share-outer">
+        <i class="ri-share-forward-line"></i>
+        分享
+      </span>
+      <div class="share-wrap">
+        <i class="arrow"></i>
+        <div class="share-icons">
+          
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="ri-weibo-fill"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="ri-wechat-fill"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="ri-qq-fill"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="ri-douban-line"></i>
+          </a>
+          <!-- <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a> -->
+          
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="ri-facebook-circle-fill"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="ri-twitter-fill"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="ri-google-fill"></i>
+          </a>
+        </div>
+      </div>
+</div>
+
+<div class="wx-share-modal">
+    <a class="modal-close" href="javascript:;"><i class="ri-close-circle-line"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://yeying.tech/%E4%B8%AA%E4%BA%BA%E9%A1%B9%E7%9B%AE/Gis/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div id="share-mask"></div>  
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Gis/" rel="tag">Gis</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/python/" rel="tag">python</a></li></ul>
+
+    </footer>
+  </div>
+
+   
+  <nav class="article-nav">
+    
+      <a href="/%E4%B8%AA%E4%BA%BA%E9%A1%B9%E7%9B%AE/NJU-FOOTBALL/" class="article-nav-link">
+        <strong class="article-nav-caption">上一篇</strong>
+        <div class="article-nav-title">
+          
+            NJU 足球赛程管理系统
+          
+        </div>
+      </a>
+    
+    
+      <a href="/%E4%B8%AA%E4%BA%BA%E9%A1%B9%E7%9B%AE/baidu-pic/" class="article-nav-link">
+        <strong class="article-nav-caption">下一篇</strong>
+        <div class="article-nav-title">百度图片下载器</div>
+      </a>
+    
+  </nav>
+
+   
+<!-- valine评论 -->
+<div id="vcomments-box">
+  <div id="vcomments"></div>
+</div>
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js"></script>
+<script>
+  new Valine({
+    el: "#vcomments",
+    app_id: "",
+    app_key: "",
+    path: window.location.pathname,
+    avatar: "monsterid",
+    placeholder: "给我的文章加点评论吧~",
+    recordIP: true,
+  });
+  const infoEle = document.querySelector("#vcomments .info");
+  if (infoEle && infoEle.childNodes && infoEle.childNodes.length > 0) {
+    infoEle.childNodes.forEach(function (item) {
+      item.parentNode.removeChild(item);
+    });
+  }
+</script>
+<style>
+  #vcomments-box {
+    padding: 5px 30px;
+  }
+
+  @media screen and (max-width: 800px) {
+    #vcomments-box {
+      padding: 5px 0px;
+    }
+  }
+
+  #vcomments-box #vcomments {
+    background-color: #fff;
+  }
+
+  .v .vlist .vcard .vh {
+    padding-right: 20px;
+  }
+
+  .v .vlist .vcard {
+    padding-left: 10px;
+  }
+</style>
+
+ 
+   
+     
+</article>
+
+
+</section>
+      <footer class="footer">
+  <div class="outer">
+    <ul>
+      <li>
+        Copyrights &copy;
+        2019-2021
+        <i class="ri-heart-fill heart_icon"></i> PAYIZ
+      </li>
+    </ul>
+    <ul>
+      <li>
+        
+        
+        <span>
+  <span><i class="ri-user-3-fill"></i><span id="busuanzi_value_site_uv"></span></span>
+  <span class="division">|</span>
+  <span><i class="ri-eye-fill"></i><span id="busuanzi_value_page_pv"></span></span>
+</span>
+        
+      </li>
+    </ul>
+    <ul>
+      
+    </ul>
+    <ul>
+      
+    </ul>
+    <ul>
+      <li>
+        <!-- cnzz统计 -->
+        
+        <script type="text/javascript" src='https://s9.cnzz.com/z_stat.php?id=1280147847&amp;web_id=1280147847'></script>
+        
+      </li>
+    </ul>
+  </div>
+</footer>
+      <div class="float_btns">
+        <div class="totop" id="totop">
+  <i class="ri-arrow-up-line"></i>
+</div>
+
+<div class="todark" id="todark">
+  <i class="ri-moon-line"></i>
+</div>
+
+      </div>
+    </main>
+    <aside class="sidebar on">
+      <button class="navbar-toggle"></button>
+<nav class="navbar">
+  
+  <div class="logo">
+    <a href="/"><img src="/images/bird.png" alt="夜莺悠吟"></a>
+  </div>
+  
+  <ul class="nav nav-main">
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/">主页</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/archives">归档</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/categories">分类</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/tags">标签</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/categories/%E7%9B%B8%E5%86%8C">相册</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/photos">壁纸</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/friends">社交</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/about/me">关于我</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/about/site">关于博客</a>
+    </li>
+    
+  </ul>
+</nav>
+<nav class="navbar navbar-bottom">
+  <ul class="nav">
+    <li class="nav-item">
+      
+      <a class="nav-item-link nav-item-search"  title="搜索">
+        <i class="ri-search-line"></i>
+      </a>
+      
+      
+      <a class="nav-item-link" target="_blank" href="/atom.xml" title="RSS Feed">
+        <i class="ri-rss-line"></i>
+      </a>
+      
+    </li>
+  </ul>
+</nav>
+<div class="search-form-wrap">
+  <div class="local-search local-search-plugin">
+  <input type="search" id="local-search-input" class="local-search-input" placeholder="Search...">
+  <div id="local-search-result" class="local-search-result"></div>
+</div>
+</div>
+    </aside>
+    <div id="mask"></div>
+
+<!-- #reward -->
+<div id="reward">
+  <span class="close"><i class="ri-close-line"></i></span>
+  <p class="reward-p"><i class="ri-cup-line"></i>感谢您的支持😊</p>
+  <div class="reward-box">
+    
+    <div class="reward-item">
+      <img class="reward-img" src="https://cdn.jsdelivr.net/gh/payiz-asj/CDN/images/alipay.png">
+      <span class="reward-type">支付宝</span>
+    </div>
+    
+    
+    <div class="reward-item">
+      <img class="reward-img" src="https://cdn.jsdelivr.net/gh/payiz-asj/CDN/images/wechatpay.png">
+      <span class="reward-type">微信</span>
+    </div>
+    
+  </div>
+</div>
+    
+<script src="/js/jquery-2.0.3.min.js"></script>
+ 
+<script src="/js/lazyload.min.js"></script>
+
+<!-- Tocbot -->
+ 
+<script src="/js/tocbot.min.js"></script>
+
+<script>
+  tocbot.init({
+    tocSelector: ".tocbot",
+    contentSelector: ".article-entry",
+    headingSelector: "h1, h2, h3, h4, h5, h6",
+    hasInnerContainers: true,
+    scrollSmooth: true,
+    scrollContainer: "main",
+    positionFixedSelector: ".tocbot",
+    positionFixedClass: "is-position-fixed",
+    fixedSidebarOffset: "auto",
+  });
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.js"></script>
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.css"
+/>
+<script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js"></script>
+
+<script src="/dist/main.js"></script>
+
+<!-- ImageViewer -->
+ <!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" style="display:none" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css">
+<script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"></script>
+
+<script>
+    function viewer_init() {
+        let pswpElement = document.querySelectorAll('.pswp')[0];
+        let $imgArr = document.querySelectorAll(('.article-entry img:not(.reward-img)'))
+
+        $imgArr.forEach(($em, i) => {
+            $em.onclick = () => {
+                // slider展开状态
+                // todo: 这样不好，后面改成状态
+                if (document.querySelector('.left-col.show')) return
+                let items = []
+                $imgArr.forEach(($em2, i2) => {
+                    let img = $em2.getAttribute('data-idx', i2)
+                    let src = $em2.getAttribute('data-target') || $em2.getAttribute('src')
+                    let title = $em2.getAttribute('alt')
+                    // 获得原图尺寸
+                    const image = new Image()
+                    image.src = src
+                    items.push({
+                        src: src,
+                        w: image.width || $em2.width,
+                        h: image.height || $em2.height,
+                        title: title
+                    })
+                })
+                var gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, {
+                    index: parseInt(i)
+                });
+                gallery.init()
+            }
+        })
+    }
+    viewer_init()
+</script> 
+<!-- MathJax -->
+
+<!-- Katex -->
+
+<!-- busuanzi  -->
+ 
+<script src="/js/busuanzi-2.3.pure.min.js"></script>
+ 
+<!-- ClickLove -->
+ 
+<script src="/js/clickLove.js"></script>
+ 
+<!-- ClickBoom1 -->
+
+<!-- ClickBoom2 -->
+
+<!-- CodeCopy -->
+ 
+<link rel="stylesheet" href="/css/clipboard.css">
+ <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+<script>
+  function wait(callback, seconds) {
+    var timelag = null;
+    timelag = window.setTimeout(callback, seconds);
+  }
+  !function (e, t, a) {
+    var initCopyCode = function(){
+      var copyHtml = '';
+      copyHtml += '<button class="btn-copy" data-clipboard-snippet="">';
+      copyHtml += '<i class="ri-file-copy-2-line"></i><span>COPY</span>';
+      copyHtml += '</button>';
+      $(".highlight .code pre").before(copyHtml);
+      $(".article pre code").before(copyHtml);
+      var clipboard = new ClipboardJS('.btn-copy', {
+        target: function(trigger) {
+          return trigger.nextElementSibling;
+        }
+      });
+      clipboard.on('success', function(e) {
+        let $btn = $(e.trigger);
+        $btn.addClass('copied');
+        let $icon = $($btn.find('i'));
+        $icon.removeClass('ri-file-copy-2-line');
+        $icon.addClass('ri-checkbox-circle-line');
+        let $span = $($btn.find('span'));
+        $span[0].innerText = 'COPIED';
+        
+        wait(function () { // 等待两秒钟后恢复
+          $icon.removeClass('ri-checkbox-circle-line');
+          $icon.addClass('ri-file-copy-2-line');
+          $span[0].innerText = 'COPY';
+        }, 2000);
+      });
+      clipboard.on('error', function(e) {
+        e.clearSelection();
+        let $btn = $(e.trigger);
+        $btn.addClass('copy-failed');
+        let $icon = $($btn.find('i'));
+        $icon.removeClass('ri-file-copy-2-line');
+        $icon.addClass('ri-time-line');
+        let $span = $($btn.find('span'));
+        $span[0].innerText = 'COPY FAILED';
+        
+        wait(function () { // 等待两秒钟后恢复
+          $icon.removeClass('ri-time-line');
+          $icon.addClass('ri-file-copy-2-line');
+          $span[0].innerText = 'COPY';
+        }, 2000);
+      });
+    }
+    initCopyCode();
+  }(window, document);
+</script>
+ 
+<!-- CanvasBackground -->
+
+<script>
+  if (window.mermaid) {
+    mermaid.initialize({ theme: "forest" });
+  }
+</script>
+
+
+    
+  </div>
+</body>
+
+</html>
