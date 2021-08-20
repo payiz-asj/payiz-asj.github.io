@@ -2,6 +2,41 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://yeying.tech/%E7%AC%94%E8%AE%B0/Typora-Theme/</loc>
+    
+    <lastmod>2021-08-20</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://yeying.tech/%E7%AC%94%E8%AE%B0/Greek-alphabet/</loc>
+    
+    <lastmod>2021-08-20</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://yeying.tech/%E7%AC%94%E8%AE%B0/vs-keys/</loc>
+    
+    <lastmod>2021-08-20</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://yeying.tech/%E7%AC%94%E8%AE%B0/Pycharm-keys/</loc>
+    
+    <lastmod>2021-08-20</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://yeying.tech/Demo/faxuanzaixian/</loc>
+    
+    <lastmod>2021-08-20</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://yeying.tech/%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91/razor-pages/</loc>
     
     <lastmod>2021-08-20</lastmod>
@@ -24,13 +59,6 @@
   
   <url>
     <loc>https://yeying.tech/%E7%AC%94%E8%AE%B0/dot-net-core/</loc>
-    
-    <lastmod>2021-08-20</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://yeying.tech/%E7%AC%94%E8%AE%B0/Typora-Theme/</loc>
     
     <lastmod>2021-08-20</lastmod>
     
@@ -143,20 +171,6 @@
   
   <url>
     <loc>https://yeying.tech/%E7%AC%94%E8%AE%B0/git-learning/</loc>
-    
-    <lastmod>2021-07-28</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://yeying.tech/%E7%AC%94%E8%AE%B0/Greek-alphabet/</loc>
-    
-    <lastmod>2021-07-28</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://yeying.tech/%E7%AC%94%E8%AE%B0/vs-keys/</loc>
     
     <lastmod>2021-07-28</lastmod>
     
@@ -326,6 +340,20 @@
   </url>
   
   <url>
+    <loc>https://yeying.tech/tags/%E5%BF%AB%E6%8D%B7%E9%94%AE/</loc>
+    <lastmod>2021-08-20</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://yeying.tech/tags/Pycharm/</loc>
+    <lastmod>2021-08-20</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://yeying.tech/tags/%E5%B8%8C%E8%85%8A%E5%AD%97%E6%AF%8D/</loc>
     <lastmod>2021-08-20</lastmod>
     <changefreq>daily</changefreq>
@@ -355,6 +383,13 @@
   
   <url>
     <loc>https://yeying.tech/tags/net-Core/</loc>
+    <lastmod>2021-08-20</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://yeying.tech/tags/Js/</loc>
     <lastmod>2021-08-20</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -397,13 +432,6 @@
   
   <url>
     <loc>https://yeying.tech/tags/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E5%9F%BA%E7%A1%80/</loc>
-    <lastmod>2021-08-20</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://yeying.tech/tags/%E5%BF%AB%E6%8D%B7%E9%94%AE/</loc>
     <lastmod>2021-08-20</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -469,6 +497,13 @@
   
   <url>
     <loc>https://yeying.tech/categories/%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91/</loc>
+    <lastmod>2021-08-20</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://yeying.tech/categories/Demo/</loc>
     <lastmod>2021-08-20</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
