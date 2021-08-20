@@ -1,11 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://yeying.tech/%E4%B8%AA%E4%BA%BA%E9%A1%B9%E7%9B%AE/Gis/</loc>
-    <lastmod>2021-08-03</lastmod>
+    <loc>https://yeying.tech/%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91/razor-pages/</loc>
+    <lastmod>2021-08-20</lastmod>
+  </url>
+  <url>
+    <loc>https://yeying.tech/%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91/development-envirenment-configuration/</loc>
+    <lastmod>2021-08-20</lastmod>
+  </url>
+  <url>
+    <loc>https://yeying.tech/%E7%AC%94%E8%AE%B0/Csharp-review/</loc>
+    <lastmod>2021-08-20</lastmod>
+  </url>
+  <url>
+    <loc>https://yeying.tech/%E7%AC%94%E8%AE%B0/dot-net-core/</loc>
+    <lastmod>2021-08-20</lastmod>
+  </url>
+  <url>
+    <loc>https://yeying.tech/%E7%AC%94%E8%AE%B0/Typora-Theme/</loc>
+    <lastmod>2021-08-20</lastmod>
   </url>
   <url>
     <loc>https://yeying.tech/%E5%A5%A5%E8%BF%90%E4%BC%9A/olympic/</loc>
+    <lastmod>2021-08-20</lastmod>
+  </url>
+  <url>
+    <loc>https://yeying.tech/%E4%B8%AA%E4%BA%BA%E9%A1%B9%E7%9B%AE/Gis/</loc>
     <lastmod>2021-08-03</lastmod>
   </url>
   <url>
