@@ -16,6 +16,250 @@
       </tags>
   </entry>
   <entry>
+    <title>Pycharm 快捷键</title>
+    <url>/%E7%AC%94%E8%AE%B0/Pycharm-keys/</url>
+    <content><![CDATA[<h2 id="pycharm-快捷键"><a href="#pycharm-快捷键" class="headerlink" title="pycharm 快捷键"></a>pycharm 快捷键</h2><table>
+<thead>
+<tr>
+<th align="left">快捷键</th>
+<th align="left">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">Alt+Enter</td>
+<td align="left">自动添加包</td>
+</tr>
+<tr>
+<td align="left">shift+O</td>
+<td align="left">自动建议代码补全</td>
+</tr>
+<tr>
+<td align="left">Ctrl+t SVN</td>
+<td align="left">更新</td>
+</tr>
+<tr>
+<td align="left">Ctrl+k SVN</td>
+<td align="left">提交</td>
+</tr>
+<tr>
+<td align="left">Ctrl + /</td>
+<td align="left">注释(取消注释)选择的行</td>
+</tr>
+<tr>
+<td align="left">Ctrl+Shift+F</td>
+<td align="left">高级查找</td>
+</tr>
+<tr>
+<td align="left">Ctrl+Enter</td>
+<td align="left">补全</td>
+</tr>
+<tr>
+<td align="left">Shift + Enter</td>
+<td align="left">开始新行</td>
+</tr>
+<tr>
+<td align="left">TAB Shift+TAB</td>
+<td align="left">缩进/取消缩进所选择的行</td>
+</tr>
+</tbody></table>
+<span id="more"></span>
+
+<table>
+<thead>
+<tr>
+<th align="left"></th>
+<th align="left"></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">Ctrl + Alt + I</td>
+<td align="left">自动缩进行</td>
+</tr>
+<tr>
+<td align="left">Ctrl + Y</td>
+<td align="left">删除当前插入符所在的行</td>
+</tr>
+<tr>
+<td align="left">Ctrl + D</td>
+<td align="left">复制当前行、或者选择的块</td>
+</tr>
+<tr>
+<td align="left">Ctrl + Shift + J</td>
+<td align="left">合并行</td>
+</tr>
+<tr>
+<td align="left">Ctrl + Shift + V</td>
+<td align="left">从最近的缓存区里粘贴</td>
+</tr>
+<tr>
+<td align="left">Ctrl + Delete</td>
+<td align="left">删除到字符结尾</td>
+</tr>
+<tr>
+<td align="left">Ctrl + Backspace</td>
+<td align="left">删除到字符的开始</td>
+</tr>
+<tr>
+<td align="left">Ctrl + NumPad+/-</td>
+<td align="left">展开或者收缩代码块</td>
+</tr>
+<tr>
+<td align="left">Ctrl + Shift + NumPad+</td>
+<td align="left">展开所有的代码块</td>
+</tr>
+<tr>
+<td align="left">Ctrl + Shift + NumPad-</td>
+<td align="left">收缩所有的代码块</td>
+</tr>
+<tr>
+<td align="left">Ctrl + N</td>
+<td align="left">跳转到类</td>
+</tr>
+<tr>
+<td align="left">Ctrl + Shift + N</td>
+<td align="left">跳转到符号</td>
+</tr>
+<tr>
+<td align="left">Alt + Right/Left</td>
+<td align="left">跳转到下一个、前一个编辑的选项卡</td>
+</tr>
+<tr>
+<td align="left">F12</td>
+<td align="left">回到先前的工具窗口</td>
+</tr>
+<tr>
+<td align="left">Esc</td>
+<td align="left">从工具窗口回到编辑窗口</td>
+</tr>
+<tr>
+<td align="left">Shift + Esc</td>
+<td align="left">隐藏运行的、最近运行的窗口</td>
+</tr>
+<tr>
+<td align="left">Ctrl + Shift + F4</td>
+<td align="left">关闭主动运行的选项卡</td>
+</tr>
+<tr>
+<td align="left">Ctrl + G</td>
+<td align="left">查看当前行号、字符号</td>
+</tr>
+<tr>
+<td align="left">Ctrl + E</td>
+<td align="left">当前文件弹出</td>
+</tr>
+<tr>
+<td align="left">Ctrl+Alt+Left/Right</td>
+<td align="left">后退、前进</td>
+</tr>
+<tr>
+<td align="left">Ctrl+Shift+Backspace</td>
+<td align="left">导航到最近编辑区域</td>
+</tr>
+<tr>
+<td align="left">Alt + F1</td>
+<td align="left">查找当前文件或标识</td>
+</tr>
+<tr>
+<td align="left">Ctrl+B / Ctrl+Click</td>
+<td align="left">跳转到声明</td>
+</tr>
+<tr>
+<td align="left">Ctrl + Alt + B</td>
+<td align="left">跳转到实现</td>
+</tr>
+<tr>
+<td align="left">Ctrl + Shift + I</td>
+<td align="left">查看快速定义</td>
+</tr>
+<tr>
+<td align="left">Ctrl + Shift + B</td>
+<td align="left">跳转到类型声明</td>
+</tr>
+<tr>
+<td align="left">Ctrl + U</td>
+<td align="left">跳转到父方法、父类</td>
+</tr>
+<tr>
+<td align="left">Alt + Up/Down</td>
+<td align="left">跳转到上一个、下一个方法</td>
+</tr>
+<tr>
+<td align="left">Ctrl + ]/[</td>
+<td align="left">跳转到代码块结束、开始</td>
+</tr>
+<tr>
+<td align="left">Ctrl + F12</td>
+<td align="left">弹出文件结构</td>
+</tr>
+<tr>
+<td align="left">Ctrl + H</td>
+<td align="left">类型层次结构</td>
+</tr>
+<tr>
+<td align="left">Ctrl + Shift + H</td>
+<td align="left">方法层次结构</td>
+</tr>
+<tr>
+<td align="left">Ctrl + Alt + H</td>
+<td align="left">调用层次结构</td>
+</tr>
+<tr>
+<td align="left">F2 / Shift + F2</td>
+<td align="left">下一条、前一条高亮的错误</td>
+</tr>
+<tr>
+<td align="left">F4 / Ctrl + Enter</td>
+<td align="left">编辑资源、查看资源</td>
+</tr>
+<tr>
+<td align="left">Alt + Home</td>
+<td align="left">显示导航条F11书签开关</td>
+</tr>
+<tr>
+<td align="left">Ctrl + Shift + F11</td>
+<td align="left">书签助记开关</td>
+</tr>
+<tr>
+<td align="left">Ctrl + #[0-9]</td>
+<td align="left">跳转到标识的书签</td>
+</tr>
+<tr>
+<td align="left">Shift + F11</td>
+<td align="left"></td>
+</tr>
+</tbody></table>
+]]></content>
+      <categories>
+        <category>笔记</category>
+      </categories>
+      <tags>
+        <tag>快捷键</tag>
+        <tag>Pycharm</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>小代码分享</title>
+    <url>/Demo/faxuanzaixian/</url>
+    <content><![CDATA[<h2 id="小代码分享"><a href="#小代码分享" class="headerlink" title="小代码分享"></a>小代码分享</h2><h4 id="法宣在线考试自动作答-且得满分"><a href="#法宣在线考试自动作答-且得满分" class="headerlink" title="法宣在线考试自动作答(且得满分)"></a><a href="https://www.cnblogs.com/QIAOXINGXING001/p/14002849.html">法宣在线考试自动作答(且得满分)</a></h4><h2 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h2><p><strong>仅供学习交流</strong><br>    功能：法宣在线考试, 自动获取答案, 完成考试.</p>
+<h2 id="运行方法"><a href="#运行方法" class="headerlink" title="运行方法"></a>运行方法</h2><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="number">1.</span> 使用chrome浏览器登录法宣在线, 进入考试页面;</span><br><span class="line"><span class="number">2.</span> 单击浏览器的地址栏, 按快捷键F12;如果按不出来，说明平台截取并禁用了，那就用Chrome自带菜单: 更多工具 - 开发者工具;</span><br><span class="line"><span class="number">3.</span> 定位到<span class="built_in">console</span>/控制台面板, 粘贴代码, 回车;</span><br><span class="line"><span class="number">4.</span> 程序开始执行, 每秒答一道题, 等待答题完成;</span><br></pre></td></tr></table></figure>
+
+<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> answer = [];</span><br><span class="line"><span class="keyword">var</span> times = <span class="number">0</span>;</span><br><span class="line"><span class="keyword">var</span> totalTimes = <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> Next = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> questionId = answer[times][<span class="string">&#x27;questionId&#x27;</span>]</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">&quot;questionId&quot;</span>, questionId)</span><br><span class="line">    $(<span class="string">`[id$=_<span class="subst">$&#123;questionId&#125;</span>]`</span>).click();</span><br><span class="line">    <span class="built_in">setTimeout</span>(</span><br><span class="line">        <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">            <span class="keyword">var</span> strAns = answer[times][<span class="string">&#x27;answerNo&#x27;</span>];</span><br><span class="line">            <span class="keyword">var</span> arrA = strAns.split(<span class="string">&#x27;&#x27;</span>);</span><br><span class="line">            <span class="keyword">for</span> (a <span class="keyword">of</span> arrA) &#123;</span><br><span class="line">                <span class="built_in">console</span>.debug(a);</span><br><span class="line">                $(<span class="string">&#x27;input[value=&#x27;</span> + a + <span class="string">&#x27;]&#x27;</span>).click()</span><br><span class="line">            &#125;</span><br><span class="line">            times += <span class="number">1</span>;</span><br><span class="line">            <span class="keyword">if</span> (times &lt; totalTimes) &#123;</span><br><span class="line">                Next();</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">else</span> &#123;</span><br><span class="line">                <span class="built_in">console</span>.debug(<span class="string">&#x27;完成&#x27;</span>);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;, <span class="number">1000</span>);</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> start = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.debug(<span class="string">&#x27;开始&#x27;</span>);</span><br><span class="line">    <span class="keyword">let</span> cookie = <span class="built_in">document</span>.cookie;</span><br><span class="line">    <span class="keyword">let</span> matchArray = cookie.match(<span class="regexp">/_EXAM(\d+)_PAPER(\d+)_SERIES(\d+)/</span>);</span><br><span class="line">    <span class="keyword">let</span> examId = matchArray[<span class="number">1</span>];</span><br><span class="line">    <span class="keyword">let</span> paperId = matchArray[<span class="number">2</span>];</span><br><span class="line">    <span class="keyword">let</span> seriesId = matchArray[<span class="number">3</span>];</span><br><span class="line">    <span class="keyword">let</span> answerUrl = <span class="string">`http://www.faxuanyun.com//ess/service/getpaper?paperId=<span class="subst">$&#123;paperId&#125;</span>&amp;series=<span class="subst">$&#123;seriesId&#125;</span>_answer`</span></span><br><span class="line">    fetch(answerUrl, &#123;</span><br><span class="line">        <span class="string">&quot;headers&quot;</span>: &#123;</span><br><span class="line">            <span class="string">&quot;cache-control&quot;</span>: <span class="string">&quot;no-cache&quot;</span>,</span><br><span class="line">            <span class="string">&quot;pragma&quot;</span>: <span class="string">&quot;no-cache&quot;</span>,</span><br><span class="line">            <span class="string">&quot;upgrade-insecure-requests&quot;</span>: <span class="string">&quot;1&quot;</span></span><br><span class="line">        &#125;,</span><br><span class="line">        <span class="string">&quot;referrerPolicy&quot;</span>: <span class="string">&quot;strict-origin-when-cross-origin&quot;</span>,</span><br><span class="line">        <span class="string">&quot;body&quot;</span>: <span class="literal">null</span>,</span><br><span class="line">        <span class="string">&quot;method&quot;</span>: <span class="string">&quot;GET&quot;</span>,</span><br><span class="line">        <span class="string">&quot;mode&quot;</span>: <span class="string">&quot;cors&quot;</span>,</span><br><span class="line">        <span class="string">&quot;credentials&quot;</span>: <span class="string">&quot;include&quot;</span></span><br><span class="line">    &#125;).then(<span class="function"><span class="params">res</span> =&gt;</span> res.text()).then(<span class="function"><span class="params">body</span> =&gt;</span> &#123;</span><br><span class="line">        <span class="built_in">console</span>.debug(<span class="string">&quot;test&quot;</span>, body);</span><br><span class="line">        <span class="keyword">let</span> answerString = body.split(<span class="string">&quot;\n&quot;</span>)[<span class="number">2</span>];</span><br><span class="line">        answer = <span class="built_in">JSON</span>.parse(answerString);</span><br><span class="line">        totalTimes = answer.length;</span><br><span class="line">        Next();</span><br><span class="line">    &#125;);</span><br><span class="line">&#125;</span><br><span class="line">start();</span><br></pre></td></tr></table></figure>
+
+<h2 id="原理"><a href="#原理" class="headerlink" title="原理"></a>原理</h2><p>这个地址可以获取到考试的答案: </p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">http:<span class="comment">//xf.faxuan.net/ess/service/getpaper?paperId=$&#123;paperId&#125;&amp;series=$&#123;seriesId&#125;_answer</span></span><br></pre></td></tr></table></figure>
+
+
+
+
+]]></content>
+      <categories>
+        <category>Demo</category>
+      </categories>
+      <tags>
+        <tag>Js</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>RazorPages Web开发</title>
     <url>/%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91/razor-pages/</url>
     <content><![CDATA[<p>以下笔记为观看B站视频<a href="https://www.bilibili.com/video/BV1PV411p7hs?p=11&spm_id_from=pageDriver">Razor Pages学生管理系统+asp.net core MVC图书管理系统</a>过程中的值得记录的地方。</p>
@@ -1554,7 +1798,7 @@ https://docs.microsoft.com/zh-cn/sql/integration-services/import-export-data/con
 <p><img src="https://cdn.nlark.com/yuque/0/2020/png/87080/1601995438349-69050b62-c787-405a-bcd6-eaca555e6f2d.png" alt="img"></p>
 <p>针对每一个输入框，还需要利用等价类划分法、边界值分析法以及错误推测法设计正确和错误的测试数据分别对邮箱名、昵称、密码输入框进行测试。</p>
 <p>实际工作中，可以将输入框测试的测试数据合理地设计到上表中，即在利用正交表测试输入框组合时，同时进行输入框测试。</p>
-<p>例如，对于表中的第二行组合，需要输入正确的邮箱名、错误的昵称、错误的密码。那么这个正确邮箱名的测试数据，可以从邮箱名的有效等价类中选一个（如<a href="mailto:&#116;&#x65;&#x73;&#116;&#x5f;&#49;&#x32;&#51;&#45;&#97;&#64;&#x71;&#113;&#46;&#x63;&#x6f;&#x6d;">&#116;&#x65;&#x73;&#116;&#x5f;&#49;&#x32;&#51;&#45;&#97;&#64;&#x71;&#113;&#46;&#x63;&#x6f;&#x6d;</a>）；错误昵称的测试数据，可以从昵称的无效等价类中选一个（如@@@）；同理，错误密码的测试数据，可以从密码的无效等价类，或者从边界值中不符合需求的测试数据中选取（如取五位密码12345），那么第二行组合的用例可以设计为如下表，这样在进行组合测试时，就已经对每个输入框的某些测试点进行了测试。</p>
+<p>例如，对于表中的第二行组合，需要输入正确的邮箱名、错误的昵称、错误的密码。那么这个正确邮箱名的测试数据，可以从邮箱名的有效等价类中选一个（如<a href="mailto:&#116;&#x65;&#x73;&#116;&#95;&#x31;&#x32;&#51;&#45;&#97;&#64;&#x71;&#x71;&#x2e;&#99;&#x6f;&#x6d;">&#116;&#x65;&#x73;&#116;&#95;&#x31;&#x32;&#51;&#45;&#97;&#64;&#x71;&#x71;&#x2e;&#99;&#x6f;&#x6d;</a>）；错误昵称的测试数据，可以从昵称的无效等价类中选一个（如@@@）；同理，错误密码的测试数据，可以从密码的无效等价类，或者从边界值中不符合需求的测试数据中选取（如取五位密码12345），那么第二行组合的用例可以设计为如下表，这样在进行组合测试时，就已经对每个输入框的某些测试点进行了测试。</p>
 <p>在本例中，QQ邮箱注册模块的功能测试用例其实就是将邮箱名的用例、昵称的用例、密码的用例合理地组合起来，通过如表的组合设计，覆盖所有的测试点。本测试用例的设计主要考察测试人员对常用用例设计方法的运用能力。</p>
 <p><img src="https://cdn.nlark.com/yuque/0/2020/png/87080/1601995528070-78402970-77e0-4485-bdf3-2bf93eaf0154.png" alt="img"></p>
 <h1 id="QQ邮箱登录模块"><a href="#QQ邮箱登录模块" class="headerlink" title="QQ邮箱登录模块"></a>QQ邮箱登录模块</h1><p>登录操作是QQ邮箱最常用的功能之一，使用QQ邮箱首先要登录，登录成功才能对邮箱系统进行操作。接下来本书就以QQ邮箱的登录模块（简化版）为例来分析一下它的测试思路，如图</p>
@@ -4366,10 +4610,6 @@ https://docs.microsoft.com/zh-cn/sql/integration-services/import-export-data/con
     <title>Visual Studio 快捷键</title>
     <url>/%E7%AC%94%E8%AE%B0/vs-keys/</url>
     <content><![CDATA[<p>总结了几个Visual Studio 好用的快捷键，以后会再继续加。</p>
-<span id="more"></span>
-
-
-
 <table>
 <thead>
 <tr>
@@ -4406,7 +4646,7 @@ https://docs.microsoft.com/zh-cn/sql/integration-services/import-export-data/con
 <td>Ctrl+K+F</td>
 </tr>
 </tbody></table>
-]]></content>
+<span id="more"></span>]]></content>
       <categories>
         <category>笔记</category>
       </categories>
@@ -4419,10 +4659,6 @@ https://docs.microsoft.com/zh-cn/sql/integration-services/import-export-data/con
     <title>希腊字母及读音</title>
     <url>/%E7%AC%94%E8%AE%B0/Greek-alphabet/</url>
     <content><![CDATA[<p>给大家安利一张表格，方便记下希腊字母的读音。</p>
-<span id="more"></span>
-
-
-
 <table>
 <thead>
 <tr>
@@ -4456,7 +4692,19 @@ https://docs.microsoft.com/zh-cn/sql/integration-services/import-export-data/con
 <td>delta</td>
 <td>德尔塔</td>
 </tr>
+</tbody></table>
+<span id="more"></span>
+
+<table>
+<thead>
 <tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
 <td>Ε</td>
 <td>ε</td>
 <td>epsilon</td>

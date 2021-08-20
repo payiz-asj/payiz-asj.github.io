@@ -6,7 +6,7 @@
   <link href="https://yeying.tech/atom.xml" rel="self"/>
   
   <link href="https://yeying.tech/"/>
-  <updated>2021-08-20T01:04:43.900Z</updated>
+  <updated>2021-08-20T01:19:53.667Z</updated>
   <id>https://yeying.tech/</id>
   
   <author>
@@ -15,6 +15,227 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Typora美化</title>
+    <link href="https://yeying.tech/%E7%AC%94%E8%AE%B0/Typora-Theme/"/>
+    <id>https://yeying.tech/%E7%AC%94%E8%AE%B0/Typora-Theme/</id>
+    <published>2021-08-19T15:59:14.000Z</published>
+    <updated>2021-08-20T01:19:53.667Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;​        偶然间看到某位大佬的Typora界面特别优美，于是搜了一下打开新世界！感觉更加离不开Typora了！&lt;/p&gt;
+&lt;p&gt;​        居然我一个熟悉CSS的人，还不知道Typora界面主题渲染竟然就靠CSS样式文件！既然这样，那就可以随便玩儿了，嘿嘿嘿 “^ _ ^”    &lt;/p&gt;
+&lt;h3 id=&quot;分享&quot;&gt;&lt;a href=&quot;#分享&quot; class=&quot;headerlink&quot; title=&quot;分享&quot;&gt;&lt;/a&gt;分享&lt;/h3&gt;&lt;p&gt;​        我自己的界面不展示了，直接放一个别人写的优秀的教程吧！&lt;/p&gt;
+&lt;p&gt;​        &lt;a href=&quot;https://blog.csdn.net/weixin_39246554/article/details/115425075&quot;&gt;网址：&lt;/a&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="笔记" scheme="https://yeying.tech/categories/%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="Typora" scheme="https://yeying.tech/tags/Typora/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>希腊字母及读音</title>
+    <link href="https://yeying.tech/%E7%AC%94%E8%AE%B0/Greek-alphabet/"/>
+    <id>https://yeying.tech/%E7%AC%94%E8%AE%B0/Greek-alphabet/</id>
+    <published>2019-04-09T10:02:54.000Z</published>
+    <updated>2021-08-20T01:19:26.056Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;给大家安利一张表格，方便记下希腊字母的读音。&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;大写&lt;/th&gt;
+&lt;th&gt;小写&lt;/th&gt;
+&lt;th&gt;英文注音&lt;/th&gt;
+&lt;th&gt;中文读音&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td&gt;Α&lt;/td&gt;
+&lt;td&gt;α&lt;/td&gt;
+&lt;td&gt;alpha&lt;/td&gt;
+&lt;td&gt;阿尔法&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Β&lt;/td&gt;
+&lt;td&gt;β&lt;/td&gt;
+&lt;td&gt;beta&lt;/td&gt;
+&lt;td&gt;贝塔&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Γ&lt;/td&gt;
+&lt;td&gt;γ&lt;/td&gt;
+&lt;td&gt;gamma&lt;/td&gt;
+&lt;td&gt;伽马&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Δ&lt;/td&gt;
+&lt;td&gt;δ&lt;/td&gt;
+&lt;td&gt;delta&lt;/td&gt;
+&lt;td&gt;德尔塔&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;</summary>
+    
+    
+    
+    <category term="笔记" scheme="https://yeying.tech/categories/%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="希腊字母" scheme="https://yeying.tech/tags/%E5%B8%8C%E8%85%8A%E5%AD%97%E6%AF%8D/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Visual Studio 快捷键</title>
+    <link href="https://yeying.tech/%E7%AC%94%E8%AE%B0/vs-keys/"/>
+    <id>https://yeying.tech/%E7%AC%94%E8%AE%B0/vs-keys/</id>
+    <published>2019-04-10T09:52:55.000Z</published>
+    <updated>2021-08-20T01:18:42.083Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;总结了几个Visual Studio 好用的快捷键，以后会再继续加。&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;功能&lt;/th&gt;
+&lt;th&gt;快捷键&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td&gt;注释&lt;/td&gt;
+&lt;td&gt;Ctrl + K  Ctrl + C&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;取消注释&lt;/td&gt;
+&lt;td&gt;Ctrl + K  Ctrl + U&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;快速换行&lt;/td&gt;
+&lt;td&gt;Ctrl + Shift + Enter&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;复制当前行&lt;/td&gt;
+&lt;td&gt;Ctrl + D&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;强迫显示参数信息&lt;/td&gt;
+&lt;td&gt;Ctrl-Shift-空格&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;插入代码段&lt;/td&gt;
+&lt;td&gt;Ctrl+K，X&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;代码自动对齐&lt;/td&gt;
+&lt;td&gt;Ctrl+K+F&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;</summary>
+    
+    
+    
+    <category term="笔记" scheme="https://yeying.tech/categories/%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="快捷键" scheme="https://yeying.tech/tags/%E5%BF%AB%E6%8D%B7%E9%94%AE/"/>
+    
+    <category term="Visual Studio" scheme="https://yeying.tech/tags/Visual-Studio/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Pycharm 快捷键</title>
+    <link href="https://yeying.tech/%E7%AC%94%E8%AE%B0/Pycharm-keys/"/>
+    <id>https://yeying.tech/%E7%AC%94%E8%AE%B0/Pycharm-keys/</id>
+    <published>2021-08-19T15:15:03.000Z</published>
+    <updated>2021-08-20T01:18:23.359Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;pycharm-快捷键&quot;&gt;&lt;a href=&quot;#pycharm-快捷键&quot; class=&quot;headerlink&quot; title=&quot;pycharm 快捷键&quot;&gt;&lt;/a&gt;pycharm 快捷键&lt;/h2&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&quot;left&quot;&gt;快捷键&lt;/th&gt;
+&lt;th align=&quot;left&quot;&gt;说明&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Alt+Enter&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;自动添加包&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;shift+O&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;自动建议代码补全&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Ctrl+t SVN&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;更新&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Ctrl+k SVN&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;提交&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Ctrl + /&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;注释(取消注释)选择的行&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Ctrl+Shift+F&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;高级查找&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Ctrl+Enter&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;补全&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Shift + Enter&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;开始新行&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;TAB Shift+TAB&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;缩进/取消缩进所选择的行&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;</summary>
+    
+    
+    
+    <category term="笔记" scheme="https://yeying.tech/categories/%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="快捷键" scheme="https://yeying.tech/tags/%E5%BF%AB%E6%8D%B7%E9%94%AE/"/>
+    
+    <category term="Pycharm" scheme="https://yeying.tech/tags/Pycharm/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>小代码分享</title>
+    <link href="https://yeying.tech/Demo/faxuanzaixian/"/>
+    <id>https://yeying.tech/Demo/faxuanzaixian/</id>
+    <published>2021-08-18T16:08:57.000Z</published>
+    <updated>2021-08-20T01:13:19.801Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;小代码分享&quot;&gt;&lt;a href=&quot;#小代码分享&quot; class=&quot;headerlink&quot; title=&quot;小代码分享&quot;&gt;&lt;/a&gt;小代码分享&lt;/h2&gt;&lt;h4 id=&quot;法宣在线考试自动作答-且得满分&quot;&gt;&lt;a href=&quot;#法宣在线考试自动作答-且得满分&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Demo" scheme="https://yeying.tech/categories/Demo/"/>
+    
+    
+    <category term="Js" scheme="https://yeying.tech/tags/Js/"/>
+    
+  </entry>
   
   <entry>
     <title>RazorPages Web开发</title>
@@ -119,28 +340,6 @@
     <category term="C#" scheme="https://yeying.tech/tags/C/"/>
     
     <category term=".net Core" scheme="https://yeying.tech/tags/net-Core/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Typora美化</title>
-    <link href="https://yeying.tech/%E7%AC%94%E8%AE%B0/Typora-Theme/"/>
-    <id>https://yeying.tech/%E7%AC%94%E8%AE%B0/Typora-Theme/</id>
-    <published>2021-08-19T17:14:14.000Z</published>
-    <updated>2021-08-20T01:02:53.094Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;​        偶然间看到某位大佬的Typora界面特别优美，于是搜了一下打开新世界！感觉更加离不开Typora了！&lt;/p&gt;
-&lt;p&gt;​        居然我一个熟悉CSS的人，还不知道Typora界面主题渲染竟然就靠CSS样式文件！既然这样，那就可以随便玩儿了，嘿嘿嘿 “^ _ ^”    &lt;/p&gt;
-&lt;h3 id=&quot;分享&quot;&gt;&lt;a href=&quot;#分享&quot; class=&quot;headerlink&quot; title=&quot;分享&quot;&gt;&lt;/a&gt;分享&lt;/h3&gt;&lt;p&gt;​        我自己的界面不展示了，直接放一个别人写的优秀的教程吧！&lt;/p&gt;
-&lt;p&gt;​        &lt;a href=&quot;https://blog.csdn.net/weixin_39246554/article/details/115425075&quot;&gt;网址：&lt;/a&gt;&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="笔记" scheme="https://yeying.tech/categories/%E7%AC%94%E8%AE%B0/"/>
-    
-    
-    <category term="Typora" scheme="https://yeying.tech/tags/Typora/"/>
     
   </entry>
   
@@ -431,102 +630,6 @@
     
     
     <category term="校园" scheme="https://yeying.tech/tags/%E6%A0%A1%E5%9B%AD/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>NJU 足球赛程管理系统</title>
-    <link href="https://yeying.tech/%E4%B8%AA%E4%BA%BA%E9%A1%B9%E7%9B%AE/NJU-FOOTBALL/"/>
-    <id>https://yeying.tech/%E4%B8%AA%E4%BA%BA%E9%A1%B9%E7%9B%AE/NJU-FOOTBALL/</id>
-    <published>2020-12-24T07:03:00.000Z</published>
-    <updated>2021-07-31T09:05:54.231Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;​        为了方便学校足球爱好者们及时查看校内足球赛程，花 3 天自学 SQL Server + C# ，制作了一个界面化 Windows 端桌面程序。期间学习到的东西很多！&lt;/p&gt;
-&lt;h2 id=&quot;项目介绍：&quot;&gt;&lt;a href=&quot;#项目介绍：&quot; class=&quot;headerlink&quot; title=&quot;项目介绍：&quot;&gt;&lt;/a&gt;项目介绍：&lt;/h2&gt;&lt;p&gt;项目名称：NJU足球赛程管理系统&lt;br&gt;项目环境：Sql Server 2019 + Visual Studio 2019&lt;br&gt;项目编程语言：Sql Server + C#.net&lt;br&gt;日期：2020.12.18 04:24 (UTC+08:00)&lt;/p&gt;
-&lt;p&gt;项目描述：&lt;br&gt;    提供针对NJU足球赛事的赛程查询、增加、修改、删除等功能，方便同学们自助关注NJU足球赛事。&lt;br&gt;    程序界面由Visual Studio 2019 利用C#.Net语言WPF框架开发，后端数据则保存在Sql Server Express数据库中，利用 SQL Server Management Studio (SSMS)  2018中创建和管理，同时也在VS中通过ADO.Net技术进行连接和操纵。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="个人项目" scheme="https://yeying.tech/categories/%E4%B8%AA%E4%BA%BA%E9%A1%B9%E7%9B%AE/"/>
-    
-    
-    <category term="C#" scheme="https://yeying.tech/tags/C/"/>
-    
-    <category term="Sql Server" scheme="https://yeying.tech/tags/Sql-Server/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>博客初建</title>
-    <link href="https://yeying.tech/%E5%8D%9A%E4%B8%BB%E5%AF%84%E8%AF%AD/blog-firstday/"/>
-    <id>https://yeying.tech/%E5%8D%9A%E4%B8%BB%E5%AF%84%E8%AF%AD/blog-firstday/</id>
-    <published>2019-03-05T02:13:34.000Z</published>
-    <updated>2021-07-28T20:41:27.505Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 align=&quot;center&quot;&gt;HELLO 👋&lt;/h1&gt;
-您好，
-
-&lt;p&gt;​        欢迎来到我的个人博客！&lt;/p&gt;
-&lt;p&gt;​        平时会抽空分享一些技术文章和我学习、生活中一些有趣的事情。🎶&lt;/p&gt;
-&lt;p&gt;​        此外，还可通过 “</summary>
-        
-      
-    
-    
-    
-    <category term="博主寄语" scheme="https://yeying.tech/categories/%E5%8D%9A%E4%B8%BB%E5%AF%84%E8%AF%AD/"/>
-    
-    
-    <category term="欢迎" scheme="https://yeying.tech/tags/%E6%AC%A2%E8%BF%8E/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Git 学习笔记</title>
-    <link href="https://yeying.tech/%E7%AC%94%E8%AE%B0/git-learning/"/>
-    <id>https://yeying.tech/%E7%AC%94%E8%AE%B0/git-learning/</id>
-    <published>2019-04-06T09:29:41.000Z</published>
-    <updated>2021-07-28T20:40:17.091Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;记录 Git 的一些常用指令与问题解决方案。&lt;/p&gt;
-&lt;p&gt;更加具体的内容请看以下仓库：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://github.com/payiz-asj/git-tips&quot;&gt;Git 的奇技淫巧&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://github.com/payiz-asj/HelloGitHub&quot;&gt;GitHub 上有趣、入门级的开源项目&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</summary>
-    
-    
-    
-    <category term="笔记" scheme="https://yeying.tech/categories/%E7%AC%94%E8%AE%B0/"/>
-    
-    
-    <category term="github" scheme="https://yeying.tech/tags/github/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>希腊字母及读音</title>
-    <link href="https://yeying.tech/%E7%AC%94%E8%AE%B0/Greek-alphabet/"/>
-    <id>https://yeying.tech/%E7%AC%94%E8%AE%B0/Greek-alphabet/</id>
-    <published>2019-04-09T10:02:54.000Z</published>
-    <updated>2021-07-28T20:39:46.703Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;给大家安利一张表格，方便记下希腊字母的读音。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="笔记" scheme="https://yeying.tech/categories/%E7%AC%94%E8%AE%B0/"/>
-    
-    
-    <category term="希腊字母" scheme="https://yeying.tech/tags/%E5%B8%8C%E8%85%8A%E5%AD%97%E6%AF%8D/"/>
     
   </entry>
   
