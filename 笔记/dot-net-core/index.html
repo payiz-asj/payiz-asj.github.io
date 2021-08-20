@@ -15,7 +15,7 @@
         name="viewport"
         content="width=device-width, initial-scale=1, maximum-scale=1"
       />
-      <title>2020 东京奥运会 |  夜莺悠吟</title>
+      <title>.net core学习笔记 |  夜莺悠吟</title>
   <meta name="generator" content="hexo-theme-ayer">
       
       <link rel="shortcut icon" href="/favicon.ico" />
@@ -49,7 +49,7 @@
       <section class="outer">
   
 <article
-  id="post-olympic"
+  id="post-dot-net-core"
   class="article article-type-post"
   itemscope
   itemprop="blogPost"
@@ -60,7 +60,7 @@
     <header class="article-header">
        
 <h1 class="article-title sea-center" style="border-left:0" itemprop="name">
-  2020 东京奥运会
+  .net core学习笔记
 </h1>
  
 
@@ -68,11 +68,11 @@
     </header>
      
     <div class="article-meta">
-      <a href="/%E5%A5%A5%E8%BF%90%E4%BC%9A/olympic/" class="article-date">
-  <time datetime="2021-07-23T09:02:54.000Z" itemprop="datePublished">2021-07-23</time>
+      <a href="/%E7%AC%94%E8%AE%B0/dot-net-core/" class="article-date">
+  <time datetime="2021-08-15T00:42:17.000Z" itemprop="datePublished">2021-08-15</time>
 </a> 
   <div class="article-category">
-    <a class="article-category-link" href="/categories/%E5%A5%A5%E8%BF%90%E4%BC%9A/">奥运会</a>
+    <a class="article-category-link" href="/categories/%E7%AC%94%E8%AE%B0/">笔记</a>
   </div>
   
 <div class="word_count">
@@ -80,7 +80,7 @@
         <span class="post-meta-item-icon">
             <i class="ri-quill-pen-line"></i>
             <span class="post-meta-item-text"> 字数统计:</span>
-            <span class="post-count">41</span>
+            <span class="post-count">1.9k</span>
         </span>
     </span>
 
@@ -89,7 +89,7 @@
         <span class="post-meta-item-icon">
             <i class="ri-book-open-line"></i>
             <span class="post-meta-item-text"> 阅读时长≈</span>
-            <span class="post-count">1 分钟</span>
+            <span class="post-count">7 分钟</span>
         </span>
     </span>
 </div>
@@ -104,12 +104,165 @@
   
     <div class="article-entry" itemprop="articleBody">
        
-  <h1 align="center">中国加油 💪</h1>
-<img align="center" src="https://pic.imgdb.cn/item/6103c3dd5132923bf82857f0.png" >
+  <p>以下笔记为观看B站视频<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1tK4y1j7Eu?p=16&spm_id_from=pageDriver">.NET5零基础到精通实战全集</a>过程中的值得记录的地方。</p>
+<span id="more"></span>
 
-<p><strong>网页链接：</strong>     <a target="_blank" rel="noopener" href="https://tiyu.baidu.com/tokyoly/home/tab/%E8%B5%9B%E7%A8%8B/type/hot">赛程</a>                                      <a target="_blank" rel="noopener" href="https://tiyu.baidu.com/tokyoly/home/tab/%E5%A5%96%E7%89%8C%E6%A6%9C">奖牌榜</a>                                 <a target="_blank" rel="noopener" href="https://tiyu.baidu.com/tokyoly/home/tab/%E5%A5%A5%E8%BF%90%E9%A1%B9%E7%9B%AE">奥运项目</a>                                   <a target="_blank" rel="noopener" href="https://tiyu.baidu.com/tokyoly/home/tab/%E6%96%B0%E9%97%BB">新闻</a></p>
-<p><strong>直播地址：</strong><a target="_blank" rel="noopener" href="https://www.miguvideo.com/mgs/website/prd/sportsHomePage.html">咪咕视频-东京奥运会</a></p>
-<h3 id="关注奥运会，支持祖国！💖"><a href="#关注奥运会，支持祖国！💖" class="headerlink" title="关注奥运会，支持祖国！💖"></a>关注奥运会，支持祖国！💖</h3> 
+
+
+<h3 id="net开发最新发展历程"><a href="#net开发最新发展历程" class="headerlink" title=".net开发最新发展历程"></a>.net开发最新发展历程</h3><p>c#6 新特性：</p>
+<ul>
+<li>lamda表达式简化函数</li>
+<li>string.format</li>
+<li>using static 可直接访问静态类静态方法</li>
+<li>？只能为可空类型服务  ，   ？？检查并提供默认值</li>
+<li>try catch 增加 where</li>
+<li>nameof(class)    //将类的名称转换成字符串</li>
+<li>使用索引器初始化关联数组</li>
+</ul>
+<p>c#7 新特性：</p>
+<ul>
+<li>Out变量</li>
+<li>元祖初始化、拷贝都很方便，函数可返回元祖，也可由于out形参</li>
+<li>弃元（函数返回值）</li>
+<li>模式</li>
+<li>本地方法/本地函数（即：函数中再声明实现一个函数）</li>
+<li>默认文本表达式</li>
+<li>数字语法改进</li>
+<li>命名实参（用:说明）</li>
+<li>private protected访问修饰符-新复合访问修饰符</li>
+<li>增强的泛型约束（增加了enum约束）约束不能为空</li>
+<li>通用的异步返回类型</li>
+</ul>
+<p>c#8 新特性：</p>
+<ul>
+<li>默认接口方法(可在接口中实现)</li>
+<li>switch表达式+lamda表达式</li>
+<li>属性模式 </li>
+<li>元祖模式</li>
+<li>位置模式</li>
+<li>静态本地函数</li>
+<li>异步流</li>
+</ul>
+<p>c#9 新特性：</p>
+<ul>
+<li>记录（针对属性、针对方法）</li>
+<li>顶级语句（与pythonl类似！！！）</li>
+<li>对象声明（简化）</li>
+<li>静态修饰（lamda表达式中）</li>
+<li>模式匹配（简化判断）</li>
+<li>为空判断（is not null）</li>
+<li>协变返回值</li>
+<li>子类重写父类函数时，返回值可为子类！</li>
+<li>新增数据类型nint、nuint、nfloat等，n为native的缩写，这些类型的大小取自于编译环境原生的数据大小，比如x32占4字节、x64占8字节</li>
+<li>lamda参数弃元</li>
+<li>关系匹配</li>
+</ul>
+<hr>
+<h3 id="Asp-net-core-开发（5-0版本）"><a href="#Asp-net-core-开发（5-0版本）" class="headerlink" title="Asp.net core 开发（5.0版本）"></a>Asp.net core 开发（5.0版本）</h3><p>.net core sdk 5.0下载地址：</p>
+<p><a target="_blank" rel="noopener" href="https://dotnet.microsoft.com/download">https://dotnet.microsoft.com/download</a></p>
+<p>目前最新的版本：5.0.400 （2021-08-13）</p>
+<h4 id="创建项目并开始使用"><a href="#创建项目并开始使用" class="headerlink" title="创建项目并开始使用"></a>创建项目并开始使用</h4><ol>
+<li><p>MVC 框架（不是前后端分离！但很经典，目前也有应用场景）</p>
+</li>
+<li><p>使用中间件（Session）</p>
+</li>
+<li><p>Log4net组件（用于记录日志）</p>
+</li>
+<li><p>项目发布：</p>
+<ul>
+<li><p>VS里直接发布</p>
+</li>
+<li><p>IIS发布</p>
+</li>
+<li><p>CMD命令行发布（dotnet）</p>
+</li>
+</ul>
+</li>
+<li><p>静态文件读取</p>
+</li>
+<li><p>Nuget引入：Microsoft.Extensions.FileProviders System.IO</p>
+</li>
+<li><p>配置文件读取静态文件的中间件</p>
+</li>
+<li><p>脚本启动时传参，项目中获取参数（控制器中通过构造函数注入IConfiguration）</p>
+</li>
+<li><p>获取配置文件中的内容（可在startup.cs和控制器中获取）</p>
+<ul>
+<li>通过IConfiguration索引取值。用冒号分割类和数组</li>
+<li>建立一个新的类，通过Ioption读取</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h4 id="MVC"><a href="#MVC" class="headerlink" title="MVC"></a>MVC</h4><h5 id="1-什么是MVC？"><a href="#1-什么是MVC？" class="headerlink" title="1. 什么是MVC？"></a>1. 什么是MVC？</h5><ul>
+<li><p>V—View—视图：呈现给用户看到的内容（表现层）</p>
+</li>
+<li><p>C—Controller—控制器：控制业务逻辑计算，调用服务，选择返回什么内容，可以返回视图，JSON、字符串等等。</p>
+</li>
+<li><p>M—-Model—视图模型：用作控制器和视图之间传递数据的载体。</p>
+</li>
+</ul>
+<h5 id="2-cshtml文件"><a href="#2-cshtml文件" class="headerlink" title="2. cshtml文件"></a>2. cshtml文件</h5><p>​    本质是一个类文件，也是个压缩式超文本语言，HTML的子集。</p>
+<p>​    <strong>Razor混编：</strong>可以在cshtml上写 后台C#代码 + 前台html代码，混合起来写。（可看出严重的前后端不分离，代码可读性可能会差些）</p>
+<h5 id="3-Razor实时预览"><a href="#3-Razor实时预览" class="headerlink" title="3. Razor实时预览"></a>3. Razor实时预览</h5><p><strong>如何解决修改视图后无需编译后即可生效？</strong></p>
+<p>//修改视图，增加了html代码，不能马上生效，怎么办？使用中间件</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Nuget引入：Microsoft.ASPNetCore.Mvc.Razor.RuntimeCompilation</span><br><span class="line">startup.cs中增加：Services.AddRazorPage().AddRazorRuntimeCompilation();</span><br></pre></td></tr></table></figure>
+
+<h5 id="4-webpage布局"><a href="#4-webpage布局" class="headerlink" title="4. webpage布局"></a>4. webpage布局</h5><p>通过 Web Pages ，您可以把重复使用的内容块（比如页面头部和底部）写在一个单独的文件中。还可以使用布局模板（布局文件）为站点的所有网页定义一致的布局。</p>
+<p>具体使用Content Blocks（内容块）和 Layout Page（布局页）。</p>
+<ul>
+<li><p>每个页面有相同的头部</p>
+</li>
+<li><p>每个页面有相同的底部</p>
+</li>
+<li><p>每个页面有相同的样式和布局</p>
+</li>
+</ul>
+<p><strong>前端页面加载顺序：</strong></p>
+<p>开始  -&gt;  Views:_ViewStart.cshtml  -&gt; _Layout.cshtml  -&gt; Other cshtml</p>
+<p><strong>Layout模板和其他页面的嵌套：</strong></p>
+<p>通过Layout中RendBody()方法做了嵌入内容页；把返回的视图替换到模板页对应的内容块中，形成了一整块的内容；目的在于每一次返回不同的页面的时候，能够吧不变的视图部分，种以重用；这样就可以少些代码。</p>
+<h6 id="关于CSS，JS引入的问题："><a href="#关于CSS，JS引入的问题：" class="headerlink" title="关于CSS，JS引入的问题："></a>关于CSS，JS引入的问题：</h6><p>问：在模板页中使用CSS/JS的时候，为了提高效率，会把Css引入在模板的上方，将JS写在模板的下方。页面嵌套到模板页后，就会出现在引用JS的上方调用JS，此时JS其实是调用不了的。</p>
+<p>答：因为Script是写在下面的，先加载RenderBody，后加载JQ，所以会报错。</p>
+<p>解决方法如下：</p>
+<p>Layout模板页添加：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">@await RenderSectionAsync(&quot;Scripts&quot;, required: false)</span><br></pre></td></tr></table></figure>
+
+<p>其他视图添加js时使用如下格式：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">@section Script&#123;</span><br><span class="line">	&lt;script Type=&quot;text/javascript&quot; &gt;</span><br><span class="line">        $(document).ready(fuction()&#123;</span><br><span class="line">        	console.log(&quot;页面已加载&quot;);</span><br><span class="line">    &#125;)</span><br><span class="line">    &lt;/script&gt;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h5 id="6-防止文件被浏览"><a href="#6-防止文件被浏览" class="headerlink" title="6. 防止文件被浏览"></a>6. 防止文件被浏览</h5><p>在 ASP.NET 中，文件的名称以下划线开头，可以防止这些文件在网上被浏览。</p>
+<p>如果您不想让您的内容块或者布局页被您的用户看到，可以重命名这些文件：</p>
+<p>_header.cshtm</p>
+<p>_footer.cshtml</p>
+<p>_Layout.cshtml</p>
+<h5 id="7-隐藏敏感信息"><a href="#7-隐藏敏感信息" class="headerlink" title="7. 隐藏敏感信息"></a>7. 隐藏敏感信息</h5><p>在 ASP.NET 中，隐藏敏感信息（数据库密码、电子邮件密码等等）最通用的方法是将这些信息保存在一个名为”_AppStart”的单独的文件中。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">_AppStart.cshtml</span><br><span class="line"></span><br><span class="line">@&#123;</span><br><span class="line">WebMail.SmtpServer = &quot;mailserver.example.com&quot;;</span><br><span class="line">WebMail.EnableSsl = true;</span><br><span class="line">WebMail.UserName = &quot;username@example.com&quot;;</span><br><span class="line">WebMail.Password = &quot;your-password&quot;;</span><br><span class="line">WebMail.From = &quot;your-name-here@example.com&quot;;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+<h5 id="8-Razor-扩展（HTML控件）"><a href="#8-Razor-扩展（HTML控件）" class="headerlink" title="8. Razor 扩展（HTML控件）"></a>8. Razor 扩展（HTML控件）</h5><h6 id="第一种方式："><a href="#第一种方式：" class="headerlink" title="第一种方式："></a>第一种方式：</h6><p>通过一个后台方法，返回一个【已经存在】的Html标签的字符串，浏览器在读取的时候，就读取成一个Html标签。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">public static IHtmlContent Img(this IHtmlHelper helper,string src,string @class)</span><br><span class="line">       &#123;</span><br><span class="line">           return new HtmlString($&quot;&lt;img src=&#x27;&#123;src&#125;&#x27;  class=&#x27;&#123;@class&#125;&#x27;/&gt;&quot;);</span><br><span class="line">       &#125;</span><br></pre></td></tr></table></figure>
+
+<p>调用：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;!--1.引入命名空间--&gt;</span><br><span class="line"></span><br><span class="line">&lt;!--2.使用图片--自定义 扩展方法--&gt;</span><br><span class="line">@Html.Img(&quot;https://gimg2.baidu.com/image_search/src=http%3A%2F%2Finews.gtimg.com%2Fnewsapp_bt%2F0%2F13234405055%2F1000&amp;refer=http%3A%2F%2Finews.gtimg.com&amp;app=2002&amp;size=f9999,10000&amp;q=a80&amp;n=0&amp;g=0n&amp;fmt=jpeg?sec=1631638948&amp;t=284412cd9bbf3e991216504e533120a9&quot;,&quot;border:1px solid red;&quot;)</span><br></pre></td></tr></table></figure>
+
+<h6 id="第二种方式："><a href="#第二种方式：" class="headerlink" title="第二种方式："></a>第二种方式：</h6><p>//通过一个后台方法，返回一个【不存在】的Html标签的字符串，在读取的时候，通过制后台方法，去生成我们制定的标签。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">1.写一个扩展方法，定义一个普通类，类名建议以TagHelper结尾，加上特性；如果没有标记特性，视图中在调用的时候使用当前类名去掉TagHelper后缀得到的的字符串来调用。</span><br><span class="line"></span><br><span class="line">2.继承TagHelpre抽象类、或者实现接口ITagHelpr，二者选一起均可。</span><br><span class="line">3.覆写或实现接口Proccss方法。</span><br><span class="line">4.实现方法，定义标签类型，指定属性，指定内容</span><br><span class="line">5.如果在调用的时候需要参数，可以在定义这标签的类内部，定义属性；属性名称建议首字母大写；在调用的时候保持和属性名称一致。</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="暂停"><a href="#暂停" class="headerlink" title="暂停"></a>暂停</h3><p>MVC网页开发先学习到这儿，后面内容以后再看。</p>
+<p>接下来要学习一下<strong>Razorpages网页开发</strong>，这个模式与MVC非常类似，区别在于Razorpages将模型和控制器代码包含在Razor页面中，其模型可总结为MVVM(model-view view-model)。</p>
+<p>Razorpages优点：</p>
+<ul>
+<li>开发维护更加简单</li>
+<li>单一责任，每个页面都独立，视图和代码组织在一起</li>
+<li>支持双向数据绑定</li>
+</ul>
+ 
       <!-- reward -->
       
       <div id="reword-out">
@@ -179,12 +332,12 @@
     <a class="modal-close" href="javascript:;"><i class="ri-close-circle-line"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://yeying.tech/%E5%A5%A5%E8%BF%90%E4%BC%9A/olympic/" alt="微信分享二维码">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://yeying.tech/%E7%AC%94%E8%AE%B0/dot-net-core/" alt="微信分享二维码">
     </div>
 </div>
 
 <div id="share-mask"></div>  
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%A5%A5%E8%BF%90%E4%BC%9A/" rel="tag">奥运会</a></li></ul>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/net-Core/" rel="tag">.net Core</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C/" rel="tag">C#</a></li></ul>
 
     </footer>
   </div>
@@ -192,19 +345,19 @@
    
   <nav class="article-nav">
     
-      <a href="/%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91/development-envirenment-configuration/" class="article-nav-link">
+      <a href="/%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91/razor-pages/" class="article-nav-link">
         <strong class="article-nav-caption">上一篇</strong>
         <div class="article-nav-title">
           
-            开发环境配置
+            RazorPages Web开发
           
         </div>
       </a>
     
     
-      <a href="/%E7%9B%B8%E5%86%8C/football-match-06-15/" class="article-nav-link">
+      <a href="/%E7%AC%94%E8%AE%B0/Csharp-review/" class="article-nav-link">
         <strong class="article-nav-caption">下一篇</strong>
-        <div class="article-nav-title">足协杯夺冠照片</div>
+        <div class="article-nav-title">C#复习(与C++对比)</div>
       </a>
     
   </nav>

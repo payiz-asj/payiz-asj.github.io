@@ -6,7 +6,7 @@
   <link href="https://yeying.tech/atom.xml" rel="self"/>
   
   <link href="https://yeying.tech/"/>
-  <updated>2021-08-03T10:12:47.803Z</updated>
+  <updated>2021-08-20T01:04:43.900Z</updated>
   <id>https://yeying.tech/</id>
   
   <author>
@@ -15,6 +15,160 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>RazorPages Web开发</title>
+    <link href="https://yeying.tech/%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91/razor-pages/"/>
+    <id>https://yeying.tech/%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91/razor-pages/</id>
+    <published>2021-08-16T07:52:19.000Z</published>
+    <updated>2021-08-20T01:04:43.900Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;以下笔记为观看B站视频&lt;a href=&quot;https://www.bilibili.com/video/BV1PV411p7hs?p=11&amp;spm_id_from=pageDriver&quot;&gt;Razor Pages学生管理系统+asp.net core MVC图书管理系统&lt;/a&gt;过程中的值得记录的地方。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;视图导入&lt;/p&gt;
+&lt;p&gt;_ViewImports.cshtml 中注册&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;wwwroot文件夹&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Startup类和中间件&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;标签助手&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;依赖注入&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;EF core 安装 &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;自动生成支架&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;BootStrap&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;jQuery&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ol&gt;</summary>
+    
+    
+    
+    <category term="软件开发" scheme="https://yeying.tech/categories/%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91/"/>
+    
+    
+    <category term="RazorPages" scheme="https://yeying.tech/tags/RazorPages/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>开发环境配置</title>
+    <link href="https://yeying.tech/%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91/development-envirenment-configuration/"/>
+    <id>https://yeying.tech/%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91/development-envirenment-configuration/</id>
+    <published>2021-08-12T06:46:33.000Z</published>
+    <updated>2021-08-20T01:04:12.854Z</updated>
+    
+    
+    <summary type="html">&lt;h3 id=&quot;IDE&quot;&gt;&lt;a href=&quot;#IDE&quot; class=&quot;headerlink&quot; title=&quot;IDE&quot;&gt;&lt;/a&gt;IDE&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Visual Studio 2019 &lt;/li&gt;
+&lt;li&gt;Pycharm  + Python3.9&lt;/li&gt;
+&lt;li&gt;Git Bash&lt;/li&gt;
+&lt;li&gt;Sql Server 2019 + SSMS2018&lt;/li&gt;
+&lt;li&gt;Node.js&lt;/li&gt;
+&lt;/ul&gt;</summary>
+    
+    
+    
+    <category term="软件开发" scheme="https://yeying.tech/categories/%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91/"/>
+    
+    
+    <category term="电脑配置" scheme="https://yeying.tech/tags/%E7%94%B5%E8%84%91%E9%85%8D%E7%BD%AE/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>C#复习(与C++对比)</title>
+    <link href="https://yeying.tech/%E7%AC%94%E8%AE%B0/Csharp-review/"/>
+    <id>https://yeying.tech/%E7%AC%94%E8%AE%B0/Csharp-review/</id>
+    <published>2021-08-13T00:38:24.000Z</published>
+    <updated>2021-08-20T01:03:25.909Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;花一天半看了一下C#基本语法，先做个笔记，供后期参考。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="笔记" scheme="https://yeying.tech/categories/%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="C#" scheme="https://yeying.tech/tags/C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>.net core学习笔记</title>
+    <link href="https://yeying.tech/%E7%AC%94%E8%AE%B0/dot-net-core/"/>
+    <id>https://yeying.tech/%E7%AC%94%E8%AE%B0/dot-net-core/</id>
+    <published>2021-08-15T00:42:17.000Z</published>
+    <updated>2021-08-20T01:03:09.512Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;以下笔记为观看B站视频&lt;a href=&quot;https://www.bilibili.com/video/BV1tK4y1j7Eu?p=16&amp;spm_id_from=pageDriver&quot;&gt;.NET5零基础到精通实战全集&lt;/a&gt;过程中的值得记录的地方。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="笔记" scheme="https://yeying.tech/categories/%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="C#" scheme="https://yeying.tech/tags/C/"/>
+    
+    <category term=".net Core" scheme="https://yeying.tech/tags/net-Core/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Typora美化</title>
+    <link href="https://yeying.tech/%E7%AC%94%E8%AE%B0/Typora-Theme/"/>
+    <id>https://yeying.tech/%E7%AC%94%E8%AE%B0/Typora-Theme/</id>
+    <published>2021-08-19T17:14:14.000Z</published>
+    <updated>2021-08-20T01:02:53.094Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;​        偶然间看到某位大佬的Typora界面特别优美，于是搜了一下打开新世界！感觉更加离不开Typora了！&lt;/p&gt;
+&lt;p&gt;​        居然我一个熟悉CSS的人，还不知道Typora界面主题渲染竟然就靠CSS样式文件！既然这样，那就可以随便玩儿了，嘿嘿嘿 “^ _ ^”    &lt;/p&gt;
+&lt;h3 id=&quot;分享&quot;&gt;&lt;a href=&quot;#分享&quot; class=&quot;headerlink&quot; title=&quot;分享&quot;&gt;&lt;/a&gt;分享&lt;/h3&gt;&lt;p&gt;​        我自己的界面不展示了，直接放一个别人写的优秀的教程吧！&lt;/p&gt;
+&lt;p&gt;​        &lt;a href=&quot;https://blog.csdn.net/weixin_39246554/article/details/115425075&quot;&gt;网址：&lt;/a&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="笔记" scheme="https://yeying.tech/categories/%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="Typora" scheme="https://yeying.tech/tags/Typora/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2020 东京奥运会</title>
+    <link href="https://yeying.tech/%E5%A5%A5%E8%BF%90%E4%BC%9A/olympic/"/>
+    <id>https://yeying.tech/%E5%A5%A5%E8%BF%90%E4%BC%9A/olympic/</id>
+    <published>2021-07-23T09:02:54.000Z</published>
+    <updated>2021-08-20T00:58:34.797Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 align=&quot;center&quot;&gt;中国加油 💪&lt;/h1&gt;
+&lt;img align=&quot;center&quot; src=&quot;https://pic.imgdb.cn/item/6103c3dd5132923bf82857f0.png&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="奥运会" scheme="https://yeying.tech/categories/%E5%A5%A5%E8%BF%90%E4%BC%9A/"/>
+    
+    
+    <category term="奥运会" scheme="https://yeying.tech/tags/%E5%A5%A5%E8%BF%90%E4%BC%9A/"/>
+    
+  </entry>
   
   <entry>
     <title>Gis</title>
@@ -36,32 +190,6 @@
     <category term="Gis" scheme="https://yeying.tech/tags/Gis/"/>
     
     <category term="python" scheme="https://yeying.tech/tags/python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>2020 东京奥运会</title>
-    <link href="https://yeying.tech/%E5%A5%A5%E8%BF%90%E4%BC%9A/olympic/"/>
-    <id>https://yeying.tech/%E5%A5%A5%E8%BF%90%E4%BC%9A/olympic/</id>
-    <published>2021-07-23T09:02:54.000Z</published>
-    <updated>2021-08-03T10:11:04.453Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 align=&quot;center&quot;&gt;中国加油 💪&lt;/h1&gt;
-&lt;img align=&quot;center&quot; src=&quot;https://pic.imgdb.cn/item/6103c3dd5132923bf82857f0.png&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="奥运会" scheme="https://yeying.tech/categories/%E5%A5%A5%E8%BF%90%E4%BC%9A/"/>
-    
-    
-    <category term="奥运会" scheme="https://yeying.tech/tags/%E5%A5%A5%E8%BF%90%E4%BC%9A/"/>
     
   </entry>
   
@@ -399,110 +527,6 @@
     
     
     <category term="希腊字母" scheme="https://yeying.tech/tags/%E5%B8%8C%E8%85%8A%E5%AD%97%E6%AF%8D/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Visual Studio 快捷键</title>
-    <link href="https://yeying.tech/%E7%AC%94%E8%AE%B0/vs-keys/"/>
-    <id>https://yeying.tech/%E7%AC%94%E8%AE%B0/vs-keys/</id>
-    <published>2019-04-10T09:52:55.000Z</published>
-    <updated>2021-07-28T20:38:15.974Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;总结了几个Visual Studio 好用的快捷键，以后会再继续加。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="笔记" scheme="https://yeying.tech/categories/%E7%AC%94%E8%AE%B0/"/>
-    
-    
-    <category term="快捷键" scheme="https://yeying.tech/tags/%E5%BF%AB%E6%8D%B7%E9%94%AE/"/>
-    
-    <category term="Visual Studio" scheme="https://yeying.tech/tags/Visual-Studio/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>ADB命令详解及用法大全</title>
-    <link href="https://yeying.tech/%E7%AC%94%E8%AE%B0/adb-keys/"/>
-    <id>https://yeying.tech/%E7%AC%94%E8%AE%B0/adb-keys/</id>
-    <published>2019-04-16T07:30:07.000Z</published>
-    <updated>2021-07-28T20:36:39.409Z</updated>
-    
-    
-    <summary type="html">&lt;h2 id=&quot;一、ADB是什么？&quot;&gt;&lt;a href=&quot;#一、ADB是什么？&quot; class=&quot;headerlink&quot; title=&quot;一、ADB是什么？&quot;&gt;&lt;/a&gt;一、ADB是什么？&lt;/h2&gt;&lt;p&gt;ADB，即 &lt;a href=&quot;https://developer.android.com/studio/command-line/adb.html&quot;&gt;Android Debug Bridge&lt;/a&gt; 是一种允许模拟器或已连接的 Android 设备进行通信的命令行工具，它可为各种设备操作提供便利，如安装和调试应用，并提供对 &lt;code&gt;Unix shell&lt;/code&gt;（可用来在模拟器或连接的设备上运行各种命令）的访问。可以在&lt;code&gt;Android SDK/platform-tools&lt;/code&gt;中找到 &lt;code&gt;adb&lt;/code&gt; 工具。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;注： 有部分命令的支持情况可能与 Android 系统版本及定制 ROM 的实现有关。&lt;/strong&gt;&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="笔记" scheme="https://yeying.tech/categories/%E7%AC%94%E8%AE%B0/"/>
-    
-    
-    <category term="使用手册" scheme="https://yeying.tech/tags/%E4%BD%BF%E7%94%A8%E6%89%8B%E5%86%8C/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>软件测试-11</title>
-    <link href="https://yeying.tech/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/software-testing-11/"/>
-    <id>https://yeying.tech/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/software-testing-11/</id>
-    <published>2019-05-28T07:29:21.000Z</published>
-    <updated>2021-07-28T09:30:25.069Z</updated>
-    
-    
-    <summary type="html">&lt;h1 id=&quot;对Bug起争议时的处理&quot;&gt;&lt;a href=&quot;#对Bug起争议时的处理&quot; class=&quot;headerlink&quot; title=&quot;对Bug起争议时的处理&quot;&gt;&lt;/a&gt;对Bug起争议时的处理&lt;/h1&gt;&lt;p&gt;测试人员和开发人员因Bug起争议的事情常有发生，例如开发人员认为这不算是一个Bug，或认为这个Bug不重要，不需要修改，而测试人员认为这是一个很严重的Bug，需要开发人员修改，或因其他原因起了争议等。如果出现了这些情况，测试人员应如何处理呢？&lt;/p&gt;
-&lt;p&gt;(1）任何争议都需要“对事不对人”，不能因为Bug而激化了双方的矛盾。&lt;/p&gt;
-&lt;p&gt;（2）有很多初级软件测试人员提交的Bug单流转到开发人员那里后，开发人员看不懂。原因在于测试人员提交的Bug单没有描述清楚，这是一个非常常见的现象。测试人员提交的Bug单一定要描述清楚，并需要有充足的依据和理由。&lt;/p&gt;
-&lt;p&gt;（3）如果Bug单写清楚了，但开发人员还是不愿意修改的话，可以找一个合适的时间，心平气和地与开发人员沟通，说明此Bug对产品质量可能产生的不良影响，测试人员在沟通过程中不能意气用事。&lt;/p&gt;
-&lt;p&gt;（4）经沟通后，如果开发人员还是不愿意修改的话（当然开发人员不修改也有他们的原因），那么此时可以向测试经理汇报这一情况，由测试经理出面解决，或是由测试经理召开Bug评审大会（开发人员、测试人员、产品经理三方人员参与，有时也包括项目经理），共同定夺。&lt;/p&gt;
-&lt;p&gt;（5）有些初级软件测试人员把Bug提交到开发人员那后，经过开发人员的各种解释，就会同意开发人员的意见，也认为这确实不是一个Bug，从而忽略这个问题，这也是经常发生在初级软件测试人员身上的事情。这就要求测试人员提交Bug的过程要有原则性，这也是作为一名合格的测试人员最重要的特征之一，对待问题需要坚持原则。&lt;/p&gt;
-&lt;p&gt;（6）测试人员应和开发人员面对面或通过电子邮件、电话等方式保持密切沟通，共同协商和处理Bug，以减少两者间的隔膜，增加测试人员与开发人员之间的信任和了解。直接沟通也应贯穿到产品开发、测试的每个环节当中。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="软件测试" scheme="https://yeying.tech/categories/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/"/>
-    
-    
-    <category term="软件测试基础" scheme="https://yeying.tech/tags/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E5%9F%BA%E7%A1%80/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>软件测试-10</title>
-    <link href="https://yeying.tech/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/software-testing-10/"/>
-    <id>https://yeying.tech/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/software-testing-10/</id>
-    <published>2019-05-28T07:12:21.000Z</published>
-    <updated>2021-07-28T09:29:46.611Z</updated>
-    
-    
-    <summary type="html">&lt;h1 id=&quot;如何记录一个Bug&quot;&gt;&lt;a href=&quot;#如何记录一个Bug&quot; class=&quot;headerlink&quot; title=&quot;如何记录一个Bug&quot;&gt;&lt;/a&gt;如何记录一个Bug&lt;/h1&gt;&lt;p&gt;当测试人员在执行测试用例的过程中发现Bug时，测试人员应该如何记录这个Bug？如何确保开发人员能理解自己所提交的Bug？本节将详细解答这些问题。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="软件测试" scheme="https://yeying.tech/categories/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/"/>
-    
-    
-    <category term="软件测试基础" scheme="https://yeying.tech/tags/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E5%9F%BA%E7%A1%80/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>软件测试-9</title>
-    <link href="https://yeying.tech/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/software-testing-9/"/>
-    <id>https://yeying.tech/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/software-testing-9/</id>
-    <published>2019-05-28T06:49:21.000Z</published>
-    <updated>2021-07-28T09:29:01.039Z</updated>
-    
-    
-    <summary type="html">&lt;h1 id=&quot;测试用例的评审&quot;&gt;&lt;a href=&quot;#测试用例的评审&quot; class=&quot;headerlink&quot; title=&quot;测试用例的评审&quot;&gt;&lt;/a&gt;测试用例的评审&lt;/h1&gt;&lt;p&gt;测试人员依据需求文档将测试用例设计完成后，如何确保设计的测试用例是正确无误的呢？这里有一个很重要的任务就是进行用例评审，通过对测试用例的评审以确保用例是&lt;strong&gt;全面的、正确的、没有冗余的。&lt;/strong&gt;&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="软件测试" scheme="https://yeying.tech/categories/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/"/>
-    
-    
-    <category term="软件测试基础" scheme="https://yeying.tech/tags/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E5%9F%BA%E7%A1%80/"/>
     
   </entry>
   
