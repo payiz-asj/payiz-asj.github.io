@@ -6,7 +6,7 @@
   <link href="https://yeying.tech/atom.xml" rel="self"/>
   
   <link href="https://yeying.tech/"/>
-  <updated>2021-08-20T01:19:53.667Z</updated>
+  <updated>2021-08-28T03:27:42.122Z</updated>
   <id>https://yeying.tech/</id>
   
   <author>
@@ -17,14 +17,64 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Github配置 SSH Keys</title>
+    <link href="https://yeying.tech/%E7%AC%94%E8%AE%B0/git-ssh/"/>
+    <id>https://yeying.tech/%E7%AC%94%E8%AE%B0/git-ssh/</id>
+    <published>2019-04-06T13:26:11.000Z</published>
+    <updated>2021-08-28T03:27:42.122Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;&lt;strong&gt;先说一下，https 和 SSH 的区别：&lt;/strong&gt;&lt;/p&gt;
+&lt;figure class=&quot;highlight js&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span</summary>
+        
+      
+    
+    
+    
+    <category term="笔记" scheme="https://yeying.tech/categories/%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="github" scheme="https://yeying.tech/tags/github/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Git 学习笔记</title>
+    <link href="https://yeying.tech/%E7%AC%94%E8%AE%B0/git-learning/"/>
+    <id>https://yeying.tech/%E7%AC%94%E8%AE%B0/git-learning/</id>
+    <published>2019-04-06T09:29:41.000Z</published>
+    <updated>2021-08-28T03:26:31.493Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;记录 Git 的一些常用指令与问题解决方案。&lt;/p&gt;
+&lt;p&gt;更加具体的内容请看以下仓库：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/payiz-asj/git-tips&quot;&gt;Git 的奇技淫巧&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/payiz-asj/HelloGitHub&quot;&gt;GitHub 上有趣、入门级的开源项目&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</summary>
+    
+    
+    
+    <category term="笔记" scheme="https://yeying.tech/categories/%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="github" scheme="https://yeying.tech/tags/github/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Typora美化</title>
     <link href="https://yeying.tech/%E7%AC%94%E8%AE%B0/Typora-Theme/"/>
     <id>https://yeying.tech/%E7%AC%94%E8%AE%B0/Typora-Theme/</id>
     <published>2021-08-19T15:59:14.000Z</published>
-    <updated>2021-08-20T01:19:53.667Z</updated>
+    <updated>2021-08-24T02:48:17.545Z</updated>
     
     
-    <summary type="html">&lt;p&gt;​        偶然间看到某位大佬的Typora界面特别优美，于是搜了一下打开新世界！感觉更加离不开Typora了！&lt;/p&gt;
+    <summary type="html">&lt;h2 id=&quot;功能&quot;&gt;&lt;a href=&quot;#功能&quot; class=&quot;headerlink&quot; title=&quot;功能&quot;&gt;&lt;/a&gt;功能&lt;/h2&gt;&lt;p&gt;​        偶然间看到某位大佬的Typora界面特别优美，于是搜了一下打开新世界！感觉更加离不开Typora了！&lt;/p&gt;
 &lt;p&gt;​        居然我一个熟悉CSS的人，还不知道Typora界面主题渲染竟然就靠CSS样式文件！既然这样，那就可以随便玩儿了，嘿嘿嘿 “^ _ ^”    &lt;/p&gt;
 &lt;h3 id=&quot;分享&quot;&gt;&lt;a href=&quot;#分享&quot; class=&quot;headerlink&quot; title=&quot;分享&quot;&gt;&lt;/a&gt;分享&lt;/h3&gt;&lt;p&gt;​        我自己的界面不展示了，直接放一个别人写的优秀的教程吧！&lt;/p&gt;
 &lt;p&gt;​        &lt;a href=&quot;https://blog.csdn.net/weixin_39246554/article/details/115425075&quot;&gt;网址：&lt;/a&gt;&lt;/p&gt;</summary>
@@ -35,6 +85,26 @@
     
     
     <category term="Typora" scheme="https://yeying.tech/tags/Typora/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>小代码分享</title>
+    <link href="https://yeying.tech/Demo/faxuanzaixian/"/>
+    <id>https://yeying.tech/Demo/faxuanzaixian/</id>
+    <published>2021-08-18T16:08:57.000Z</published>
+    <updated>2021-08-24T02:45:14.917Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;小代码分享&quot;&gt;&lt;a href=&quot;#小代码分享&quot; class=&quot;headerlink&quot; title=&quot;小代码分享&quot;&gt;&lt;/a&gt;小代码分享&lt;/h2&gt;&lt;h4 id=&quot;法宣在线考试自动作答-且得满分&quot;&gt;&lt;a href=&quot;#法宣在线考试自动作答-且得满分&quot; class=&quot;headerlink&quot; title=&quot;法宣在线考试自动作答(且得满分)&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://www.cnblogs.com/QIAOXINGXING001/p/14002849.html&quot;&gt;法宣在线考试自动作答(且得满分)&lt;/a&gt;&lt;/h4&gt;&lt;h2 id=&quot;说明&quot;&gt;&lt;a href=&quot;#说明&quot; class=&quot;headerlink&quot; title=&quot;说明&quot;&gt;&lt;/a&gt;说明&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;仅供学习交流&lt;/strong&gt;&lt;br&gt;    功能：法宣在线考试, 自动获取答案, 完成考试。&lt;/p&gt;
+&lt;h2 id=&quot;运行方法&quot;&gt;&lt;a href=&quot;#运行方法&quot; class=&quot;headerlink&quot; title=&quot;运行方法&quot;&gt;&lt;/a&gt;运行方法&lt;/h2&gt;&lt;figure class=&quot;highlight js&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;number&quot;&gt;1.&lt;/span&gt; 使用chrome浏览器登录法宣在线, 进入考试页面;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;number&quot;&gt;2.&lt;/span&gt; 单击浏览器的地址栏, 按快捷键F12;如果按不出来，说明平台截取并禁用了，那就用Chrome自带菜单: 更多工具 - 开发者工具;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;number&quot;&gt;3.&lt;/span&gt; 定位到&lt;span class=&quot;built_in&quot;&gt;console&lt;/span&gt;/控制台面板, 粘贴代码, 回车;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;number&quot;&gt;4.&lt;/span&gt; 程序开始执行, 每秒答一道题, 等待答题完成;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
+    
+    
+    
+    <category term="Demo" scheme="https://yeying.tech/categories/Demo/"/>
+    
+    
+    <category term="Js" scheme="https://yeying.tech/tags/Js/"/>
     
   </entry>
   
@@ -209,31 +279,6 @@
     <category term="快捷键" scheme="https://yeying.tech/tags/%E5%BF%AB%E6%8D%B7%E9%94%AE/"/>
     
     <category term="Pycharm" scheme="https://yeying.tech/tags/Pycharm/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>小代码分享</title>
-    <link href="https://yeying.tech/Demo/faxuanzaixian/"/>
-    <id>https://yeying.tech/Demo/faxuanzaixian/</id>
-    <published>2021-08-18T16:08:57.000Z</published>
-    <updated>2021-08-20T01:13:19.801Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;小代码分享&quot;&gt;&lt;a href=&quot;#小代码分享&quot; class=&quot;headerlink&quot; title=&quot;小代码分享&quot;&gt;&lt;/a&gt;小代码分享&lt;/h2&gt;&lt;h4 id=&quot;法宣在线考试自动作答-且得满分&quot;&gt;&lt;a href=&quot;#法宣在线考试自动作答-且得满分&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="Demo" scheme="https://yeying.tech/categories/Demo/"/>
-    
-    
-    <category term="Js" scheme="https://yeying.tech/tags/Js/"/>
     
   </entry>
   
@@ -581,55 +626,6 @@
     
     
     <category term="小程序" scheme="https://yeying.tech/tags/%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hackathon华东九校编程创客马拉松</title>
-    <link href="https://yeying.tech/%E4%B8%AA%E4%BA%BA%E9%A1%B9%E7%9B%AE/hackathon-memory/"/>
-    <id>https://yeying.tech/%E4%B8%AA%E4%BA%BA%E9%A1%B9%E7%9B%AE/hackathon-memory/</id>
-    <published>2020-11-29T12:20:34.000Z</published>
-    <updated>2021-07-31T10:48:11.277Z</updated>
-    
-    
-    <summary type="html">&lt;h1 align = &quot;center&quot;&gt;Hackathon编程马拉松项目&lt;/h1&gt;
-&lt;h3 align = &quot;center&quot;&gt;——微信小程序“送信鸭”&lt;/h3&gt;
-&lt;p&gt;
-    &lt;img align =&quot;center&quot; src = &quot;https://pic.imgdb.cn/item/60fe7e585132923bf8be7495.png&quot; style = &quot;width:81px&quot;/&gt;
-&lt;/p&gt;
-
-
-
-&lt;p&gt;这周末参加了一个很有意思的编程比赛，想写篇文章记录一下比赛经历。 &lt;/p&gt;</summary>
-    
-    
-    
-    <category term="个人项目" scheme="https://yeying.tech/categories/%E4%B8%AA%E4%BA%BA%E9%A1%B9%E7%9B%AE/"/>
-    
-    
-    <category term="小程序" scheme="https://yeying.tech/tags/%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>校园风景</title>
-    <link href="https://yeying.tech/%E7%9B%B8%E5%86%8C/xianlincampus/"/>
-    <id>https://yeying.tech/%E7%9B%B8%E5%86%8C/xianlincampus/</id>
-    <published>2019-03-10T08:08:38.000Z</published>
-    <updated>2021-07-31T09:49:24.895Z</updated>
-    
-    
-    <summary type="html">&lt;h1 align = &quot;center&quot;&gt;校园风景自拍&lt;/h1&gt;
-​    
-
-&lt;h3 id=&quot;记录身边的美景😘&quot;&gt;&lt;a href=&quot;#记录身边的美景😘&quot; class=&quot;headerlink&quot; title=&quot;记录身边的美景😘&quot;&gt;&lt;/a&gt;记录身边的美景😘&lt;/h3&gt;</summary>
-    
-    
-    
-    <category term="相册" scheme="https://yeying.tech/categories/%E7%9B%B8%E5%86%8C/"/>
-    
-    
-    <category term="校园" scheme="https://yeying.tech/tags/%E6%A0%A1%E5%9B%AD/"/>
     
   </entry>
   
