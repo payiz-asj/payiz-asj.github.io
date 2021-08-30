@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+
+
+<html lang="zh-CN">
+  
+
+    <head>
+      <meta charset="utf-8" />
+       
+      <meta name="keywords" content="YeYing,Blog,夜莺,博客,夜莺悠吟,yeying.tech,www.yeying.tech" />
+       
+      <meta name="description" content="挑灯夜战，常闻夜莺悠吟...停笔共鸣...悲壮、坚定！&lt;br&gt;心酸背后总有值得坚持的理由💪请坚持！&lt;br&gt; 珍惜身边的人！ 小快y你❤" />
+      
+      <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1"
+      />
+      <title>一个很奇怪的BUG |  夜莺悠吟</title>
+  <meta name="generator" content="hexo-theme-ayer">
+      
+      <link rel="shortcut icon" href="/favicon.ico" />
+       
+<link rel="stylesheet" href="/dist/main.css">
+
+      <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/Shen-Yu/cdn/css/remixicon.min.css"
+      />
+      
+<link rel="stylesheet" href="/css/custom.css">
+ 
+      <script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+       
+ 
+
+      <!-- mermaid -->
+      
+    <link rel="alternate" href="/atom.xml" title="夜莺悠吟" type="application/atom+xml">
+</head>
+  </html>
+</html>
+
+
+<body>
+  <div id="app">
+    
+      
+    <main class="content on">
+      <section class="outer">
+  
+<article
+  id="post-interesting-bug"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h1 class="article-title sea-center" style="border-left:0" itemprop="name">
+  一个很奇怪的BUG
+</h1>
+ 
+
+      
+    </header>
+     
+    <div class="article-meta">
+      <a href="/%E7%AC%94%E8%AE%B0/interesting-bug/" class="article-date">
+  <time datetime="2021-08-30T10:11:39.000Z" itemprop="datePublished">2021-08-30</time>
+</a> 
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E7%AC%94%E8%AE%B0/">笔记</a>
+  </div>
+  
+<div class="word_count">
+    <span class="post-time">
+        <span class="post-meta-item-icon">
+            <i class="ri-quill-pen-line"></i>
+            <span class="post-meta-item-text"> 字数统计:</span>
+            <span class="post-count">2.5k</span>
+        </span>
+    </span>
+
+    <span class="post-time">
+        &nbsp; | &nbsp;
+        <span class="post-meta-item-icon">
+            <i class="ri-book-open-line"></i>
+            <span class="post-meta-item-text"> 阅读时长≈</span>
+            <span class="post-count">10 分钟</span>
+        </span>
+    </span>
+</div>
+ 
+    </div>
+      
+    <div class="tocbot"></div>
+
+
+
+
+  
+    <div class="article-entry" itemprop="articleBody">
+       
+  <h2 id="一个很奇怪的BUG"><a href="#一个很奇怪的BUG" class="headerlink" title="一个很奇怪的BUG"></a>一个很奇怪的BUG</h2><h3 id="发现Bug"><a href="#发现Bug" class="headerlink" title="发现Bug"></a>发现Bug</h3><p>今天在使用python+win32com读取exel表格时，突然遇到一个bug，获取不到exel权限，即程序第一句就出错，后面的内容都无法运行，比如下面写了一个简单的测试：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> win32com.client</span><br><span class="line"></span><br><span class="line">xlApp = win32com.client.Dispatch(<span class="string">&#x27;Excel.Application&#x27;</span>)  <span class="comment"># win32com获取exel应用服务</span></span><br><span class="line">filename = <span class="string">r&#x27;E:\\Programs\\python\\自动化处理EXEL\\test.xlsx&#x27;</span></span><br><span class="line">xlwb = xlApp.Workbooks.Open(Filename=filename)  <span class="comment"># 获取工作簿</span></span><br><span class="line"><span class="built_in">print</span>(xlwb)</span><br><span class="line"><span class="built_in">print</span>(xlwb.Sheets(<span class="number">1</span>).Cells(<span class="number">1</span>, <span class="number">1</span>))  <span class="comment"># 打印第一张工作表的A1单元格的值</span></span><br><span class="line">xlApp.Quit()</span><br></pre></td></tr></table></figure>
+
+
+
+<span id="more"></span>
+
+
+
+<p>错误信息如下：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">Traceback (most recent call last):</span><br><span class="line">  File <span class="string">&quot;D:\Program Files\Python39\lib\site-packages\win32com\client\dynamic.py&quot;</span>, line <span class="number">81</span>, <span class="keyword">in</span> _GetGoodDispatch</span><br><span class="line">    IDispatch = pythoncom.connect(IDispatch)</span><br><span class="line">pywintypes.com_error: (-<span class="number">2147221021</span>, <span class="string">&#x27;操作无法使用&#x27;</span>, <span class="literal">None</span>, <span class="literal">None</span>)</span><br><span class="line"></span><br><span class="line">During handling of the above exception, another exception occurred:</span><br><span class="line"></span><br><span class="line">Traceback (most recent call last):</span><br><span class="line">  File <span class="string">&quot;E:\Programs\python\自动化处理EXEL\读取文件.py&quot;</span>, line <span class="number">298</span>, <span class="keyword">in</span> &lt;module&gt;</span><br><span class="line">    test_001()</span><br><span class="line">  File <span class="string">&quot;E:\Programs\python\自动化处理EXEL\读取文件.py&quot;</span>, line <span class="number">252</span>, <span class="keyword">in</span> test_001</span><br><span class="line">    xlApp = win32com.client.gencache.EnsureDispatch(<span class="string">&#x27;Excel.Application&#x27;</span>)</span><br><span class="line">  File <span class="string">&quot;D:\Program Files\Python39\lib\site-packages\win32com\client\gencache.py&quot;</span>, line <span class="number">524</span>, <span class="keyword">in</span> EnsureDispatch</span><br><span class="line">    disp = win32com.client.Dispatch(prog_id)</span><br><span class="line">  File <span class="string">&quot;D:\Program Files\Python39\lib\site-packages\win32com\client\__init__.py&quot;</span>, line <span class="number">95</span>, <span class="keyword">in</span> Dispatch</span><br><span class="line">    dispatch, userName = dynamic._GetGoodDispatchAndUserName(dispatch,userName,clsctx)</span><br><span class="line">  File <span class="string">&quot;D:\Program Files\Python39\lib\site-packages\win32com\client\dynamic.py&quot;</span>, line <span class="number">98</span>, <span class="keyword">in</span> _GetGoodDispatchAndUserName</span><br><span class="line">    <span class="keyword">return</span> (_GetGoodDispatch(IDispatch, clsctx), userName)</span><br><span class="line">  File <span class="string">&quot;D:\Program Files\Python39\lib\site-packages\win32com\client\dynamic.py&quot;</span>, line <span class="number">83</span>, <span class="keyword">in</span> _GetGoodDispatch</span><br><span class="line">    IDispatch = pythoncom.CoCreateInstance(IDispatch, <span class="literal">None</span>, clsctx, pythoncom.IID_IDispatch)</span><br><span class="line">pywintypes.com_error: (-<span class="number">2147467262</span>, <span class="string">&#x27;不支持此接口&#x27;</span>, <span class="literal">None</span>, <span class="literal">None</span>)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h3 id="开始排查问题"><a href="#开始排查问题" class="headerlink" title="开始排查问题"></a>开始排查问题</h3><p>这个玩意儿竟然花了我5h时间！！！</p>
+<ol>
+<li>首先，我通过断点调试找到：</li>
+</ol>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># D:\Program Files\Python39\Lib\site-packages\win32com\client\dynamic.py</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">_GetGoodDispatch</span>(<span class="params">IDispatch, clsctx = pythoncom.CLSCTX_SERVER</span>):</span></span><br><span class="line">	<span class="comment"># quick return for most common case</span></span><br><span class="line">	<span class="keyword">if</span> <span class="built_in">isinstance</span>(IDispatch, PyIDispatchType):</span><br><span class="line">		<span class="keyword">return</span> IDispatch</span><br><span class="line">	<span class="keyword">if</span> <span class="built_in">isinstance</span>(IDispatch, _GoodDispatchTypes):</span><br><span class="line">		<span class="keyword">try</span>:</span><br><span class="line">			IDispatch = pythoncom.connect(IDispatch)</span><br><span class="line">		<span class="keyword">except</span> pythoncom.ole_error:</span><br><span class="line">			IDispatch = pythoncom.CoCreateInstance(IDispatch, <span class="literal">None</span>, clsctx, pythoncom.IID_IDispatch)  <span class="comment"># 断点最终停在这里过不去</span></span><br><span class="line">	<span class="keyword">else</span>:</span><br><span class="line">		<span class="comment"># may already be a wrapped class.</span></span><br><span class="line">		IDispatch = <span class="built_in">getattr</span>(IDispatch, <span class="string">&quot;_oleobj_&quot;</span>, IDispatch)</span><br><span class="line">	<span class="keyword">return</span> IDispatch</span><br><span class="line">	</span><br><span class="line"><span class="comment"># 进一步看pythoncom.py和pywintypes.py文件，也没看出是啥问题</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<ol start="2">
+<li><p>开始查找百度</p>
+<p>​        在百度上看到此问题都是2017年之前的回答，很显然，大家都放弃win32com读取exel这种老办法了，要不我手头上个别文件需要这个，我也是更喜欢使用pandas和openpyxl来着，哼！</p>
+<p>​        大家的答案大概总结为以下几个：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1.</span> （先说一下，这个是最坑的办法！！！）</span><br><span class="line">	有些人说，第一句话使用下面这个代替，与win32com.client.Dispatch()有点区别，使用中注意就行</span><br><span class="line">excel_APP = win32com.client.gencache.EnsureDispatch(<span class="string">&#x27;Excel.Application&#x27;</span>)</span><br></pre></td></tr></table></figure>
+
+<p>​        <strong>上面这个方法是坑中之坑！</strong>我使用上面那句代替以后，问题依旧在，开始往深渊继续探索！</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">2.</span> 有些人说检查EXEL有没有注册dcom服务：</span><br><span class="line">通过dcom.cnfg和regedit来检测和修改</span><br><span class="line"></span><br><span class="line"><span class="number">3.</span> 有些人说dcom中exel Application的权限设置修改一下，</span><br><span class="line">通过属性-&gt;安全</span><br><span class="line"></span><br><span class="line"><span class="number">4.</span> 有些人说删除gen_py</span><br><span class="line">位置：C:\Users\XXX\AppData\Local\Temp\gen_py</span><br><span class="line"></span><br><span class="line"><span class="number">5.</span> 有人说重新运行一下makepy.py(需要安装win32gui,里面选择exel服务)</span><br><span class="line">位置：D:\Program Files\Python39\Lib\site-packages\win32com\client\makepy.py</span><br><span class="line">    </span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>​        上面这些可能对部分人有用，但是我的程序昨天还好好的啊！当然，这些东西照做了，也没好。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">6.</span> 在stackoverflow.com上继续查，查到有人说可能是python和windows系统都得是<span class="number">32</span>位才可以。</span><br><span class="line">。。。。。</span><br><span class="line">我昨天好好的大哥！</span><br><span class="line">我python <span class="number">3.9</span> + Win10 Windows <span class="number">10</span> 企业版 20H <span class="number">64</span>位 + Office <span class="number">2016</span> <span class="number">64</span>位</span><br><span class="line"></span><br><span class="line">我试着卸载pywin32,重装，装了最新版pywin32-<span class="number">301.</span>win-amd64-py3<span class="number">.9</span>.exe</span><br><span class="line">网址：https://github.com/mhammond/pywin32/releases</span><br><span class="line">	也丝毫没用</span><br><span class="line">	此时已到中午吃饭时间，中午吃饭时脑子还是非常的乱！脖子也因为一上午紧盯着屏幕没动过而疼得要命...</span><br><span class="line"></span><br><span class="line"><span class="number">7.</span> 要加一个time.sleep(<span class="number">0.5</span>)已解决加载缓慢的问题</span><br><span class="line">	这个在成功建立xlAPP以后，在后续使用中需要注意加载缓慢的情况，现在我遇到的问题是根本还没开始打开exel应用服务！</span><br></pre></td></tr></table></figure>
+
+<p>​        下午开始深究问题的原因：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">发现网上大家出现的问题试以下几个类型：</span><br><span class="line">a）环境问题</span><br><span class="line">b) 第三方库问题</span><br><span class="line">c) 要读取的.xlsx文件路径、名称等的问题（我开始怀疑我当初是不是这个问题） </span><br><span class="line">d) win32com.client.Dispatch和win32com.client.gencache.EnsureDispatch这两个的区别，很显然，如果使用的后者，因二者使用的语法大小写不一样，导致makepy.py生成的dcom映射读不到“EXEL.Application”, 我上午踩得坑就是这个</span><br></pre></td></tr></table></figure>
+
+<p>​        </p>
+</li>
+</ol>
+<h4 id="解决bug"><a href="#解决bug" class="headerlink" title="解决bug"></a>解决bug</h4><p>看到网上好多人都解决不了问题，放弃了python+win32com这条两路线，然而我不会那么轻易放弃！</p>
+<p>经过跟踪源码，发现：</p>
+<p><strong>Dispatch()除了gencache.EnsureDispatch()以外，还有两个函数可以替代它，于是开始尝试：</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">DispatchEx()和CDispatch()</span><br></pre></td></tr></table></figure>
+
+<p>前者直接解决了我今天的问题！</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">xlApp = win32com.client.DispatchEx(<span class="string">&#x27;Excel.Application&#x27;</span>)</span><br></pre></td></tr></table></figure>
+
+<p><strong>使用这句代替后居然神奇的好了！！！</strong></p>
+<p>网上搜了一下区别，也就找到一个讨论 <a target="_blank" rel="noopener" href="https://oomake.com/question/5339468">https://oomake.com/question/5339468</a></p>
+<p>大概意思是：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">如果Excel已打开，使用dispatch将在打开的Excel实例中创建新选项卡；而使用dispatchEx将打开一个新的Excel实例。</span><br><span class="line">DispatchEx可能用于远程访问。</span><br><span class="line"></span><br><span class="line">从the pywin32 source，您可以看到DispatchEx尝试返回一个包裹的IDispatchEx接口而不是IDispatch。 (考虑到名字，这并不太令人惊讶。) 你可以在MSDN上查找IDispatchEx，你会发现它是</span><br><span class="line"></span><br><span class="line">an extension of the IDispatch interface, supports features appropriate <span class="keyword">for</span> dynamic languages such <span class="keyword">as</span> scripting languages.</span><br><span class="line">这个想法是，如果你自动化的东西是一个动态对象(就像你在Python或Javascript中那样的对象)，而不是一个静态对象(就像你在C++或Java中拥有的那种对象)，Visual基本代码可以访问其动态性质 - 在运行时枚举，添加和删除成员等。 当然pywin32几乎可以完成VB的所有工作，有时你需要更加明确一些。在这种情况下，您需要创建一个DispatchEx，并调用其DeleteMemberByName等方法。</span><br></pre></td></tr></table></figure>
+
+<p>看来DispatchEx是扩展版，能建多个win32com服务对象。</p>
+<p><strong>还有个神奇的事情：</strong></p>
+<p>当我用 DispatchEx() 成功打开exel以后，<strong>再用 Dispach() 和gencache.EnsureDispatch()居然也可以打开了，但过一会儿又打不开了…</strong></p>
+<p>不过使用DispatchEx屡试屡爽，没出过问题。</p>
+<h4 id="继续探索"><a href="#继续探索" class="headerlink" title="继续探索"></a>继续探索</h4><p>针对三个函数的区别，我发现最大的区别就是： DispatchEx() 会新建win32com.client ，即新的客户端服务，我的代码里是新的Excel.Application；而后者则使用当前系统进程中的Excel.Application服务。</p>
+<p><strong>那么如果我用任务管理器关闭当前所有Microsoft Excel进程，后两者是不是没办法运行啦？</strong></p>
+<p><strong>是滴！！！！</strong></p>
+<p><strong>果然运行失败，而且出现的错误提示正是我今天一直在解决的BUG！</strong></p>
+<p><strong>所以说，我今天早上第一次出现问题，有可能是文件名错误，跟大可能是我刚开机就运行我的代码，没有Microsoft Excel服务进程，所以用pywin32获取不到Excel.Application服务！</strong></p>
+<p><strong>做个实验验证一下？</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> win32com.client</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">test_01</span>():</span></span><br><span class="line">    xlApp = win32com.client.DispatchEx(<span class="string">&#x27;Excel.Application&#x27;</span>) </span><br><span class="line">    filename = <span class="string">r&#x27;E:\\Programs\\python\\自动化处理EXEL\\test.xlsx&#x27;</span></span><br><span class="line">    xlwb = xlApp.Workbooks.Open(Filename=filename) </span><br><span class="line">    <span class="built_in">print</span>(xlwb)</span><br><span class="line">    <span class="built_in">print</span>(xlwb.Sheets(<span class="number">1</span>).Cells(<span class="number">1</span>, <span class="number">1</span>))  <span class="comment"># 打印第一张工作表的A1单元格的值</span></span><br><span class="line">    <span class="comment"># xlApp.Quit()</span></span><br><span class="line">    </span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">test_02</span>():</span></span><br><span class="line">	xlApp = win32com.client.Dispatch(<span class="string">&#x27;Excel.Application&#x27;</span>)  </span><br><span class="line">    filename = <span class="string">r&#x27;E:\\Programs\\python\\自动化处理EXEL\\test.xlsx&#x27;</span></span><br><span class="line">    xlwb = xlApp.Workbooks.Open(Filename=filename)  </span><br><span class="line">    <span class="built_in">print</span>(xlwb)</span><br><span class="line">    <span class="built_in">print</span>(xlwb.Sheets(<span class="number">1</span>).Cells(<span class="number">1</span>, <span class="number">1</span>))  <span class="comment"># 打印第一张工作表的A1单元格的值</span></span><br><span class="line">    <span class="comment"># xlApp.Quit()</span></span><br><span class="line">    </span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">test_03</span>():</span></span><br><span class="line">	xlApp = win32com.client.gencache.EnsureDispatch(<span class="string">&#x27;Excel.Application&#x27;</span>) </span><br><span class="line">    filename = <span class="string">r&#x27;E:\\Programs\\python\\自动化处理EXEL\\test.xlsx&#x27;</span></span><br><span class="line">    xlwb = xlApp.Workbooks.Open(Filename=filename) </span><br><span class="line">    <span class="built_in">print</span>(xlwb)</span><br><span class="line">    <span class="built_in">print</span>(xlwb.Sheets(<span class="number">1</span>).Cells(<span class="number">1</span>, <span class="number">1</span>))  <span class="comment"># 打印第一张工作表的A1单元格的值</span></span><br><span class="line">    <span class="comment"># xlApp.Quit()</span></span><br><span class="line">    </span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&#x27;__main__&#x27;</span>:</span><br><span class="line">    <span class="comment"># test_01()</span></span><br><span class="line">    <span class="comment"># test_02()</span></span><br><span class="line">    <span class="comment"># test_03()</span></span><br><span class="line">    <span class="keyword">while</span>(<span class="literal">True</span>):</span><br><span class="line">        test_01()</span><br><span class="line">        <span class="comment"># test_02()</span></span><br><span class="line">        <span class="comment"># test_03()</span></span><br><span class="line">        <span class="keyword">pass</span></span><br></pre></td></tr></table></figure>
+
+
+
+
+<table>
+<thead>
+<tr>
+<th align="center">实验批次</th>
+<th align="center">实验过程</th>
+<th align="center">实验结果</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">一</td>
+<td align="center">利用任务管理器关闭所有Microsoft Excel进程，分别运行test_01()、test_02()、test_03()</td>
+<td align="center">只有test_01()成功，后两者得到今天的开头的那个bug，即无法自己创建Excel.Application服务</td>
+</tr>
+<tr>
+<td align="center">二</td>
+<td align="center">用鼠标随便点开一个电脑上的.xlsx文件，此时任务管理器中增加一个Microsoft Excel进程。进而分别运行test_01()、test_02()、test_03()</td>
+<td align="center">test_01()、test_02()、test_03()都可正常运行。任务管理器中的情况分两种：（1）若提前打开的.xlsx和测试的文件是一个，那么test_01()增加一个进程，后两者不增加进程；（2）若若提前打开的.xlsx为任意文件，和测试的文件是不一样，则三者都增加一个进程</td>
+</tr>
+<tr>
+<td align="center">三</td>
+<td align="center">用鼠标随便点开一个电脑上的.xlsx文件，此时任务管理器中增加一个Microsoft Excel进程。然后分别无限循环运行test_01()、test_02()、test_03()</td>
+<td align="center">test_01()、test_02()、test_03()都可正常运行。后两者与实验二一致，只增加一个进程；而test-01()则无限增加进程，比如达到好多个Microsoft Excel进程。</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+</tbody></table>
+<p><strong>结果分析：</strong></p>
+<p>上述实验及结果显示，我的猜测没错，也让我今天的探索终于有了清晰地答案，终于可以安稳地使用win32com了！！</p>
+<p><strong>在以后的使用中，我更想用xlApp = win32com.client.DispatchEx(‘Excel.Application’) 来创建Excel.Application服务，看他样子有可能还可以跨计算机创建实例！</strong></p>
+<p><strong>还记得大二时陈家骏教授说过，你害怕bug干嘛？计算机是我们人类开发出来的，害怕它？在人工智能还未成熟的现在，bug完全只是设计缺陷而已，你程序写成怎么样，它给你的反馈就那样！你完全没必要担心bug会吞噬你，哈哈！</strong></p>
+<p>对啊，经常看到周围人一遇到问题就放弃，或者努力尝试解决一段时间后仍会选择放弃，而我是那个喜欢钻研问题的本质，尽最大能力解决的人！尤其是自己写的代码出的问题，我会更认真钻研。</p>
+ 
+      <!-- reward -->
+      
+      <div id="reword-out">
+        <div id="reward-btn">
+          打赏
+        </div>
+      </div>
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <div class="declare">
+      <ul class="post-copyright">
+        <li>
+          <i class="ri-copyright-line"></i>
+          <strong>版权声明： </strong>
+          
+          本博客所有文章除特别声明外，著作权归作者所有。转载请注明出处！
+          
+        </li>
+      </ul>
+    </div>
+    
+    <footer class="article-footer">
+       
+<div class="share-btn">
+      <span class="share-sns share-outer">
+        <i class="ri-share-forward-line"></i>
+        分享
+      </span>
+      <div class="share-wrap">
+        <i class="arrow"></i>
+        <div class="share-icons">
+          
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="ri-weibo-fill"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="ri-wechat-fill"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="ri-qq-fill"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="ri-douban-line"></i>
+          </a>
+          <!-- <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a> -->
+          
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="ri-facebook-circle-fill"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="ri-twitter-fill"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="ri-google-fill"></i>
+          </a>
+        </div>
+      </div>
+</div>
+
+<div class="wx-share-modal">
+    <a class="modal-close" href="javascript:;"><i class="ri-close-circle-line"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://yeying.tech/%E7%AC%94%E8%AE%B0/interesting-bug/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div id="share-mask"></div>  
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/python/" rel="tag">python</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/win32com/" rel="tag">win32com</a></li></ul>
+
+    </footer>
+  </div>
+
+   
+  <nav class="article-nav">
+    
+    
+      <a href="/%E7%AC%94%E8%AE%B0/Typora-Theme/" class="article-nav-link">
+        <strong class="article-nav-caption">下一篇</strong>
+        <div class="article-nav-title">Typora美化</div>
+      </a>
+    
+  </nav>
+
+   
+<!-- valine评论 -->
+<div id="vcomments-box">
+  <div id="vcomments"></div>
+</div>
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js"></script>
+<script>
+  new Valine({
+    el: "#vcomments",
+    app_id: "",
+    app_key: "",
+    path: window.location.pathname,
+    avatar: "monsterid",
+    placeholder: "给我的文章加点评论吧~",
+    recordIP: true,
+  });
+  const infoEle = document.querySelector("#vcomments .info");
+  if (infoEle && infoEle.childNodes && infoEle.childNodes.length > 0) {
+    infoEle.childNodes.forEach(function (item) {
+      item.parentNode.removeChild(item);
+    });
+  }
+</script>
+<style>
+  #vcomments-box {
+    padding: 5px 30px;
+  }
+
+  @media screen and (max-width: 800px) {
+    #vcomments-box {
+      padding: 5px 0px;
+    }
+  }
+
+  #vcomments-box #vcomments {
+    background-color: #fff;
+  }
+
+  .v .vlist .vcard .vh {
+    padding-right: 20px;
+  }
+
+  .v .vlist .vcard {
+    padding-left: 10px;
+  }
+</style>
+
+ 
+   
+     
+</article>
+
+
+</section>
+      <footer class="footer">
+  <div class="outer">
+    <ul>
+      <li>
+        Copyrights &copy;
+        2019-2021
+        <i class="ri-heart-fill heart_icon"></i> PAYIZ
+      </li>
+    </ul>
+    <ul>
+      <li>
+        
+        
+        <span>
+  <span><i class="ri-user-3-fill"></i><span id="busuanzi_value_site_uv"></span></span>
+  <span class="division">|</span>
+  <span><i class="ri-eye-fill"></i><span id="busuanzi_value_page_pv"></span></span>
+</span>
+        
+      </li>
+    </ul>
+    <ul>
+      
+    </ul>
+    <ul>
+      
+    </ul>
+    <ul>
+      <li>
+        <!-- cnzz统计 -->
+        
+        <script type="text/javascript" src='https://s9.cnzz.com/z_stat.php?id=1280147847&amp;web_id=1280147847'></script>
+        
+      </li>
+    </ul>
+  </div>
+</footer>
+      <div class="float_btns">
+        <div class="totop" id="totop">
+  <i class="ri-arrow-up-line"></i>
+</div>
+
+<div class="todark" id="todark">
+  <i class="ri-moon-line"></i>
+</div>
+
+      </div>
+    </main>
+    <aside class="sidebar on">
+      <button class="navbar-toggle"></button>
+<nav class="navbar">
+  
+  <div class="logo">
+    <a href="/"><img src="/images/bird.png" alt="夜莺悠吟"></a>
+  </div>
+  
+  <ul class="nav nav-main">
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/">主页</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/archives">归档</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/categories">分类</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/tags">标签</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/categories/%E7%9B%B8%E5%86%8C">相册</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/photos">壁纸</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/friends">社交</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/about/me">关于我</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/about/site">关于博客</a>
+    </li>
+    
+  </ul>
+</nav>
+<nav class="navbar navbar-bottom">
+  <ul class="nav">
+    <li class="nav-item">
+      
+      <a class="nav-item-link nav-item-search"  title="搜索">
+        <i class="ri-search-line"></i>
+      </a>
+      
+      
+      <a class="nav-item-link" target="_blank" href="/atom.xml" title="RSS Feed">
+        <i class="ri-rss-line"></i>
+      </a>
+      
+    </li>
+  </ul>
+</nav>
+<div class="search-form-wrap">
+  <div class="local-search local-search-plugin">
+  <input type="search" id="local-search-input" class="local-search-input" placeholder="Search...">
+  <div id="local-search-result" class="local-search-result"></div>
+</div>
+</div>
+    </aside>
+    <div id="mask"></div>
+
+<!-- #reward -->
+<div id="reward">
+  <span class="close"><i class="ri-close-line"></i></span>
+  <p class="reward-p"><i class="ri-cup-line"></i>感谢您的支持😊</p>
+  <div class="reward-box">
+    
+    <div class="reward-item">
+      <img class="reward-img" src="https://cdn.jsdelivr.net/gh/payiz-asj/CDN/images/alipay.png">
+      <span class="reward-type">支付宝</span>
+    </div>
+    
+    
+    <div class="reward-item">
+      <img class="reward-img" src="https://cdn.jsdelivr.net/gh/payiz-asj/CDN/images/wechatpay.png">
+      <span class="reward-type">微信</span>
+    </div>
+    
+  </div>
+</div>
+    
+<script src="/js/jquery-2.0.3.min.js"></script>
+ 
+<script src="/js/lazyload.min.js"></script>
+
+<!-- Tocbot -->
+ 
+<script src="/js/tocbot.min.js"></script>
+
+<script>
+  tocbot.init({
+    tocSelector: ".tocbot",
+    contentSelector: ".article-entry",
+    headingSelector: "h1, h2, h3, h4, h5, h6",
+    hasInnerContainers: true,
+    scrollSmooth: true,
+    scrollContainer: "main",
+    positionFixedSelector: ".tocbot",
+    positionFixedClass: "is-position-fixed",
+    fixedSidebarOffset: "auto",
+  });
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.js"></script>
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.css"
+/>
+<script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js"></script>
+
+<script src="/dist/main.js"></script>
+
+<!-- ImageViewer -->
+ <!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" style="display:none" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css">
+<script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"></script>
+
+<script>
+    function viewer_init() {
+        let pswpElement = document.querySelectorAll('.pswp')[0];
+        let $imgArr = document.querySelectorAll(('.article-entry img:not(.reward-img)'))
+
+        $imgArr.forEach(($em, i) => {
+            $em.onclick = () => {
+                // slider展开状态
+                // todo: 这样不好，后面改成状态
+                if (document.querySelector('.left-col.show')) return
+                let items = []
+                $imgArr.forEach(($em2, i2) => {
+                    let img = $em2.getAttribute('data-idx', i2)
+                    let src = $em2.getAttribute('data-target') || $em2.getAttribute('src')
+                    let title = $em2.getAttribute('alt')
+                    // 获得原图尺寸
+                    const image = new Image()
+                    image.src = src
+                    items.push({
+                        src: src,
+                        w: image.width || $em2.width,
+                        h: image.height || $em2.height,
+                        title: title
+                    })
+                })
+                var gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, {
+                    index: parseInt(i)
+                });
+                gallery.init()
+            }
+        })
+    }
+    viewer_init()
+</script> 
+<!-- MathJax -->
+
+<!-- Katex -->
+
+<!-- busuanzi  -->
+ 
+<script src="/js/busuanzi-2.3.pure.min.js"></script>
+ 
+<!-- ClickLove -->
+ 
+<script src="/js/clickLove.js"></script>
+ 
+<!-- ClickBoom1 -->
+
+<!-- ClickBoom2 -->
+
+<!-- CodeCopy -->
+ 
+<link rel="stylesheet" href="/css/clipboard.css">
+ <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+<script>
+  function wait(callback, seconds) {
+    var timelag = null;
+    timelag = window.setTimeout(callback, seconds);
+  }
+  !function (e, t, a) {
+    var initCopyCode = function(){
+      var copyHtml = '';
+      copyHtml += '<button class="btn-copy" data-clipboard-snippet="">';
+      copyHtml += '<i class="ri-file-copy-2-line"></i><span>COPY</span>';
+      copyHtml += '</button>';
+      $(".highlight .code pre").before(copyHtml);
+      $(".article pre code").before(copyHtml);
+      var clipboard = new ClipboardJS('.btn-copy', {
+        target: function(trigger) {
+          return trigger.nextElementSibling;
+        }
+      });
+      clipboard.on('success', function(e) {
+        let $btn = $(e.trigger);
+        $btn.addClass('copied');
+        let $icon = $($btn.find('i'));
+        $icon.removeClass('ri-file-copy-2-line');
+        $icon.addClass('ri-checkbox-circle-line');
+        let $span = $($btn.find('span'));
+        $span[0].innerText = 'COPIED';
+        
+        wait(function () { // 等待两秒钟后恢复
+          $icon.removeClass('ri-checkbox-circle-line');
+          $icon.addClass('ri-file-copy-2-line');
+          $span[0].innerText = 'COPY';
+        }, 2000);
+      });
+      clipboard.on('error', function(e) {
+        e.clearSelection();
+        let $btn = $(e.trigger);
+        $btn.addClass('copy-failed');
+        let $icon = $($btn.find('i'));
+        $icon.removeClass('ri-file-copy-2-line');
+        $icon.addClass('ri-time-line');
+        let $span = $($btn.find('span'));
+        $span[0].innerText = 'COPY FAILED';
+        
+        wait(function () { // 等待两秒钟后恢复
+          $icon.removeClass('ri-time-line');
+          $icon.addClass('ri-file-copy-2-line');
+          $span[0].innerText = 'COPY';
+        }, 2000);
+      });
+    }
+    initCopyCode();
+  }(window, document);
+</script>
+ 
+<!-- CanvasBackground -->
+
+<script>
+  if (window.mermaid) {
+    mermaid.initialize({ theme: "forest" });
+  }
+</script>
+
+
+    
+  </div>
+</body>
+
+</html>

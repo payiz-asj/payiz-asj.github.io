@@ -6,7 +6,7 @@
   <link href="https://yeying.tech/atom.xml" rel="self"/>
   
   <link href="https://yeying.tech/"/>
-  <updated>2021-08-28T03:27:42.122Z</updated>
+  <updated>2021-08-30T10:13:23.993Z</updated>
   <id>https://yeying.tech/</id>
   
   <author>
@@ -17,21 +17,37 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>一个很奇怪的BUG</title>
+    <link href="https://yeying.tech/%E7%AC%94%E8%AE%B0/interesting-bug/"/>
+    <id>https://yeying.tech/%E7%AC%94%E8%AE%B0/interesting-bug/</id>
+    <published>2021-08-30T10:11:39.000Z</published>
+    <updated>2021-08-30T10:13:23.993Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;一个很奇怪的BUG&quot;&gt;&lt;a href=&quot;#一个很奇怪的BUG&quot; class=&quot;headerlink&quot; title=&quot;一个很奇怪的BUG&quot;&gt;&lt;/a&gt;一个很奇怪的BUG&lt;/h2&gt;&lt;h3 id=&quot;发现Bug&quot;&gt;&lt;a href=&quot;#发现Bug&quot; class=&quot;headerlink&quot; title=&quot;发现Bug&quot;&gt;&lt;/a&gt;发现Bug&lt;/h3&gt;&lt;p&gt;今天在使用python+win32com读取exel表格时，突然遇到一个bug，获取不到exel权限，即程序第一句就出错，后面的内容都无法运行，比如下面写了一个简单的测试：&lt;/p&gt;
+&lt;figure class=&quot;highlight python&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;import&lt;/span&gt; win32com.client&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;xlApp = win32com.client.Dispatch(&lt;span class=&quot;string&quot;&gt;&amp;#x27;Excel.Application&amp;#x27;&lt;/span&gt;)  &lt;span class=&quot;comment&quot;&gt;# win32com获取exel应用服务&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;filename = &lt;span class=&quot;string&quot;&gt;r&amp;#x27;E:\\Programs\\python\\自动化处理EXEL\\test.xlsx&amp;#x27;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;xlwb = xlApp.Workbooks.Open(Filename=filename)  &lt;span class=&quot;comment&quot;&gt;# 获取工作簿&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;built_in&quot;&gt;print&lt;/span&gt;(xlwb)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;built_in&quot;&gt;print&lt;/span&gt;(xlwb.Sheets(&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;).Cells(&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;))  &lt;span class=&quot;comment&quot;&gt;# 打印第一张工作表的A1单元格的值&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;xlApp.Quit()&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
+    
+    
+    
+    <category term="笔记" scheme="https://yeying.tech/categories/%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="python" scheme="https://yeying.tech/tags/python/"/>
+    
+    <category term="win32com" scheme="https://yeying.tech/tags/win32com/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Github配置 SSH Keys</title>
     <link href="https://yeying.tech/%E7%AC%94%E8%AE%B0/git-ssh/"/>
     <id>https://yeying.tech/%E7%AC%94%E8%AE%B0/git-ssh/</id>
     <published>2019-04-06T13:26:11.000Z</published>
-    <updated>2021-08-28T03:27:42.122Z</updated>
+    <updated>2021-08-28T03:34:34.536Z</updated>
     
     
-      
-      
-        
-        
     <summary type="html">&lt;p&gt;&lt;strong&gt;先说一下，https 和 SSH 的区别：&lt;/strong&gt;&lt;/p&gt;
-&lt;figure class=&quot;highlight js&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span</summary>
-        
-      
+&lt;figure class=&quot;highlight js&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;、前者可以随意克隆github上的项目，而不管是谁的；而后者则是你必须是你要克隆的项目的拥有者或管理员，且需要先添加 SSH key ，否则无法克隆。&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;number&quot;&gt;2&lt;/span&gt;、https url 在push的时候是需要验证用户名和密码的；而 SSH 在push的时候，是不需要输入用户名的，如果配置SSH key的时候设置了密码，则需要输入密码的，否则直接是不需要输入密码的。&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
     
     
     
@@ -604,28 +620,6 @@
     
     
     <category term="足球比赛" scheme="https://yeying.tech/tags/%E8%B6%B3%E7%90%83%E6%AF%94%E8%B5%9B/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>项目需求分析</title>
-    <link href="https://yeying.tech/%E4%B8%AA%E4%BA%BA%E9%A1%B9%E7%9B%AE/hackathon-requirement-analysis/"/>
-    <id>https://yeying.tech/%E4%B8%AA%E4%BA%BA%E9%A1%B9%E7%9B%AE/hackathon-requirement-analysis/</id>
-    <published>2020-11-29T04:20:34.000Z</published>
-    <updated>2021-07-31T10:49:48.030Z</updated>
-    
-    
-    <summary type="html">&lt;h2 align = &quot;center&quot;&gt;——“送信鸭”小程序&lt;/h2&gt;
-## 1. 需求获取 / 需求调研：
-
-&lt;h3 id=&quot;1-1-访谈&quot;&gt;&lt;a href=&quot;#1-1-访谈&quot; class=&quot;headerlink&quot; title=&quot;1.1 访谈&quot;&gt;&lt;/a&gt;1.1 访谈&lt;/h3&gt;&lt;p&gt;​    通过访谈获取需求是需求获取方法中最直接、最快速的一种方法了，往往能够&lt;strong&gt;最直接、最具体、清晰、客观地&lt;/strong&gt;了解目标用户的需求。   &lt;/p&gt;</summary>
-    
-    
-    
-    <category term="个人项目" scheme="https://yeying.tech/categories/%E4%B8%AA%E4%BA%BA%E9%A1%B9%E7%9B%AE/"/>
-    
-    
-    <category term="小程序" scheme="https://yeying.tech/tags/%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
     
   </entry>
   

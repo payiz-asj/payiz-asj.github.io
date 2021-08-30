@@ -152,6 +152,68 @@
        
     
 <article
+  id="post-adb-keys"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/%E7%AC%94%E8%AE%B0/adb-keys/"
+    >ADB命令详解及用法大全</a> 
+</h2>
+ 
+
+      
+    </header>
+     
+    <div class="article-meta">
+      <a href="/%E7%AC%94%E8%AE%B0/adb-keys/" class="article-date">
+  <time datetime="2019-04-16T07:30:07.000Z" itemprop="datePublished">2019-04-16</time>
+</a> 
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E7%AC%94%E8%AE%B0/">笔记</a>
+  </div>
+   
+    </div>
+      
+    <div class="article-entry" itemprop="articleBody">
+       
+  <h2 id="一、ADB是什么？"><a href="#一、ADB是什么？" class="headerlink" title="一、ADB是什么？"></a>一、ADB是什么？</h2><p>ADB，即 <a target="_blank" rel="noopener" href="https://developer.android.com/studio/command-line/adb.html">Android Debug Bridge</a> 是一种允许模拟器或已连接的 Android 设备进行通信的命令行工具，它可为各种设备操作提供便利，如安装和调试应用，并提供对 <code>Unix shell</code>（可用来在模拟器或连接的设备上运行各种命令）的访问。可以在<code>Android SDK/platform-tools</code>中找到 <code>adb</code> 工具。</p>
+<p><strong>注： 有部分命令的支持情况可能与 Android 系统版本及定制 ROM 的实现有关。</strong></p> 
+      <a class="article-more-link" href="/%E7%AC%94%E8%AE%B0/adb-keys/"
+        >阅读更多...</a
+      >
+       
+      <!-- reward -->
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <footer class="article-footer">
+       
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E4%BD%BF%E7%94%A8%E6%89%8B%E5%86%8C/" rel="tag">使用手册</a></li></ul>
+
+    </footer>
+  </div>
+
+    
+ 
+    
+</article>
+
+
+    
+    
+       
+    
+<article
   id="post-vs-keys"
   class="article article-type-post"
   itemscope
@@ -376,37 +438,11 @@
     <div class="article-entry" itemprop="articleBody">
        
   <p><strong>先说一下，https 和 SSH 的区别：</strong></p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1</span>、前者可以随意克隆github上的项目，而不管是谁的；而后者则是你必须是你要克隆的项目的拥有者或管理员，且需要先添加 SSH key ，否则无法克隆。</span><br><span class="line"></span><br><span class="line"><span class="number">2</span>、https url 在push的时候是需要验证用户名和密码的；而 SSH 在push的时候，是不需要输入用户名的，如果配置SSH key的时候设置了密码，则需要输入密码的，否则直接是不需要输入密码的。</span><br></pre></td></tr></table></figure>
-
-<p><strong>配置步骤：</strong></p>
-<h4 id="1-本地下载Git工具"><a href="#1-本地下载Git工具" class="headerlink" title="1. 本地下载Git工具"></a>1. 本地下载Git工具</h4><p>​    网址：<a target="_blank" rel="noopener" href="https://git-scm.com/">https://git-scm.com/</a></p>
-<h4 id="2-添加用户"><a href="#2-添加用户" class="headerlink" title="2. 添加用户"></a>2. 添加用户</h4><p>打开Gitbash，输入</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --<span class="keyword">global</span> user.name <span class="string">&#x27;your_name&#x27;</span> <span class="comment"># 设置用户名(github)</span></span><br><span class="line">git config --<span class="keyword">global</span> user.email <span class="string">&#x27;your_email@example.com&#x27;</span> <span class="comment"># 设置邮箱（注册github时用的邮箱）</span></span><br></pre></td></tr></table></figure>
-
-
-
-<h4 id="3-添加SSH-Keys"><a href="#3-添加SSH-Keys" class="headerlink" title="3. 添加SSH Keys"></a>3. 添加SSH Keys</h4><p>打开Gitbash，输入</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ls -al ~/.ssh <span class="comment"># 检查是否已存在ssh keys</span></span><br></pre></td></tr></table></figure>
-
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C <span class="string">&quot;your_email@example.com&quot;</span> <span class="comment"># 创建新的秘钥</span></span><br></pre></td></tr></table></figure>
-
-<p>接下来要求你输入密码，这个密码是使用SSH链接 push的时候用的，可以选择设，如果不想设 按Enter就可以了。 然后如果输出下面内容，表示key创建成功。</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Your identification has been saved <span class="keyword">in</span> /home/you/.ssh/id_rsa. <span class="comment">#  Your public key has been saved in /home/you/.ssh/id_rsa.pub. # The key fingerprint is: # 01:0f:f4:3b:ca:85:d6:17:a1:7d:f0:68:9d:f0:a2:db your_email@example.com</span></span><br></pre></td></tr></table></figure>
-
-<p>然后，把ssh key添加到github上</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">打开刚才的目录（例如/home/you/.ssh/id_rsa.pub），里面会有两个或三个文件：</span><br><span class="line">id_rsa           <span class="comment"># 本地私钥</span></span><br><span class="line">id_rsa.pub       <span class="comment"># 公钥</span></span><br><span class="line">known_hosts      <span class="comment"># 前期可能没生成，这个只是日志记录文件，后期会生成，而且不重要</span></span><br></pre></td></tr></table></figure>
-
-<p>浏览器打开 <a target="_blank" rel="noopener" href="https://github.com/settings/keys">https://github.com/settings/keys</a>  点击“New SSH key”，标题可以随便起，key内容：将id_rsa.pub里面的内容复制到这里</p>
-<h4 id="4-测试"><a href="#4-测试" class="headerlink" title="4. 测试"></a>4. 测试</h4><p>打开Gitbash，输入</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh -T git@github.com  <span class="comment"># 试图连接github</span></span><br></pre></td></tr></table></figure>
-
-<p>如果看到提示，输入“yes”，按enter</p>
-<p>最后会的得到以下信息：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Hi username! Yo<span class="string">u&#x27;ve successfully authenticated, but GitHub does not # provide shell access.</span></span><br></pre></td></tr></table></figure>
-
-<p><strong>如果该用户名是你的，你已经成功设置SSH密钥！</strong></p>
-<p>此时，你用git克隆仓库时，HTTPS和SSH的方式都可以使用了。</p>
- 
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1</span>、前者可以随意克隆github上的项目，而不管是谁的；而后者则是你必须是你要克隆的项目的拥有者或管理员，且需要先添加 SSH key ，否则无法克隆。</span><br><span class="line"></span><br><span class="line"><span class="number">2</span>、https url 在push的时候是需要验证用户名和密码的；而 SSH 在push的时候，是不需要输入用户名的，如果配置SSH key的时候设置了密码，则需要输入密码的，否则直接是不需要输入密码的。</span><br></pre></td></tr></table></figure> 
+      <a class="article-more-link" href="/%E7%AC%94%E8%AE%B0/git-ssh/"
+        >阅读更多...</a
+      >
+       
       <!-- reward -->
       
     </div>
