@@ -6,7 +6,7 @@
   <link href="https://yeying.tech/atom.xml" rel="self"/>
   
   <link href="https://yeying.tech/"/>
-  <updated>2021-08-30T10:13:23.993Z</updated>
+  <updated>2021-09-04T11:23:53.278Z</updated>
   <id>https://yeying.tech/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Sql Server 复习</title>
+    <link href="https://yeying.tech/%E7%AC%94%E8%AE%B0/sql-server-learning/"/>
+    <id>https://yeying.tech/%E7%AC%94%E8%AE%B0/sql-server-learning/</id>
+    <published>2021-09-04T06:22:45.000Z</published>
+    <updated>2021-09-04T11:23:53.278Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;Sql-Server-复习&quot;&gt;&lt;a href=&quot;#Sql-Server-复习&quot; class=&quot;headerlink&quot; title=&quot;Sql Server 复习&quot;&gt;&lt;/a&gt;Sql Server 复习&lt;/h2&gt;&lt;h3 id=&quot;1-我的环境&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="笔记" scheme="https://yeying.tech/categories/%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="Sql Server" scheme="https://yeying.tech/tags/Sql-Server/"/>
+    
+  </entry>
   
   <entry>
     <title>一个很奇怪的BUG</title>
@@ -579,38 +604,6 @@
         
     <summary type="html">&lt;h1 align = &quot;center&quot;&gt;闯入半决赛&lt;/h1&gt;
 &lt;h3 align = &quot;center&quot;&gt;地海 2:1 环境</summary>
-        
-      
-    
-    
-    
-    <category term="相册" scheme="https://yeying.tech/categories/%E7%9B%B8%E5%86%8C/"/>
-    
-    
-    <category term="足球比赛" scheme="https://yeying.tech/tags/%E8%B6%B3%E7%90%83%E6%AF%94%E8%B5%9B/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>足协杯夺冠照片</title>
-    <link href="https://yeying.tech/%E7%9B%B8%E5%86%8C/football-match-06-15/"/>
-    <id>https://yeying.tech/%E7%9B%B8%E5%86%8C/football-match-06-15/</id>
-    <published>2021-06-15T08:37:35.000Z</published>
-    <updated>2021-07-31T14:34:23.998Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 align = &quot;center&quot;&gt;足协杯夺冠照片&lt;/h1&gt;
-
-
-
-
-&lt;table&gt;
-      &lt;tr&gt; 
-          &lt;td align = &quot;center&quot;&gt;&lt;img</summary>
         
       
     
