@@ -104,7 +104,13 @@
   
     <div class="article-entry" itemprop="articleBody">
        
-  <h2 id="Sql-Server-复习"><a href="#Sql-Server-复习" class="headerlink" title="Sql Server 复习"></a>Sql Server 复习</h2><h3 id="1-我的环境"><a href="#1-我的环境" class="headerlink" title="1. 我的环境"></a>1. 我的环境</h3><p>Win10 64位，Sql Server 2019 Express,  SSMS 2018</p>
+  <p>抽空复习了一下Sql Server相关知识，做了如下笔记，以后作参考。</p>
+<span id="more"></span>
+
+
+
+<h3 id="1-我的环境"><a href="#1-我的环境" class="headerlink" title="1. 我的环境"></a>1. 我的环境</h3><p>Win10 64位，Sql Server 2019 Express,  SSMS 2018</p>
+<hr>
 <h3 id="2-常用-SQL-Server-规范集锦"><a href="#2-常用-SQL-Server-规范集锦" class="headerlink" title="2. 常用 SQL Server 规范集锦"></a>2. 常用 SQL Server 规范集锦</h3><h4 id="常见的字段类型选择"><a href="#常见的字段类型选择" class="headerlink" title="常见的字段类型选择"></a>常见的字段类型选择</h4><p>1.字符类型建议采用varchar/nvarchar数据类型<br>        2.金额货币建议采用money数据类型<br>        3.科学计数建议采用numeric数据类型<br>        4.自增长标识建议采用bigint数据类型  (数据量一大，用int类型就装不下，那以后改造就麻烦了)<br>        5.时间类型建议采用为datetime数据类型<br>        6.禁止使用text、ntext、image老的数据类型<br>        7.禁止使用xml数据类型、varchar(max)、nvarchar(max)</p>
 <h4 id="约束与索引"><a href="#约束与索引" class="headerlink" title="约束与索引"></a>约束与索引</h4><p><strong>每张表必须有主键</strong></p>
 <ul>
@@ -166,6 +172,7 @@
 <li>组合索引的原则是，过滤性越好的字段越靠前</li>
 <li>索引过多不仅会增加编译时间，也会影响数据库选择最佳执行计划</li>
 </ul>
+<hr>
 <h4 id="SQL查询"><a href="#SQL查询" class="headerlink" title="SQL查询"></a>SQL查询</h4><ul>
 <li>禁止在数据库做复杂运算</li>
 <li>禁止使用SELECT *      </li>
@@ -270,6 +277,7 @@
 <h5 id="21-增加事务异常处理机制"><a href="#21-增加事务异常处理机制" class="headerlink" title="21) 增加事务异常处理机制"></a>21) 增加事务异常处理机制</h5><p>应用程序做好意外处理，及时做Rollback。<br>设置连接属性 “set xact_abort on”</p>
 <h5 id="22-输出列使用二段式命名格式"><a href="#22-输出列使用二段式命名格式" class="headerlink" title="22)  输出列使用二段式命名格式"></a>22)  输出列使用二段式命名格式</h5><p>二段式命名格式：表名.字段名</p>
 <p>有JOIN关系的TSQL，字段必须指明字段是属于哪个表的，否则未来表结构变更后，有可能发生Ambiguous column name的程序兼容错误</p>
+<hr>
 <h4 id="架构设计"><a href="#架构设计" class="headerlink" title="架构设计"></a>架构设计</h4><ul>
 <li>读写分离</li>
 <li>schema解耦</li>
@@ -286,6 +294,7 @@
 <h4 id="日志类型的表应分区或分表"><a href="#日志类型的表应分区或分表" class="headerlink" title="日志类型的表应分区或分表"></a>日志类型的表应分区或分表</h4><p>对于大的表格要进行分区，分区操作将表和索引分在多个分区，通过分区切换能够快速实现新旧分区替换，加快数据清理速度，大幅减少IO资源消耗</p>
 <h4 id="频繁写入的表，需要分区或分表"><a href="#频繁写入的表，需要分区或分表" class="headerlink" title="频繁写入的表，需要分区或分表"></a>频繁写入的表，需要分区或分表</h4><p>自增长与Latch Lock</p>
 <p>闩锁是sql Server自己内部申请和控制，用户没有办法来干预，用来保证内存里面数据结构的一致性，锁级别是页级锁</p>
+<hr>
 <h3 id="Sql-语法及代码练习"><a href="#Sql-语法及代码练习" class="headerlink" title="Sql 语法及代码练习"></a>Sql 语法及代码练习</h3> 
       <!-- reward -->
       
