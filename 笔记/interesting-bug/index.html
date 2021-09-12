@@ -80,7 +80,7 @@
         <span class="post-meta-item-icon">
             <i class="ri-quill-pen-line"></i>
             <span class="post-meta-item-text"> 字数统计:</span>
-            <span class="post-count">2.5k</span>
+            <span class="post-count">2.4k</span>
         </span>
     </span>
 
@@ -89,7 +89,7 @@
         <span class="post-meta-item-icon">
             <i class="ri-book-open-line"></i>
             <span class="post-meta-item-text"> 阅读时长≈</span>
-            <span class="post-count">10 分钟</span>
+            <span class="post-count">9 分钟</span>
         </span>
     </span>
 </div>
@@ -104,7 +104,8 @@
   
     <div class="article-entry" itemprop="articleBody">
        
-  <h2 id="一个很奇怪的BUG"><a href="#一个很奇怪的BUG" class="headerlink" title="一个很奇怪的BUG"></a>一个很奇怪的BUG</h2><h3 id="发现Bug"><a href="#发现Bug" class="headerlink" title="发现Bug"></a>发现Bug</h3><p>今天在使用python+win32com读取exel表格时，突然遇到一个bug，获取不到exel权限，即程序第一句就出错，后面的内容都无法运行，比如下面写了一个简单的测试：</p>
+  <p>​    今天遇到个奇怪的bug, 记录于此</p>
+<h3 id="发现Bug"><a href="#发现Bug" class="headerlink" title="发现Bug"></a>发现Bug</h3><p>今天在使用python+win32com读取exel表格时，突然遇到一个bug，获取不到exel权限，即程序第一句就出错，后面的内容都无法运行，比如下面写了一个简单的测试：</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> win32com.client</span><br><span class="line"></span><br><span class="line">xlApp = win32com.client.Dispatch(<span class="string">&#x27;Excel.Application&#x27;</span>)  <span class="comment"># win32com获取exel应用服务</span></span><br><span class="line">filename = <span class="string">r&#x27;E:\\Programs\\python\\自动化处理EXEL\\test.xlsx&#x27;</span></span><br><span class="line">xlwb = xlApp.Workbooks.Open(Filename=filename)  <span class="comment"># 获取工作簿</span></span><br><span class="line"><span class="built_in">print</span>(xlwb)</span><br><span class="line"><span class="built_in">print</span>(xlwb.Sheets(<span class="number">1</span>).Cells(<span class="number">1</span>, <span class="number">1</span>))  <span class="comment"># 打印第一张工作表的A1单元格的值</span></span><br><span class="line">xlApp.Quit()</span><br></pre></td></tr></table></figure>
 
 
@@ -184,12 +185,12 @@
 <tr>
 <td align="center">二</td>
 <td align="center">用鼠标随便点开一个电脑上的.xlsx文件，此时任务管理器中增加一个Microsoft Excel进程。进而分别运行test_01()、test_02()、test_03()</td>
-<td align="center">test_01()、test_02()、test_03()都可正常运行。任务管理器中的情况分两种：（1）若提前打开的.xlsx和测试的文件是一个，那么test_01()增加一个进程，后两者不增加进程；（2）若若提前打开的.xlsx为任意文件，和测试的文件是不一样，则三者都增加一个进程</td>
+<td align="center">test_01()、test_02()、test_03()都可正常运行。任务管理器中的情况：test_01()增加一个进程，后两者不增加进程</td>
 </tr>
 <tr>
 <td align="center">三</td>
 <td align="center">用鼠标随便点开一个电脑上的.xlsx文件，此时任务管理器中增加一个Microsoft Excel进程。然后分别无限循环运行test_01()、test_02()、test_03()</td>
-<td align="center">test_01()、test_02()、test_03()都可正常运行。后两者与实验二一致，只增加一个进程；而test-01()则无限增加进程，比如达到好多个Microsoft Excel进程。</td>
+<td align="center">test_01()、test_02()、test_03()都可正常运行。后两者与实验二一致，只使用现有进程；而test-01()则无限增加进程，出现好多个Microsoft Excel进程。</td>
 </tr>
 <tr>
 <td align="center"></td>
@@ -200,8 +201,8 @@
 <p><strong>结果分析：</strong></p>
 <p>上述实验及结果显示，我的猜测没错，也让我今天的探索终于有了清晰地答案，终于可以安稳地使用win32com了！！</p>
 <p><strong>在以后的使用中，我更想用xlApp = win32com.client.DispatchEx(‘Excel.Application’) 来创建Excel.Application服务，看他样子有可能还可以跨计算机创建实例！</strong></p>
-<p><strong>还记得大二时陈家骏教授说过，你害怕bug干嘛？计算机是我们人类开发出来的，害怕它？在人工智能还未成熟的现在，bug完全只是设计缺陷而已，你程序写成怎么样，它给你的反馈就那样！你完全没必要担心bug会吞噬你，哈哈！</strong></p>
-<p>对啊，经常看到周围人一遇到问题就放弃，或者努力尝试解决一段时间后仍会选择放弃，而我是那个喜欢钻研问题的本质，尽最大能力解决的人！尤其是自己写的代码出的问题，我会更认真钻研。</p>
+<p><strong>还记得大二时陈家骏教授说过，你害怕bug干嘛？程序人写的，你程序写成怎么样，它给你的反馈就那样！完全没有灵异现象！bug只是设计缺陷而已，而你是设计者，造物者！</strong></p>
+<p>对啊，经常看到周围人被奇怪的Bug吓得不敢动代码了，准备就那么妥协；而我是个喜欢钻研问题的本质，尽最大能力解决问题的人！尤其是自己写的代码出的问题，我会更认真钻研。</p>
  
       <!-- reward -->
       

@@ -244,7 +244,8 @@
       
     <div class="article-entry" itemprop="articleBody">
        
-  <h2 id="一个很奇怪的BUG"><a href="#一个很奇怪的BUG" class="headerlink" title="一个很奇怪的BUG"></a>一个很奇怪的BUG</h2><h3 id="发现Bug"><a href="#发现Bug" class="headerlink" title="发现Bug"></a>发现Bug</h3><p>今天在使用python+win32com读取exel表格时，突然遇到一个bug，获取不到exel权限，即程序第一句就出错，后面的内容都无法运行，比如下面写了一个简单的测试：</p>
+  <p>​    今天遇到个奇怪的bug, 记录于此</p>
+<h3 id="发现Bug"><a href="#发现Bug" class="headerlink" title="发现Bug"></a>发现Bug</h3><p>今天在使用python+win32com读取exel表格时，突然遇到一个bug，获取不到exel权限，即程序第一句就出错，后面的内容都无法运行，比如下面写了一个简单的测试：</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> win32com.client</span><br><span class="line"></span><br><span class="line">xlApp = win32com.client.Dispatch(<span class="string">&#x27;Excel.Application&#x27;</span>)  <span class="comment"># win32com获取exel应用服务</span></span><br><span class="line">filename = <span class="string">r&#x27;E:\\Programs\\python\\自动化处理EXEL\\test.xlsx&#x27;</span></span><br><span class="line">xlwb = xlApp.Workbooks.Open(Filename=filename)  <span class="comment"># 获取工作簿</span></span><br><span class="line"><span class="built_in">print</span>(xlwb)</span><br><span class="line"><span class="built_in">print</span>(xlwb.Sheets(<span class="number">1</span>).Cells(<span class="number">1</span>, <span class="number">1</span>))  <span class="comment"># 打印第一张工作表的A1单元格的值</span></span><br><span class="line">xlApp.Quit()</span><br></pre></td></tr></table></figure> 
       <a class="article-more-link" href="/%E7%AC%94%E8%AE%B0/interesting-bug/"
         >阅读更多...</a
@@ -370,7 +371,8 @@
       
     <div class="article-entry" itemprop="articleBody">
        
-  <h2 id="pycharm-快捷键"><a href="#pycharm-快捷键" class="headerlink" title="pycharm 快捷键"></a>pycharm 快捷键</h2><table>
+  <p>关于快捷键网上很多人都总结了，我在此重复，只是为了自己查看更方便一些</p>
+<table>
 <thead>
 <tr>
 <th align="left">快捷键</th>
@@ -474,7 +476,7 @@
       
     <div class="article-entry" itemprop="articleBody">
        
-  <h2 id="小代码分享"><a href="#小代码分享" class="headerlink" title="小代码分享"></a>小代码分享</h2><h4 id="法宣在线考试自动作答-且得满分"><a href="#法宣在线考试自动作答-且得满分" class="headerlink" title="法宣在线考试自动作答(且得满分)"></a><a target="_blank" rel="noopener" href="https://www.cnblogs.com/QIAOXINGXING001/p/14002849.html">法宣在线考试自动作答(且得满分)</a></h4><h2 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h2><p><strong>仅供学习交流</strong><br>    功能：法宣在线考试, 自动获取答案, 完成考试。</p>
+  <h3 id="小代码分享"><a href="#小代码分享" class="headerlink" title="小代码分享"></a>小代码分享</h3><h4 id="法宣在线考试自动作答-且得满分"><a href="#法宣在线考试自动作答-且得满分" class="headerlink" title="法宣在线考试自动作答(且得满分)"></a><a target="_blank" rel="noopener" href="https://www.cnblogs.com/QIAOXINGXING001/p/14002849.html">法宣在线考试自动作答(且得满分)</a></h4><h2 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h2><p><strong>仅供学习交流</strong><br>    功能：法宣在线考试, 自动获取答案, 完成考试。</p>
 <h2 id="运行方法"><a href="#运行方法" class="headerlink" title="运行方法"></a>运行方法</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1.</span> 使用chrome浏览器登录法宣在线, 进入考试页面;</span><br><span class="line"><span class="number">2.</span> 单击浏览器的地址栏, 按快捷键F12;如果按不出来，说明平台截取并禁用了，那就用Chrome自带菜单: 更多工具 - 开发者工具;</span><br><span class="line"><span class="number">3.</span> 定位到<span class="built_in">console</span>/控制台面板, 粘贴代码, 回车;</span><br><span class="line"><span class="number">4.</span> 程序开始执行, 每秒答一道题, 等待答题完成;</span><br></pre></td></tr></table></figure> 
       <a class="article-more-link" href="/Demo/faxuanzaixian/"
         >阅读更多...</a

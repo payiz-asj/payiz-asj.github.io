@@ -1,12 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://yeying.tech/%E7%AC%94%E8%AE%B0/sql-server-learning/</loc>
-    <lastmod>2021-09-06</lastmod>
+    <loc>https://yeying.tech/Demo/faxuanzaixian/</loc>
+    <lastmod>2021-09-12</lastmod>
+  </url>
+  <url>
+    <loc>https://yeying.tech/%E7%AC%94%E8%AE%B0/vs-keys/</loc>
+    <lastmod>2021-09-12</lastmod>
+  </url>
+  <url>
+    <loc>https://yeying.tech/%E7%AC%94%E8%AE%B0/Pycharm-keys/</loc>
+    <lastmod>2021-09-12</lastmod>
   </url>
   <url>
     <loc>https://yeying.tech/%E7%AC%94%E8%AE%B0/interesting-bug/</loc>
-    <lastmod>2021-08-30</lastmod>
+    <lastmod>2021-09-12</lastmod>
+  </url>
+  <url>
+    <loc>https://yeying.tech/%E7%9B%B8%E5%86%8C/football-match-06-15/</loc>
+    <lastmod>2021-09-12</lastmod>
+  </url>
+  <url>
+    <loc>https://yeying.tech/%E7%AC%94%E8%AE%B0/sql-server-learning/</loc>
+    <lastmod>2021-09-06</lastmod>
   </url>
   <url>
     <loc>https://yeying.tech/%E7%AC%94%E8%AE%B0/git-ssh/</loc>
@@ -21,19 +37,7 @@
     <lastmod>2021-08-24</lastmod>
   </url>
   <url>
-    <loc>https://yeying.tech/Demo/faxuanzaixian/</loc>
-    <lastmod>2021-08-24</lastmod>
-  </url>
-  <url>
     <loc>https://yeying.tech/%E7%AC%94%E8%AE%B0/Greek-alphabet/</loc>
-    <lastmod>2021-08-20</lastmod>
-  </url>
-  <url>
-    <loc>https://yeying.tech/%E7%AC%94%E8%AE%B0/vs-keys/</loc>
-    <lastmod>2021-08-20</lastmod>
-  </url>
-  <url>
-    <loc>https://yeying.tech/%E7%AC%94%E8%AE%B0/Pycharm-keys/</loc>
     <lastmod>2021-08-20</lastmod>
   </url>
   <url>
@@ -78,10 +82,6 @@
   </url>
   <url>
     <loc>https://yeying.tech/%E7%9B%B8%E5%86%8C/football-match-06-06/</loc>
-    <lastmod>2021-07-31</lastmod>
-  </url>
-  <url>
-    <loc>https://yeying.tech/%E7%9B%B8%E5%86%8C/football-match-06-15/</loc>
     <lastmod>2021-07-31</lastmod>
   </url>
   <url>

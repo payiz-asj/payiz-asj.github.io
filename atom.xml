@@ -6,7 +6,7 @@
   <link href="https://yeying.tech/atom.xml" rel="self"/>
   
   <link href="https://yeying.tech/"/>
-  <updated>2021-09-06T09:54:50.103Z</updated>
+  <updated>2021-09-12T06:32:18.330Z</updated>
   <id>https://yeying.tech/</id>
   
   <author>
@@ -15,6 +15,204 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>小代码分享</title>
+    <link href="https://yeying.tech/Demo/faxuanzaixian/"/>
+    <id>https://yeying.tech/Demo/faxuanzaixian/</id>
+    <published>2021-08-18T16:08:57.000Z</published>
+    <updated>2021-09-12T06:32:18.330Z</updated>
+    
+    
+    <summary type="html">&lt;h3 id=&quot;小代码分享&quot;&gt;&lt;a href=&quot;#小代码分享&quot; class=&quot;headerlink&quot; title=&quot;小代码分享&quot;&gt;&lt;/a&gt;小代码分享&lt;/h3&gt;&lt;h4 id=&quot;法宣在线考试自动作答-且得满分&quot;&gt;&lt;a href=&quot;#法宣在线考试自动作答-且得满分&quot; class=&quot;headerlink&quot; title=&quot;法宣在线考试自动作答(且得满分)&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://www.cnblogs.com/QIAOXINGXING001/p/14002849.html&quot;&gt;法宣在线考试自动作答(且得满分)&lt;/a&gt;&lt;/h4&gt;&lt;h2 id=&quot;说明&quot;&gt;&lt;a href=&quot;#说明&quot; class=&quot;headerlink&quot; title=&quot;说明&quot;&gt;&lt;/a&gt;说明&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;仅供学习交流&lt;/strong&gt;&lt;br&gt;    功能：法宣在线考试, 自动获取答案, 完成考试。&lt;/p&gt;
+&lt;h2 id=&quot;运行方法&quot;&gt;&lt;a href=&quot;#运行方法&quot; class=&quot;headerlink&quot; title=&quot;运行方法&quot;&gt;&lt;/a&gt;运行方法&lt;/h2&gt;&lt;figure class=&quot;highlight js&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;number&quot;&gt;1.&lt;/span&gt; 使用chrome浏览器登录法宣在线, 进入考试页面;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;number&quot;&gt;2.&lt;/span&gt; 单击浏览器的地址栏, 按快捷键F12;如果按不出来，说明平台截取并禁用了，那就用Chrome自带菜单: 更多工具 - 开发者工具;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;number&quot;&gt;3.&lt;/span&gt; 定位到&lt;span class=&quot;built_in&quot;&gt;console&lt;/span&gt;/控制台面板, 粘贴代码, 回车;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;number&quot;&gt;4.&lt;/span&gt; 程序开始执行, 每秒答一道题, 等待答题完成;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
+    
+    
+    
+    <category term="Demo" scheme="https://yeying.tech/categories/Demo/"/>
+    
+    
+    <category term="Js" scheme="https://yeying.tech/tags/Js/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Visual Studio 快捷键</title>
+    <link href="https://yeying.tech/%E7%AC%94%E8%AE%B0/vs-keys/"/>
+    <id>https://yeying.tech/%E7%AC%94%E8%AE%B0/vs-keys/</id>
+    <published>2019-04-10T09:52:55.000Z</published>
+    <updated>2021-09-12T06:31:38.488Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;总结了几个Visual Studio 好用的快捷键，以后会再继续加。&lt;/p&gt;
+&lt;p&gt;关于快捷键网上很多人都总结了，我在此重复，只是为了自己查看更方便一些&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;功能&lt;/th&gt;
+&lt;th&gt;快捷键&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td&gt;注释&lt;/td&gt;
+&lt;td&gt;Ctrl + K  Ctrl + C&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;取消注释&lt;/td&gt;
+&lt;td&gt;Ctrl + K  Ctrl + U&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;快速换行&lt;/td&gt;
+&lt;td&gt;Ctrl + Shift + Enter&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;复制当前行&lt;/td&gt;
+&lt;td&gt;Ctrl + D&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;强迫显示参数信息&lt;/td&gt;
+&lt;td&gt;Ctrl-Shift-空格&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;插入代码段&lt;/td&gt;
+&lt;td&gt;Ctrl+K，X&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;代码自动对齐&lt;/td&gt;
+&lt;td&gt;Ctrl+K+F&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;</summary>
+    
+    
+    
+    <category term="笔记" scheme="https://yeying.tech/categories/%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="快捷键" scheme="https://yeying.tech/tags/%E5%BF%AB%E6%8D%B7%E9%94%AE/"/>
+    
+    <category term="Visual Studio" scheme="https://yeying.tech/tags/Visual-Studio/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Pycharm 快捷键</title>
+    <link href="https://yeying.tech/%E7%AC%94%E8%AE%B0/Pycharm-keys/"/>
+    <id>https://yeying.tech/%E7%AC%94%E8%AE%B0/Pycharm-keys/</id>
+    <published>2021-08-19T15:15:03.000Z</published>
+    <updated>2021-09-12T06:31:19.019Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;关于快捷键网上很多人都总结了，我在此重复，只是为了自己查看更方便一些&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&quot;left&quot;&gt;快捷键&lt;/th&gt;
+&lt;th align=&quot;left&quot;&gt;说明&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Alt+Enter&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;自动添加包&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;shift+O&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;自动建议代码补全&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Ctrl+t SVN&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;更新&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Ctrl+k SVN&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;提交&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Ctrl + /&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;注释(取消注释)选择的行&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Ctrl+Shift+F&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;高级查找&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Ctrl+Enter&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;补全&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Shift + Enter&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;开始新行&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;TAB Shift+TAB&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;缩进/取消缩进所选择的行&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;</summary>
+    
+    
+    
+    <category term="笔记" scheme="https://yeying.tech/categories/%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="快捷键" scheme="https://yeying.tech/tags/%E5%BF%AB%E6%8D%B7%E9%94%AE/"/>
+    
+    <category term="Pycharm" scheme="https://yeying.tech/tags/Pycharm/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>一个很奇怪的BUG</title>
+    <link href="https://yeying.tech/%E7%AC%94%E8%AE%B0/interesting-bug/"/>
+    <id>https://yeying.tech/%E7%AC%94%E8%AE%B0/interesting-bug/</id>
+    <published>2021-08-30T10:11:39.000Z</published>
+    <updated>2021-09-12T06:29:56.988Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;​    今天遇到个奇怪的bug, 记录于此&lt;/p&gt;
+&lt;h3 id=&quot;发现Bug&quot;&gt;&lt;a href=&quot;#发现Bug&quot; class=&quot;headerlink&quot; title=&quot;发现Bug&quot;&gt;&lt;/a&gt;发现Bug&lt;/h3&gt;&lt;p&gt;今天在使用python+win32com读取exel表格时，突然遇到一个bug，获取不到exel权限，即程序第一句就出错，后面的内容都无法运行，比如下面写了一个简单的测试：&lt;/p&gt;
+&lt;figure class=&quot;highlight python&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;import&lt;/span&gt; win32com.client&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;xlApp = win32com.client.Dispatch(&lt;span class=&quot;string&quot;&gt;&amp;#x27;Excel.Application&amp;#x27;&lt;/span&gt;)  &lt;span class=&quot;comment&quot;&gt;# win32com获取exel应用服务&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;filename = &lt;span class=&quot;string&quot;&gt;r&amp;#x27;E:\\Programs\\python\\自动化处理EXEL\\test.xlsx&amp;#x27;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;xlwb = xlApp.Workbooks.Open(Filename=filename)  &lt;span class=&quot;comment&quot;&gt;# 获取工作簿&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;built_in&quot;&gt;print&lt;/span&gt;(xlwb)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;built_in&quot;&gt;print&lt;/span&gt;(xlwb.Sheets(&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;).Cells(&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;))  &lt;span class=&quot;comment&quot;&gt;# 打印第一张工作表的A1单元格的值&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;xlApp.Quit()&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
+    
+    
+    
+    <category term="笔记" scheme="https://yeying.tech/categories/%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="python" scheme="https://yeying.tech/tags/python/"/>
+    
+    <category term="win32com" scheme="https://yeying.tech/tags/win32com/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>足协杯夺冠照片</title>
+    <link href="https://yeying.tech/%E7%9B%B8%E5%86%8C/football-match-06-15/"/>
+    <id>https://yeying.tech/%E7%9B%B8%E5%86%8C/football-match-06-15/</id>
+    <published>2021-06-15T08:37:35.000Z</published>
+    <updated>2021-09-12T06:21:44.541Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 align = &quot;center&quot;&gt;足协杯夺冠照片&lt;/h1&gt;
+
+
+
+
+&lt;table&gt;
+      &lt;tr&gt; 
+          &lt;td align = &quot;center&quot;&gt;&lt;img</summary>
+        
+      
+    
+    
+    
+    <category term="相册" scheme="https://yeying.tech/categories/%E7%9B%B8%E5%86%8C/"/>
+    
+    
+    <category term="足球比赛" scheme="https://yeying.tech/tags/%E8%B6%B3%E7%90%83%E6%AF%94%E8%B5%9B/"/>
+    
+  </entry>
   
   <entry>
     <title>Sql Server 复习</title>
@@ -32,28 +230,6 @@
     
     
     <category term="Sql Server" scheme="https://yeying.tech/tags/Sql-Server/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>一个很奇怪的BUG</title>
-    <link href="https://yeying.tech/%E7%AC%94%E8%AE%B0/interesting-bug/"/>
-    <id>https://yeying.tech/%E7%AC%94%E8%AE%B0/interesting-bug/</id>
-    <published>2021-08-30T10:11:39.000Z</published>
-    <updated>2021-08-30T10:13:23.993Z</updated>
-    
-    
-    <summary type="html">&lt;h2 id=&quot;一个很奇怪的BUG&quot;&gt;&lt;a href=&quot;#一个很奇怪的BUG&quot; class=&quot;headerlink&quot; title=&quot;一个很奇怪的BUG&quot;&gt;&lt;/a&gt;一个很奇怪的BUG&lt;/h2&gt;&lt;h3 id=&quot;发现Bug&quot;&gt;&lt;a href=&quot;#发现Bug&quot; class=&quot;headerlink&quot; title=&quot;发现Bug&quot;&gt;&lt;/a&gt;发现Bug&lt;/h3&gt;&lt;p&gt;今天在使用python+win32com读取exel表格时，突然遇到一个bug，获取不到exel权限，即程序第一句就出错，后面的内容都无法运行，比如下面写了一个简单的测试：&lt;/p&gt;
-&lt;figure class=&quot;highlight python&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;import&lt;/span&gt; win32com.client&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;xlApp = win32com.client.Dispatch(&lt;span class=&quot;string&quot;&gt;&amp;#x27;Excel.Application&amp;#x27;&lt;/span&gt;)  &lt;span class=&quot;comment&quot;&gt;# win32com获取exel应用服务&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;filename = &lt;span class=&quot;string&quot;&gt;r&amp;#x27;E:\\Programs\\python\\自动化处理EXEL\\test.xlsx&amp;#x27;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;xlwb = xlApp.Workbooks.Open(Filename=filename)  &lt;span class=&quot;comment&quot;&gt;# 获取工作簿&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;built_in&quot;&gt;print&lt;/span&gt;(xlwb)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;built_in&quot;&gt;print&lt;/span&gt;(xlwb.Sheets(&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;).Cells(&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;))  &lt;span class=&quot;comment&quot;&gt;# 打印第一张工作表的A1单元格的值&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;xlApp.Quit()&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
-    
-    
-    
-    <category term="笔记" scheme="https://yeying.tech/categories/%E7%AC%94%E8%AE%B0/"/>
-    
-    
-    <category term="python" scheme="https://yeying.tech/tags/python/"/>
-    
-    <category term="win32com" scheme="https://yeying.tech/tags/win32com/"/>
     
   </entry>
   
@@ -124,26 +300,6 @@
   </entry>
   
   <entry>
-    <title>小代码分享</title>
-    <link href="https://yeying.tech/Demo/faxuanzaixian/"/>
-    <id>https://yeying.tech/Demo/faxuanzaixian/</id>
-    <published>2021-08-18T16:08:57.000Z</published>
-    <updated>2021-08-24T02:45:14.917Z</updated>
-    
-    
-    <summary type="html">&lt;h2 id=&quot;小代码分享&quot;&gt;&lt;a href=&quot;#小代码分享&quot; class=&quot;headerlink&quot; title=&quot;小代码分享&quot;&gt;&lt;/a&gt;小代码分享&lt;/h2&gt;&lt;h4 id=&quot;法宣在线考试自动作答-且得满分&quot;&gt;&lt;a href=&quot;#法宣在线考试自动作答-且得满分&quot; class=&quot;headerlink&quot; title=&quot;法宣在线考试自动作答(且得满分)&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://www.cnblogs.com/QIAOXINGXING001/p/14002849.html&quot;&gt;法宣在线考试自动作答(且得满分)&lt;/a&gt;&lt;/h4&gt;&lt;h2 id=&quot;说明&quot;&gt;&lt;a href=&quot;#说明&quot; class=&quot;headerlink&quot; title=&quot;说明&quot;&gt;&lt;/a&gt;说明&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;仅供学习交流&lt;/strong&gt;&lt;br&gt;    功能：法宣在线考试, 自动获取答案, 完成考试。&lt;/p&gt;
-&lt;h2 id=&quot;运行方法&quot;&gt;&lt;a href=&quot;#运行方法&quot; class=&quot;headerlink&quot; title=&quot;运行方法&quot;&gt;&lt;/a&gt;运行方法&lt;/h2&gt;&lt;figure class=&quot;highlight js&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;number&quot;&gt;1.&lt;/span&gt; 使用chrome浏览器登录法宣在线, 进入考试页面;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;number&quot;&gt;2.&lt;/span&gt; 单击浏览器的地址栏, 按快捷键F12;如果按不出来，说明平台截取并禁用了，那就用Chrome自带菜单: 更多工具 - 开发者工具;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;number&quot;&gt;3.&lt;/span&gt; 定位到&lt;span class=&quot;built_in&quot;&gt;console&lt;/span&gt;/控制台面板, 粘贴代码, 回车;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;number&quot;&gt;4.&lt;/span&gt; 程序开始执行, 每秒答一道题, 等待答题完成;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
-    
-    
-    
-    <category term="Demo" scheme="https://yeying.tech/categories/Demo/"/>
-    
-    
-    <category term="Js" scheme="https://yeying.tech/tags/Js/"/>
-    
-  </entry>
-  
-  <entry>
     <title>希腊字母及读音</title>
     <link href="https://yeying.tech/%E7%AC%94%E8%AE%B0/Greek-alphabet/"/>
     <id>https://yeying.tech/%E7%AC%94%E8%AE%B0/Greek-alphabet/</id>
@@ -193,127 +349,6 @@
     
     
     <category term="希腊字母" scheme="https://yeying.tech/tags/%E5%B8%8C%E8%85%8A%E5%AD%97%E6%AF%8D/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Visual Studio 快捷键</title>
-    <link href="https://yeying.tech/%E7%AC%94%E8%AE%B0/vs-keys/"/>
-    <id>https://yeying.tech/%E7%AC%94%E8%AE%B0/vs-keys/</id>
-    <published>2019-04-10T09:52:55.000Z</published>
-    <updated>2021-08-20T01:18:42.083Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;总结了几个Visual Studio 好用的快捷键，以后会再继续加。&lt;/p&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;功能&lt;/th&gt;
-&lt;th&gt;快捷键&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;&lt;tr&gt;
-&lt;td&gt;注释&lt;/td&gt;
-&lt;td&gt;Ctrl + K  Ctrl + C&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;取消注释&lt;/td&gt;
-&lt;td&gt;Ctrl + K  Ctrl + U&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;快速换行&lt;/td&gt;
-&lt;td&gt;Ctrl + Shift + Enter&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;复制当前行&lt;/td&gt;
-&lt;td&gt;Ctrl + D&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;强迫显示参数信息&lt;/td&gt;
-&lt;td&gt;Ctrl-Shift-空格&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;插入代码段&lt;/td&gt;
-&lt;td&gt;Ctrl+K，X&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;代码自动对齐&lt;/td&gt;
-&lt;td&gt;Ctrl+K+F&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;&lt;/table&gt;</summary>
-    
-    
-    
-    <category term="笔记" scheme="https://yeying.tech/categories/%E7%AC%94%E8%AE%B0/"/>
-    
-    
-    <category term="快捷键" scheme="https://yeying.tech/tags/%E5%BF%AB%E6%8D%B7%E9%94%AE/"/>
-    
-    <category term="Visual Studio" scheme="https://yeying.tech/tags/Visual-Studio/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Pycharm 快捷键</title>
-    <link href="https://yeying.tech/%E7%AC%94%E8%AE%B0/Pycharm-keys/"/>
-    <id>https://yeying.tech/%E7%AC%94%E8%AE%B0/Pycharm-keys/</id>
-    <published>2021-08-19T15:15:03.000Z</published>
-    <updated>2021-08-20T01:18:23.359Z</updated>
-    
-    
-    <summary type="html">&lt;h2 id=&quot;pycharm-快捷键&quot;&gt;&lt;a href=&quot;#pycharm-快捷键&quot; class=&quot;headerlink&quot; title=&quot;pycharm 快捷键&quot;&gt;&lt;/a&gt;pycharm 快捷键&lt;/h2&gt;&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th align=&quot;left&quot;&gt;快捷键&lt;/th&gt;
-&lt;th align=&quot;left&quot;&gt;说明&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;Alt+Enter&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;自动添加包&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;shift+O&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;自动建议代码补全&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;Ctrl+t SVN&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;更新&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;Ctrl+k SVN&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;提交&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;Ctrl + /&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;注释(取消注释)选择的行&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;Ctrl+Shift+F&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;高级查找&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;Ctrl+Enter&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;补全&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;Shift + Enter&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;开始新行&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;TAB Shift+TAB&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;缩进/取消缩进所选择的行&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;&lt;/table&gt;</summary>
-    
-    
-    
-    <category term="笔记" scheme="https://yeying.tech/categories/%E7%AC%94%E8%AE%B0/"/>
-    
-    
-    <category term="快捷键" scheme="https://yeying.tech/tags/%E5%BF%AB%E6%8D%B7%E9%94%AE/"/>
-    
-    <category term="Pycharm" scheme="https://yeying.tech/tags/Pycharm/"/>
     
   </entry>
   
@@ -572,32 +607,6 @@
 
 &lt;p&gt;遇到了本学期第一场点球大战，照样赢！&lt;/p&gt;
 &lt;h2 id=&quot;首发阵容&quot;&gt;&lt;a href=&quot;#首发阵容&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="相册" scheme="https://yeying.tech/categories/%E7%9B%B8%E5%86%8C/"/>
-    
-    
-    <category term="足球比赛" scheme="https://yeying.tech/tags/%E8%B6%B3%E7%90%83%E6%AF%94%E8%B5%9B/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>足协杯半决赛</title>
-    <link href="https://yeying.tech/%E7%9B%B8%E5%86%8C/football-match-06-06/"/>
-    <id>https://yeying.tech/%E7%9B%B8%E5%86%8C/football-match-06-06/</id>
-    <published>2021-06-07T07:51:03.000Z</published>
-    <updated>2021-07-31T15:39:42.778Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 align = &quot;center&quot;&gt;闯入半决赛&lt;/h1&gt;
-&lt;h3 align = &quot;center&quot;&gt;地海 2:1 环境</summary>
         
       
     
