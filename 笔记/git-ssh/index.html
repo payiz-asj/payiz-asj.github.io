@@ -80,7 +80,7 @@
         <span class="post-meta-item-icon">
             <i class="ri-quill-pen-line"></i>
             <span class="post-meta-item-text"> 字数统计:</span>
-            <span class="post-count">548</span>
+            <span class="post-count">1k</span>
         </span>
     </span>
 
@@ -89,7 +89,7 @@
         <span class="post-meta-item-icon">
             <i class="ri-book-open-line"></i>
             <span class="post-meta-item-text"> 阅读时长≈</span>
-            <span class="post-count">2 分钟</span>
+            <span class="post-count">4 分钟</span>
         </span>
     </span>
 </div>
@@ -131,12 +131,52 @@
 <h4 id="4-测试"><a href="#4-测试" class="headerlink" title="4. 测试"></a>4. 测试</h4><p>打开Gitbash，输入</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh -T git@github.com  <span class="comment"># 试图连接github</span></span><br></pre></td></tr></table></figure>
 
-<p>如果看到提示，输入“yes”，按enter</p>
+<p><strong>如果看到提示，输入“yes”，按enter</strong></p>
 <p>最后会的得到以下信息：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Hi username! Yo<span class="string">u&#x27;ve successfully authenticated, but GitHub does not # provide shell access.</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Hi username! Yo<span class="string">u&#x27;ve successfully authenticated, but GitHub does not provide shell access.</span></span><br></pre></td></tr></table></figure>
 
 <p><strong>如果该用户名是你的，你已经成功设置SSH密钥！</strong></p>
 <p>此时，你用git克隆仓库时，HTTPS和SSH的方式都可以使用了。</p>
+<h4 id="5-Gitee-怎么配置SSH-key"><a href="#5-Gitee-怎么配置SSH-key" class="headerlink" title="5.Gitee 怎么配置SSH key"></a>5.Gitee 怎么配置SSH key</h4><p>Gitee（码云）是另一个云端软件开发协作平台，能帮助开发者/团队/企业更好地管理代码。虽然它的社区活跃度没有GIthub高，但是因为是国产的，访问速度特别快。</p>
+<p>所以，有些正在开发的软件，我会选择使用Gitee进行版本管理和协同开发。</p>
+<p><strong>Gitee怎么配置SSH key 呢？</strong></p>
+<p>我总结了一下，您也可以在官网地址：<a target="_blank" rel="noopener" href="https://gitee.com/help/articles/4229#article-header0%E4%B8%8A%E6%9F%A5%E7%9C%8B%E6%9B%B4%E5%A4%9A%E5%B8%AE%E5%8A%A9%E3%80%82">https://gitee.com/help/articles/4229#article-header0上查看更多帮助。</a></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t ed25519 -C <span class="string">&quot;xxxxx@xxxxx.com&quot;</span>   <span class="comment"># 创建新的秘钥</span></span><br></pre></td></tr></table></figure>
+
+<p>官网提到SSH key的名称不要求必须是邮箱，这只是传统惯例而已。</p>
+<p>其次，中间的编码使用ed25519和rsa不知道有什么区别，反正我是改成了rsa</p>
+<p><strong>后面的步骤跟github类似，验证使用下面的语句</strong>（如有提示，记得输入yes再enter）</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh -T git@gitee.com</span><br></pre></td></tr></table></figure>
+
+
+
+<h4 id="6-Git配置多个SSH-Key"><a href="#6-Git配置多个SSH-Key" class="headerlink" title="6.Git配置多个SSH-Key"></a>6.Git配置多个SSH-Key</h4><h5 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h5><p>当有多个git账号时，比如：</p>
+<p>a. 一个gitee，用于公司内部的工作开发；<br>        b. 一个github，用于自己进行一些开发活动；</p>
+<h5 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h5><ol>
+<li>生成一个公司用的SSH-Key</li>
+</ol>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ssh-keygen -t rsa -C <span class="string">&#x27;xxxxx@company.com&#x27;</span> -f ~/.ssh/gitee_id_rsa</span><br></pre></td></tr></table></figure>
+
+<ol>
+<li>生成一个github用的SSH-Key</li>
+</ol>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ssh-keygen -t rsa -C <span class="string">&#x27;xxxxx@qq.com&#x27;</span> -f ~/.ssh/github_id_rsa</span><br></pre></td></tr></table></figure>
+
+<ol>
+<li>在 ~/.ssh 目录下新建一个config文件(名称就是config,无后缀)，添加如下内容（其中Host和HostName填写git服务器的域名，IdentityFile指定私钥的路径）</li>
+</ol>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># gitee</span></span><br><span class="line">Host gitee.com</span><br><span class="line">HostName gitee.com</span><br><span class="line">PreferredAuthentications publickey</span><br><span class="line">IdentityFile ~/.ssh/gitee_id_rsa</span><br><span class="line"><span class="comment"># github</span></span><br><span class="line">Host github.com</span><br><span class="line">HostName github.com</span><br><span class="line">PreferredAuthentications publickey</span><br><span class="line">IdentityFile ~/.ssh/github_id_rsa</span><br></pre></td></tr></table></figure>
+
+<p>4.用ssh命令分别测试</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ ssh -T git@gitee.com</span><br><span class="line">$ ssh -T git@github.com</span><br></pre></td></tr></table></figure>
+
+<p>这里以gitee为例，成功的话会返回下图内容（如有提示，记得输入yes再enter）</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Hi username! Yo<span class="string">u&#x27;ve successfully authenticated, but GITEE.COM does not  provide shell access.</span></span><br></pre></td></tr></table></figure>
+
+
+
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Hi username! Yo<span class="string">u&#x27;ve successfully authenticated, but GitHub does not provide shell access.</span></span><br></pre></td></tr></table></figure>
+
  
       <!-- reward -->
       
