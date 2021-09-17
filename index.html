@@ -213,7 +213,7 @@
        
     
 <article
-  id="post-interesting-bug"
+  id="post-an-interesting-bug"
   class="article article-type-post"
   itemscope
   itemprop="blogPost"
@@ -224,7 +224,7 @@
     <header class="article-header">
        
 <h2 itemprop="name">
-  <a class="article-title" href="/%E7%AC%94%E8%AE%B0/interesting-bug/"
+  <a class="article-title" href="/%E7%AC%94%E8%AE%B0/an-interesting-bug/"
     >一个很奇怪的BUG</a> 
 </h2>
  
@@ -233,7 +233,7 @@
     </header>
      
     <div class="article-meta">
-      <a href="/%E7%AC%94%E8%AE%B0/interesting-bug/" class="article-date">
+      <a href="/%E7%AC%94%E8%AE%B0/an-interesting-bug/" class="article-date">
   <time datetime="2021-08-30T10:11:39.000Z" itemprop="datePublished">2021-08-30</time>
 </a> 
   <div class="article-category">
@@ -247,7 +247,7 @@
   <p>​    今天遇到个奇怪的bug, 记录于此</p>
 <h3 id="发现Bug"><a href="#发现Bug" class="headerlink" title="发现Bug"></a>发现Bug</h3><p>今天在使用python+win32com读取exel表格时，突然遇到一个bug，获取不到exel权限，即程序第一句就出错，后面的内容都无法运行，比如下面写了一个简单的测试：</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> win32com.client</span><br><span class="line"></span><br><span class="line">xlApp = win32com.client.Dispatch(<span class="string">&#x27;Excel.Application&#x27;</span>)  <span class="comment"># win32com获取exel应用服务</span></span><br><span class="line">filename = <span class="string">r&#x27;E:\\Programs\\python\\自动化处理EXEL\\test.xlsx&#x27;</span></span><br><span class="line">xlwb = xlApp.Workbooks.Open(Filename=filename)  <span class="comment"># 获取工作簿</span></span><br><span class="line"><span class="built_in">print</span>(xlwb)</span><br><span class="line"><span class="built_in">print</span>(xlwb.Sheets(<span class="number">1</span>).Cells(<span class="number">1</span>, <span class="number">1</span>))  <span class="comment"># 打印第一张工作表的A1单元格的值</span></span><br><span class="line">xlApp.Quit()</span><br></pre></td></tr></table></figure> 
-      <a class="article-more-link" href="/%E7%AC%94%E8%AE%B0/interesting-bug/"
+      <a class="article-more-link" href="/%E7%AC%94%E8%AE%B0/an-interesting-bug/"
         >阅读更多...</a
       >
        
@@ -260,7 +260,7 @@
     
     <footer class="article-footer">
        
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/python/" rel="tag">python</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/win32com/" rel="tag">win32com</a></li></ul>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Python/" rel="tag">Python</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Win32com/" rel="tag">Win32com</a></li></ul>
 
     </footer>
   </div>
