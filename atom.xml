@@ -6,7 +6,7 @@
   <link href="https://yeying.tech/atom.xml" rel="self"/>
   
   <link href="https://yeying.tech/"/>
-  <updated>2021-09-14T08:44:25.741Z</updated>
+  <updated>2021-09-16T07:59:19.514Z</updated>
   <id>https://yeying.tech/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://yeying.tech/%E7%AC%94%E8%AE%B0/git-ssh/"/>
     <id>https://yeying.tech/%E7%AC%94%E8%AE%B0/git-ssh/</id>
     <published>2019-04-06T13:26:11.000Z</published>
-    <updated>2021-09-14T08:44:25.741Z</updated>
+    <updated>2021-09-16T07:59:19.514Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;strong&gt;先说一下，https 和 SSH 的区别：&lt;/strong&gt;&lt;/p&gt;
@@ -32,7 +32,143 @@
     <category term="笔记" scheme="https://yeying.tech/categories/%E7%AC%94%E8%AE%B0/"/>
     
     
-    <category term="github" scheme="https://yeying.tech/tags/github/"/>
+    <category term="Git" scheme="https://yeying.tech/tags/Git/"/>
+    
+    <category term="Github" scheme="https://yeying.tech/tags/Github/"/>
+    
+    <category term="Gitee" scheme="https://yeying.tech/tags/Gitee/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Git 学习笔记</title>
+    <link href="https://yeying.tech/%E7%AC%94%E8%AE%B0/git-learning/"/>
+    <id>https://yeying.tech/%E7%AC%94%E8%AE%B0/git-learning/</id>
+    <published>2019-04-06T09:29:41.000Z</published>
+    <updated>2021-09-16T07:55:35.485Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;记录 Git 的一些常用指令与问题解决方案。&lt;/p&gt;
+&lt;p&gt;更加具体的内容请看以下仓库：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/payiz-asj/git-tips&quot;&gt;Git 的奇技淫巧&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/payiz-asj/HelloGitHub&quot;&gt;GitHub 上有趣、入门级的开源项目&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</summary>
+    
+    
+    
+    <category term="笔记" scheme="https://yeying.tech/categories/%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="Git" scheme="https://yeying.tech/tags/Git/"/>
+    
+    <category term="Github" scheme="https://yeying.tech/tags/Github/"/>
+    
+    <category term="Gitee" scheme="https://yeying.tech/tags/Gitee/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>足协杯小组赛第一场</title>
+    <link href="https://yeying.tech/%E7%9B%B8%E5%86%8C/football-match-04-06/"/>
+    <id>https://yeying.tech/%E7%9B%B8%E5%86%8C/football-match-04-06/</id>
+    <published>2021-04-06T08:18:23.000Z</published>
+    <updated>2021-09-16T07:39:17.605Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 align = &quot;center&quot;&gt;足协杯小组赛第一场&lt;/h1&gt;
+&lt;h3 align = &quot;center&quot;&gt;地海 3:1 政管&lt;/h3&gt;   
+
+
+
+&lt;p&gt; &lt;strong&gt;本学期第一场硬仗，狭路相逢勇者胜，赢得痛快&lt;/strong&gt;    &lt;/p&gt;
+&lt;table&gt;
+  </summary>
+        
+      
+    
+    
+    
+    <category term="相册" scheme="https://yeying.tech/categories/%E7%9B%B8%E5%86%8C/"/>
+    
+    
+    <category term="足球比赛" scheme="https://yeying.tech/tags/%E8%B6%B3%E7%90%83%E6%AF%94%E8%B5%9B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>一个很奇怪的BUG</title>
+    <link href="https://yeying.tech/%E7%AC%94%E8%AE%B0/an-interesting-bug/"/>
+    <id>https://yeying.tech/%E7%AC%94%E8%AE%B0/an-interesting-bug/</id>
+    <published>2021-08-30T10:11:39.000Z</published>
+    <updated>2021-09-16T03:40:03.460Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;​    今天遇到个奇怪的bug, 记录于此&lt;/p&gt;
+&lt;h3 id=&quot;发现Bug&quot;&gt;&lt;a href=&quot;#发现Bug&quot; class=&quot;headerlink&quot; title=&quot;发现Bug&quot;&gt;&lt;/a&gt;发现Bug&lt;/h3&gt;&lt;p&gt;今天在使用python+win32com读取exel表格时，突然遇到一个bug，获取不到exel权限，即程序第一句就出错，后面的内容都无法运行，比如下面写了一个简单的测试：&lt;/p&gt;
+&lt;figure class=&quot;highlight python&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;import&lt;/span&gt; win32com.client&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;xlApp = win32com.client.Dispatch(&lt;span class=&quot;string&quot;&gt;&amp;#x27;Excel.Application&amp;#x27;&lt;/span&gt;)  &lt;span class=&quot;comment&quot;&gt;# win32com获取exel应用服务&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;filename = &lt;span class=&quot;string&quot;&gt;r&amp;#x27;E:\\Programs\\python\\自动化处理EXEL\\test.xlsx&amp;#x27;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;xlwb = xlApp.Workbooks.Open(Filename=filename)  &lt;span class=&quot;comment&quot;&gt;# 获取工作簿&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;built_in&quot;&gt;print&lt;/span&gt;(xlwb)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;built_in&quot;&gt;print&lt;/span&gt;(xlwb.Sheets(&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;).Cells(&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;))  &lt;span class=&quot;comment&quot;&gt;# 打印第一张工作表的A1单元格的值&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;xlApp.Quit()&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
+    
+    
+    
+    <category term="笔记" scheme="https://yeying.tech/categories/%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="Python" scheme="https://yeying.tech/tags/Python/"/>
+    
+    <category term="Win32com" scheme="https://yeying.tech/tags/Win32com/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>百度图片下载器</title>
+    <link href="https://yeying.tech/%E4%B8%AA%E4%BA%BA%E9%A1%B9%E7%9B%AE/baidu-pic/"/>
+    <id>https://yeying.tech/%E4%B8%AA%E4%BA%BA%E9%A1%B9%E7%9B%AE/baidu-pic/</id>
+    <published>2020-12-05T07:59:50.000Z</published>
+    <updated>2021-09-16T03:39:38.213Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;给大家分享一个自己写的程序，百度图片下载器&lt;/p&gt;
+&lt;h3 id=&quot;介绍：&quot;&gt;&lt;a href=&quot;#介绍：&quot; class=&quot;headerlink&quot; title=&quot;介绍：&quot;&gt;&lt;/a&gt;介绍：&lt;/h3&gt;&lt;p&gt;​        百度图片下载助手，能够个性化爬取&lt;a href=&quot;https://image.baidu.com/&quot;&gt;百度图片&lt;/a&gt;上的图片。&lt;/p&gt;
+&lt;h3 id=&quot;开发环境：&quot;&gt;&lt;a href=&quot;#开发环境：&quot; class=&quot;headerlink&quot; title=&quot;开发环境：&quot;&gt;&lt;/a&gt;开发环境：&lt;/h3&gt;&lt;p&gt;​         Pycharm（python3.8），第三方库：requests、selenium、multiprocessing、json&lt;/p&gt;
+&lt;h3 id=&quot;使用说明：&quot;&gt;&lt;a href=&quot;#使用说明：&quot; class=&quot;headerlink&quot; title=&quot;使用说明：&quot;&gt;&lt;/a&gt;使用说明：&lt;/h3&gt;&lt;p&gt;​        &lt;strong&gt;共做了两个方案：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;（1）直接分析解码百度图片后台AJAX请求，直接爬取图片。这种方法虽简单，但容易被百度反爬机制发现，不太稳定。&lt;/p&gt;
+&lt;p&gt;（2）通过Selenium模拟浏览器操作来避免百度反爬，这种方法比较稳定。此外，通过多进程提高了效率。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="个人项目" scheme="https://yeying.tech/categories/%E4%B8%AA%E4%BA%BA%E9%A1%B9%E7%9B%AE/"/>
+    
+    
+    <category term="Python" scheme="https://yeying.tech/tags/Python/"/>
+    
+    <category term="爬虫" scheme="https://yeying.tech/tags/%E7%88%AC%E8%99%AB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Gis</title>
+    <link href="https://yeying.tech/%E4%B8%AA%E4%BA%BA%E9%A1%B9%E7%9B%AE/Gis/"/>
+    <id>https://yeying.tech/%E4%B8%AA%E4%BA%BA%E9%A1%B9%E7%9B%AE/Gis/</id>
+    <published>2020-12-20T09:39:26.000Z</published>
+    <updated>2021-09-16T03:39:01.560Z</updated>
+    
+    
+    <summary type="html">&lt;h3 id=&quot;项目介绍：&quot;&gt;&lt;a href=&quot;#项目介绍：&quot; class=&quot;headerlink&quot; title=&quot;项目介绍：&quot;&gt;&lt;/a&gt;项目介绍：&lt;/h3&gt;&lt;p&gt;​        受地海学院Gis专业朋友委托，做了一个解析、分析Gis数据的脚本，用来解析RINEX格式的导航电文到内存中（字典类型），计算其中所有卫星在瞬时地球坐标系(WGS-84)中的位置，并导出到txt或json格式文件。&lt;/p&gt;
+&lt;p&gt;​        里面用到的第三方库有os, sys, json,pandas,math,numpy。&lt;/p&gt;
+&lt;p&gt;​        数据解析函数返回值为字典格式数据。数据解析完还可导出为txt,json等文件。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="个人项目" scheme="https://yeying.tech/categories/%E4%B8%AA%E4%BA%BA%E9%A1%B9%E7%9B%AE/"/>
+    
+    
+    <category term="Gis" scheme="https://yeying.tech/tags/Gis/"/>
+    
+    <category term="Python" scheme="https://yeying.tech/tags/Python/"/>
     
   </entry>
   
@@ -108,9 +244,9 @@
     <category term="笔记" scheme="https://yeying.tech/categories/%E7%AC%94%E8%AE%B0/"/>
     
     
-    <category term="快捷键" scheme="https://yeying.tech/tags/%E5%BF%AB%E6%8D%B7%E9%94%AE/"/>
-    
     <category term="Visual Studio" scheme="https://yeying.tech/tags/Visual-Studio/"/>
+    
+    <category term="快捷键" scheme="https://yeying.tech/tags/%E5%BF%AB%E6%8D%B7%E9%94%AE/"/>
     
   </entry>
   
@@ -173,32 +309,9 @@
     <category term="笔记" scheme="https://yeying.tech/categories/%E7%AC%94%E8%AE%B0/"/>
     
     
-    <category term="快捷键" scheme="https://yeying.tech/tags/%E5%BF%AB%E6%8D%B7%E9%94%AE/"/>
-    
     <category term="Pycharm" scheme="https://yeying.tech/tags/Pycharm/"/>
     
-  </entry>
-  
-  <entry>
-    <title>一个很奇怪的BUG</title>
-    <link href="https://yeying.tech/%E7%AC%94%E8%AE%B0/interesting-bug/"/>
-    <id>https://yeying.tech/%E7%AC%94%E8%AE%B0/interesting-bug/</id>
-    <published>2021-08-30T10:11:39.000Z</published>
-    <updated>2021-09-12T06:29:56.988Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;​    今天遇到个奇怪的bug, 记录于此&lt;/p&gt;
-&lt;h3 id=&quot;发现Bug&quot;&gt;&lt;a href=&quot;#发现Bug&quot; class=&quot;headerlink&quot; title=&quot;发现Bug&quot;&gt;&lt;/a&gt;发现Bug&lt;/h3&gt;&lt;p&gt;今天在使用python+win32com读取exel表格时，突然遇到一个bug，获取不到exel权限，即程序第一句就出错，后面的内容都无法运行，比如下面写了一个简单的测试：&lt;/p&gt;
-&lt;figure class=&quot;highlight python&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;import&lt;/span&gt; win32com.client&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;xlApp = win32com.client.Dispatch(&lt;span class=&quot;string&quot;&gt;&amp;#x27;Excel.Application&amp;#x27;&lt;/span&gt;)  &lt;span class=&quot;comment&quot;&gt;# win32com获取exel应用服务&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;filename = &lt;span class=&quot;string&quot;&gt;r&amp;#x27;E:\\Programs\\python\\自动化处理EXEL\\test.xlsx&amp;#x27;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;xlwb = xlApp.Workbooks.Open(Filename=filename)  &lt;span class=&quot;comment&quot;&gt;# 获取工作簿&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;built_in&quot;&gt;print&lt;/span&gt;(xlwb)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;built_in&quot;&gt;print&lt;/span&gt;(xlwb.Sheets(&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;).Cells(&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;))  &lt;span class=&quot;comment&quot;&gt;# 打印第一张工作表的A1单元格的值&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;xlApp.Quit()&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
-    
-    
-    
-    <category term="笔记" scheme="https://yeying.tech/categories/%E7%AC%94%E8%AE%B0/"/>
-    
-    
-    <category term="python" scheme="https://yeying.tech/tags/python/"/>
-    
-    <category term="win32com" scheme="https://yeying.tech/tags/win32com/"/>
+    <category term="快捷键" scheme="https://yeying.tech/tags/%E5%BF%AB%E6%8D%B7%E9%94%AE/"/>
     
   </entry>
   
@@ -250,30 +363,6 @@
     
     
     <category term="Sql Server" scheme="https://yeying.tech/tags/Sql-Server/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Git 学习笔记</title>
-    <link href="https://yeying.tech/%E7%AC%94%E8%AE%B0/git-learning/"/>
-    <id>https://yeying.tech/%E7%AC%94%E8%AE%B0/git-learning/</id>
-    <published>2019-04-06T09:29:41.000Z</published>
-    <updated>2021-08-28T03:26:31.493Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;记录 Git 的一些常用指令与问题解决方案。&lt;/p&gt;
-&lt;p&gt;更加具体的内容请看以下仓库：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://github.com/payiz-asj/git-tips&quot;&gt;Git 的奇技淫巧&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://github.com/payiz-asj/HelloGitHub&quot;&gt;GitHub 上有趣、入门级的开源项目&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</summary>
-    
-    
-    
-    <category term="笔记" scheme="https://yeying.tech/categories/%E7%AC%94%E8%AE%B0/"/>
-    
-    
-    <category term="github" scheme="https://yeying.tech/tags/github/"/>
     
   </entry>
   
@@ -485,53 +574,6 @@
   </entry>
   
   <entry>
-    <title>Gis</title>
-    <link href="https://yeying.tech/%E4%B8%AA%E4%BA%BA%E9%A1%B9%E7%9B%AE/Gis/"/>
-    <id>https://yeying.tech/%E4%B8%AA%E4%BA%BA%E9%A1%B9%E7%9B%AE/Gis/</id>
-    <published>2020-12-20T09:39:26.000Z</published>
-    <updated>2021-08-03T10:12:47.803Z</updated>
-    
-    
-    <summary type="html">&lt;h3 id=&quot;项目介绍：&quot;&gt;&lt;a href=&quot;#项目介绍：&quot; class=&quot;headerlink&quot; title=&quot;项目介绍：&quot;&gt;&lt;/a&gt;项目介绍：&lt;/h3&gt;&lt;p&gt;​        受地海学院Gis专业朋友委托，做了一个解析、分析Gis数据的脚本，用来解析RINEX格式的导航电文到内存中（字典类型），计算其中所有卫星在瞬时地球坐标系(WGS-84)中的位置，并导出到txt或json格式文件。&lt;/p&gt;
-&lt;p&gt;​        里面用到的第三方库有os, sys, json,pandas,math,numpy。&lt;/p&gt;
-&lt;p&gt;​        数据解析函数返回值为字典格式数据。数据解析完还可导出为txt,json等文件。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="个人项目" scheme="https://yeying.tech/categories/%E4%B8%AA%E4%BA%BA%E9%A1%B9%E7%9B%AE/"/>
-    
-    
-    <category term="Gis" scheme="https://yeying.tech/tags/Gis/"/>
-    
-    <category term="python" scheme="https://yeying.tech/tags/python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>百度图片下载器</title>
-    <link href="https://yeying.tech/%E4%B8%AA%E4%BA%BA%E9%A1%B9%E7%9B%AE/baidu-pic/"/>
-    <id>https://yeying.tech/%E4%B8%AA%E4%BA%BA%E9%A1%B9%E7%9B%AE/baidu-pic/</id>
-    <published>2020-12-05T07:59:50.000Z</published>
-    <updated>2021-08-03T09:52:02.714Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;给大家分享一个自己写的程序，百度图片下载器&lt;/p&gt;
-&lt;h3 id=&quot;介绍：&quot;&gt;&lt;a href=&quot;#介绍：&quot; class=&quot;headerlink&quot; title=&quot;介绍：&quot;&gt;&lt;/a&gt;介绍：&lt;/h3&gt;&lt;p&gt;​        百度图片下载助手，能够个性化爬取&lt;a href=&quot;https://image.baidu.com/&quot;&gt;百度图片&lt;/a&gt;上的图片。&lt;/p&gt;
-&lt;h3 id=&quot;开发环境：&quot;&gt;&lt;a href=&quot;#开发环境：&quot; class=&quot;headerlink&quot; title=&quot;开发环境：&quot;&gt;&lt;/a&gt;开发环境：&lt;/h3&gt;&lt;p&gt;​         Pycharm（python3.8），第三方库：requests、selenium、multiprocessing、json&lt;/p&gt;
-&lt;h3 id=&quot;使用说明：&quot;&gt;&lt;a href=&quot;#使用说明：&quot; class=&quot;headerlink&quot; title=&quot;使用说明：&quot;&gt;&lt;/a&gt;使用说明：&lt;/h3&gt;&lt;p&gt;​        &lt;strong&gt;共做了两个方案：&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;（1）直接分析解码百度图片后台AJAX请求，直接爬取图片。这种方法虽简单，但容易被百度反爬机制发现，不太稳定。&lt;/p&gt;
-&lt;p&gt;（2）通过Selenium模拟浏览器操作来避免百度反爬，这种方法比较稳定。此外，通过多进程提高了效率。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="个人项目" scheme="https://yeying.tech/categories/%E4%B8%AA%E4%BA%BA%E9%A1%B9%E7%9B%AE/"/>
-    
-    
-    <category term="python" scheme="https://yeying.tech/tags/python/"/>
-    
-  </entry>
-  
-  <entry>
     <title>足协杯决赛</title>
     <link href="https://yeying.tech/%E7%9B%B8%E5%86%8C/football-match-06-12/"/>
     <id>https://yeying.tech/%E7%9B%B8%E5%86%8C/football-match-06-12/</id>
@@ -545,38 +587,6 @@
         
     <summary type="html">&lt;h1 align = &quot;center&quot;&gt;夺冠啦&lt;/h1&gt;
 &lt;h3 align = &quot;center&quot;&gt;地海 7:6 政管</summary>
-        
-      
-    
-    
-    
-    <category term="相册" scheme="https://yeying.tech/categories/%E7%9B%B8%E5%86%8C/"/>
-    
-    
-    <category term="足球比赛" scheme="https://yeying.tech/tags/%E8%B6%B3%E7%90%83%E6%AF%94%E8%B5%9B/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>足协杯小组赛第一场</title>
-    <link href="https://yeying.tech/%E7%9B%B8%E5%86%8C/football-match-04-06/"/>
-    <id>https://yeying.tech/%E7%9B%B8%E5%86%8C/football-match-04-06/</id>
-    <published>2021-04-06T08:18:23.000Z</published>
-    <updated>2021-07-31T18:57:51.796Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 align = &quot;center&quot;&gt;足协杯小组赛第一场&lt;/h1&gt;
-&lt;h3 align = &quot;center&quot;&gt;地海 3:1 政管&lt;/h3&gt;   
-
-
-
-&lt;p&gt; &lt;strong&gt;本学期第一场硬仗，狭路相逢勇者胜，赢得痛快&lt;/strong&gt;    &lt;/p&gt;
-&lt;table&gt;
-  </summary>
         
       
     
