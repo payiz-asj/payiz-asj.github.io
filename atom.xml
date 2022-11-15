@@ -2,11 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>夜莺悠吟</title>
   <icon>https://yeying.tech/favicon.ico</icon>
-  <subtitle>yyyZy你❤</subtitle>
+  <subtitle>yyyy</subtitle>
   <link href="https://yeying.tech/atom.xml" rel="self"/>
   
   <link href="https://yeying.tech/"/>
-  <updated>2021-09-16T07:59:19.514Z</updated>
+  <updated>2022-07-06T08:14:17.032Z</updated>
   <id>https://yeying.tech/</id>
   
   <author>
@@ -15,6 +15,114 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>足协杯夺冠照片</title>
+    <link href="https://yeying.tech/%E7%9B%B8%E5%86%8C/football-match-06-15/"/>
+    <id>https://yeying.tech/%E7%9B%B8%E5%86%8C/football-match-06-15/</id>
+    <published>2021-06-15T08:37:35.000Z</published>
+    <updated>2022-07-06T08:14:17.032Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 align = &quot;center&quot;&gt;足协杯夺冠照片&lt;/h1&gt;
+
+
+
+&lt;table&gt;
+      &lt;tr&gt; 
+          &lt;td align = &quot;center&quot;&gt;&lt;img</summary>
+        
+      
+    
+    
+    
+    <category term="相册" scheme="https://yeying.tech/categories/%E7%9B%B8%E5%86%8C/"/>
+    
+    
+    <category term="足球比赛" scheme="https://yeying.tech/tags/%E8%B6%B3%E7%90%83%E6%AF%94%E8%B5%9B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Pycharm 快捷键</title>
+    <link href="https://yeying.tech/%E7%AC%94%E8%AE%B0/Pycharm-keys/"/>
+    <id>https://yeying.tech/%E7%AC%94%E8%AE%B0/Pycharm-keys/</id>
+    <published>2021-08-19T15:15:03.000Z</published>
+    <updated>2022-06-16T02:42:34.117Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;关于快捷键网上很多人都总结了，我在此重复，只是为了自己查看更方便一些&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&quot;left&quot;&gt;快捷键&lt;/th&gt;
+&lt;th align=&quot;left&quot;&gt;说明&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Alt+Enter&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;自动添加包&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;shift+O&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;自动建议代码补全&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Ctrl+t SVN&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;更新&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Ctrl+k SVN&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;提交&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Ctrl + /&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;注释(取消注释)选择的行&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Ctrl + J&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;快速添加代码结构&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Ctrl+Shift+F&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;高级查找&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Ctrl+Enter&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;补全&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Shift + Enter&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;下方插入新行&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Ctrl + Alt + Enter&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;上方插入新行&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;TAB Shift+TAB&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;缩进/取消缩进所选择的行&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Ctrl + Shift + I&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;快捷查看方法的实现&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;</summary>
+    
+    
+    
+    <category term="笔记" scheme="https://yeying.tech/categories/%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="Pycharm" scheme="https://yeying.tech/tags/Pycharm/"/>
+    
+    <category term="快捷键" scheme="https://yeying.tech/tags/%E5%BF%AB%E6%8D%B7%E9%94%AE/"/>
+    
+  </entry>
   
   <entry>
     <title>Github配置 SSH Keys</title>
@@ -247,103 +355,6 @@
     <category term="Visual Studio" scheme="https://yeying.tech/tags/Visual-Studio/"/>
     
     <category term="快捷键" scheme="https://yeying.tech/tags/%E5%BF%AB%E6%8D%B7%E9%94%AE/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Pycharm 快捷键</title>
-    <link href="https://yeying.tech/%E7%AC%94%E8%AE%B0/Pycharm-keys/"/>
-    <id>https://yeying.tech/%E7%AC%94%E8%AE%B0/Pycharm-keys/</id>
-    <published>2021-08-19T15:15:03.000Z</published>
-    <updated>2021-09-12T06:31:19.019Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;关于快捷键网上很多人都总结了，我在此重复，只是为了自己查看更方便一些&lt;/p&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th align=&quot;left&quot;&gt;快捷键&lt;/th&gt;
-&lt;th align=&quot;left&quot;&gt;说明&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;Alt+Enter&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;自动添加包&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;shift+O&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;自动建议代码补全&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;Ctrl+t SVN&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;更新&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;Ctrl+k SVN&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;提交&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;Ctrl + /&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;注释(取消注释)选择的行&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;Ctrl+Shift+F&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;高级查找&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;Ctrl+Enter&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;补全&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;Shift + Enter&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;开始新行&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td align=&quot;left&quot;&gt;TAB Shift+TAB&lt;/td&gt;
-&lt;td align=&quot;left&quot;&gt;缩进/取消缩进所选择的行&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;&lt;/table&gt;</summary>
-    
-    
-    
-    <category term="笔记" scheme="https://yeying.tech/categories/%E7%AC%94%E8%AE%B0/"/>
-    
-    
-    <category term="Pycharm" scheme="https://yeying.tech/tags/Pycharm/"/>
-    
-    <category term="快捷键" scheme="https://yeying.tech/tags/%E5%BF%AB%E6%8D%B7%E9%94%AE/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>足协杯夺冠照片</title>
-    <link href="https://yeying.tech/%E7%9B%B8%E5%86%8C/football-match-06-15/"/>
-    <id>https://yeying.tech/%E7%9B%B8%E5%86%8C/football-match-06-15/</id>
-    <published>2021-06-15T08:37:35.000Z</published>
-    <updated>2021-09-12T06:21:44.541Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 align = &quot;center&quot;&gt;足协杯夺冠照片&lt;/h1&gt;
-
-
-
-
-&lt;table&gt;
-      &lt;tr&gt; 
-          &lt;td align = &quot;center&quot;&gt;&lt;img</summary>
-        
-      
-    
-    
-    
-    <category term="相册" scheme="https://yeying.tech/categories/%E7%9B%B8%E5%86%8C/"/>
-    
-    
-    <category term="足球比赛" scheme="https://yeying.tech/tags/%E8%B6%B3%E7%90%83%E6%AF%94%E8%B5%9B/"/>
     
   </entry>
   
