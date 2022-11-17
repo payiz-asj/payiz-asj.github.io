@@ -396,6 +396,13 @@
   </url>
   
   <url>
+    <loc>https://yeying.tech/tags/%E5%BF%AB%E6%8D%B7%E9%94%AE/</loc>
+    <lastmod>2022-11-17</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://yeying.tech/tags/Gis/</loc>
     <lastmod>2022-11-17</lastmod>
     <changefreq>daily</changefreq>
@@ -424,13 +431,6 @@
   </url>
   
   <url>
-    <loc>https://yeying.tech/tags/%E5%BF%AB%E6%8D%B7%E9%94%AE/</loc>
-    <lastmod>2022-11-17</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://yeying.tech/tags/Win32com/</loc>
     <lastmod>2022-11-17</lastmod>
     <changefreq>daily</changefreq>
@@ -438,7 +438,7 @@
   </url>
   
   <url>
-    <loc>https://yeying.tech/tags/%E4%BD%BF%E7%94%A8%E6%89%8B%E5%86%8C/</loc>
+    <loc>https://yeying.tech/tags/%E6%AC%A2%E8%BF%8E/</loc>
     <lastmod>2022-11-17</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -452,7 +452,14 @@
   </url>
   
   <url>
-    <loc>https://yeying.tech/tags/%E6%AC%A2%E8%BF%8E/</loc>
+    <loc>https://yeying.tech/tags/%E4%BD%BF%E7%94%A8%E6%89%8B%E5%86%8C/</loc>
+    <lastmod>2022-11-17</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://yeying.tech/tags/%E8%B6%B3%E7%90%83%E6%AF%94%E8%B5%9B/</loc>
     <lastmod>2022-11-17</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -474,13 +481,6 @@
   
   <url>
     <loc>https://yeying.tech/tags/Js/</loc>
-    <lastmod>2022-11-17</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://yeying.tech/tags/%E8%B6%B3%E7%90%83%E6%AF%94%E8%B5%9B/</loc>
     <lastmod>2022-11-17</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -545,6 +545,13 @@
   </url>
   
   <url>
+    <loc>https://yeying.tech/categories/%E7%9B%B8%E5%86%8C/</loc>
+    <lastmod>2022-11-17</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://yeying.tech/categories/%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91/</loc>
     <lastmod>2022-11-17</lastmod>
     <changefreq>daily</changefreq>
@@ -553,13 +560,6 @@
   
   <url>
     <loc>https://yeying.tech/categories/Demo/</loc>
-    <lastmod>2022-11-17</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://yeying.tech/categories/%E7%9B%B8%E5%86%8C/</loc>
     <lastmod>2022-11-17</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
