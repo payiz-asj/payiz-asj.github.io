@@ -86,18 +86,30 @@
   <script>
     try {
       var typed = new Typed("#subtitle", {
-        strings: ['夜暗方显万颗星，灯明始见一缕尘。', '宝剑锋从磨砺出，梅花香自苦寒来。', '人生如逆旅，我亦是行人。'],
-        startDelay: 0,
-        typeSpeed: 150,
+        strings: ['业精于勤荒于嬉，行成于思毁于随', '人生如逆旅，我亦是行人', '人谁无过？过而能改，善莫大焉','宁为玉碎，不为瓦全','人生如棋；我愿为卒；行动虽慢；谁曾见我后退半步','物是人非事事休，欲语泪先流','人固有一死，或重于泰山，或轻于鸿毛','穷则独善其身，达则兼济天下','当局者迷，旁观者清','勿以恶小而为之，勿以善小而不为','长风破浪会有时，直挂云帆济沧海','学而不思则罔，思而不学则殆'],
         loop: true,
+        startDelay: 500,
+        backDelay: 1000,
+        typeSpeed: 100,        
         backSpeed: 25,
-        showCursor: true
+        showCursor: true,
+        fadeOut:true,
       });
     } catch (err) {
       console.log(err)
     }
   </script>
   
+
+  <!-- MyConsoleText -->
+  <script>
+  // 清空控制台
+  console.clear();
+  // 输出样式文字
+  console.log("%c有朋自远方来，不亦乐乎？\nWelcome to my blog🎉\n",
+  "text-shadow: 0 1px 0 #ccc,0 2px 0 #c9c9c9,0 3px 0 #bbb,0 4px 0 #b9b9b9,0 5px 0 #aaa,0 6px 1px rgba(0,0,0,.1),0 0 5px rgba(0,0,0,.1),0 1px 3px rgba(0,0,0,.3),0 3px 5px rgba(0,0,0,.2),0 5px 10px rgba(0,0,0,.25),0 10px 10px rgba(0,0,0,.2),0 20px 20px rgba(0,0,0,.15);font-size:4rem;"
+  );
+  </script>
 <div id="main">
   <section class="outer">
   
